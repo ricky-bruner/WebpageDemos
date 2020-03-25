@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import IconAnimationDemo from './IconAnimationDemo';
 import './icons.css';
 
-export default class IconDemo extends Component {
+export default class IconDemos extends Component {
     state = {};
 
     render(){

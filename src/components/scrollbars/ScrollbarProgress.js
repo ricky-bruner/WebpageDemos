@@ -5,12 +5,22 @@ export default class ScrollbarProgress extends Component {
     state = {};
 
     componentDidMount(){
+        let body = document.querySelector(".scrollbar-progress-body");
         let progress = document.getElementById('progressbar');
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
 
-        window.onscroll = function(){
-            let progressHeight = (window.pageYOffset / totalHeight) * 100;
-            progress.style.height = progressHeight + "%";
+        body.onscroll = function(){
+            // let progressHeight = (body.pageYOffset / totalHeight) * 100;
+            // progress.style.height = progressHeight + "%";
+            let height = body.clientHeight;
+            // console.log(height);
+            let scrollHeight = body.scrollHeight - height;
+            // console.log(scrollHeight)
+            let scrollTop = body.scrollTop;
+            console.log(scrollTop);
+            // let percent = Math.floor(scrollTop / scrollHeight * 100);
+            progress.style.height = scrollTop + "px";
+
+            // console.log(percent);
         }
     }
 

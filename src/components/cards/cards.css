@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+.skewed-border-demo {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+    padding: 20px;
+}
+
+.skewed-border-demo .container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+    z-index: 0;
+}
+
+.skewed-border-demo .container .box {
+    position: relative;
+    margin-bottom: 60px;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.skewed-border-demo .container .box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    transform: skew(2deg, 2deg);
+    z-index: -1;
+}
+
+.skewed-border-demo .container .box:nth-child(1):before {
+    background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+
+.skewed-border-demo .container .box:nth-child(2):before {
+    background: linear-gradient(315deg, #89ff00, #00bcd4);
+}
+
+.skewed-border-demo .container .box:nth-child(3):before {
+    background: linear-gradient(315deg, #e91e63, #5d02ff);
+}
+
+.skewed-border-demo .container .box:nth-child(4):before {
+    background: linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.skewed-border-demo .container .box:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .05);
+    pointer-events: none;
+}
+
+.skewed-border-demo .container .box .content {
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+}
+
+.skewed-border-demo .container .box .content h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255, 255, 255, .05);
+    transition: .5s;
+}
+
+.skewed-border-demo .container .box:hover .content h2 {
+    top: -140px;
+}
+
+.skewed-border-demo .container .box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.skewed-border-demo .container .box .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.skewed-border-demo .container .box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: .5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.skewed-border-demo .container .box:hover .content a {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.skewed-border-demo .container .box .content a:hover {
+    background: white;
+    color: black;
+}

@@ -1,9 +1,18 @@
 .scrollbar-demos-body {
+    position: relative;
     min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scrollbar-progress-body {
+    position: relative;
     font-family: "arial";
+    width: 80%;
+    height: 450px;
+    overflow-y: scroll;
 }
 
 .scrollbar-progress-body section {
@@ -21,12 +30,12 @@
     color: white
 }
 
-::-webkit-scrollbar {
+.scrollbar-progress-body::-webkit-scrollbar {
     width: 0;
 }
 
 #scrollPath {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 10px;
@@ -35,10 +44,11 @@
 }
 
 #progressbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 10px;
+    /* height: 80%; */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     background: linear-gradient(to top, #008aff, #00ffe7);
