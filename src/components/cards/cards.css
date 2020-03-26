@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 
 /* Skewed Border Demo */
 .skewed-border-demo {
@@ -205,11 +205,78 @@
     left: 0;
     width: 50%;
     height: 100%;
-    background: rgba(255, 255, 255, .1);
+    background: rgba(255, 255, 255, .05);
     pointer-events: none;
 }
 
 .glowing-card-demo .box .content {
     padding: 20px;
     color: white;
+}
+
+/* Flip Hover Card Demo */
+
+.flip-hover-card-demo {
+    font-family: "Quicksand", sans-serif;
+    background: #f2f2f2;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.flip-hover-card-demo .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flip-hover-card-demo .container .card {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.flip-hover-card-demo .container .card:hover {
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+
+.flip-hover-card-demo .container .card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+
+.flip-hover-card-demo .container .card:hover .imgBox {
+    transform: rotateY(-135deg)
+}
+
+.flip-hover-card-demo .container .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-hover-card-demo .container .card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
 }
