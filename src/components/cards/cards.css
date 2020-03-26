@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
+
+/* Skewed Border Demo */
 .skewed-border-demo {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -129,4 +131,85 @@
 .skewed-border-demo .container .box .content a:hover {
     background: white;
     color: black;
+}
+
+/* Glowing Card Demo */
+.glowing-card-demo {
+    font-family: 'Poppins', sans-serif;
+    background: #010615;
+
+}
+
+.glowing-card-demo .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.glowing-card-demo .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    margin: 40px;
+}
+
+.glowing-card-demo .box:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: white;
+    z-index: -1;
+}
+
+.glowing-card-demo .box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.glowing-card-demo .box:nth-child(1):before,
+.glowing-card-demo .box:nth-child(1):after {
+    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.glowing-card-demo .box:nth-child(2):before,
+.glowing-card-demo .box:nth-child(2):after {
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.glowing-card-demo .box:nth-child(3):before,
+.glowing-card-demo .box:nth-child(3):after {
+    background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+}
+
+.glowing-card-demo .box .glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    pointer-events: none;
+}
+
+.glowing-card-demo .box .content {
+    padding: 20px;
+    color: white;
 }
