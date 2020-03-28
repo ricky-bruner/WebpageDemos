@@ -4,6 +4,7 @@ import './cards.css';
 import GlowingCardDemo from './GlowingCardDemo';
 import FlipHoverCardDemo from './FlipHoverCardDemo';
 import IconGrowthCard from './IconGrowthCard';
+import CircleGrowthIconCard from './CircleGrowthIconCard';
 
 export default class CardDemos extends Component {
     state = {
@@ -17,6 +18,7 @@ export default class CardDemos extends Component {
                 <GlowingCardDemo />
                 <FlipHoverCardDemo />
                 <IconGrowthCard />
+                <CircleGrowthIconCard />
             </div>
         )
     }
