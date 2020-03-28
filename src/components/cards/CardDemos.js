@@ -3,6 +3,7 @@ import SkewedBorderDemo from './SkewedBorderDemo';
 import './cards.css';
 import GlowingCardDemo from './GlowingCardDemo';
 import FlipHoverCardDemo from './FlipHoverCardDemo';
+import IconGrowthCard from './IconGrowthCard';
 
 export default class CardDemos extends Component {
     state = {
@@ -15,6 +16,7 @@ export default class CardDemos extends Component {
                 <SkewedBorderDemo />
                 <GlowingCardDemo />
                 <FlipHoverCardDemo />
+                <IconGrowthCard />
             </div>
         )
     }
