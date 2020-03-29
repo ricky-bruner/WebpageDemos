@@ -22,7 +22,7 @@
     margin-top: 40px;
 }
 
-.icon-container {
+.icon-animation-body .icon-container {
     position: relative;
     width: 1000px;
     display: flex;
@@ -30,22 +30,22 @@
     align-items: center;
 }
 
-.icon-container .icon {
+.icon-animation-body .icon-container .icon {
     width: 200px;
 }
 
-.icon-container .icon path {
+.icon-animation-body .icon-container .icon path {
     fill: transparent;
     stroke-width: 10;
     stroke: #31e8ff;
 }
 
-.icon-container .icon.heart path {
+.icon-animation-body .icon-container .icon.heart path {
     stroke-dasharray: 1560;
     stroke-dashoffset: 0;
 }
 
-.icon-container .icon.heart:hover path {
+.icon-animation-body .icon-container .icon.heart:hover path {
     animation: animate-heart 1.5s linear forwards;
 }
 
@@ -66,12 +66,12 @@
     }
 }
 
-.icon-container .icon.star path {
+.icon-animation-body .icon-container .icon.star path {
     stroke-dasharray: 1810;
     stroke-dashoffset: 0;
 }
 
-.icon-container .icon.star:hover path {
+.icon-animation-body .icon-container .icon.star:hover path {
     animation: animate-star 2s linear forwards;
 }
 
@@ -92,12 +92,12 @@
     }
 }
 
-.icon-container .icon.moon path {
+.icon-animation-body .icon-container .icon.moon path {
     stroke-dasharray: 1560;
     stroke-dashoffset: 0;
 }
 
-.icon-container .icon.moon:hover path {
+.icon-animation-body .icon-container .icon.moon:hover path {
     animation: animate-moon 1.5s linear forwards;
 }
 
@@ -119,12 +119,12 @@
 }
 
 
-.icon-container .icon.leaf path {
+.icon-animation-body .icon-container .icon.leaf path {
     stroke-dasharray: 2350;
     stroke-dashoffset: 0;
 }
 
-.icon-container .icon.leaf:hover path {
+.icon-animation-body .icon-container .icon.leaf:hover path {
     animation: animate-leaf 1.5s linear forwards;
 }
 

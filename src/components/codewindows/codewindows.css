@@ -1,0 +1,62 @@
+.code-box {
+    width: 90%;
+    height: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 50px;
+}
+
+.code-selection-box {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.code-selection-box button {
+    background: none;
+    border: none;
+}
+
+#html:focus,
+#css:focus {
+    outline: 0;
+}
+
+#html svg,
+#css svg {
+    width: 40px;
+    height: 40px;
+    color: lightblue;
+}
+
+.code-selection-box h3 {
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+}
+
+.code-display-box {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+pre {
+    color: gold;
+    background: rgb(40, 40, 40);
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+    word-wrap: normal;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 0px 50px inset;
+}

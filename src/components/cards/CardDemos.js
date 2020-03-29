@@ -5,6 +5,7 @@ import GlowingCardDemo from './GlowingCardDemo';
 import FlipHoverCardDemo from './FlipHoverCardDemo';
 import IconGrowthCard from './IconGrowthCard';
 import CircleGrowthIconCard from './CircleGrowthIconCard';
+import CodeWindow from '../codewindows/CodeWindow';
 
 export default class CardDemos extends Component {
     state = {
@@ -15,10 +16,16 @@ export default class CardDemos extends Component {
         return (
             <div className="card-demos-body">
                 <SkewedBorderDemo />
+                <CodeWindow html=".skewed-border-demo" />
                 <GlowingCardDemo />
+                <CodeWindow html=".glowing-card-demo" />
                 <FlipHoverCardDemo />
+                <CodeWindow html=".flip-hover-card-demo" />
                 <IconGrowthCard />
+                <CodeWindow html=".icon-growth-card-demo" />
                 <CircleGrowthIconCard />
+                <CodeWindow html=".circle-growth-icon-card-demo" />
+
             </div>
         )
     }
