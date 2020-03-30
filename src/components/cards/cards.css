@@ -623,3 +623,234 @@
     padding: 0;
     color: white;
 }
+
+/* Neumorphism Card Demo */
+.neumorphism-card-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebf5fc;
+}
+
+.neumorphism-card-demo .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100px;
+}
+
+.neumorphism-card-demo .container .card {
+    width: 320px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+                6px 6px 20px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-card-demo .container .card:hover {
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, .5),
+                inset 6px 6px 20px rgba(0, 0, 0, .05);
+}
+
+.neumorphism-card-demo .container .card .imgBx {
+    position: relative;
+    text-align: center;
+}
+
+.neumorphism-card-demo .container .card .imgBx svg {
+    width: 120px;
+    height: 120px;
+    color: #32a3b1;
+}
+
+.neumorphism-card-demo .container .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.neumorphism-card-demo .container .card .contentBx h2 {
+    color: #32a3b1;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
+.neumorphism-card-demo .container .card .contentBx p {
+    color: #32a3b1;
+}
+
+.neumorphism-card-demo .container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #32a3b1;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+                4px 4px 15px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-card-demo .container .card .contentBx a:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, .5),
+                inset 4px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-card-demo .container .card a:hover span {
+    display: block;
+    transform: scale(.98);
+}
+
+.neumorphism-card-demo .container .card:hover .imgBx,
+.neumorphism-card-demo .container .card:hover .contentBx {
+    transform: scale(.98);
+}
+
+/* Image Slide Left Card Demo */
+.image-slide-left-card-demo {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+.image-slide-left-card-demo .container {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image-slide-left-card-demo .container .card {
+    position: relative;
+    height: 250px;
+    background: white;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+
+.image-slide-left-card-demo .container .card .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.image-slide-left-card-demo .container .card:hover .imgBx {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: .5s ease-in-out;
+    background: #ff0057;
+}
+
+.image-slide-left-card-demo .container .card .imgBx:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(255, 255, 255, .05);
+    font-weight: 700;
+}
+
+.image-slide-left-card-demo .container .card .imgBx svg {
+    color: white;
+    height: 65%;
+    width: 65%;
+    transition: .5s ease-in-out;
+}
+
+.image-slide-left-card-demo .container .card:hover .imgBx svg {
+    height: 55%;
+    width: 55%;
+}
+
+.image-slide-left-card-demo .container .card .content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-slide-left-card-demo .container .card .content h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.image-slide-left-card-demo .container .card .content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .image-slide-left-card-demo .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-slide-left-card-demo .container .card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-slide-left-card-demo .container .card {
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-slide-left-card-demo .container .card .imgBx {
+        position: relative;
+    }
+
+    .image-slide-left-card-demo .container .card .imgBx,
+    .image-slide-left-card-demo .container .card:hover .imgBx {
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 0;
+    }
+
+    .image-slide-left-card-demo .container .card .imgBx svg,
+    .image-slide-left-card-demo .container .card:hover .imgBx svg {
+        max-width: 100px;
+    }
+
+    .image-slide-left-card-demo .container .card .content {
+        position: relative;
+        width: 100%;
+    }
+}

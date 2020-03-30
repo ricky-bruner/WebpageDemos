@@ -7,6 +7,8 @@ import IconGrowthCard from './IconGrowthCard';
 import CircleGrowthIconCard from './CircleGrowthIconCard';
 import CodeWindow from '../codewindows/CodeWindow';
 import HoverSwitchCardDemo from './HoverSwitchCardDemo';
+import NeumorphismCardDemo from './NeumorphismCardDemo';
+import ImageSlideLeftCardDemo from './ImageSlideLeftCardDemo';
 
 export default class CardDemos extends Component {
     state = {
@@ -16,6 +18,10 @@ export default class CardDemos extends Component {
     render(){
         return (
             <div className="card-demos-body">
+                <ImageSlideLeftCardDemo />
+                <CodeWindow html=".image-slide-left-card-demo" />
+                <NeumorphismCardDemo />
+                <CodeWindow html=".neumorphism-card-demo" />
                 <SkewedBorderDemo />
                 <CodeWindow html=".skewed-border-demo" />
                 <GlowingCardDemo />
