@@ -1,4 +1,5 @@
 .colorful-hover-quote-box-demo {
+    position: relative;
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
