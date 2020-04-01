@@ -9,6 +9,7 @@ import CodeWindow from '../codewindows/CodeWindow';
 import HoverSwitchCardDemo from './HoverSwitchCardDemo';
 import NeumorphismCardDemo from './NeumorphismCardDemo';
 import ImageSlideLeftCardDemo from './ImageSlideLeftCardDemo';
+import CircleGrowthServiceCard from './CircleGrowthServiceCard';
 
 export default class CardDemos extends Component {
     state = {
@@ -18,6 +19,8 @@ export default class CardDemos extends Component {
     render(){
         return (
             <div className="card-demos-body">
+                <CircleGrowthServiceCard />
+                <CodeWindow html=".circle-growth-service-card-demo" />
                 <ImageSlideLeftCardDemo />
                 <CodeWindow html=".image-slide-left-card-demo" />
                 <NeumorphismCardDemo />
