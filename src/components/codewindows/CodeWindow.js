@@ -79,9 +79,9 @@ export default class CodeWindow extends Component {
     }
 
     formatRuleText = (ruleText) => {
-        ruleText = ruleText.replace(/{/g, "{\n    ");
+        ruleText = ruleText.replace(/{/g, "{\n   ");
         ruleText = ruleText.replace(/}/g, "}\n");
-        ruleText = ruleText.replace(/;/g, ";\n    ");
+        ruleText = ruleText.replace(/;/g, ";\n   ");
         ruleText = ruleText.replace(/ {4}}/g, "}");
 
         return "\n" + ruleText;
@@ -95,19 +95,21 @@ export default class CodeWindow extends Component {
         text = text.replace(/</g, "\n<");
         let textArray = text.split('\n').filter(t => t !== "");
         let formattedText = "";
-        let beginTags = [ "<div", "</div", "<h1", "<h2", "<h3", "<h4", "<a", "<p", "<img", "<svg", "<path" ];
+        let breakTags = [ "<div", "</div", "<h1", "<h2", "<h3", "<h4", "<a", "<p", "<img", "<svg", "<path", "<ul", "<li", "</ul>", "</li>", "</a>", "<svg", "</svg>" ];
+        let indenters = [ "<div", "<ul", "<li", "<a", "<svg" ];
+        let outdenters = [ "</div", "</ul>", "</li>", "</a>", "</svg>" ];
         // let endTags = [ "</div>", "</h1>", "</h2>", "</h3>", "</h4>", "</a>", "</p>", "</img>", "</svg>", "</pat" ];
         let indentCount = 0;
 
         textArray.forEach(t => {
-            if (beginTags.filter(tag => t.includes(tag)).length > 0) {
+            if (breakTags.filter(tag => t.includes(tag)).length > 0) {
                 formattedText += "\n"
-                if(t.includes("<div")){
+                if(indenters.filter(i => t.includes(i)).length > 0){
                     indentCount++;
                     for(let i = 0; i < indentCount; i++){
                         formattedText += "    ";
                     }
-                } else if(t.includes("</div")){
+                } else if(outdenters.filter(i => t.includes(i)).length > 0){
                     for(let i = 0; i < indentCount; i++){
                         formattedText += "    ";
                     }
