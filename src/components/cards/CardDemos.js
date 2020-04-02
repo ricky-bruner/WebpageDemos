@@ -10,6 +10,8 @@ import HoverSwitchCardDemo from './HoverSwitchCardDemo';
 import NeumorphismCardDemo from './NeumorphismCardDemo';
 import ImageSlideLeftCardDemo from './ImageSlideLeftCardDemo';
 import CircleGrowthServiceCard from './CircleGrowthServiceCard';
+import IsometricCardHoverDemo from './IsometricCardHoverDemo';
+import FlipUpHoverCardDemo from './FlipUpHoverCardDemo';
 
 export default class CardDemos extends Component {
     state = {
@@ -19,6 +21,10 @@ export default class CardDemos extends Component {
     render(){
         return (
             <div className="card-demos-body">
+                <FlipUpHoverCardDemo />
+                <CodeWindow html=".flip-up-hover-card-demo" />
+                <IsometricCardHoverDemo />
+                <CodeWindow html=".isometric-card-hover-demo" />
                 <CircleGrowthServiceCard />
                 <CodeWindow html=".circle-growth-service-card-demo" />
                 <ImageSlideLeftCardDemo />

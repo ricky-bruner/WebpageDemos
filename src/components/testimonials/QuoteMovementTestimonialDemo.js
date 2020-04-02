@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Dumbledore from "../../img/dumbledore.jpg";
-import Hagrid from "../../img/hagrid.jpg";
 import Snape from "../../img/snape.jpg";
 
 export default class QuoteMovementTestimonialDemo extends Component {
