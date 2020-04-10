@@ -12,6 +12,12 @@ import ImageSlideLeftCardDemo from './ImageSlideLeftCardDemo';
 import CircleGrowthServiceCard from './CircleGrowthServiceCard';
 import IsometricCardHoverDemo from './IsometricCardHoverDemo';
 import FlipUpHoverCardDemo from './FlipUpHoverCardDemo';
+import SwivelRotationCardDemo from './SwivelRotationCardDemo';
+import CircleReductionServiceCard from './CircleReductionServiceCard';
+import GameStyleCardsDemo from './GameStyleCardsDemo';
+import DirectionAwareCardDemo from './DirectionAwareCardDemo';
+import DepthOfFieldCardDemo from './DepthOfFieldCardDemo';
+import ImageClipHoverCardDemo from './ImageClipHoverCardDemo';
 
 export default class CardDemos extends Component {
     state = {
@@ -21,6 +27,18 @@ export default class CardDemos extends Component {
     render(){
         return (
             <div className="card-demos-body">
+                <ImageClipHoverCardDemo />
+                <CodeWindow html=".image-clip-hover-card-demo" />
+                <DepthOfFieldCardDemo />
+                <CodeWindow html=".depth-of-field-card-demo" />
+                <DirectionAwareCardDemo />
+                <CodeWindow html=".direction-aware-card-demo" />
+                <GameStyleCardsDemo />
+                <CodeWindow html=".game-style-cards-demo" />
+                <CircleReductionServiceCard />
+                <CodeWindow html=".circle-reduction-service-card-demo" />
+                <SwivelRotationCardDemo />
+                <CodeWindow html=".swivel-rotation-card-demo" />
                 <FlipUpHoverCardDemo />
                 <CodeWindow html=".flip-up-hover-card-demo" />
                 <IsometricCardHoverDemo />

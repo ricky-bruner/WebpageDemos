@@ -1183,3 +1183,684 @@
     transition-delay: .2s;
 }
 
+/* Swivel Rotation Card Demo */
+.swivel-rotation-card-demo {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #555;
+}
+
+.swivel-rotation-card-demo .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.swivel-rotation-card-demo .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
+
+.swivel-rotation-card-demo .container .card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1.5s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.swivel-rotation-card-demo .container .card .face.front {
+    background: white;
+    color: black;
+}
+
+.swivel-rotation-card-demo .container .card:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.swivel-rotation-card-demo .container .card .face.back {
+    background: black;
+    color: #fff;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.swivel-rotation-card-demo .container .card:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.swivel-rotation-card-demo .container .card .face h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+}
+
+.swivel-rotation-card-demo .container .card .face svg {
+    width: 60%;
+    height: 60%;
+    transform: perspective(500px) translateZ(50px);
+}
+
+.swivel-rotation-card-demo .container .card .face.back p {
+    padding: 0 40px;
+    font-size: .7em;
+    transform: perspective(500px) translateZ(50px);
+}
+
+.swivel-rotation-card-demo .container .card .face.back a {
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid white;
+    font-size: .8em;
+    transform: perspective(500px) translateZ(50px);
+    color: white;
+    background: transparent;
+}
+
+.swivel-rotation-card-demo .container .card .face.back a:hover {
+    /* transform: perspective(500px) translateZ(50px) scale(1.1); */
+    border: 1px solid rgb(205, 205, 205);
+    color: rgb(205, 205, 205);
+}
+
+/*  */
+.circle-reduction-service-card-demo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #00d0ff;
+}
+
+.circle-reduction-service-card-demo .container {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+
+.circle-reduction-service-card-demo .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #fff;
+    transition: .5s;
+}
+
+.circle-reduction-service-card-demo .container .card:hover {
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .2);
+}
+
+.circle-reduction-service-card-demo .container .card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-reduction-service-card-demo .container .card .face.face1 {
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    color: #013d4a;
+}
+
+.circle-reduction-service-card-demo .container .card .face.face1 h2 {
+    margin-top: 70px;
+}
+
+.circle-reduction-service-card-demo .container .card .face.face1 a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #013d4a;
+    border: 2px solid #013d4a;
+}
+
+.circle-reduction-service-card-demo .container .card .face.face1 a:hover {
+    color: white;
+    background: #013d4a;
+}
+
+.circle-reduction-service-card-demo .container .card .face.face2 {
+    background: #013d4a;
+    transition: .5s;
+}
+
+.circle-reduction-service-card-demo .container .card:hover .face.face2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 2px solid #013d4a;
+}
+
+.circle-reduction-service-card-demo .container .card .face.face2 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: white;
+    transition: .5s;
+}
+
+.circle-reduction-service-card-demo .container .card:hover .face.face2 h2 {
+    font-size: 2em;
+    color: #013d4a;
+}
+
+/* Game Style Cards Demo */
+.game-style-cards-demo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.game-style-cards-demo .box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+}
+
+.game-style-cards-demo .box .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .5);
+    transition: .5s;
+    transform-origin: bottom;
+    border-radius: 10px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-style-cards-demo .box .card:nth-child(1) {
+    transform: translate(0px, 0px);
+}
+
+.game-style-cards-demo .box .card:nth-child(2) {
+    transform: translate(2px, 2px);
+}
+
+.game-style-cards-demo .box .card:nth-child(3) {
+    transform: translate(4px, 4px);
+}
+
+.game-style-cards-demo .box .card:nth-child(4) {
+    transform: translate(6px, 6px);
+}
+
+.game-style-cards-demo .box .card:nth-child(5) {
+    transform: translate(8px, 8px);
+}
+
+.game-style-cards-demo .box .card:nth-child(6) {
+    transform: translate(10px, 10px);
+}
+
+.game-style-cards-demo .box .card:nth-child(7) {
+    transform: translate(12px, 12px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(1) {
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(2) {
+    transform: rotate(-30deg) translate(2px, 2px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(3) {
+    transform: rotate(-15deg) translate(4px, 4px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(4) {
+    transform: rotate(-0deg) translate(6px, 6px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(5) {
+    transform: rotate(15deg) translate(8px, 8px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(6) {
+    transform: rotate(30deg) translate(10px, 10px);
+}
+
+.game-style-cards-demo .box:hover .card:nth-child(7) {
+    transform: rotate(45deg) translate(12px, 12px);
+}
+
+.game-style-cards-demo .box .card:hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+}
+
+.game-style-cards-demo .box .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 20;
+    pointer-events: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.game-style-cards-demo .box .card:nth-child(1), 
+.game-style-cards-demo .box .card:nth-child(1) .overlay {
+    background: linear-gradient(45deg, #ffb08e, #f54a00);
+}
+
+.game-style-cards-demo .box .card:nth-child(2), 
+.game-style-cards-demo .box .card:nth-child(2) .overlay {
+    background: linear-gradient(45deg, #96c0ff, #0046de);
+}
+
+.game-style-cards-demo .box .card:nth-child(3), 
+.game-style-cards-demo .box .card:nth-child(3) .overlay {
+    background: linear-gradient(45deg, #8f8f8f, #ffe600);
+}
+
+.game-style-cards-demo .box .card:nth-child(4), 
+.game-style-cards-demo .box .card:nth-child(4) .overlay {
+    background: linear-gradient(45deg, #303030, #02dceb);
+}
+
+.game-style-cards-demo .box .card:nth-child(5), 
+.game-style-cards-demo .box .card:nth-child(5) .overlay {
+    background: linear-gradient(45deg, #f4582c, #d30000);
+}
+
+.game-style-cards-demo .box .card:nth-child(6), 
+.game-style-cards-demo .box .card:nth-child(6) .overlay {
+    background: linear-gradient(45deg, #daffb0, #006fd0);
+}
+
+.game-style-cards-demo .box .card:nth-child(7), 
+.game-style-cards-demo .box .card:nth-child(7) .overlay {
+    background: linear-gradient(45deg, #04ed00, #f4f4f4);
+}
+
+.game-style-cards-demo .box .card .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-style-cards-demo .box .card .imgBx svg {
+    width: 100px;
+    height: 100px;
+}
+
+.game-style-cards-demo .box .card .imgBx h2{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.game-style-cards-demo .box .card .overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.game-style-cards-demo .box .card .overlay:hover {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    opacity: .9;
+    border-radius: 0;
+}
+
+.game-style-cards-demo .box .card .overlay:before {
+    content: "Read";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: .5s;
+}
+
+.game-style-cards-demo .box .card .overlay:hover:before {
+    display: none;
+    transition-delay: 0s;
+}
+
+.game-style-cards-demo .box .card .content {
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+    color: white;
+}
+
+.game-style-cards-demo .box .card .overlay:hover ~ .content {
+    opacity: 1;
+    visibility: visible;
+    transition: .2s;
+    transition-delay: .3s;
+}
+
+/* Direction Aware Card Demo */
+.direction-aware-card-demo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #0b74cb 0%, #0b74cb 50%, rgb(215, 215, 215) 50%, rgb(215, 215, 215) 100%);
+}
+
+.direction-aware-card-demo .container {
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+}
+
+.direction-aware-card-demo .container .card {
+    position: relative;
+    width: 180px;
+    height: 240px;
+    background: white;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    transition: .5s;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.direction-aware-card-demo .container:hover .card {
+    transform: perspective(500px) rotateY(30deg)
+}
+
+.direction-aware-card-demo .container .card:hover {
+    transform: perspective(500px) rotateY(0deg)
+}
+.direction-aware-card-demo .container .card:hover ~ .card {
+    transform: perspective(500px) rotateY(-30deg)
+}
+
+.direction-aware-card-demo .container .card h2 {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3em;
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    transition: box-shadow .5s;
+}
+
+.direction-aware-card-demo .container .card:hover h2 {
+    background: white;
+    color: #2196f3;
+    box-shadow: 0 0 0 150px #2196f3;
+}
+
+/* Depth of Field Card Demo */
+.depth-of-field-card-demo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg, white 50%, #2196f3);
+}
+
+.depth-of-field-card-demo .container {
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+
+.depth-of-field-card-demo .container .card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.depth-of-field-card-demo .container:hover .card {
+    filter: blur(5px);
+    transform: scale(.7)
+}
+
+.depth-of-field-card-demo .container .card:hover {
+    filter: blur(0px);
+    transform: scale(1)
+}
+
+.depth-of-field-card-demo .container .card:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 1;
+    transition: .5s;
+}
+
+.depth-of-field-card-demo .container .card:hover:before {
+    background: black;
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.depth-of-field-card-demo .container .card .content {
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: .5s;
+}
+
+.depth-of-field-card-demo .container .card:hover .content {
+    color: white;
+}
+
+.depth-of-field-card-demo .container .card .content h2 {
+    font-size: 3em;
+}
+
+.depth-of-field-card-demo .container .card .content p {
+    font-size: .9em;
+}
+
+.depth-of-field-card-demo .container .card .content a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #262626;
+    color: white;
+    text-decoration: none;
+}
+
+.depth-of-field-card-demo .container .card:hover .content a {
+    background: #2196f3;
+}
+
+/* Image Clip Hover Card Demo */
+.image-clip-hover-card-demo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.image-clip-hover-card-demo .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.image-clip-hover-card-demo .container .box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.image-clip-hover-card-demo .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 50px inset;
+}
+
+.image-clip-hover-card-demo .container .box .content h2,
+.image-clip-hover-card-demo .container .box .content p {
+    margin-bottom: 25px;
+}
+
+.image-clip-hover-card-demo .container .box .content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.image-clip-hover-card-demo .container .box .content a:hover {
+    background: black;
+    color: white;
+}
+
+.image-clip-hover-card-demo .container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: 1s;
+}
+
+.image-clip-hover-card-demo .container .box:hover img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+}
+
+.image-clip-hover-card-demo .container .box:nth-child(even):hover img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}

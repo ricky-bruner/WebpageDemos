@@ -79,6 +79,8 @@ export default class CodeWindow extends Component {
     }
 
     formatRuleText = (ruleText) => {
+        let demoClass = ruleText.split(this.props.html + " ");
+        ruleText = this.props.html + " " + demoClass.join("");
         ruleText = ruleText.replace(/{/g, "{\n   ");
         ruleText = ruleText.replace(/}/g, "}\n");
         ruleText = ruleText.replace(/;/g, ";\n   ");
