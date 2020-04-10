@@ -4,6 +4,7 @@ import ScrollbarDemos from './components/scrollbars/ScrollbarDemos';
 import CardDemos from './components/cards/CardDemos';
 import NavbarDemos from './components/navbars/NavbarDemos';
 import TestimonialDemos from './components/testimonials/TestimonialDemos';
+import ButtonDemos from './components/buttons/ButtonDemos';
 
 export default class App extends Component {
     state = {
@@ -49,6 +50,10 @@ export default class App extends Component {
                 {
                     this.state.scrollbars &&
                     <ScrollbarDemos />
+                }
+                {
+                    this.state.buttons &&
+                    <ButtonDemos />
                 }
             </div>
         );
