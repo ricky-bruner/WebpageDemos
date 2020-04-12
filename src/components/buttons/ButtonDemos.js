@@ -5,6 +5,8 @@ import "./buttons.css";
 import ShootingBorderButtonDemo from './ShootingBorderButtonDemo';
 import AnimatedOutlineButtonDemo from './AnimatedOutlineButtonDemo';
 import OscillatingSolidButtonDemo from './OscillatingSolidButtonDemo';
+import ThreeDimensionalButtonDemo from './ThreeDimensionalButtonDemo';
+import NeonReflectiveButtonDemo from './NeonReflectiveButtonDemo';
 
 export default class ButtonDemos extends Component {
     state = {}
@@ -12,6 +14,10 @@ export default class ButtonDemos extends Component {
     render(){
         return (
             <div className="button-demos-body">
+                <NeonReflectiveButtonDemo />
+                <CodeWindow html=".neon-reflective-button-demo" />
+                <ThreeDimensionalButtonDemo />
+                <CodeWindow html=".three-dimensional-button-demo" />
                 <OscillatingSolidButtonDemo />
                 <CodeWindow html=".oscillating-solid-button-demo" />
                 <AnimatedOutlineButtonDemo />
