@@ -15,7 +15,6 @@ export default class ButtonDemos extends Component {
         return (
             <div className="button-demos-body">
                 <NeonReflectiveButtonDemo />
-                <CodeWindow html=".neon-reflective-button-demo" />
                 <ThreeDimensionalButtonDemo />
                 <CodeWindow html=".three-dimensional-button-demo" />
                 <OscillatingSolidButtonDemo />
