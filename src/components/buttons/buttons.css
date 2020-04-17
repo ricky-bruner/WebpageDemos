@@ -702,7 +702,6 @@
 }
 
 .three-dimensional-button-demo .container .button-container .three-dimensional-button:hover {
-    background: #2196f3;
     box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.4);
     transform: rotate(-10deg) skew(5deg);
     transition-delay: 2s;
@@ -940,10 +939,6 @@
     animation: neon-reflective-1 3s linear infinite;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.xs span:nth-child(1) {
-    height: 1px;
-}
-
 .neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(1) {
     animation: neon-reflective-1 1s linear infinite;
 }
@@ -965,10 +960,6 @@
     background: linear-gradient(180deg, transparent, #03e9f4);
     animation: neon-reflective-2 3s linear infinite;
     animation-delay: .75s;
-}
-
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.xs span:nth-child(2) {
-    width: 1px;
 }
 
 .neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(2) {
@@ -995,10 +986,6 @@
     animation-delay: 1.5s;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.xs span:nth-child(3) {
-    height: 1px;
-}
-
 .neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(3) {
     animation: neon-reflective-3 1s linear infinite;
     animation-delay: .5s;
@@ -1021,10 +1008,6 @@
     background: linear-gradient(360deg, transparent, #03e9f4);
     animation: neon-reflective-4 3s linear infinite;
     animation-delay: 2.25s;
-}
-
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.xs span:nth-child(4) {
-    width: 1px;
 }
 
 .neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(4) {

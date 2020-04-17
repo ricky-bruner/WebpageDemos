@@ -4,9 +4,32 @@ import CodeWindow from '../codewindows/CodeWindow';
 export default class NeonReflectiveButtonDemo extends Component {
     state = {
         color: "blue",
+        colors: [
+            "green",
+            "mint",
+            "cyan",
+            "blue",
+            "purple",
+            "magenta",
+            "pink",
+            "hotpink",
+            "red",
+            "orange",
+            "yellow",
+            "white",
+        ],
         showAllColors: false,
         html: ".neon-reflective-button-demo",
-        borderSpeed: "bd-nm"
+        borderSpeed: "bd-nm",
+        sizes: [
+            "xlg",
+            "lg",
+            "md",
+            "sm",
+            "xs",
+        ],
+        size: "md",
+        showAllSizes: true
     };
 
     switchColor = (color) => {
@@ -23,6 +46,18 @@ export default class NeonReflectiveButtonDemo extends Component {
 
     toggleBorder = (border) => {
         this.setState({ borderSpeed: border }, () => {
+            this.refs.CodeWindow.renderHTML()
+        });
+    }
+
+    toggleSize = (size) => {
+        this.setState({ size: size, showAllSizes: false }, () => {
+            this.refs.CodeWindow.renderHTML()
+        });
+    }
+
+    toggleAllSizes = () => {
+        this.setState({ showAllSizes: !this.state.showAllSizes }, () => {
             this.refs.CodeWindow.renderHTML()
         });
     }
@@ -54,245 +89,132 @@ export default class NeonReflectiveButtonDemo extends Component {
                         <button onClick={() => this.toggleBorder("bd-f")}>Fast Border</button>
                         <button onClick={() => this.toggleBorder("bd-no")}>No Border</button>
                     </div>
+                    <h3>Size Options</h3>
+                    <div className="options-box">
+                        <button onClick={() => this.toggleAllSizes()}>ALL</button>                       
+                        <button onClick={() => this.toggleSize("xlg")}>XLG</button>                       
+                        <button onClick={() => this.toggleSize("lg")}>LG</button>                       
+                        <button onClick={() => this.toggleSize("md")}>MD</button>                       
+                        <button onClick={() => this.toggleSize("sm")}>SM</button>                       
+                        <button onClick={() => this.toggleSize("xs")}>XS</button>
+                    </div>
                     <div className="container">
                         {
                             !this.state.showAllColors &&
-                            <div className="button-container" data-text="X-Large">
-                                <button className={"neon-reflective-button xlg " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xlg " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xlg " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                            </div>
+                            this.state.showAllSizes &&
+                            this.state.sizes.map(s => {
+                                return (
+                                    <div className="button-container" data-text={s}>
+                                        <button className={"neon-reflective-button " + s + " " + this.state.color + " " + this.state.borderSpeed}>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Button
+                                        </button>
+                                        <button className={"neon-reflective-button " + s + " " + this.state.color + " " + this.state.borderSpeed}>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Button
+                                        </button>
+                                        <button className={"neon-reflective-button " + s + " " + this.state.color + " " + this.state.borderSpeed}>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Button
+                                        </button>
+                                        {
+                                            s === "sm" ||
+                                            s === "xs" &&
+                                            <button className={"neon-reflective-button " + s + " " + this.state.color + " " + this.state.borderSpeed}>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Button
+                                            </button>
+                                        }
+                                        {
+                                            s === "xs" &&
+                                            <button className={"neon-reflective-button " + s + " " + this.state.color + " " + this.state.borderSpeed}>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Button
+                                            </button>
+                                        }
+                                    </div>
+                                );
+                            })
                         }
                         {
                             !this.state.showAllColors &&
-                            <div className="button-container" data-text="Large">
-                                <button className={"neon-reflective-button lg " + this.state.color + " " + this.state.borderSpeed}>
+                            !this.state.showAllSizes &&
+                            <div className="button-container" data-text={this.state.size}>
+                                <button className={"neon-reflective-button " + this.state.size + " " + this.state.color + " " + this.state.borderSpeed}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     Button
                                 </button>
-                                <button className={"neon-reflective-button lg " + this.state.color + " " + this.state.borderSpeed}>
+                                <button className={"neon-reflective-button " + this.state.size + " " + this.state.color + " " + this.state.borderSpeed}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     Button
                                 </button>
-                                <button className={"neon-reflective-button lg " + this.state.color + " " + this.state.borderSpeed}>
+                                <button className={"neon-reflective-button " + this.state.size + " " + this.state.color + " " + this.state.borderSpeed}>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     Button
                                 </button>
-                            </div>
-                        }
-                        {
-                            !this.state.showAllColors &&
-                            <div className="button-container" data-text="Medium">
-                                <button className={"neon-reflective-button md " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button md " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button md " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                            </div>
-                        }
-                        {
-                            !this.state.showAllColors &&
-                            <div className="button-container" data-text="Small">
-                                <button className={"neon-reflective-button sm " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button sm " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button sm " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button sm " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                            </div>
-                        }
-                        {
-                            !this.state.showAllColors &&
-                            <div className="button-container" data-text="X-Small">
-                                <button className={"neon-reflective-button xs " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs " + this.state.color + " " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
+                                {
+                                    this.state.size === "sm" ||
+                                    this.state.size === "xs" &&
+                                    <button className={"neon-reflective-button " + this.state.size + " " + this.state.color + " " + this.state.borderSpeed}>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Button
+                                    </button>
+                                }
+                                {
+                                    this.state.size === "xs" &&
+                                    <button className={"neon-reflective-button " + this.state.size + " " + this.state.color + " " + this.state.borderSpeed}>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Button
+                                    </button>
+                                }
                             </div>
                         }
                         {
                             this.state.showAllColors &&
                             <div className="button-container" data-text="Colors">
-                                <button className={"neon-reflective-button xs green " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs mint " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs cyan " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs blue " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs purple " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs magenta " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs pink " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs hotpink " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs red " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs orange " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs yellow " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
-                                <button className={"neon-reflective-button xs white " + this.state.borderSpeed}>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Button
-                                </button>
+                                {
+                                    this.state.colors.map(c => {
+                                        return (
+                                            <button className={"neon-reflective-button xs " + c + " " + this.state.borderSpeed}>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Button
+                                            </button>
+                                        );
+                                    })
+                                }
                             </div>
                         }
                     </div>
