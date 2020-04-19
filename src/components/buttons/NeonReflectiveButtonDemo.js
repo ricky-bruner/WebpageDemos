@@ -127,8 +127,7 @@ export default class NeonReflectiveButtonDemo extends Component {
                                             Button
                                         </button>
                                         {
-                                            s === "sm" ||
-                                            s === "xs" &&
+                                            (this.state.size === "sm" || this.state.size === "xs") && 
                                             <button className={"neon-reflective-button " + s + " " + this.state.color + " " + this.state.borderSpeed}>
                                                 <span></span>
                                                 <span></span>
@@ -177,8 +176,7 @@ export default class NeonReflectiveButtonDemo extends Component {
                                     Button
                                 </button>
                                 {
-                                    this.state.size === "sm" ||
-                                    this.state.size === "xs" &&
+                                    (this.state.size === "sm" || this.state.size === "xs") && 
                                     <button className={"neon-reflective-button " + this.state.size + " " + this.state.color + " " + this.state.borderSpeed}>
                                         <span></span>
                                         <span></span>
