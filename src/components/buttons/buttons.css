@@ -2,6 +2,7 @@
 .button-demos-body h2 {
     font-size: 30px;
     margin: 20px;
+    color: #0d428c;
     text-align: center;
 }
 
@@ -12,7 +13,6 @@
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
     color: #0d428c;
-
 }
 
 .button-demos-body .options-container h3 {
@@ -33,7 +33,6 @@
     margin: 10px;
     box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 10px;
     background: #0d428c;
-
 }
 
 .button-demos-body .options-container .options-box .option-section {
@@ -63,7 +62,7 @@
 
 .button-demos-body .options-container .options-box button:hover {
     color: white;
-    background: black;
+    background: #0d428c;
     border-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -71,28 +70,30 @@
     outline: none;
 }
 
-.button-demos-body .container {
+.button-demos-body .demo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px 20px 40px;
+    width: 75%;
+    padding: 50px 10px 10px;
+    margin: 15px 0;
 }
 
-.button-demos-body .container .button-container {
+.button-demos-body .demo-container .button-container {
     position: relative;
-    width: 75%;
-    height: 150px;
-    margin: 10px;
+    width: 95%;
+    min-height: 150px;
+    margin: 20px 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
-.button-demos-body .container .button-container:before {
+.button-demos-body .demo-container .button-container:before {
     content: attr(data-text);
     position: absolute;
     background: black;
@@ -102,6 +103,42 @@
     left: 2%;
     border: 1px solid black;
     z-index: 1;
+}
+
+.button-demos-body .demo-container.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.button-demos-body .demo-container.dark .button-container {
+    background: black;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+
+.button-demos-body .demo-container.dark .button-container:before {
+    background: rgb(30, 30, 30);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.button-demos-body .demo-container.light {
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    background: rgb(235, 235, 235);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.button-demos-body .demo-container.light .button-container {
+    background: white;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+}
+
+.button-demos-body .demo-container.light .button-container:before {
+    background: rgb(235, 235, 235);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 /* Middle Out Buttom Demo */
@@ -211,7 +248,7 @@
 .shooting-border-button-demo {
     margin: 0;
     padding: 0;
-    background: #0c002b;
+    /* background: #0c002b; */
     font-family: sans-serif;
     min-height: 100vh;
     width: 100%;
@@ -221,12 +258,11 @@
     align-items: center;
 }
 
-.shooting-border-button-demo h2 {
+/* .shooting-border-button-demo h2 {
     color: #1670f0;
-}
+} */
 
-.shooting-border-button-demo .container .button-container {
-    /* width: 70%; */
+/* .shooting-border-button-demo .container .button-container {
     height: 200px;
     background: #0c002b;
     border: .5px solid #1671f05d;
@@ -237,9 +273,9 @@
     background: #0c002b;
     color: #1670f0;
     border: .5px solid #1671f05d;
-}
+} */
 
-.shooting-border-button-demo .container .button-container .shooting-border-button {
+.shooting-border-button-demo .shooting-border-button {
     position: relative;
     background: #0c002b;
     color: #1670f0;
@@ -254,40 +290,58 @@
     transition: 1s;
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.xlg {
+.shooting-border-button-demo .shooting-border-button.mint {
+    color: #00ffca;
+    background: #001738;
+    /* filter: hue-rotate(300deg) brightness(2) */
+}
+
+.shooting-border-button-demo .shooting-border-button.lightgreen {
+    color: #97cf01;
+    background: #001b00;
+    /* filter: hue-rotate(215deg) brightness(1.7); */
+}
+
+.shooting-border-button-demo .shooting-border-button.green {
+    color: #00ff10;
+    background: #001b0d;
+    /* filter: hue-rotate(265deg) brightness(1.7); */
+}
+
+.shooting-border-button-demo .shooting-border-button.xlg {
     padding: 30px 60px;
     font-size: 30px;
     letter-spacing: 2px;
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.lg {
+.shooting-border-button-demo .shooting-border-button.lg {
     padding: 25px 50px;
     font-size: 25px;
     letter-spacing: 2px;
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.md {
+.shooting-border-button-demo .shooting-border-button.md {
     padding: 20px 40px;
     font-size: 20px;
     letter-spacing: 2px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.sm {
+.shooting-border-button-demo .shooting-border-button.sm {
     padding: 15px 30px;
     font-size: 15px;
     letter-spacing: 2px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.xs {
+.shooting-border-button-demo .shooting-border-button.xs {
     padding: 10px 20px;
     font-size: 10px;
     letter-spacing: 2px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button:before {
+.shooting-border-button-demo .shooting-border-button:before {
     content: "";
     position: absolute;
     top: 2px;
@@ -298,7 +352,7 @@
     background: rgba(255, 255, 255, .05);
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button:hover span:nth-child(1) {
+.shooting-border-button-demo .shooting-border-button:hover span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -308,17 +362,31 @@
     animation: animateTop 2s linear infinite;
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.sm:hover span:nth-child(1),
-.shooting-border-button-demo .container .button-container .shooting-border-button.sm:hover span:nth-child(3),
-.shooting-border-button-demo .container .button-container .shooting-border-button.xs:hover span:nth-child(1),
-.shooting-border-button-demo .container .button-container .shooting-border-button.xs:hover span:nth-child(3) {
+.shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(1) {
+    background: linear-gradient(to right, #001738, #00ffca);
+}
+
+.shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(1) {
+    background: linear-gradient(to right, #001b00, #97cf01);
+}
+
+.shooting-border-button-demo .shooting-border-button.green:hover span:nth-child(1) {
+    color: #00ff10;
+    background: #001b0d;
+    background: linear-gradient(to right, #001b0d, #00ff10);
+}
+
+.shooting-border-button-demo .shooting-border-button.sm:hover span:nth-child(1),
+.shooting-border-button-demo .shooting-border-button.sm:hover span:nth-child(3),
+.shooting-border-button-demo .shooting-border-button.xs:hover span:nth-child(1),
+.shooting-border-button-demo .shooting-border-button.xs:hover span:nth-child(3) {
     height: 1px;
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button.sm:hover span:nth-child(2),
-.shooting-border-button-demo .container .button-container .shooting-border-button.sm:hover span:nth-child(4),
-.shooting-border-button-demo .container .button-container .shooting-border-button.xs:hover span:nth-child(2),
-.shooting-border-button-demo .container .button-container .shooting-border-button.xs:hover span:nth-child(4) {
+.shooting-border-button-demo .shooting-border-button.sm:hover span:nth-child(2),
+.shooting-border-button-demo .shooting-border-button.sm:hover span:nth-child(4),
+.shooting-border-button-demo .shooting-border-button.xs:hover span:nth-child(2),
+.shooting-border-button-demo .shooting-border-button.xs:hover span:nth-child(4) {
     width: 1px;
 }
 
@@ -331,7 +399,7 @@
     }
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button:hover span:nth-child(2) {
+.shooting-border-button-demo .shooting-border-button:hover span:nth-child(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -341,6 +409,14 @@
     animation: animateRight 2s linear infinite;
     animation-delay: 1s;
     visibility: hidden;
+}
+
+.shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #001738, #00ffca);
+}
+
+.shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #001b00, #97cf01);
 }
 
 @keyframes animateRight {
@@ -354,7 +430,7 @@
     }
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button:hover span:nth-child(3) {
+.shooting-border-button-demo .shooting-border-button:hover span:nth-child(3) {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -362,6 +438,14 @@
     height: 2px;
     background: linear-gradient(to left, #0c002b, #1779ff);
     animation: animateBottom 2s linear infinite;
+}
+
+.shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(3) {
+    background: linear-gradient(to left, #001738, #00ffca);
+}
+
+.shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(3) {
+    background: linear-gradient(to left, #001b00, #97cf01);
 }
 
 @keyframes animateBottom {
@@ -373,7 +457,7 @@
     }
 }
 
-.shooting-border-button-demo .container .button-container .shooting-border-button:hover span:nth-child(4) {
+.shooting-border-button-demo .shooting-border-button:hover span:nth-child(4) {
     position: absolute;
     top: 0;
     left: 0;
@@ -383,6 +467,14 @@
     animation: animateLeft 2s linear infinite;
     animation-delay: 1s;
     visibility: hidden;
+}
+
+.shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(4) {
+    background: linear-gradient(to top, #001738, #00ffca);
+}
+
+.shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(4) {
+    background: linear-gradient(to top, #001b00, #97cf01);
 }
 
 @keyframes animateLeft {
@@ -400,7 +492,6 @@
 .animated-outline-button-demo {
     margin: 0;
     padding: 0;
-    background: #262626;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -409,23 +500,7 @@
     align-items: center;
 }
 
-.animated-outline-button-demo h2 {
-    color: white;
-}
-
-.animated-outline-button-demo .container .button-container {
-    /* width: 70%; */
-    height: 200px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
-}
-
-.animated-outline-button-demo .container .button-container:before {
-    background: #262626;
-    color: #00bcd4;
-    border: .5px solid rgba(255, 255, 255, 0.5);
-}
-
-.animated-outline-button-demo .container .button-container .animated-outline-button {
+.animated-outline-button-demo .animated-outline-button {
     position: relative;
     width: 180px;
     height: 60px;
@@ -438,45 +513,59 @@
     letter-spacing: 2px;
     color: white;
     text-decoration: none;
+    background: none;
+    border: none;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xlg {
+.animated-outline-button-demo .animated-outline-button.light {
+    color: black;
+}
+
+.animated-outline-button-demo .animated-outline-button:focus {
+    outline: none;
+}
+
+.animated-outline-button-demo .animated-outline-button:hover {
+    cursor: pointer;
+}
+
+.animated-outline-button-demo .animated-outline-button.xlg {
     width: 210px;
     height: 70px;
     line-height: 70px;
     font-size: 28px;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.lg {
+.animated-outline-button-demo .animated-outline-button.lg {
     width: 180px;
     height: 60px;
     line-height: 60px;
     font-size: 24px;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.md {
+.animated-outline-button-demo .animated-outline-button.md {
     width: 160px;
     height: 55px;
     line-height: 55px;
     font-size: 20px;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.sm {
+.animated-outline-button-demo .animated-outline-button.sm {
     width: 130px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xs {
+.animated-outline-button-demo .animated-outline-button.xs {
     width: 90px;
     height: 30px;
     line-height: 30px;
     font-size: 12px;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button svg,
-.animated-outline-button-demo .container .button-container .animated-outline-button svg rect {
+.animated-outline-button-demo .animated-outline-button svg,
+.animated-outline-button-demo .animated-outline-button svg rect {
     position: absolute;
     top: 0;
     left: 0;
@@ -485,7 +574,7 @@
     fill: transparent;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button svg rect {
+.animated-outline-button-demo .animated-outline-button svg rect {
     stroke: white;
     stroke-width: 4;
     transition: 1s;
@@ -493,62 +582,121 @@
     stroke-dashoffset: 0;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.sm svg rect {
+.animated-outline-button-demo .animated-outline-button.light svg rect {
+    stroke: black;
+}
+
+.animated-outline-button-demo .animated-outline-button.sm svg rect {
     stroke-width: 3;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xs svg rect {
+.animated-outline-button-demo .animated-outline-button.xs svg rect {
     stroke-width: 2;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button:hover svg rect {
+.animated-outline-button-demo .animated-outline-button:hover svg rect {
     stroke-dasharray: 100, 400;
     stroke-dashoffset: 220;
     stroke: #00bcd4;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xlg svg rect {
+/* .animated-outline-button-demo .animated-outline-button.mint:hover svg rect {
+} */
+
+.animated-outline-button-demo .animated-outline-button.blue:hover svg rect {
+    stroke: #00bcd4;
+}
+
+.animated-outline-button-demo .animated-outline-button.mint:hover svg rect {
+    stroke: #00f192;
+}
+
+.animated-outline-button-demo .animated-outline-button.hotpink:hover svg rect {
+    stroke: #ff3183;
+}
+
+.animated-outline-button-demo .animated-outline-button.purple:hover svg rect {
+    stroke: #8945c7;
+}
+
+.animated-outline-button-demo .animated-outline-button.pink:hover svg rect {
+    stroke: #ff5fff;
+}
+
+.animated-outline-button-demo .animated-outline-button.red:hover svg rect {
+    stroke: #ff3333;
+}
+
+.animated-outline-button-demo .animated-outline-button.redorange:hover svg rect {
+    stroke: #ff4800;
+}
+
+.animated-outline-button-demo .animated-outline-button.orange:hover svg rect {
+    stroke: #ff6f00;
+}
+
+.animated-outline-button-demo .animated-outline-button.yellow:hover svg rect {
+    stroke: #ffc701;
+}
+
+.animated-outline-button-demo .animated-outline-button.lightgreen:hover svg rect {
+    stroke: #c5ef01;
+}
+
+.animated-outline-button-demo .animated-outline-button.green:hover svg rect {
+    stroke: #5bdb01;
+}
+
+.animated-outline-button-demo .animated-outline-button.black:hover svg rect {
+    stroke: #000000;
+}
+
+.animated-outline-button-demo .animated-outline-button.white:hover svg rect {
+    stroke: #ffffff;
+}
+
+.animated-outline-button-demo .animated-outline-button.xlg svg rect {
     stroke-dasharray: 560, 500;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xlg:hover svg rect {
+.animated-outline-button-demo .animated-outline-button.xlg:hover svg rect {
     stroke-dasharray: 110, 400;
     stroke-dashoffset: 180;
-    stroke: #00bcd4;
+    /* stroke: #00bcd4; */
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.lg svg rect {
+.animated-outline-button-demo .animated-outline-button.lg svg rect {
     stroke-dasharray: 500, 500;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.lg:hover svg rect {
+.animated-outline-button-demo .animated-outline-button.lg:hover svg rect {
     stroke-dasharray: 100, 400;
     stroke-dashoffset: 220;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.md svg rect {
+.animated-outline-button-demo .animated-outline-button.md svg rect {
     stroke-dasharray: 430, 500;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.md:hover svg rect {
+.animated-outline-button-demo .animated-outline-button.md:hover svg rect {
     stroke-dasharray: 80, 350;
     stroke-dashoffset: 175;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.sm svg rect {
+.animated-outline-button-demo .animated-outline-button.sm svg rect {
     stroke-dasharray: 340, 500;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.sm:hover svg rect {
+.animated-outline-button-demo .animated-outline-button.sm:hover svg rect {
     stroke-dasharray: 65, 350;
     stroke-dashoffset: 212;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xs svg rect {
+.animated-outline-button-demo .animated-outline-button.xs svg rect {
     stroke-dasharray: 270, 500;
 }
 
-.animated-outline-button-demo .container .button-container .animated-outline-button.xs:hover svg rect {
+.animated-outline-button-demo .animated-outline-button.xs:hover svg rect {
     stroke-dasharray: 50, 350;
     stroke-dashoffset: 258;
 }
@@ -557,7 +705,6 @@
 .oscillating-solid-button-demo {
     margin: 0;
     padding: 0;
-    background: #262626;
     font-family: sans-serif;
     min-height: 100vh;
     width: 100%;
@@ -567,60 +714,68 @@
     align-items: center;
 }
 
-.oscillating-solid-button-demo h2 {
-    color: white;
-}
-
-.oscillating-solid-button-demo .container .button-container {
-    /* height: 120px; */
-    border: .5px solid #03a8f487;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-.oscillating-solid-button-demo .container .button-container:before {
-    background: #262626;
-    color: #03a9f4;
-    border: .5px solid #03a8f487;
-}
-
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button {
+.oscillating-solid-button-demo .oscillating-solid-button {
     position: relative;
     margin: 5px;
     padding: 15px 30px;
     text-transform: uppercase;
     text-decoration: none;
+    background: transparent;
+    border: none;
     color: white;
     letter-spacing: 2px;
     font-size: 20px;
     z-index: 1;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.xlg {
+.oscillating-solid-button-demo .oscillating-solid-button.light {
+    color: black;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.light:hover {
+    color: white;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.dark {
+    color: white;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button:focus {
+    outline: none;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button:hover {
+    cursor: pointer;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.xlg {
     padding: 20px 40px;
     font-size: 25px;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.lg {
+.oscillating-solid-button-demo .oscillating-solid-button.lg {
     padding: 15px 30px;
     font-size: 20px;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.md {
+.oscillating-solid-button-demo .oscillating-solid-button.md {
     padding: 12px 24px;
     font-size: 18px;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.sm {
+.oscillating-solid-button-demo .oscillating-solid-button.sm {
     padding: 8px 16px;
+    letter-spacing: 1px;
     font-size: 16px;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.xs {
+.oscillating-solid-button-demo .oscillating-solid-button.xs {
     padding: 5px 10px;
     font-size: 12px;
+    letter-spacing: 1px;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button:before {
+.oscillating-solid-button-demo .oscillating-solid-button:before {
     content: "";
     position: absolute;
     top: 0;
@@ -634,13 +789,81 @@
     transform: scale(0);
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button:hover:before {
+.oscillating-solid-button-demo .oscillating-solid-button.blue:before {
+    background: #03a9f4;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.mint:before {
+    background: #00f192;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.hotpink:before {
+    background: #ff3183;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.purple:before {
+    background: #8945c7;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.pink:before {
+    background: #ff5fff;
+}
+
+/* .liquid-wave-button-demo .liquid-wave-button.carribean .liquid {
+    background: #59ddff;
+} */
+
+/* .liquid-wave-button-demo .liquid-wave-button.hotpink .liquid {
+    background: #fe479f;
+} */
+
+.oscillating-solid-button-demo .oscillating-solid-button.red:before {
+    background: #ff3333;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.redorange:before {
+    background: #ff4800;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.orange:before {
+    background: #ff6f00;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.yellow:before {
+    background: #ffc701;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.lightgreen:before {
+    background: #c5ef01;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.green:before {
+    background: #5bdb01;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.white:before {
+    background: white;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.white:hover {
+    color: black;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.black:before {
+    background: black;
+}
+
+/* .oscillating-solid-button-demo .oscillating-solid-button.white:hover {
+    color: black;
+} */
+
+.oscillating-solid-button-demo .oscillating-solid-button:hover:before {
     transition: transform .5s;
     transform-origin: top left;
     transform: scale(1);
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button:after {
+.oscillating-solid-button-demo .oscillating-solid-button:after {
     content: "";
     position: absolute;
     top: 0;
@@ -656,13 +879,21 @@
     transform: scale(1);
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.sm:after,
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button.xs:after {
-    border: 1px solid white;
-
+.oscillating-solid-button-demo .oscillating-solid-button.light:after {
+    border: 2px solid black;
 }
 
-.oscillating-solid-button-demo .container .button-container .oscillating-solid-button:hover:after {
+.oscillating-solid-button-demo .oscillating-solid-button.sm:after,
+.oscillating-solid-button-demo .oscillating-solid-button.xs:after {
+    border: 1px solid white;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button.sm.light:after,
+.oscillating-solid-button-demo .oscillating-solid-button.xs.light:after {
+    border: 1px solid black;
+}
+
+.oscillating-solid-button-demo .oscillating-solid-button:hover:after {
     transition: transform .5s;
     transform-origin: bottom right;
     transform: scale(0);
@@ -672,7 +903,6 @@
 .three-dimensional-button-demo {
     margin: 0;
     padding: 0;
-    background: #2196f3;
     font-family: sans-serif;
     min-height: 100vh;
     width: 100%;
@@ -682,26 +912,19 @@
     align-items: center;
 }
 
-.three-dimensional-button-demo h2 {
-    color: white;
+.three-dimensional-button-demo .demo-container .button-container {
+    border: 1px solid #03a8f487 !important;
+    background: #2196f3 !important;
+    min-height: 250px;
 }
 
-.three-dimensional-button-demo .container .button-container {
-    border: .5px solid #03a8f487;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-}
-
-.three-dimensional-button-demo .container .button-container:before {
-    background: #262626;
-    color: #03a9f4;
-    border: .5px solid #03a8f487;
-}
-
-.three-dimensional-button-demo .container .button-container .three-dimensional-button {
+.three-dimensional-button-demo .three-dimensional-button {
     position: relative;
     margin: 5px 20px;
     padding: 20px 20px 20px 30px;
     color: white;
+    background: transparent;
+    border: none;
     font-size: 20px;
     font-family: sans-serif;
     text-decoration: none;
@@ -710,52 +933,57 @@
     transition: .5s;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xlg {
-    padding: 25px 25px 25px 35px;
-    font-size: 25px;
-    letter-spacing: 15px;
+.three-dimensional-button-demo .three-dimensional-button:focus {
+    outline: none;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.lg {
+.three-dimensional-button-demo .three-dimensional-button.xlg {
+    padding: 22px 22px 22px 32px;
+    font-size: 22px;
+    letter-spacing: 12px;
+}
+
+.three-dimensional-button-demo .three-dimensional-button.lg {
     padding: 20px 20px 20px 30px;
     font-size: 20px;
     letter-spacing: 10px;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.md {
+.three-dimensional-button-demo .three-dimensional-button.md {
     padding: 15px 15px 15px 25px;
     font-size: 15px;
     letter-spacing: 8px;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.sm {
+.three-dimensional-button-demo .three-dimensional-button.sm {
     padding: 12px 12px 12px 20px;
     font-size: 12px;
     letter-spacing: 5px;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xs {
+.three-dimensional-button-demo .three-dimensional-button.xs {
     padding: 8px 8px 8px 12px;
     font-size: 8px;
     letter-spacing: 3px;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:hover {
+.three-dimensional-button-demo .three-dimensional-button:hover {
+    cursor: pointer;
     box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.4);
     transform: rotate(-10deg) skew(5deg);
     transition-delay: 2s;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.sm:hover {
+.three-dimensional-button-demo .three-dimensional-button.sm:hover {
     box-shadow: -20px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xs:hover {
+.three-dimensional-button-demo .three-dimensional-button.xs:hover {
     box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:before, 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:after {
+.three-dimensional-button-demo .three-dimensional-button:before, 
+.three-dimensional-button-demo .three-dimensional-button:after {
     content: "";
     position: absolute;
     width: 2px;
@@ -767,24 +995,24 @@
     transition-duration: .5s;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.sm:before, 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.sm:after,
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xs:before, 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xs:after {
+.three-dimensional-button-demo .three-dimensional-button.sm:before, 
+.three-dimensional-button-demo .three-dimensional-button.sm:after,
+.three-dimensional-button-demo .three-dimensional-button.xs:before, 
+.three-dimensional-button-demo .three-dimensional-button.xs:after {
     width: 1px;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:before {
+.three-dimensional-button-demo .three-dimensional-button:before {
     top: 0;
     left: 0;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:after {
+.three-dimensional-button-demo .three-dimensional-button:after {
     top: 0;
     right: 0;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:hover:before {
+.three-dimensional-button-demo .three-dimensional-button:hover:before {
     width: 100%;
     opacity: .1;
     transform: translate(5px, -5px);
@@ -792,12 +1020,12 @@
     transition-delay: 0s, .5s, 1s, 1.5s;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.sm:hover:before,
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xs:hover:before {
+.three-dimensional-button-demo .three-dimensional-button.sm:hover:before,
+.three-dimensional-button-demo .three-dimensional-button.xs:hover:before {
     transform: translate(3px, -3px);
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button:hover:after {
+.three-dimensional-button-demo .three-dimensional-button:hover:after {
     width: 100%;
     opacity: .1;
     transform: translate(10px, -10px);
@@ -805,8 +1033,8 @@
     transition-delay: 0s, .5s, 1s, 1.5s;
 }
 
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.sm:hover:after,
-.three-dimensional-button-demo .container .button-container .three-dimensional-button.xs:hover:after {
+.three-dimensional-button-demo .three-dimensional-button.sm:hover:after,
+.three-dimensional-button-demo .three-dimensional-button.xs:hover:after {
     transform: translate(6px, -6px);
 }
 
@@ -821,28 +1049,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #050801;
 }
 
-.neon-reflective-button-demo h2,
-.neon-reflective-button-demo h3 {
-    color: white;
+.neon-reflective-button-demo .demo-container .button-container {
+    min-height: 250px;
 }
 
-.neon-reflective-button-demo .container .button-container {
-    height: 250px;
-    border: .5px solid rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px;
-    flex-wrap: wrap;
-}
-
-.neon-reflective-button-demo .container .button-container:before {
-    background: black;
-    color: white;
-    border: .5px solid rgba(255, 255, 255, 0.5);
-}
-
-.neon-reflective-button-demo .container .button-container .neon-reflective-button {
+.neon-reflective-button-demo .neon-reflective-button {
     position: relative;
     display: inline-block;
     padding: 25px 30px;
@@ -856,102 +1069,106 @@
     overflow: hidden;
     transition: .5s;
     letter-spacing: 4px;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005) */
+}
+
+.neon-reflective-button-demo .neon-reflective-button.reflective {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005)
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button:hover {
+.neon-reflective-button-demo .neon-reflective-button:hover {
     cursor: pointer;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button:focus {
+.neon-reflective-button-demo .neon-reflective-button:focus {
     outline: none;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.xlg {
+.neon-reflective-button-demo .neon-reflective-button.xlg {
     padding: 30px 35px;
     font-size: 28px;
     letter-spacing: 6px;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.lg {
+.neon-reflective-button-demo .neon-reflective-button.lg {
     padding: 25px 30px;
     font-size: 24px;
     letter-spacing: 4px;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.md {
+.neon-reflective-button-demo .neon-reflective-button.md {
     padding: 20px 25px;
     font-size: 20px;
     letter-spacing: 4px;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.sm {
+.neon-reflective-button-demo .neon-reflective-button.sm {
     padding: 15px 20px;
     font-size: 16px;
     letter-spacing: 3px;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.xs {
+.neon-reflective-button-demo .neon-reflective-button.xs {
     padding: 10px 15px;
     font-size: 10px;
     letter-spacing: 2px;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.green {
+.neon-reflective-button-demo .neon-reflective-button.green {
     filter: hue-rotate(290deg);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.pink {
+.neon-reflective-button-demo .neon-reflective-button.pink {
     filter: hue-rotate(110deg);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.yellow {
+.neon-reflective-button-demo .neon-reflective-button.yellow {
     filter: invert(1) hue-rotate(65deg) brightness(3);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.orange {
+.neon-reflective-button-demo .neon-reflective-button.orange {
     filter: invert(1) hue-rotate(45deg) brightness(2.5);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.purple {
+.neon-reflective-button-demo .neon-reflective-button.purple {
     filter: hue-rotate(80deg);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.red {
+.neon-reflective-button-demo .neon-reflective-button.red {
     filter: invert(1) brightness(1.5);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.white {
+.neon-reflective-button-demo .neon-reflective-button.white {
     filter: grayscale(1) brightness(3);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.mint {
+.neon-reflective-button-demo .neon-reflective-button.mint {
     filter: invert(1) hue-rotate(160deg) brightness(3);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.cyan {
+.neon-reflective-button-demo .neon-reflective-button.cyan {
     filter: invert(1) hue-rotate(165deg) brightness(3);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.magenta {
+.neon-reflective-button-demo .neon-reflective-button.magenta {
     filter: invert(1) hue-rotate(335deg) brightness(3);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.hotpink {
+.neon-reflective-button-demo .neon-reflective-button.hotpink {
     filter: invert(1) hue-rotate(350deg) brightness(3);
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.yellow:hover,
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.orange:hover,
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.red:hover,
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.mint:hover,
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.cyan:hover,
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.magenta:hover,
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.hotpink:hover {
+.neon-reflective-button-demo .neon-reflective-button.yellow:hover,
+.neon-reflective-button-demo .neon-reflective-button.orange:hover,
+.neon-reflective-button-demo .neon-reflective-button.red:hover,
+.neon-reflective-button-demo .neon-reflective-button.mint:hover,
+.neon-reflective-button-demo .neon-reflective-button.cyan:hover,
+.neon-reflective-button-demo .neon-reflective-button.magenta:hover,
+.neon-reflective-button-demo .neon-reflective-button.hotpink:hover {
     color: white;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button:hover {
+.neon-reflective-button-demo .neon-reflective-button:hover {
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
@@ -960,16 +1177,16 @@
                 0 0 200px #03e9f4;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button span {
+.neon-reflective-button-demo .neon-reflective-button span {
     position: absolute;
     display: block;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-no span {
+.neon-reflective-button-demo .neon-reflective-button.bd-no span {
     display: none;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button span:nth-child(1) {
+.neon-reflective-button-demo .neon-reflective-button span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -978,7 +1195,7 @@
     animation: neon-reflective-1 3s linear infinite;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(1) {
+.neon-reflective-button-demo .neon-reflective-button.bd-f span:nth-child(1) {
     animation: neon-reflective-1 1s linear infinite;
 }
 
@@ -991,7 +1208,7 @@
     }
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button span:nth-child(2) {
+.neon-reflective-button-demo .neon-reflective-button span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -1001,7 +1218,7 @@
     animation-delay: .75s;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(2) {
+.neon-reflective-button-demo .neon-reflective-button.bd-f span:nth-child(2) {
     animation: neon-reflective-2 1s linear infinite;
     animation-delay: .25s;
 }
@@ -1015,7 +1232,7 @@
     }
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button span:nth-child(3) {
+.neon-reflective-button-demo .neon-reflective-button span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -1025,7 +1242,7 @@
     animation-delay: 1.5s;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(3) {
+.neon-reflective-button-demo .neon-reflective-button.bd-f span:nth-child(3) {
     animation: neon-reflective-3 1s linear infinite;
     animation-delay: .5s;
 }
@@ -1039,7 +1256,7 @@
     }
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button span:nth-child(4) {
+.neon-reflective-button-demo .neon-reflective-button span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -1049,7 +1266,7 @@
     animation-delay: 2.25s;
 }
 
-.neon-reflective-button-demo .container .button-container .neon-reflective-button.bd-f span:nth-child(4) {
+.neon-reflective-button-demo .neon-reflective-button.bd-f span:nth-child(4) {
     animation: neon-reflective-4 1s linear infinite;
     animation-delay: .75s;
 }
@@ -1074,43 +1291,6 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
-
-.liquid-wave-button-demo h2,
-.liquid-wave-button-demo h3 {
-    color: #0d428c;
-    /* color: black; */
-}
-
-.liquid-wave-button-demo .container .button-container {
-    height: 250px;
-    border: .5px solid rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 5px 15px;
-    flex-wrap: wrap;
-}
-
-.liquid-wave-button-demo .container .button-container.dark {
-    background: black;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
-}
-
-.liquid-wave-button-demo .container .button-container.light {
-    background: white;
-    border: .5px solid rgba(0, 0, 0, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
-
-}
-
-.liquid-wave-button-demo .container .button-container:before {
-    background: black;
-    color: white;
-    border: .5px solid rgba(255, 255, 255, 0.5);
-}
-
-.liquid-wave-button-demo .container .button-container.dark:before {
-    background: white;
-    color: black;
-    border: .5px solid rgba(0, 0, 0, 0.5);
 }
 
 .liquid-wave-button-demo .liquid-wave-button {

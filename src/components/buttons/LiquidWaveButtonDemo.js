@@ -3,43 +3,18 @@ import CodeWindow from '../codewindows/CodeWindow';
 
 export default class LiquidWaveButtonDemo extends Component {
     state = {
-        color: "blue",
-        colors: [
-            "blue",
-            "carribean",
-            "mint",
-            "lightgreen",
-            "green",
-            "purple",
-            "pink",
-            "hotpink",
-            "red",
-            "redorange",
-            "orange",
-            "yellow",
-            "white",
-            "black"
-        ],
-        showAllColors: false,
         html: ".liquid-wave-button-demo",
-        speed: "wave-nm",
-        speeds: [
-            "wave-fs",
-            "wave-nm",
-            "wave-sl"
-        ],
-        sizes: [
-            "xlg",
-            "lg",
-            "md",
-            "sm",
-            "xs",
-        ],
-        size: "",
-        showAllSizes: true,
-        showAllSpeeds: false,
         theme: "dark",
-        themes: [ "light", "dark" ]
+        size: "",
+        speed: "wave-nm",
+        color: "blue",
+        colors: [ "blue", "carribean", "mint", "lightgreen", "green", "purple", "pink", "hotpink", "red", "redorange", "orange", "yellow", "white", "black" ],
+        speeds: [ "wave-fs", "wave-nm", "wave-sl" ],
+        sizes: [ "xlg", "lg", "md", "sm", "xs", ],
+        themes: [ "light", "dark" ],
+        showAllSizes: true,
+        showAllColors: false,
+        showAllSpeeds: false
     };
 
     switchColor = (color) => {
@@ -79,7 +54,7 @@ export default class LiquidWaveButtonDemo extends Component {
     toggleAllSpeeds = () => {
         let color = this.state.color === "" ? "blue" : this.state.color;
         let size = this.state.size === "" ? "lg" : this.state.size;
-        let speed = !this.state.ahowAllSpeeds ? "" : "wave-nm";
+        let speed = !this.state.showAllSpeeds ? "" : "wave-nm";
 
         this.setState({ showAllSpeeds: !this.state.showAllSpeeds, showAllColors: false, showAllSizes: false, color: color, size: size, speed: speed }, () => {
             this.refs.CodeWindow.renderHTML()
@@ -134,8 +109,7 @@ export default class LiquidWaveButtonDemo extends Component {
                             </div>
                         </div>
                     </div>
-                    
-                    <div className="container">
+                    <div className={"demo-container " + this.state.theme}>
                         {
                             !this.state.showAllColors &&
                             !this.state.showAllSpeeds &&

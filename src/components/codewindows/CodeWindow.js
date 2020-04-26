@@ -90,7 +90,7 @@ export default class CodeWindow extends Component {
         text = text.replace(/</g, "\n<");
         let textArray = text.split('\n').filter(t => t !== "");
         let formattedText = "";
-        let breakTags = [ "<div", "</div", "<h1", "<h2", "<h3", "<h4", "<a", "<p", "<img", "<svg", "<path", "<ul", "<li", "</ul>", "</li>", "</a>", "<svg", "</svg>" ];
+        let breakTags = [ "<div", "</div", "<h1", "<h2", "<h3", "<h4", "<a", "<p", "<img", "<svg", "<path", "<ul", "<li", "</ul>", "</li>", "</a>", "<svg", "</svg>", "<butt" ];
         let indenters = [ "<div", "<ul", "<li", "<a", "<svg" ];
         let outdenters = [ "</div", "</ul>", "</li>", "</a>", "</svg>" ];
         // let endTags = [ "</div>", "</h1>", "</h2>", "</h3>", "</h4>", "</a>", "</p>", "</img>", "</svg>", "</pat" ];

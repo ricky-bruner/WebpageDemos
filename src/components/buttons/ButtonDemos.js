@@ -18,13 +18,9 @@ export default class ButtonDemos extends Component {
                 <LiquidWaveButtonDemo />
                 <NeonReflectiveButtonDemo />
                 <ThreeDimensionalButtonDemo />
-                <CodeWindow html=".three-dimensional-button-demo" />
                 <OscillatingSolidButtonDemo />
-                <CodeWindow html=".oscillating-solid-button-demo" />
                 <AnimatedOutlineButtonDemo />
-                <CodeWindow html=".animated-outline-button-demo" />
                 <ShootingBorderButtonDemo />
-                <CodeWindow html=".shooting-border-button-demo" />
                 <MiddleOutButtonDemo />
                 <CodeWindow html=".middle-out-button-demo" />
             </div>
