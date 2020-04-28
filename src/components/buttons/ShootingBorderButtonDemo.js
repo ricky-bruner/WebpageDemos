@@ -80,142 +80,123 @@ export default class ShootingBorderButtonDemo extends Component {
                         </div>
                     </div>
                     <div className={"demo-container " + this.state.theme}>
-                        <div className="button-container" data-text="X-Large">
-                            <a href="shooting-border-button-demo" className={"shooting-border-button xlg " + this.state.color}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button xlg">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button xlg">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                        </div>
-                        <div className="button-container" data-text="Large">
-                            <a href="shooting-border-button-demo" className="shooting-border-button lg">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button lg">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button lg">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                        </div>
-                        <div className="button-container" data-text="Medium">
-                            <a href="shooting-border-button-demo" className="shooting-border-button md">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button md">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button md">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                        </div>
-                        <div className="button-container" data-text="Small">
-                            <a href="shooting-border-button-demo" className="shooting-border-button sm">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button sm">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button sm">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button sm">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                        </div>
-                        <div className="button-container" data-text="X-Small">
-                            <a href="shooting-border-button-demo" className="shooting-border-button xs">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button xs">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button xs">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button xs">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                            <a href="shooting-border-button-demo" className="shooting-border-button xs">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                Button
-                            </a>
-                        </div>
+                    {
+                            this.state.showAllSizes &&
+                            !this.state.showAllColors &&
+                            this.state.sizes.map(s => {
+                                return (
+                                    <div className="button-container" data-text={s}>
+                                        <button className={"shooting-border-button " + s + " " + this.state.color + " " + this.state.theme}>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Button
+                                        </button>
+                                        <button className={"shooting-border-button " + s + " " + this.state.color + " " + this.state.theme}>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Button
+                                        </button>
+                                        <button className={"shooting-border-button " + s + " " + this.state.color + " " + this.state.theme}>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Button
+                                        </button>
+                                        {
+                                            (s === "sm" || s === "xs") &&
+                                            <button className={"shooting-border-button " + s + " " + this.state.color + " " + this.state.theme}>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Button
+                                            </button>
+                                        }
+                                        {
+                                            s === "xs" &&
+                                            <button className={"shooting-border-button " + s + " " + this.state.color + " " + this.state.theme}>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Button
+                                            </button>
+                                        }
+                                    </div>
+                                );
+                            })
+                        }
+                        {
+                            !this.state.showAllSizes &&
+                            !this.state.showAllColors &&
+                            <div className="button-container" data-text={this.state.size}>
+                                <button className={"shooting-border-button " + this.state.size + " " + this.state.color + " " + this.state.theme}>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Button
+                                </button>
+                                <button className={"shooting-border-button " + this.state.size + " " + this.state.color + " " + this.state.theme}>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Button
+                                </button>
+                                <button className={"shooting-border-button " + this.state.size + " " + this.state.color + " " + this.state.theme}>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Button
+                                </button>
+                                {
+                                    (this.state.size === "sm" || this.state.size === "xs") &&
+                                    <button className={"shooting-border-button " + this.state.size + " " + this.state.color + " " + this.state.theme}>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Button
+                                    </button>
+                                }
+                                {
+                                    this.state.size === "xs" &&
+                                    <button className={"shooting-border-button " + this.state.size + " " + this.state.color + " " + this.state.theme}>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Button
+                                    </button>
+                                }
+                            </div>
+                        }
+                        {
+                            !this.state.showAllSizes &&
+                            this.state.showAllColors &&
+                            <div className="button-container" data-text="Colors">
+                                {
+                                    this.state.colors.map(c => {
+                                        return (
+                                            <button className={"shooting-border-button " + this.state.size + " " + c + " " + this.state.theme}>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                                Button
+                                            </button>
+                                        );
+                                    })
+                                }
+                            </div>
+                        }
                     </div>
                 </div>
                 <CodeWindow html={this.state.html} ref="CodeWindow" />

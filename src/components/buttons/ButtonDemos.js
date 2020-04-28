@@ -22,7 +22,6 @@ export default class ButtonDemos extends Component {
                 <AnimatedOutlineButtonDemo />
                 <ShootingBorderButtonDemo />
                 <MiddleOutButtonDemo />
-                <CodeWindow html=".middle-out-button-demo" />
             </div>
         )
     }

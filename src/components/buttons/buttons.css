@@ -153,13 +153,9 @@
     font-family: "Poppins", sans-serif;
 }
 
-.middle-out-button-demo .container .button-container:before {
-    padding: 0 5px;
-}
-
-.middle-out-button-demo .container .button-container .middle-out-button {
+.middle-out-button-demo .middle-out-button {
     position: relative;
-    margin: 5px;
+    margin: 15px 5px 5px;
     padding: 8px 30px;
     color: black;
     text-transform: uppercase;
@@ -167,49 +163,53 @@
     font-size: 20px;
     border: 2px solid black;
     box-sizing: border-box;
+    background: none;
     transition: .5s;
+    z-index: 1;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button.xlg {
-    padding: 12px 35px;
+.middle-out-button-demo .middle-out-button.xlg {
+    padding: 18px 35px;
     font-size: 26px;
     border: 2.5px solid black;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button.lg {
-    padding: 10px 30px;
-    font-size: 20px;
+.middle-out-button-demo .middle-out-button.lg {
+    padding: 14px 30px;
+    font-size: 22px;
     border: 2px solid black;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button.md {
-    padding: 8px 25px;
-    font-size: 15px;
+.middle-out-button-demo .middle-out-button.md {
+    padding: 12px 25px;
+    font-size: 18px;
     border: 1px solid black;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button.sm {
-    padding: 6px 20px;
-    font-size: 10px;
+.middle-out-button-demo .middle-out-button.sm {
+    padding: 9px 20px;
+    font-size: 14px;
     border: 1px solid black;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button.xs {
-    padding: 5px 15px;
-    font-size: 8px;
+.middle-out-button-demo .middle-out-button.xs {
+    padding: 7px 15px;
+    font-size: 12px;
     border: .5px solid black;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button:hover {
+.middle-out-button-demo .middle-out-button:hover {
     color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button:before {
+.middle-out-button-demo .middle-out-button:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 51%;
     height: 100%;
     background: black;
     z-index: -1;
@@ -218,18 +218,18 @@
     transform-origin: left;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button:hover:before {
+.middle-out-button-demo .middle-out-button:hover:before {
     transform: scaleX(1);
     transition: transform .5s;
     transform-origin: right;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button:after {
+.middle-out-button-demo .middle-out-button:after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 51%;
     height: 100%;
     background: black;
     z-index: -1;
@@ -238,17 +238,192 @@
     transform-origin: right;
 }
 
-.middle-out-button-demo .container .button-container .middle-out-button:hover:after {
+.middle-out-button-demo .middle-out-button:hover:after {
     transform: scaleX(1);
     transition: transform .5s;
     transform-origin: left;
 }
+
+.middle-out-button-demo .middle-out-button.blue {
+    color: #03a9f4;
+    border-color: #03a9f4;
+}
+
+.middle-out-button-demo .middle-out-button.blue:before {
+    background: #03a9f4;
+}
+
+.middle-out-button-demo .middle-out-button.blue:after {
+    background: #03a9f4;
+}
+
+.middle-out-button-demo .middle-out-button.mint {
+    color: #00ffb0;
+    border-color: #00ffb0;
+}
+
+.middle-out-button-demo .middle-out-button.mint:before {
+    background: #00ffb0;
+}
+
+.middle-out-button-demo .middle-out-button.mint:after {
+    background: #00ffb0;
+}
+
+.middle-out-button-demo .middle-out-button.lightgreen {
+    color: #b6dc00;
+    border-color: #b6dc00;
+}
+
+.middle-out-button-demo .middle-out-button.lightgreen:before {
+    background: #b6dc00;
+}
+
+.middle-out-button-demo .middle-out-button.lightgreen:after {
+    background: #b6dc00;
+}
+
+.middle-out-button-demo .middle-out-button.green {
+    color: #00ff10;
+    border-color: #00ff10;
+}
+
+.middle-out-button-demo .middle-out-button.green:before {
+    background: #00ff10;
+}
+
+.middle-out-button-demo .middle-out-button.green:after {
+    background: #00ff10;
+}
+
+.middle-out-button-demo .middle-out-button.purple {
+    color: #c13ce9;
+    border-color: #c13ce9;
+}
+
+.middle-out-button-demo .middle-out-button.purple:before {
+    background: #c13ce9;
+}
+
+.middle-out-button-demo .middle-out-button.purple:after {
+    background: #c13ce9;
+}
+
+.middle-out-button-demo .middle-out-button.pink {
+    color: #ff5caf;
+    border-color: #ff5caf;
+}
+
+.middle-out-button-demo .middle-out-button.pink:before {
+    background: #ff5caf;
+}
+
+.middle-out-button-demo .middle-out-button.pink:after {
+    background: #ff5caf;
+}
+
+.middle-out-button-demo .middle-out-button.hotpink {
+    color: #fc349d;
+    border-color: #fc349d;
+}
+
+.middle-out-button-demo .middle-out-button.hotpink:before {
+    background: #fc349d;
+}
+
+.middle-out-button-demo .middle-out-button.hotpink:after {
+    background: #fc349d;
+}
+
+.middle-out-button-demo .middle-out-button.red {
+    color: #f12a32;
+    border-color: #f12a32;
+}
+
+.middle-out-button-demo .middle-out-button.red:before {
+    background: #f12a32;
+}
+
+.middle-out-button-demo .middle-out-button.red:after {
+    background: #f12a32;
+}
+
+.middle-out-button-demo .middle-out-button.redorange {
+    color: #f63b00;
+    border-color: #f63b00;
+}
+
+.middle-out-button-demo .middle-out-button.redorange:before {
+    background: #f63b00;
+}
+
+.middle-out-button-demo .middle-out-button.redorange:after {
+    background: #f63b00;
+}
+
+.middle-out-button-demo .middle-out-button.orange {
+    color: #ff8100;
+    border-color: #ff8100;
+}
+
+.middle-out-button-demo .middle-out-button.orange:before {
+    background: #ff8100;
+}
+
+.middle-out-button-demo .middle-out-button.orange:after {
+    background: #ff8100;
+}
+
+.middle-out-button-demo .middle-out-button.yellow {
+    color: #ffec00;
+    border-color: #ffec00;
+}
+
+.middle-out-button-demo .middle-out-button.yellow:before {
+    background: #ffec00;
+}
+
+.middle-out-button-demo .middle-out-button.yellow:after {
+    background: #ffec00;
+}
+
+.middle-out-button-demo .middle-out-button.white {
+    color: white;
+    border-color: white;
+}
+
+.middle-out-button-demo .middle-out-button.white:before {
+    background: white;
+}
+
+.middle-out-button-demo .middle-out-button.white:after {
+    background: white;
+}
+
+.middle-out-button-demo .middle-out-button.light:hover,
+.middle-out-button-demo .middle-out-button.dark:hover {
+    color: white;
+    text-shadow: 1px 1px black; 
+}
+
+.middle-out-button-demo .middle-out-button.black:hover {
+    color: white;
+    text-shadow: none; 
+}
+
+.middle-out-button-demo .middle-out-button.white:hover {
+    color: black;
+    text-shadow: none;
+}
+
+/* .middle-out-button-demo .middle-out-button.xs:hover {
+    text-shadow: none;
+} */
 
 /* Shooting Border Button Demo */
 .shooting-border-button-demo {
     margin: 0;
     padding: 0;
-    /* background: #0c002b; */
     font-family: sans-serif;
     min-height: 100vh;
     width: 100%;
@@ -257,23 +432,6 @@
     justify-content: center;
     align-items: center;
 }
-
-/* .shooting-border-button-demo h2 {
-    color: #1670f0;
-} */
-
-/* .shooting-border-button-demo .container .button-container {
-    height: 200px;
-    background: #0c002b;
-    border: .5px solid #1671f05d;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 5px 15px;
-}
-
-.shooting-border-button-demo .container .button-container:before {
-    background: #0c002b;
-    color: #1670f0;
-    border: .5px solid #1671f05d;
-} */
 
 .shooting-border-button-demo .shooting-border-button {
     position: relative;
@@ -285,27 +443,83 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: 1s;
+    border: none;
+}
+
+.shooting-border-button-demo .shooting-border-button:focus {
+    outline: none;
+}
+
+.shooting-border-button-demo .shooting-border-button:hover {
+    cursor: pointer;
+}
+
+.shooting-border-button-demo .shooting-border-button.blue {
+    color: #1670f0;
+    background: #0c002b;
 }
 
 .shooting-border-button-demo .shooting-border-button.mint {
-    color: #00ffca;
-    background: #001738;
-    /* filter: hue-rotate(300deg) brightness(2) */
+    color: #00ffb0;
+    background: #00100c;
 }
 
 .shooting-border-button-demo .shooting-border-button.lightgreen {
-    color: #97cf01;
-    background: #001b00;
-    /* filter: hue-rotate(215deg) brightness(1.7); */
+    color: #b6dc00;
+    background: #001700;
 }
 
 .shooting-border-button-demo .shooting-border-button.green {
     color: #00ff10;
     background: #001b0d;
-    /* filter: hue-rotate(265deg) brightness(1.7); */
+}
+
+.shooting-border-button-demo .shooting-border-button.yellow {
+    color: #ffec00;
+    background: #1a1500;
+}
+
+.shooting-border-button-demo .shooting-border-button.orange {
+    color: #ff8100;
+    background: #201000;
+}
+
+.shooting-border-button-demo .shooting-border-button.redorange {
+    color: #f63b00;
+    background: #1d0700;
+}
+
+.shooting-border-button-demo .shooting-border-button.red {
+    color: #f12a32;
+    background: #190300;
+}
+
+.shooting-border-button-demo .shooting-border-button.hotpink {
+    color: #fc349d;
+    background: #1f0001;
+}
+
+.shooting-border-button-demo .shooting-border-button.pink {
+    color: #ff5caf;
+    background: #2b0000;
+}
+
+.shooting-border-button-demo .shooting-border-button.purple {
+    color: #c13ce9;
+    background: #200025;
+}
+
+.shooting-border-button-demo .shooting-border-button.white {
+    color: black;
+    background: #c4c4c4;
+}
+
+.shooting-border-button-demo .shooting-border-button.black {
+    color: white;
+    background: #121212;
 }
 
 .shooting-border-button-demo .shooting-border-button.xlg {
@@ -352,6 +566,10 @@
     background: rgba(255, 255, 255, .05);
 }
 
+.shooting-border-button-demo .shooting-border-button.white:before {
+    background: rgba(255, 255, 255, .2);
+}
+
 .shooting-border-button-demo .shooting-border-button:hover span:nth-child(1) {
     position: absolute;
     top: 0;
@@ -362,18 +580,56 @@
     animation: animateTop 2s linear infinite;
 }
 
+.shooting-border-button-demo .shooting-border-button.blue:hover span:nth-child(1) {
+    background: linear-gradient(to right, #0c002b, #1670f0);
+}
+
 .shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(1) {
-    background: linear-gradient(to right, #001738, #00ffca);
+    background: linear-gradient(to right, #00100c, #00ffb0);
 }
 
 .shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(1) {
-    background: linear-gradient(to right, #001b00, #97cf01);
+    background: linear-gradient(to right, #001700, #b6dc00);
 }
 
 .shooting-border-button-demo .shooting-border-button.green:hover span:nth-child(1) {
-    color: #00ff10;
-    background: #001b0d;
     background: linear-gradient(to right, #001b0d, #00ff10);
+}
+
+.shooting-border-button-demo .shooting-border-button.yellow:hover span:nth-child(1) {
+    background: linear-gradient(to right, #1a1500, #ffec00);
+}
+
+.shooting-border-button-demo .shooting-border-button.orange:hover span:nth-child(1) {
+    background: linear-gradient(to right, #201000, #ff8100);
+}
+
+.shooting-border-button-demo .shooting-border-button.redorange:hover span:nth-child(1) {
+    background: linear-gradient(to right, #1d0700, #f63b00);
+}
+
+.shooting-border-button-demo .shooting-border-button.red:hover span:nth-child(1) {
+    background: linear-gradient(to right, #190300, #f12a32);
+}
+
+.shooting-border-button-demo .shooting-border-button.hotpink:hover span:nth-child(1) {
+    background: linear-gradient(to right, #1f0001, #fc349d);
+}
+
+.shooting-border-button-demo .shooting-border-button.pink:hover span:nth-child(1) {
+    background: linear-gradient(to right, #2b0000, #ff5caf);
+}
+
+.shooting-border-button-demo .shooting-border-button.purple:hover span:nth-child(1) {
+    background: linear-gradient(to right, #200025, #c13ce9);
+}
+
+.shooting-border-button-demo .shooting-border-button.white:hover span:nth-child(1) {
+    background: linear-gradient(to right, #c4c4c4, black);
+}
+
+.shooting-border-button-demo .shooting-border-button.black:hover span:nth-child(1) {
+    background: linear-gradient(to right, #121212, white);
 }
 
 .shooting-border-button-demo .shooting-border-button.sm:hover span:nth-child(1),
@@ -411,12 +667,56 @@
     visibility: hidden;
 }
 
+.shooting-border-button-demo .shooting-border-button.blue:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #0c002b, #1670f0);
+}
+
 .shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(2) {
-    background: linear-gradient(to bottom, #001738, #00ffca);
+    background: linear-gradient(to bottom, #00100c, #00ffb0);
 }
 
 .shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(2) {
-    background: linear-gradient(to bottom, #001b00, #97cf01);
+    background: linear-gradient(to bottom, #001700, #b6dc00);
+}
+
+.shooting-border-button-demo .shooting-border-button.green:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #001b0d, #00ff10);
+}
+
+.shooting-border-button-demo .shooting-border-button.yellow:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #1a1500, #ffec00);
+}
+
+.shooting-border-button-demo .shooting-border-button.orange:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #201000, #ff8100);
+}
+
+.shooting-border-button-demo .shooting-border-button.redorange:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #1d0700, #f63b00);
+}
+
+.shooting-border-button-demo .shooting-border-button.red:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #190300, #f12a32);
+}
+
+.shooting-border-button-demo .shooting-border-button.hotpink:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #1f0001, #fc349d);
+}
+
+.shooting-border-button-demo .shooting-border-button.pink:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #2b0000, #ff5caf);
+}
+
+.shooting-border-button-demo .shooting-border-button.purple:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #200025, #c13ce9);
+}
+
+.shooting-border-button-demo .shooting-border-button.white:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #c4c4c4, black);
+}
+
+.shooting-border-button-demo .shooting-border-button.black:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #121212, white);
 }
 
 @keyframes animateRight {
@@ -440,12 +740,56 @@
     animation: animateBottom 2s linear infinite;
 }
 
+.shooting-border-button-demo .shooting-border-button.blue:hover span:nth-child(3) {
+    background: linear-gradient(to left, #0c002b, #1670f0);
+}
+
 .shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(3) {
-    background: linear-gradient(to left, #001738, #00ffca);
+    background: linear-gradient(to left, #00100c, #00ffb0);
 }
 
 .shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(3) {
-    background: linear-gradient(to left, #001b00, #97cf01);
+    background: linear-gradient(to left, #001700, #b6dc00);
+}
+
+.shooting-border-button-demo .shooting-border-button.green:hover span:nth-child(3) {
+    background: linear-gradient(to left, #001b0d, #00ff10);
+}
+
+.shooting-border-button-demo .shooting-border-button.yellow:hover span:nth-child(3) {
+    background: linear-gradient(to left, #1a1500, #ffec00);
+}
+
+.shooting-border-button-demo .shooting-border-button.orange:hover span:nth-child(3) {
+    background: linear-gradient(to left, #201000, #ff8100);
+}
+
+.shooting-border-button-demo .shooting-border-button.redorange:hover span:nth-child(3) {
+    background: linear-gradient(to left, #1d0700, #f63b00);
+}
+
+.shooting-border-button-demo .shooting-border-button.red:hover span:nth-child(3) {
+    background: linear-gradient(to left, #190300, #f12a32);
+}
+
+.shooting-border-button-demo .shooting-border-button.hotpink:hover span:nth-child(3) {
+    background: linear-gradient(to left, #1f0001, #fc349d);
+}
+
+.shooting-border-button-demo .shooting-border-button.pink:hover span:nth-child(3) {
+    background: linear-gradient(to left, #2b0000, #ff5caf);
+}
+
+.shooting-border-button-demo .shooting-border-button.purple:hover span:nth-child(3) {
+    background: linear-gradient(to left, #200025, #c13ce9);
+}
+
+.shooting-border-button-demo .shooting-border-button.white:hover span:nth-child(3) {
+    background: linear-gradient(to left, #c4c4c4, black);
+}
+
+.shooting-border-button-demo .shooting-border-button.black:hover span:nth-child(3) {
+    background: linear-gradient(to left, #121212, white);
 }
 
 @keyframes animateBottom {
@@ -469,12 +813,56 @@
     visibility: hidden;
 }
 
+.shooting-border-button-demo .shooting-border-button.blue:hover span:nth-child(4) {
+    background: linear-gradient(to top, #0c002b, #1670f0);
+}
+
 .shooting-border-button-demo .shooting-border-button.mint:hover span:nth-child(4) {
-    background: linear-gradient(to top, #001738, #00ffca);
+    background: linear-gradient(to top, #00100c, #00ffb0);
 }
 
 .shooting-border-button-demo .shooting-border-button.lightgreen:hover span:nth-child(4) {
-    background: linear-gradient(to top, #001b00, #97cf01);
+    background: linear-gradient(to top, #001700, #b6dc00);
+}
+
+.shooting-border-button-demo .shooting-border-button.green:hover span:nth-child(4) {
+    background: linear-gradient(to top, #001b0d, #00ff10);
+}
+
+.shooting-border-button-demo .shooting-border-button.yellow:hover span:nth-child(4) {
+    background: linear-gradient(to top, #1a1500, #ffec00);
+}
+
+.shooting-border-button-demo .shooting-border-button.orange:hover span:nth-child(4) {
+    background: linear-gradient(to top, #201000, #ff8100);
+}
+
+.shooting-border-button-demo .shooting-border-button.redorange:hover span:nth-child(4) {
+    background: linear-gradient(to top, #1d0700, #f63b00);
+}
+
+.shooting-border-button-demo .shooting-border-button.red:hover span:nth-child(4) {
+    background: linear-gradient(to top, #190300, #f12a32);
+}
+
+.shooting-border-button-demo .shooting-border-button.hotpink:hover span:nth-child(4) {
+    background: linear-gradient(to top, #1f0001, #fc349d);
+}
+
+.shooting-border-button-demo .shooting-border-button.pink:hover span:nth-child(4) {
+    background: linear-gradient(to top, #2b0000, #ff5caf);
+}
+
+.shooting-border-button-demo .shooting-border-button.purple:hover span:nth-child(4) {
+    background: linear-gradient(to top, #200025, #c13ce9);
+}
+
+.shooting-border-button-demo .shooting-border-button.white:hover span:nth-child(4) {
+    background: linear-gradient(to top, #c4c4c4, black);
+}
+
+.shooting-border-button-demo .shooting-border-button.black:hover span:nth-child(4) {
+    background: linear-gradient(to top, #121212, white);
 }
 
 @keyframes animateLeft {
