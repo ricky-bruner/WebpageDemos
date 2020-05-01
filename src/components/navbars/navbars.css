@@ -1,17 +1,171 @@
-.remote-navbar-demo {
-    background: #f2f2f2;
+/* Demo Setup Styles */
+.navbar-demos-body h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: #0d428c;
+    text-align: center;
+}
+
+.navbar-demos-body .options-container {
+    position: relative;
+    width: 75%;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    color: #0d428c;
+}
+
+.navbar-demos-body .options-container h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+    color: #0d428c;
+    background: white;
+}
+
+.navbar-demos-body .options-container .options-box {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 10px;
+    background: #0d428c;
+}
+
+.navbar-demos-body .options-container .options-box .option-section {
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+    background: white;
+}
+
+.navbar-demos-body .options-container .options-box button {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    background: white;
+    color: rgba(0, 0, 0, 1);
+    transition: .5s;
+}
+
+.navbar-demos-body .options-container .options-box button.active {
+    background: #0d428c;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-demos-body .options-container .options-box button:hover {
+    color: white;
+    background: #0d428c;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-demos-body .options-container .options-box button:focus {
+    outline: none;
+}
+
+.navbar-demos-body .demo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding: 50px 10px 10px;
+    margin: 15px 0;
+}
+
+.navbar-demos-body .demo-container .navbar-container {
+    position: relative;
+    width: 95%;
+    min-height: 150px;
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.navbar-demos-body .demo-container .navbar-container:before {
+    content: attr(data-text);
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    top: -15px;
+    left: 2%;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.navbar-demos-body .demo-container.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.navbar-demos-body .demo-container.dark .navbar-container {
+    background: black;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-demos-body .demo-container.dark .navbar-container:before {
+    background: rgb(30, 30, 30);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-demos-body .demo-container.light {
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    background: rgb(235, 235, 235);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.navbar-demos-body .demo-container.light .navbar-container {
+    background: white;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-demos-body .demo-container.light .navbar-container:before {
+    background: rgb(235, 235, 235);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Remote Navbar Demo */
+.remote-navbar-demo {
+    /* background: #f2f2f2; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.remote-navbar-demo ul {
+.remote-navbar-demo .demo-container .navbar-container {
+    padding: 10px 100px;
+}
+
+.remote-navbar-demo .remote-navbar {
     position: relative;
     transform: rotate(-25deg) skew(20deg, 5deg);
     list-style-type: none;
+    margin: 50px;
 }
 
-.remote-navbar-demo .list-item {
+.remote-navbar-demo .remote-navbar .list-item {
     background: #000;
     color: #575757;
     text-align: center;
@@ -26,7 +180,61 @@
     transition: all 0.25s linear;
 }
 
-.remote-navbar-demo .list-item:hover {
+.remote-navbar-demo .remote-navbar.light .list-item {
+    background: #000;
+    color: rgb(87, 87, 87);
+    border-bottom: 1px solid rgb(6, 6, 6);
+    box-shadow: -2em 1.5em 0 rgb(225, 225, 225);
+}
+
+.remote-navbar-demo .remote-navbar.dark .list-item {
+    background: #fff;
+    color: rgb(87, 87, 87);   
+    border-bottom: 1px solid rgb(249, 249, 249);
+    box-shadow: -2em 1.5em 0 rgb(30, 30, 30);
+}
+
+.remote-navbar-demo .remote-navbar .list-item:before, 
+.remote-navbar-demo .remote-navbar .list-item:after {
+    content: '';
+    position: absolute;
+    transition: all 0.25s linear;
+    width: 0.5em;
+}
+
+.remote-navbar-demo .remote-navbar .list-item:after {
+    height: 4em;
+    background: rgb(24, 24, 24);
+    bottom: -2.25em;
+    left: 1.5em;
+    transform: rotate(90deg) skew(0, 45deg);
+}
+
+.remote-navbar-demo .remote-navbar.light .list-item:after {
+    background: rgb(24, 24, 24);
+}
+
+.remote-navbar-demo .remote-navbar.dark .list-item:after {
+    background: rgb(231, 231, 231);
+}
+
+.remote-navbar-demo .remote-navbar .list-item:before {
+    height: 2.5em;
+    background: rgb(18, 18, 18);
+    top: 0.25em;
+    left: -0.5em;
+    transform: skewY(-45deg);
+}
+
+.remote-navbar-demo .remote-navbar.light .list-item:before {
+    background: rgb(18, 18, 18);
+}
+
+.remote-navbar-demo .remote-navbar.dark .list-item:before {
+    background: rgb(237, 237, 237);
+}
+
+.remote-navbar-demo .remote-navbar .list-item:hover {
     background: #ff6e42;
     color: #fffcfb;
     transform: translate(0.9em, -0.9em);
@@ -34,19 +242,81 @@
     box-shadow: -2em 2em 0 #e1e1e1;
 }
 
-.remote-navbar-demo .list-item:hover:before, 
-.remote-navbar-demo .list-item:hover:after {
+.remote-navbar-demo .remote-navbar.light .list-item:hover {
+    box-shadow: -2em 2em 0 #e1e1e1;
+}
+
+.remote-navbar-demo .remote-navbar.dark .list-item:hover {
+    box-shadow: -2em 2em 0 rgb(30, 30, 30);
+}
+
+.remote-navbar-demo .remote-navbar.redorange .list-item:hover {
+    background: rgb(255, 110, 66);
+}
+
+.remote-navbar-demo .remote-navbar.blue .list-item:hover {
+    background: rgb(66, 66, 255);
+}
+
+.remote-navbar-demo .remote-navbar.mint .list-item:hover {
+    background: rgb(66, 255, 161);
+}
+
+.remote-navbar-demo .remote-navbar.lightgreen .list-item:hover {
+    background: rgb(161, 255, 66);
+}
+
+.remote-navbar-demo .remote-navbar.green .list-item:hover {
+    background: rgb(66, 255, 66);
+}
+
+.remote-navbar-demo .remote-navbar.purple .list-item:hover {
+    background: rgb(161, 66, 255);
+}
+
+.remote-navbar-demo .remote-navbar.pink .list-item:hover {
+    background: rgb(255, 135, 213);
+}
+
+.remote-navbar-demo .remote-navbar.hotpink .list-item:hover {
+    background: rgb(255, 66, 161);
+}
+
+.remote-navbar-demo .remote-navbar.red .list-item:hover {
+    background: rgb(255, 66, 66);
+}
+
+.remote-navbar-demo .remote-navbar.orange .list-item:hover {
+    background: rgb(255, 161, 66);
+}
+
+.remote-navbar-demo .remote-navbar.yellow .list-item:hover {
+    color: #cecece;
+    background: rgb(255, 255, 66);
+}
+
+.remote-navbar-demo .remote-navbar.white .list-item:hover {
+    color: #cecece;
+    background: white;
+}
+
+.remote-navbar-demo .remote-navbar.black .list-item:hover {
+    background: black;
+}
+
+.remote-navbar-demo .remote-navbar .list-item:hover:before, 
+.remote-navbar-demo .remote-navbar .list-item:hover:after {
     transition: all 0.25s linear;
 }
 
-.remote-navbar-demo .list-item:hover:before {
+.remote-navbar-demo .remote-navbar .list-item:hover:before {
     background: #b65234;
     width: 1em;
     top: 0.5em;
     left: -1em;
 }
 
-.remote-navbar-demo .list-item:hover:after {
+.remote-navbar-demo .remote-navbar .list-item:hover:after {
     background: #b65234;
     width: 1em;
     bottom: -2.5em;
@@ -54,25 +324,226 @@
     height: 4em;
 }
 
-.remote-navbar-demo .list-item:before, .list-item:after {
-    content: '';
+.remote-navbar-demo .remote-navbar.redorange .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.redorange .list-item:hover:after {
+    background: rgb(182, 82, 52);
+}
+
+.remote-navbar-demo .remote-navbar.blue .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.blue .list-item:hover:after {
+    background: rgb(52, 52, 183);
+}
+
+.remote-navbar-demo .remote-navbar.mint .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.mint .list-item:hover:after {
+    background: rgb(52, 183, 117);
+}
+
+.remote-navbar-demo .remote-navbar.lightgreen .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.lightgreen .list-item:hover:after {
+    background: rgb(117, 183, 52);
+}
+
+.remote-navbar-demo .remote-navbar.green .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.green .list-item:hover:after {
+    background: rgb(52, 183, 52);
+}
+
+.remote-navbar-demo .remote-navbar.purple .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.purple .list-item:hover:after {
+    background: rgb(117, 52, 183);
+}
+
+.remote-navbar-demo .remote-navbar.pink .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.pink .list-item:hover:after {
+    background: rgb(185, 100, 155);
+}
+
+.remote-navbar-demo .remote-navbar.hotpink .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.hotpink .list-item:hover:after {
+    background: rgb(183, 52, 117);
+}
+
+.remote-navbar-demo .remote-navbar.red .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.red .list-item:hover:after {
+    background: rgb(183, 52, 52);
+}
+
+.remote-navbar-demo .remote-navbar.orange .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.orange .list-item:hover:after {
+    background: rgb(183, 117, 52);
+}
+
+.remote-navbar-demo .remote-navbar.yellow .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.yellow .list-item:hover:after {
+    background: rgb(183, 183, 52);
+}
+
+.remote-navbar-demo .remote-navbar.white .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.white .list-item:hover:after {
+    background: rgb(237, 237, 237);
+}
+
+.remote-navbar-demo .remote-navbar.black .list-item:hover:before,
+.remote-navbar-demo .remote-navbar.black .list-item:hover:after {
+    background: rgb(24, 24, 24);
+}
+
+/* Swinging Border Navbar Demo */
+.swinging-border-navbar-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar {
+    position: relative;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 25px 5px 10px;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar li {
+    list-style: none;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar li a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: 0 10px;
+    min-width: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.light li a {
+    color: black;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar li a:before {
+    content: "";
     position: absolute;
-    transition: all 0.25s linear;
-    width: 0.5em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #ffeb3b;
+    border-left: 2px solid #ffeb3b;
+    transform-origin: left;
+    transition: .5s;
+    box-sizing: border-box;
 }
 
-.remote-navbar-demo .list-item:after {
-    height: 4em;
-    background: #181818;
-    bottom: -2.25em;
-    left: 1.5em;
-    transform: rotate(90deg) skew(0, 45deg);
+.swinging-border-navbar-demo .swinging-border-navbar.bd-thin li a:before {
+    border-width: 1px;
 }
 
-.remote-navbar-demo .list-item:before {
-    height: 2.5em;
-    background: #121212;
-    top: 0.25em;
-    left: -0.5em;
-    transform: skewY(-45deg);
+.swinging-border-navbar-demo .swinging-border-navbar.bd-thicc li a:before {
+    border-width: 3px;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar li a:hover:before {
+    width: 10px;
+    height: 10px;
+    transform: rotate(360deg);
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #ffeb3b;
+    border-right: 2px solid #ffeb3b;
+    transform-origin: right;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.bd-thin li a:after {
+    border-width: 1px;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.bd-thicc li a:after {
+    border-width: 3px;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar li a:hover:after {
+    width: 10px;
+    height: 10px;
+    transform: rotate(-360deg);
+    transition-delay: .3s;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.yellow li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.yellow li a:after {
+    border-color: #ffeb3b;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.blue li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.blue li a:after {
+    border-color: #0000ff;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.mint li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.mint li a:after {
+    border-color: #00ffbf;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.lightgreen li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.lightgreen li a:after {
+    border-color: #80ff00;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.green li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.green li a:after {
+    border-color: #00ff40;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.purple li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.purple li a:after {
+    border-color: #bf00ff;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.pink li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.pink li a:after {
+    border-color: #fe89d5;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.hotpink li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.hotpink li a:after {
+    border-color: #ff00bf;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.red li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.red li a:after {
+    border-color: #ff0000;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.redorange li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.redorange li a:after {
+    border-color: #ff4000;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.orange li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.orange li a:after {
+    border-color: #ff8000;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.white li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.white li a:after {
+    border-color: white;
+}
+
+.swinging-border-navbar-demo .swinging-border-navbar.black li a:before,
+.swinging-border-navbar-demo .swinging-border-navbar.black li a:after {
+    border-color: black;
 }
