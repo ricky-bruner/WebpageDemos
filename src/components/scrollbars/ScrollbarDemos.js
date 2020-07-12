@@ -8,7 +8,13 @@ export default class ScrollbarDemos extends Component {
     render() {
         return (
             <div className="scrollbar-demos-body">
-                <ScrollbarProgress />
+                {
+                    (this.props.selectedDemo === "Scrollbar Progress" || this.props.selectedDemo === "All") &&
+                    <div>
+                        <ScrollbarProgress />
+                    </div>
+                }
+                {/* <ScrollbarProgress /> */}
             </div> 
         );
     }

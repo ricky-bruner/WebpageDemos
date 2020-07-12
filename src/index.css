@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
     margin: 0;
@@ -21,3 +22,88 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.app-view {
+    display: flex;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: 100vh;
+    padding: 10px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 10px;
+    background: #0d428c;
+}
+
+.navbar-container h2 {
+    font-size: 22px;
+    margin: 20px;
+    /* margin-bottom: 20px; */
+    color: white;
+    text-align: center;
+}
+
+.navbar-section-header {
+    color: white;
+    text-align: right;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 10px;
+}
+
+.navbar-section-header:hover {
+    cursor: pointer;
+} 
+
+.navbar-section-underline {
+    border-top: 2px solid white;
+}
+
+.navbar-section-list {
+    background: white;
+    padding: 10px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 10px;
+    list-style-type: none;
+    /* list-style-type: "→"; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: 1s;
+    margin-bottom: 15px;
+}
+
+.navbar-section-list li {
+    margin: 2px;
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 2px;
+    background: white;
+}
+
+.navbar-section-list li button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.navbar-section-list li button:focus {
+    outline: none;
+}
+
+.content-container {
+    width: 85%;
+    min-height: 100vh;
+}
+
+
+

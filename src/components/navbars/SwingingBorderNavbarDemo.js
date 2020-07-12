@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CodeWindow from '../codewindows/CodeWindow';
 
-export default class SwingingBorderNavbar extends Component {
+export default class SwingingBorderNavbarDemo extends Component {
     state = {
         html: ".swinging-border-navbar-demo",
         theme: "dark",
@@ -32,7 +32,7 @@ export default class SwingingBorderNavbar extends Component {
     }
 
     toggleAllColors = () => {
-        let color = !this.state.showAllColors ? "" : "redorange";
+        let color = !this.state.showAllColors ? "" : "yellow";
         
         this.setState({ showAllColors: !this.state.showAllColors, color: color }, () => {
             this.refs.CodeWindow.renderHTML()

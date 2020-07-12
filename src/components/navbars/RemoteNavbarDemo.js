@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faThLarge, faChartBar, faTasks, faBell, faArchive, faComment, faSitemap, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
 import { faTumblr } from '@fortawesome/free-brands-svg-icons'
 
-export default class RemoteNavbar extends Component {
+export default class RemoteNavbarDemo extends Component {
     state = {
         html: ".remote-navbar-demo",
         theme: "light",

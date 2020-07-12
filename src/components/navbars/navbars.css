@@ -547,3 +547,375 @@
 .swinging-border-navbar-demo .swinging-border-navbar.black li a:after {
     border-color: black;
 }
+
+/* Roving Border Navbar Demo */
+.roving-border-navbar-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roving-border-navbar-demo .roving-border-navbar {
+    font-family: "Montserrat", sans-serif;
+    background: #ffff56;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.yellow {
+    background: #ffff56;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.white {
+    background: white;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.black {
+    background: black;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.blue {
+    background: #5757ff;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.mint {
+    background: #57ffab;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.lightgreen {
+    background: #abff57;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.green {
+    background: #57ff57;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.purple {
+    background: #ab57ff;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.pink {
+    background: #ff57ff;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.hotpink {
+    background: #ff57ab;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.red {
+    background: #ff5757;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.redorange {
+    background: #ff8157;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.orange {
+    background: #ffab57;
+}
+
+.roving-border-navbar-demo .roving-border-navbar li {
+    list-style: none;
+}
+
+.roving-border-navbar-demo .roving-border-navbar li a { 
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.black li a { 
+    color: #e3e3e3;
+}
+
+.roving-border-navbar-demo .roving-border-navbar li a:before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.roving-border-navbar-demo .roving-border-navbar li a:hover:before { 
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.roving-border-navbar-demo .roving-border-navbar li a:after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.roving-border-navbar-demo .roving-border-navbar li a:hover:after { 
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.black li a:before,
+.roving-border-navbar-demo .roving-border-navbar.black li a:after {
+    background: #e3e3e3;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.bd-nm li a:before,
+.roving-border-navbar-demo .roving-border-navbar.bd-nm li a:after {
+    height: 2px;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.bd-thin li a:before,
+.roving-border-navbar-demo .roving-border-navbar.bd-thin li a:after {
+    height: 1px;
+}
+
+.roving-border-navbar-demo .roving-border-navbar.bd-thicc li a:before,
+.roving-border-navbar-demo .roving-border-navbar.bd-thicc li a:after {
+    height: 3px;
+}
+
+/* Targeted Hover Navbar Demo */
+.targeted-hover-navbar-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar {
+    position: relative;
+    font-family: sans-serif;
+    display: flex;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li {
+    list-style: none;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li a {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+    color: #262626;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    padding: 5px 10px;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.light li a {
+    color: #262626;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.dark li a {
+    color: #d9d9d9;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li a:hover {
+    color: white;
+    background: #e91e63;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li a:before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e91e63;
+    border-width: 0 0 3px 3px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li a:hover:before {
+    bottom: -12px;
+    left: -12px;
+    opacity: 1;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li a:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e91e63;
+    border-width: 3px 3px 0 0;
+    transition: .5s;
+    opacity: 0;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar li a:hover:after {
+    top: -12px;
+    right: -12px;
+    opacity: 1;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.bd-nm li a:before {
+    border-width: 0 0 3px 3px;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.bd-nm li a:after {
+    border-width: 3px 3px 0 0;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.bd-thin li a:before {
+    border-width: 0 0 1px 1px;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.bd-thin li a:after {
+    border-width: 1px 1px 0 0;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.bd-thicc li a:before {
+    border-width: 0 0 5px 5px;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.bd-thicc li a:after {
+    border-width: 5px 5px 0 0;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.blue li a:hover {
+    background: #2020e9;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.blue li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.blue li a:after {
+    border-color: #2020e9;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.mint li a:hover {
+    background: #20e985;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.mint li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.mint li a:after {
+    border-color: #20e985;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.lightgreen li a:hover {
+    background: #85e920;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.lightgreen li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.lightgreen li a:after {
+    border-color: #85e920;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.green li a:hover {
+    background: #20e920;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.green li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.green li a:after {
+    border-color: #20e920;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.purple li a:hover {
+    background: #8520e9;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.purple li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.purple li a:after {
+    border-color: #8520e9;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.pink li a:hover {
+    background: #f1749e;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.pink li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.pink li a:after {
+    border-color: #f1749e;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.hotpink li a:hover {
+    background: #e91e63;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.hotpink li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.hotpink li a:after {
+    border-color: #e91e63;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.red li a:hover {
+    background: #e92020;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.red li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.red li a:after {
+    border-color: #e92020;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.redorange li a:hover {
+    background: #e95220;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.redorange li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.redorange li a:after {
+    border-color: #e95220;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.orange li a:hover {
+    background: #e98520;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.orange li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.orange li a:after {
+    border-color: #e98520;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.yellow li a:hover {
+    background: #e9e920;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.yellow li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.yellow li a:after {
+    border-color: #e9e920;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.white li a:hover {
+    color: #262626;
+    background: #ffffff;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.white li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.white li a:after {
+    border-color: #ffffff;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.black li a:hover {
+    background: #000000;
+}
+
+.targeted-hover-navbar-demo .targeted-hover-navbar.black li a:before,
+.targeted-hover-navbar-demo .targeted-hover-navbar.black li a:after {
+    border-color: #000000;
+}

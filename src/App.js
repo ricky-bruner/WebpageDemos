@@ -5,9 +5,12 @@ import CardDemos from './components/cards/CardDemos';
 import NavbarDemos from './components/navbars/NavbarDemos';
 import TestimonialDemos from './components/testimonials/TestimonialDemos';
 import ButtonDemos from './components/buttons/ButtonDemos';
+import HomePage from './components/homepage/HomePage';
+import MainNavbar from './components/app/MainNavbar';
 
 export default class App extends Component {
     state = {
+        home: true,
         navbars: false,
         icons: false,
         cards: false,
@@ -17,44 +20,88 @@ export default class App extends Component {
     }
 
     renderDemos = (e) => {
-        const stateToChange = {}
-        stateToChange[e.target.id] = !this.state[e.target.id]
+        let newState = {
+            home: false,
+            navbars: false,
+            icons: false,
+            cards: false,
+            testimonials: false,
+            scrollbars: false,
+            buttons: false
+        }
+        
+        switch(e.target.id){
+            case "home":
+                newState.home = true;
+                break;
+            case "navbars":
+                newState.navbars = true;
+                break;
+            case "icons":
+                newState.icons = true;
+                break;
+            case "cards":
+                newState.cards = true;
+                break;
+            case "testimonials":
+                newState.testimonials = true;
+                break;
+            case "scrollbars":
+                newState.scrollbars = true;
+                break;
+            case "buttons":
+                newState.buttons = true;
+                break;
+            default:
+                newState.home = true;
+                break;
+        }
+
+        this.setState(newState);
+    }
+
+    selectDemo = (type, demoName) => {
+        const stateToChange = this.state;
+        stateToChange[type] = true;
+        stateToChange["home"] = false;
+        stateToChange["selectedDemo"] = demoName;
         this.setState(stateToChange)
     }
 
     render(){
         return (
-            <div className="App">
-                <button id="navbars" onClick={(e) => this.renderDemos(e)}>Navbars</button>
-                <button id="icons" onClick={(e) => this.renderDemos(e)}>Icons</button>
-                <button id="cards" onClick={(e) => this.renderDemos(e)}>Cards</button>
-                <button id="testimonials" onClick={(e) => this.renderDemos(e)}>Testimonials</button>
-                <button id="scrollbars" onClick={(e) => this.renderDemos(e)}>Scrollbars</button>
-                <button id="buttons" onClick={(e) => this.renderDemos(e)}>Buttons</button>
-                {
-                    this.state.navbars &&
-                    <NavbarDemos />
-                }
-                {
-                    this.state.icons &&
-                    <IconDemos />
-                }
-                {
-                    this.state.cards &&
-                    <CardDemos />
-                }
-                {
-                    this.state.testimonials &&
-                    <TestimonialDemos />
-                }
-                {
-                    this.state.scrollbars &&
-                    <ScrollbarDemos />
-                }
-                {
-                    this.state.buttons &&
-                    <ButtonDemos />
-                }
+            <div className="app-view">
+                <MainNavbar showOptions={this.showOptions} renderDemos={this.renderDemos} selectDemo={this.selectDemo} />
+                <div className="content-container">
+                    {
+                        this.state.home &&
+                        <HomePage />
+                    }
+                    {
+                        this.state.navbars &&
+                        <NavbarDemos selectedDemo={this.state.selectedDemo} />
+                    }
+                    {
+                        this.state.icons &&
+                        <IconDemos selectedDemo={this.state.selectedDemo} />
+                    }
+                    {
+                        this.state.cards &&
+                        <CardDemos selectedDemo={this.state.selectedDemo} />
+                    }
+                    {
+                        this.state.testimonials &&
+                        <TestimonialDemos selectedDemo={this.state.selectedDemo} />
+                    }
+                    {
+                        this.state.scrollbars &&
+                        <ScrollbarDemos selectedDemo={this.state.selectedDemo} />
+                    }
+                    {
+                        this.state.buttons &&
+                        <ButtonDemos selectedDemo={this.state.selectedDemo} />
+                    }
+                </div>
             </div>
         );
     }

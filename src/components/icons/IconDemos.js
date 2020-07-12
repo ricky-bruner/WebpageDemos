@@ -9,8 +9,15 @@ export default class IconDemos extends Component {
     render(){
         return (
             <div className="icon-demos-body">
-                <IconAnimationDemo />
-                <CodeWindow html=".icon-animation-body" />
+                {
+                    (this.props.selectedDemo === "Icon Animation" || this.props.selectedDemo === "All") &&
+                    <div>
+                        <IconAnimationDemo />
+                        <CodeWindow html=".icon-animation-body" />
+                    </div>
+                }
+                {/* <IconAnimationDemo />
+                <CodeWindow html=".icon-animation-body" /> */}
             </div>
         );
     }
