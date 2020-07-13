@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/WebpageDemos/static/css/main.4d593e87.chunk.css",
-    "main.js": "/WebpageDemos/static/js/main.21426e70.chunk.js",
-    "main.js.map": "/WebpageDemos/static/js/main.21426e70.chunk.js.map",
+    "main.css": "/WebpageDemos/static/css/main.0783d235.chunk.css",
+    "main.js": "/WebpageDemos/static/js/main.37ddcb00.chunk.js",
+    "main.js.map": "/WebpageDemos/static/js/main.37ddcb00.chunk.js.map",
     "runtime-main.js": "/WebpageDemos/static/js/runtime-main.f3ca1b71.js",
     "runtime-main.js.map": "/WebpageDemos/static/js/runtime-main.f3ca1b71.js.map",
-    "static/js/2.f511c91e.chunk.js": "/WebpageDemos/static/js/2.f511c91e.chunk.js",
-    "static/js/2.f511c91e.chunk.js.map": "/WebpageDemos/static/js/2.f511c91e.chunk.js.map",
+    "static/js/2.946ccbd1.chunk.js": "/WebpageDemos/static/js/2.946ccbd1.chunk.js",
+    "static/js/2.946ccbd1.chunk.js.map": "/WebpageDemos/static/js/2.946ccbd1.chunk.js.map",
     "index.html": "/WebpageDemos/index.html",
-    "precache-manifest.e2705d083d7cab94a844255a5034c18d.js": "/WebpageDemos/precache-manifest.e2705d083d7cab94a844255a5034c18d.js",
+    "precache-manifest.538b8b40b846ebf7b3219b88695b2fb2.js": "/WebpageDemos/precache-manifest.538b8b40b846ebf7b3219b88695b2fb2.js",
     "service-worker.js": "/WebpageDemos/service-worker.js",
-    "static/css/main.4d593e87.chunk.css.map": "/WebpageDemos/static/css/main.4d593e87.chunk.css.map",
-    "static/js/2.f511c91e.chunk.js.LICENSE.txt": "/WebpageDemos/static/js/2.f511c91e.chunk.js.LICENSE.txt",
+    "static/css/main.0783d235.chunk.css.map": "/WebpageDemos/static/css/main.0783d235.chunk.css.map",
+    "static/js/2.946ccbd1.chunk.js.LICENSE.txt": "/WebpageDemos/static/js/2.946ccbd1.chunk.js.LICENSE.txt",
     "static/media/ProjectLogo1.png": "/WebpageDemos/static/media/ProjectLogo1.b38c469a.png",
     "static/media/ProjectLogo2.png": "/WebpageDemos/static/media/ProjectLogo2.9267e302.png",
     "static/media/ProjectLogo3.png": "/WebpageDemos/static/media/ProjectLogo3.7687f651.png",
@@ -19,14 +19,16 @@
     "static/media/dumbledore.jpg": "/WebpageDemos/static/media/dumbledore.accac18a.jpg",
     "static/media/hagrid-portrait.png": "/WebpageDemos/static/media/hagrid-portrait.d57f3f76.png",
     "static/media/hagrid.jpg": "/WebpageDemos/static/media/hagrid.f24e493f.jpg",
+    "static/media/online-tutorials-icon.png": "/WebpageDemos/static/media/online-tutorials-icon.1f6692fd.png",
     "static/media/testimonials.css": "/WebpageDemos/static/media/quote.dacf1007.svg",
+    "static/media/right-arrow.png": "/WebpageDemos/static/media/right-arrow.41111c89.png",
     "static/media/snape-portrait.png": "/WebpageDemos/static/media/snape-portrait.6a1f1328.png",
     "static/media/snape.jpg": "/WebpageDemos/static/media/snape.7ee55dd9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f3ca1b71.js",
-    "static/js/2.f511c91e.chunk.js",
-    "static/css/main.4d593e87.chunk.css",
-    "static/js/main.21426e70.chunk.js"
+    "static/js/2.946ccbd1.chunk.js",
+    "static/css/main.0783d235.chunk.css",
+    "static/js/main.37ddcb00.chunk.js"
   ]
 }
