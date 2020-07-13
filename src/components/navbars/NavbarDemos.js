@@ -4,12 +4,14 @@ import SwingingBorderNavbarDemo from './SwingingBorderNavbarDemo';
 import './navbars.css';
 import RovingBorderNavbarDemo from './RovingBorderNavbarDemo';
 import TargetedHoverNavbarDemo from './TergetedHoverNavbarDemo';
+import NavbarDemoHeader from './NavbarDemoHeader';
 
 export default class NavbarDemos extends Component {
 
     render(){
         return (
             <div className="navbar-demos-body">
+                <NavbarDemoHeader />
                 {
                     (this.props.selectedDemo === "Targeted Hover" || this.props.selectedDemo === "All") &&
                     <TargetedHoverNavbarDemo />

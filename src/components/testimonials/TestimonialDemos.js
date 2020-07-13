@@ -4,6 +4,7 @@ import CodeWindow from '../codewindows/CodeWindow';
 import BottomColorRiseTestimonialDemo from './BottomColorRiseTestimonialDemo';
 import QuoteMovementTestimonialDemo from './QuoteMovementTestimonialDemo';
 import "./testimonials.css";
+import TestimonialDemoHeader from './TestimonialDemoHeader';
 
 
 export default class TestimonialDemos extends Component {
@@ -12,6 +13,7 @@ export default class TestimonialDemos extends Component {
     render(){
         return (
             <div className="tesitmonials-demo-body">
+                <TestimonialDemoHeader />
                 {
                     (this.props.selectedDemo === "Quote Movement" || this.props.selectedDemo === "All") &&
                     <div>

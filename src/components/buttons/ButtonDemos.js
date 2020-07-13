@@ -7,6 +7,7 @@ import OscillatingSolidButtonDemo from './OscillatingSolidButtonDemo';
 import ThreeDimensionalButtonDemo from './ThreeDimensionalButtonDemo';
 import NeonReflectiveButtonDemo from './NeonReflectiveButtonDemo';
 import LiquidWaveButtonDemo from './LiquidWaveButtonDemo';
+import ButtonDemoHeader from './ButtonDemoHeader';
 
 export default class ButtonDemos extends Component {
     state = {}
@@ -14,6 +15,7 @@ export default class ButtonDemos extends Component {
     render(){
         return (
             <div className="button-demos-body">
+                <ButtonDemoHeader />
                 {
                     (this.props.selectedDemo === "Liquid Wave" || this.props.selectedDemo === "All") &&
                     <LiquidWaveButtonDemo />

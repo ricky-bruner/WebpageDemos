@@ -18,6 +18,7 @@ import GameStyleCardsDemo from './GameStyleCardsDemo';
 import DirectionAwareCardDemo from './DirectionAwareCardDemo';
 import DepthOfFieldCardDemo from './DepthOfFieldCardDemo';
 import ImageClipHoverCardDemo from './ImageClipHoverCardDemo';
+import CardDemoHeader from './CardDemoHeader';
 
 export default class CardDemos extends Component {
     state = {
@@ -27,6 +28,7 @@ export default class CardDemos extends Component {
     render(){
         return (
             <div className="card-demos-body">
+                <CardDemoHeader />
                 {
                     (this.props.selectedDemo === "Image Clip Hover" || this.props.selectedDemo === "All") &&
                     <div>

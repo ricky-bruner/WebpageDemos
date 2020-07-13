@@ -16,7 +16,8 @@ export default class App extends Component {
         cards: false,
         testimonials: false,
         scrollbars: false,
-        buttons: false
+        buttons: false,
+        expanded: true
     }
 
     renderDemos = (e) => {
@@ -61,18 +62,30 @@ export default class App extends Component {
     }
 
     selectDemo = (type, demoName) => {
-        const stateToChange = this.state;
+        let stateToChange = {
+            home: false,
+            navbars: false,
+            icons: false,
+            cards: false,
+            testimonials: false,
+            scrollbars: false,
+            buttons: false
+        }
+
         stateToChange[type] = true;
-        stateToChange["home"] = false;
         stateToChange["selectedDemo"] = demoName;
         this.setState(stateToChange)
+    }
+
+    toggleNavbar = () => {
+        this.setState({expanded: !this.state.expanded});
     }
 
     render(){
         return (
             <div className="app-view">
-                <MainNavbar showOptions={this.showOptions} renderDemos={this.renderDemos} selectDemo={this.selectDemo} />
-                <div className="content-container">
+                <MainNavbar showOptions={this.showOptions} renderDemos={this.renderDemos} selectDemo={this.selectDemo} expanded={this.state.expanded} toggleNavbar={this.toggleNavbar}/>
+                <div className={this.state.expanded ? "content-container expanded" : "content-container"}>
                     {
                         this.state.home &&
                         <HomePage />
