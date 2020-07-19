@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CodeWindow from '../codewindows/CodeWindow';
+import CodeWindow from '../../codewindows/CodeWindow';
 
 export default class CircleGrowthServiceCard extends Component {
     state = {

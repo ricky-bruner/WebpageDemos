@@ -6,16 +6,20 @@ import BorderOptionFactory from '../options/BorderOptionFactory';
 
 export default function CardDemoOptionsFactory(demoName){
     let options = {
+        borders: [],
+        border: "",
+        useShowAllBorders: false,
         colors: [],
         color: "",
+        useShowAllColors: false,
         sizes: [],
         size: "",
+        useShowAllSizes: false,
         speeds: [],
         speed: "",
+        useShowAllSpeeds: false,
         themes: [],
-        theme: "",
-        borders: [],
-        border: ""
+        theme: ""
     };
     
     switch(demoName){
@@ -65,8 +69,64 @@ export default function CardDemoOptionsFactory(demoName){
         case "IsometricHoverCards":
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
+            options.colors = ColorOptionsFactory("standard");
+            options.color = "blue";
+            options.useShowAllColors = true;
             return options;
 
+        case "CircleGrowthServiceCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "light";
+            return options;
+
+        case "ImageSlideLeftCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            options.colors = ColorOptionsFactory("standard");
+            options.color = "hotpink";
+            options.useShowAllColors = true;
+            return options;
+
+        case "NeumorphismCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "light";
+            options.borders = BorderOptionFactory("neumorphismcards");
+            options.border = "bd-rounded";
+            options.colors = ColorOptionsFactory("neumorphismcards");
+            options.color = "teal";
+            options.useShowAllColors = true;
+            return options;
+
+        case "SkewedBorderCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            return options;
+
+        case "GlowingCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            return options;
+
+        case "FlipHoverCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "light";
+            return options;
+
+        case "CircleGrowthIconCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            return options;
+
+        case "IconGrowthCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            return options;
+
+        case "HoverSwitchCards":
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            return options;
+            
         default:
             return options;
     }

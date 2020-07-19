@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faObjectGroup, faCode, faRocket } from '@fortawesome/free-solid-svg-icons';
-import CodeWindow from '../codewindows/CodeWindow';
 
-export default class NeumorphismCardDemo extends Component {
+export default class NeumorphismCards extends Component {
     state = {
-        html: ".neumorphism-card-demo"
     };
 
     render(){
         return (
-            <div className="demo-section">
-                <div id="neumorphism-card-demo" className="neumorphism-card-demo">
+            <div id="neumorphism-card-demo" className={"neumorphism-cards " + this.props.settings.theme}>
+                {
+                    !this.props.settings.showAllColors &&
                     <div className="container">
-                        <div className="card">
+                        <div className={"card " + this.props.settings.color + " " + this.props.settings.border}>
                             <div className="imgBx">
                                 <FontAwesomeIcon icon={faObjectGroup} />
                             </div>
@@ -23,7 +22,7 @@ export default class NeumorphismCardDemo extends Component {
                                 <a href="neumorphism-card-demo"><span>Read More</span></a>
                             </div>
                         </div>
-                        <div className="card">
+                        <div className={"card " + this.props.settings.color + " " + this.props.settings.border}>
                             <div className="imgBx">
                                 <FontAwesomeIcon icon={faCode} />
                             </div>
@@ -33,7 +32,7 @@ export default class NeumorphismCardDemo extends Component {
                                 <a href="neumorphism-card-demo"><span>Read More</span></a>
                             </div>
                         </div>
-                        <div className="card">
+                        <div className={"card " + this.props.settings.color + " " + this.props.settings.border}>
                             <div className="imgBx">
                                 <FontAwesomeIcon icon={faRocket} />
                             </div>
@@ -44,8 +43,28 @@ export default class NeumorphismCardDemo extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <CodeWindow html={this.state.html} ref="CodeWindow" />
+                }
+                {
+                    this.props.settings.showAllColors &&
+                    <div className="container">
+                        {
+                            this.props.settings.colors.map(c => {
+                                return (
+                                    <div className={"card " + c + " " + this.props.settings.border}>
+                                        <div className="imgBx">
+                                            <FontAwesomeIcon icon={faObjectGroup} />
+                                        </div>
+                                        <div className="contentBx">
+                                            <h2>Design</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                            <a href="neumorphism-card-demo"><span>Read More</span></a>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                }
             </div>
         );
     }

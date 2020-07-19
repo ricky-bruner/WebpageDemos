@@ -6,6 +6,9 @@ export default function ColorOptionsFactory(selection){
         case "liquidwavebutton":
             return [ "blue", "carribean", "mint", "lightgreen", "green", "purple", "pink", "hotpink", "red", "redorange", "orange", "yellow", "white", "black" ];
 
+        case "neumorphismcards":
+            return [ "teal", "purple", "red", "orange", "yellow", "green", "blue", "pink" ];
+
         default:
             return [];
 

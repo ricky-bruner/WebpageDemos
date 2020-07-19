@@ -29,14 +29,18 @@ export default class GenericDemo extends Component {
     getSettings = () => {
         let settings = {
             border: this.state.border,
-            color: this.state.color,
-            size: this.state.size,
-            speed: this.state.speed,
-            theme: this.state.theme,
+            borders: this.props.options.borders,
             showAllBorders: this.state.showAllBorders,
+            color: this.state.color,
+            colors: this.props.options.colors,
             showAllColors: this.state.showAllColors,
+            size: this.state.size,
+            sizes: this.props.options.sizes,
             showAllSizes: this.state.showAllSizes,
-            showAllSpeeds: this.state.showAllSpeeds
+            speed: this.state.speed,
+            speeds: this.props.options.speeds,
+            showAllSpeeds: this.state.showAllSpeeds,
+            theme: this.state.theme
         }
 
         return settings;
@@ -143,7 +147,10 @@ export default class GenericDemo extends Component {
                             this.props.options.sizes.length > 0 &&
                             <div className="option-section">
                                 <h4>Sizes:</h4>
-                                <button className={(this.state.showAllSizes === true) ? "active" : ""} onClick={() => this.toggleAllSizes()}>Show All</button>
+                                {
+                                    this.props.options.useShowAllSizes &&
+                                    <button className={(this.state.showAllSizes === true) ? "active" : ""} onClick={() => this.toggleAllSizes()}>Show All</button>
+                                }
                                 {
                                     this.props.options.sizes.map(s => <button className={(this.state.size === s) ? "active" : ""} onClick={() => this.toggleSize(s)}>{s.toUpperCase()}</button>)
                                 } 
@@ -153,7 +160,10 @@ export default class GenericDemo extends Component {
                             this.props.options.speeds.length > 0 &&
                             <div className="option-section">
                                 <h4>Speeds:</h4>
-                                <button className={(this.state.showAllSpeeds === true) ? "active" : ""} onClick={() => this.toggleAllSpeeds()}>Show All</button>
+                                {
+                                    this.props.options.showAllSpeeds &&
+                                    <button className={(this.state.showAllSpeeds === true) ? "active" : ""} onClick={() => this.toggleAllSpeeds()}>Show All</button>
+                                }
                                 {
                                     this.props.options.speeds.map(sp => {
                                         return <button className={(this.state.speed === sp) ? "active" : ""} onClick={() => this.toggleSpeed(sp)}>{sp.toUpperCase()}</button>
@@ -165,7 +175,10 @@ export default class GenericDemo extends Component {
                             this.props.options.borders.length > 0 &&
                             <div className="option-section">
                                 <h4>Borders:</h4>
-                                <button className={(this.state.showAllBorders === true) ? "active" : ""} onClick={() => this.toggleAllBorders()}>Show All</button>
+                                {
+                                    this.props.options.useShowAllBorders &&
+                                    <button className={(this.state.showAllBorders === true) ? "active" : ""} onClick={() => this.toggleAllBorders()}>Show All</button>
+                                }
                                 {
                                     this.props.options.borders.map(bd => {
                                     return <button className={(this.state.border === bd) ? "active" : ""} onClick={() => this.toggleBorder(bd)}>{bd.toUpperCase()}</button>
@@ -179,7 +192,10 @@ export default class GenericDemo extends Component {
                         <div className="options-box">
                             <div className="option-section">
                                 <h4>Colors:</h4>
-                                <button className={(this.state.showAllColors === true) ? "active" : ""} onClick={() => this.toggleAllColors()}>Show All</button>
+                                {
+                                    this.props.options.useShowAllColors &&
+                                    <button className={(this.state.showAllColors === true) ? "active" : ""} onClick={() => this.toggleAllColors()}>Show All</button>
+                                }
                                 {
                                     this.props.options.colors.map(c => <button className={(this.state.color === c) ? "active" : ""} onClick={() => this.toggleColor(c)}>{c.charAt(0).toUpperCase() + c.slice(1)}</button>)
                                 }
