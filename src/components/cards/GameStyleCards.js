@@ -3,12 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faAngular } from '@fortawesome/free-brands-svg-icons';
 
-export default class GameStyleCardsDemo extends Component {
-    state = {};
-
+export default class GameStyleCards extends Component {
     render(){
         return (
-            <div className="game-style-cards-demo">
+            <div className={"game-style-cards " + this.props.settings.theme}>
                 <div className="box">
                     <div className="card">
                         <div className="imgBx">
@@ -103,6 +101,7 @@ export default class GameStyleCardsDemo extends Component {
                     </div>
                 </div>
             </div>
+            
         );
     }
-}
+};

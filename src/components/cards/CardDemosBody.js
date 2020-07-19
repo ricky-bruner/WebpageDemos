@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import SkewedBorderDemo from './SkewedBorderDemo';
+// import SkewedBorderDemo from './SkewedBorderDemo';
 import './cards.css';
-import GlowingCardDemo from './GlowingCardDemo';
-import FlipHoverCardDemo from './FlipHoverCardDemo';
-import IconGrowthCard from './IconGrowthCard';
-import CircleGrowthIconCard from './CircleGrowthIconCard';
-import CodeWindow from '../codewindows/CodeWindow';
-import HoverSwitchCardDemo from './HoverSwitchCardDemo';
-import NeumorphismCardDemo from './NeumorphismCardDemo';
-import ImageSlideLeftCardDemo from './ImageSlideLeftCardDemo';
-import CircleGrowthServiceCard from './CircleGrowthServiceCard';
-import IsometricCardHoverDemo from './IsometricCardHoverDemo';
-import FlipUpHoverCardDemo from './FlipUpHoverCardDemo';
-import SwivelRotationCardDemo from './SwivelRotationCardDemo';
-import CircleReductionServiceCard from './CircleReductionServiceCard';
-import GameStyleCardsDemo from './GameStyleCardsDemo';
-import DirectionAwareCardDemo from './DirectionAwareCardDemo';
-import DepthOfFieldCardDemo from './DepthOfFieldCardDemo';
-import ImageClipHoverCardDemo from './ImageClipHoverCardDemo';
+// import GlowingCardDemo from './GlowingCardDemo';
+// import FlipHoverCardDemo from './FlipHoverCardDemo';
+// import IconGrowthCard from './IconGrowthCard';
+// import CircleGrowthIconCard from './CircleGrowthIconCard';
+// import CodeWindow from '../codewindows/CodeWindow';
+// import HoverSwitchCardDemo from './HoverSwitchCardDemo';
+// import NeumorphismCardDemo from './NeumorphismCardDemo';
+// import ImageSlideLeftCardDemo from './ImageSlideLeftCardDemo';
+// import CircleGrowthServiceCard from './CircleGrowthServiceCard';
+// import IsometricCardHoverDemo from './IsometricCardHoverDemo';
+// import FlipUpHoverCardDemo from './FlipUpHoverCardDemo';
+// import SwivelRotationCardDemo from './SwivelRotationCardDemo';
+// import CircleReductionServiceCard from './CircleReductionServiceCard';
+// import GameStyleCardsDemo from './GameStyleCardsDemo';
+// import DirectionAwareCardDemo from './DirectionAwareCardDemo';
+// import DepthOfFieldCardDemo from './DepthOfFieldCardDemo';
+// import ImageClipHoverCardDemo from './ImageClipHoverCardDemo';
 import CardDemoHeader from './CardDemoHeader';
+// import CardDemo from './CardDemo';
+import CardDemoOptionsFactory from '../../modules/cards/CardDemoOptionsFactory';
+// import CardDemoEnums from '../../modules/enums/CardDemoEnums';
+import GenericDemo from '../app/demos/GenericDemo';
+import CardDemos from '../../modules/cards/CardDemos';
 
-export default class CardDemos extends Component {
+export default class CardDemosBody extends Component {
     state = {
 
     }
@@ -30,125 +35,85 @@ export default class CardDemos extends Component {
             <div className="card-demos-body">
                 <CardDemoHeader />
                 {
+                    CardDemos().map(demo => {
+                        if(this.props.selectedDemo === demo.friendlyName || this.props.selectedDemo === "All"){
+                            return <GenericDemo demoType="card" options={CardDemoOptionsFactory(demo.demoName)} demoName={demo.demoName} demoClass={demo.demoClass} title={demo.demoTitle} />
+                        }
+                    })
+                }
+                {/* {
+                    (this.props.selectedDemo === "Game Style" || this.props.selectedDemo === "All") &&
+                    <GenericDemo demoType="card" options={CardDemoOptionsFactory("GameStyleCards")} demoName="GameStyleCards" demoClass="game-style-cards" />
+                } */}
+                {/* {
                     (this.props.selectedDemo === "Image Clip Hover" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <ImageClipHoverCardDemo />
-                        <CodeWindow html=".image-clip-hover-card-demo" />
-                    </div>
+                    <ImageClipHoverCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Depth Of Field" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <DepthOfFieldCardDemo />
-                        <CodeWindow html=".depth-of-field-card-demo" />
-                    </div>
+                    <DepthOfFieldCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Direction Aware" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <DirectionAwareCardDemo />
-                        <CodeWindow html=".direction-aware-card-demo" />
-                    </div>
+                    <DirectionAwareCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Game Style" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <GameStyleCardsDemo />
-                        <CodeWindow html=".game-style-cards-demo" />
-                    </div>
+                    <GenericDemo options={CardDemoOptionsFactory("GameStyleCardsDemo")} demoName="GameStyleCardsDemo" demoClass="game-style-cards" />
+                    // <GameStyleCardsDemo />
                 }
                 {
                     (this.props.selectedDemo === "Circle Reduction" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <CircleReductionServiceCard />
-                        <CodeWindow html=".circle-reduction-service-card-demo" />
-                    </div>
+                    <CircleReductionServiceCard />
                 }
                 {
                     (this.props.selectedDemo === "Swivel Rotation" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <SwivelRotationCardDemo />
-                        <CodeWindow html=".swivel-rotation-card-demo" />
-                    </div>
+                    <SwivelRotationCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Flip Up Hover" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <FlipUpHoverCardDemo />
-                        <CodeWindow html=".flip-up-hover-card-demo" />
-                    </div>
+                    <FlipUpHoverCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Isometric" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <IsometricCardHoverDemo />
-                        <CodeWindow html=".isometric-card-hover-demo" />
-                    </div>
+                    <IsometricCardHoverDemo />
                 }
                 {
                     (this.props.selectedDemo === "Circle Growth" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <CircleGrowthServiceCard />
-                        <CodeWindow html=".circle-growth-service-card-demo" />
-                    </div>
+                    <CircleGrowthServiceCard />
                 }
                 {
                     (this.props.selectedDemo === "Image Slide Left" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <ImageSlideLeftCardDemo />
-                        <CodeWindow html=".image-slide-left-card-demo" />
-                    </div>
+                    <ImageSlideLeftCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Neumorphism" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <NeumorphismCardDemo />
-                        <CodeWindow html=".neumorphism-card-demo" />
-                    </div>
+                    <NeumorphismCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Skewed Border" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <SkewedBorderDemo />
-                        <CodeWindow html=".skewed-border-demo" />
-                    </div>
+                    <SkewedBorderDemo />
                 }
                 {
                     (this.props.selectedDemo === "Glowing" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <GlowingCardDemo />
-                        <CodeWindow html=".glowing-card-demo" />
-                    </div>
+                    <GlowingCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Flip Hover" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <FlipHoverCardDemo />
-                        <CodeWindow html=".flip-hover-card-demo" />
-                    </div>
+                    <FlipHoverCardDemo />
                 }
                 {
                     (this.props.selectedDemo === "Icon Growth" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <IconGrowthCard />
-                        <CodeWindow html=".icon-growth-card-demo" />
-                    </div>
+                    <IconGrowthCard />
                 }
                 {
                     (this.props.selectedDemo === "Circle Growth Icon" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <CircleGrowthIconCard />
-                        <CodeWindow html=".circle-growth-icon-card-demo" />
-                    </div>
+                    <CircleGrowthIconCard />
                 }
                 {
                     (this.props.selectedDemo === "Hover Switch" || this.props.selectedDemo === "All") &&
-                    <div>
-                        <HoverSwitchCardDemo />
-                        <CodeWindow html=".hover-switch-card-demo" />
-                    </div>
-                }
-
+                    <HoverSwitchCardDemo />
+                } */}
                 {/* <ImageClipHoverCardDemo />
                 <CodeWindow html=".image-clip-hover-card-demo" /> */}
                 {/* <DepthOfFieldCardDemo />

@@ -1,3 +1,128 @@
+.demo-section {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.demo-section .demo-container {
+    position: relative;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+    min-height: 95vh;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.card-demo-section {
+    /* width: 100%; */
+    /* box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px; */
+    /* box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px; */
+    /* padding: 20px; */
+}
+
+/* .card-demos-body h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: #0d428c;
+    text-align: center;
+} */
+
+.card-demos-body .card-demo-title {
+    font-size: 30px;
+    margin: 20px;
+    color: #0d428c;
+    text-align: center;
+}
+
+.card-demos-body .options-container {
+    position: relative;
+    width: 75%;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    color: #0d428c;
+}
+
+.card-demos-body .options-container h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0;
+    text-align: center;
+    color: #0d428c;
+    background: white;
+}
+
+.card-demos-body .options-container .options-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 10px;
+    background: #0d428c;
+}
+
+.card-demos-body .options-container .options-box .option-section {
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+    background: white;
+}
+
+.card-demos-body .options-container .options-box button {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    background: white;
+    color: rgba(0, 0, 0, 1);
+    transition: .5s;
+}
+
+.card-demos-body .options-container .options-box button.active {
+    background: #0d428c;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-demos-body .options-container .options-box button:hover {
+    color: white;
+    background: #0d428c;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-demos-body .options-container .options-box button:focus {
+    outline: none;
+}
+
+.card-demos-body .demo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    /* padding: 50px 10px 10px; */
+    margin: 15px 0;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+
+
+/* .card-demo-section h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: #0d428c;
+    text-align: center;
+} */
+
 
 /* Skewed Border Demo */
 .skewed-border-demo {
@@ -972,7 +1097,7 @@
 }
 
 /* Isometric Card Hover Demo */
-.isometric-card-hover-demo {
+.isometric-hover-cards {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -980,29 +1105,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 95vh;
+    width: 100%;
     background: #f3f3f3;
     overflow: hidden;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 
-.isometric-card-hover-demo .container {
+.isometric-hover-cards .container {
     position: relative;
-    width: 1050px;
+    width: 100%;
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     transform: skewY(-10deg);
 }
 
-.isometric-card-hover-demo .container .card {
+.isometric-hover-cards .container .card {
     position: relative;
     width: 300px;
     height: 400px;
     background: white;    
     transition: .5s;
+    margin: 40px;
 }
 
-.isometric-card-hover-demo .container .card:before {
+.isometric-hover-cards .container .card:before {
     content: "";
     position: absolute;
     top: -15px;
@@ -1015,7 +1144,7 @@
     transition: .5s;
 }
 
-.isometric-card-hover-demo .container .card:after {
+.isometric-hover-cards .container .card:after {
     content: "";
     position: absolute;
     top: -15px;
@@ -1029,11 +1158,11 @@
     border-bottom: 200px solid #d9d9d9;
 }
 
-.isometric-card-hover-demo .container .card:hover {
+.isometric-hover-cards .container .card:hover {
     transform: translateY(-40px);
 }
 
-.isometric-card-hover-demo .container .card .imgBx {
+.isometric-hover-cards .container .card .imgBx {
     position: relative;
     width: 300px;
     height: 200px;
@@ -1044,19 +1173,19 @@
     flex-direction: column;
 }
 
-.isometric-card-hover-demo .container .card .imgBx svg {
+.isometric-hover-cards .container .card .imgBx svg {
     width: 100px;
     height: 100px;
     color: white;
 }
 
-.isometric-card-hover-demo .container .card .imgBx h3 {
+.isometric-hover-cards .container .card .imgBx h3 {
     position: relative;
     color: white;
     margin-top: 10px;
 }
 
-.isometric-card-hover-demo .container .card .content {
+.isometric-hover-cards .container .card .content {
     position: relative;
     width: 100%;
     height: 200px;
@@ -1066,7 +1195,7 @@
     text-align: center;
 }
 
-.isometric-card-hover-demo .container .card .content:before {
+.isometric-hover-cards .container .card .content:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1081,26 +1210,26 @@
     z-index: -1;
 }
 
-.isometric-card-hover-demo .container .card:hover .content:before {
+.isometric-hover-cards .container .card:hover .content:before {
     transform: translateY(40px) skewX(45deg);
     filter: blur(5px);
     opacity: .5;
 }
 
-.isometric-card-hover-demo .container .card:nth-child(1) {
+.isometric-hover-cards .container .card:nth-child(1) {
     z-index: 3;
 }
 
-.isometric-card-hover-demo .container .card:nth-child(2) {
+.isometric-hover-cards .container .card:nth-child(2) {
     z-index: 2;
 }
 
-.isometric-card-hover-demo .container .card:nth-child(3) {
+.isometric-hover-cards .container .card:nth-child(3) {
     z-index: 1;
 }
 
 /* Flip Up Card Hover Demo */
-.flip-up-hover-card-demo {
+.flip-up-hover-cards {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1108,20 +1237,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 95vh;
+    width: 100%;
+    background: #f3f3f3;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.flip-up-hover-cards.light {
     background: #f3f3f3;
 }
 
-.flip-up-hover-card-demo .container {
+.flip-up-hover-cards.dark {
+    background: #131313;
+}
+
+.flip-up-hover-cards .container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1000px;
+    width: 100%;
     transform-style: preserve-3d;
 }
 
-.flip-up-hover-card-demo .container .box {
+.flip-up-hover-cards .container .box {
     position: relative;
     width: 300px;
     height: 400px;
@@ -1131,7 +1270,7 @@
     transform-style: preserve-3d;
 }
 
-.flip-up-hover-card-demo .container .box .imgBx {
+.flip-up-hover-cards .container .box .imgBx {
     position: absolute;
     top: 0;
     left: 0;
@@ -1143,13 +1282,13 @@
     transition-delay: .2s;
 }
 
-.flip-up-hover-card-demo .container .box:hover .imgBx {
+.flip-up-hover-cards .container .box:hover .imgBx {
     transform: rotateX(-90deg);
     opacity: 0;
     transition-delay: 0s;
 }
 
-.flip-up-hover-card-demo .container .box .imgBx img {
+.flip-up-hover-cards .container .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1158,7 +1297,7 @@
     object-fit: cover;
 }
 
-.flip-up-hover-card-demo .container .box .contentBx {
+.flip-up-hover-cards .container .box .contentBx {
     position: absolute;
     top: 0;
     left: 0;
@@ -1177,26 +1316,37 @@
     color: white;
 }
 
-.flip-up-hover-card-demo .container .box:hover .contentBx {
+.flip-up-hover-cards.light .container .box .contentBx {
+    background: #333;
+    color: white;
+}
+
+.flip-up-hover-cards.dark .container .box .contentBx {
+    background: rgb(213, 213, 213);
+    color: black;
+}
+
+.flip-up-hover-cards .container .box:hover .contentBx {
     transform: rotateX(0deg);
     opacity: 1;
     transition-delay: .2s;
 }
 
 /* Swivel Rotation Card Demo */
-.swivel-rotation-card-demo {
+.swivel-rotation-cards {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     width: 100%;
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #555;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 
-.swivel-rotation-card-demo .container {
+.swivel-rotation-cards .container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1205,14 +1355,14 @@
     align-items: center;
 }
 
-.swivel-rotation-card-demo .container .card {
+.swivel-rotation-cards .container .card {
     position: relative;
     width: 300px;
     height: 400px;
     transform-style: preserve-3d;
 }
 
-.swivel-rotation-card-demo .container .card .face {
+.swivel-rotation-cards .container .card .face {
     position: absolute;
     top: 0;
     left: 0;
@@ -1229,44 +1379,44 @@
     transform: perspective(500px) rotateY(0deg);
 }
 
-.swivel-rotation-card-demo .container .card .face.front {
+.swivel-rotation-cards .container .card .face.front {
     background: white;
     color: black;
 }
 
-.swivel-rotation-card-demo .container .card:hover .face.front {
+.swivel-rotation-cards .container .card:hover .face.front {
     transform: perspective(500px) rotateY(180deg);
 }
 
-.swivel-rotation-card-demo .container .card .face.back {
+.swivel-rotation-cards .container .card .face.back {
     background: black;
     color: #fff;
     transform: perspective(500px) rotateY(180deg);
 }
 
-.swivel-rotation-card-demo .container .card:hover .face.back {
+.swivel-rotation-cards .container .card:hover .face.back {
     transform: perspective(500px) rotateY(360deg);
 }
 
-.swivel-rotation-card-demo .container .card .face h2 {
+.swivel-rotation-cards .container .card .face h2 {
     font-size: 2em;
     text-transform: uppercase;
     transform: perspective(500px) translateZ(50px);
 }
 
-.swivel-rotation-card-demo .container .card .face svg {
+.swivel-rotation-cards .container .card .face svg {
     width: 60%;
     height: 60%;
     transform: perspective(500px) translateZ(50px);
 }
 
-.swivel-rotation-card-demo .container .card .face.back p {
+.swivel-rotation-cards .container .card .face.back p {
     padding: 0 40px;
     font-size: .7em;
     transform: perspective(500px) translateZ(50px);
 }
 
-.swivel-rotation-card-demo .container .card .face.back a {
+.swivel-rotation-cards .container .card .face.back a {
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 5px;
@@ -1278,35 +1428,37 @@
     background: transparent;
 }
 
-.swivel-rotation-card-demo .container .card .face.back a:hover {
+.swivel-rotation-cards .container .card .face.back a:hover {
     /* transform: perspective(500px) translateZ(50px) scale(1.1); */
     border: 1px solid rgb(205, 205, 205);
     color: rgb(205, 205, 205);
 }
 
-/*  */
-.circle-reduction-service-card-demo {
+/*  Circle Reduction Service Cards */
+.circle-reduction-service-cards {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
     outline: none;
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: #00d0ff;
+    width: 100%;
+    min-height: 95vh;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 
-.circle-reduction-service-card-demo .container {
-    width: 1100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 15px;
+.circle-reduction-service-cards .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
-.circle-reduction-service-card-demo .container .card {
+.circle-reduction-service-cards .container .card {
     position: relative;
     width: 300px;
     height: 400px;
@@ -1315,11 +1467,11 @@
     transition: .5s;
 }
 
-.circle-reduction-service-card-demo .container .card:hover {
+.circle-reduction-service-cards .container .card:hover {
     box-shadow: 0 30px 50px rgba(0, 0, 0, .2);
 }
 
-.circle-reduction-service-card-demo .container .card .face {
+.circle-reduction-service-cards .container .card .face {
     position: absolute;
     top: 0;
     left: 0;
@@ -1330,7 +1482,7 @@
     align-items: center;
 }
 
-.circle-reduction-service-card-demo .container .card .face.face1 {
+.circle-reduction-service-cards .container .card .face.face1 {
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
@@ -1338,11 +1490,11 @@
     color: #013d4a;
 }
 
-.circle-reduction-service-card-demo .container .card .face.face1 h2 {
+.circle-reduction-service-cards .container .card .face.face1 h2 {
     margin-top: 70px;
 }
 
-.circle-reduction-service-card-demo .container .card .face.face1 a {
+.circle-reduction-service-cards .container .card .face.face1 a {
     display: inline-block;
     padding: 5px 10px;
     margin-top: 20px;
@@ -1351,17 +1503,17 @@
     border: 2px solid #013d4a;
 }
 
-.circle-reduction-service-card-demo .container .card .face.face1 a:hover {
+.circle-reduction-service-cards .container .card .face.face1 a:hover {
     color: white;
     background: #013d4a;
 }
 
-.circle-reduction-service-card-demo .container .card .face.face2 {
+.circle-reduction-service-cards .container .card .face.face2 {
     background: #013d4a;
     transition: .5s;
 }
 
-.circle-reduction-service-card-demo .container .card:hover .face.face2 {
+.circle-reduction-service-cards .container .card:hover .face.face2 {
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -1372,7 +1524,7 @@
     border: 2px solid #013d4a;
 }
 
-.circle-reduction-service-card-demo .container .card .face.face2 h2 {
+.circle-reduction-service-cards .container .card .face.face2 h2 {
     margin: 0;
     padding: 0;
     font-size: 10em;
@@ -1380,22 +1532,32 @@
     transition: .5s;
 }
 
-.circle-reduction-service-card-demo .container .card:hover .face.face2 h2 {
+.circle-reduction-service-cards .container .card:hover .face.face2 h2 {
     font-size: 2em;
     color: #013d4a;
 }
 
 /* Game Style Cards Demo */
-.game-style-cards-demo {
-    position: relative;
+.game-style-cards {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
     background: #262626;
-    min-height: 100vh;
-    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 95vh;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 
-.game-style-cards-demo .box {
+.game-style-cards.dark {
+    background: #262626;
+}
+
+.game-style-cards.light {
+    background: #e1e1e1;
+}
+
+.game-style-cards .box {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -1404,7 +1566,7 @@
     height: 450px;
 }
 
-.game-style-cards-demo .box .card {
+.game-style-cards .box .card {
     position: absolute;
     top: 0;
     left: 0;
@@ -1420,68 +1582,68 @@
     align-items: center;
 }
 
-.game-style-cards-demo .box .card:nth-child(1) {
+.game-style-cards .box .card:nth-child(1) {
     transform: translate(0px, 0px);
 }
 
-.game-style-cards-demo .box .card:nth-child(2) {
+.game-style-cards .box .card:nth-child(2) {
     transform: translate(2px, 2px);
 }
 
-.game-style-cards-demo .box .card:nth-child(3) {
+.game-style-cards .box .card:nth-child(3) {
     transform: translate(4px, 4px);
 }
 
-.game-style-cards-demo .box .card:nth-child(4) {
+.game-style-cards .box .card:nth-child(4) {
     transform: translate(6px, 6px);
 }
 
-.game-style-cards-demo .box .card:nth-child(5) {
+.game-style-cards .box .card:nth-child(5) {
     transform: translate(8px, 8px);
 }
 
-.game-style-cards-demo .box .card:nth-child(6) {
+.game-style-cards .box .card:nth-child(6) {
     transform: translate(10px, 10px);
 }
 
-.game-style-cards-demo .box .card:nth-child(7) {
+.game-style-cards .box .card:nth-child(7) {
     transform: translate(12px, 12px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(1) {
+.game-style-cards .box:hover .card:nth-child(1) {
     transform: rotate(-45deg) translate(0px, 0px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(2) {
+.game-style-cards .box:hover .card:nth-child(2) {
     transform: rotate(-30deg) translate(2px, 2px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(3) {
+.game-style-cards .box:hover .card:nth-child(3) {
     transform: rotate(-15deg) translate(4px, 4px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(4) {
+.game-style-cards .box:hover .card:nth-child(4) {
     transform: rotate(-0deg) translate(6px, 6px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(5) {
+.game-style-cards .box:hover .card:nth-child(5) {
     transform: rotate(15deg) translate(8px, 8px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(6) {
+.game-style-cards .box:hover .card:nth-child(6) {
     transform: rotate(30deg) translate(10px, 10px);
 }
 
-.game-style-cards-demo .box:hover .card:nth-child(7) {
+.game-style-cards .box:hover .card:nth-child(7) {
     transform: rotate(45deg) translate(12px, 12px);
 }
 
-.game-style-cards-demo .box .card:hover {
+.game-style-cards .box .card:hover {
     z-index: 1;
     box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
 }
 
-.game-style-cards-demo .box .card:before {
+.game-style-cards .box .card:before {
     content: "";
     position: absolute;
     top: 0;
@@ -1495,42 +1657,42 @@
     border-bottom-left-radius: 10px;
 }
 
-.game-style-cards-demo .box .card:nth-child(1), 
-.game-style-cards-demo .box .card:nth-child(1) .overlay {
+.game-style-cards .box .card:nth-child(1), 
+.game-style-cards .box .card:nth-child(1) .overlay {
     background: linear-gradient(45deg, #ffb08e, #f54a00);
 }
 
-.game-style-cards-demo .box .card:nth-child(2), 
-.game-style-cards-demo .box .card:nth-child(2) .overlay {
+.game-style-cards .box .card:nth-child(2), 
+.game-style-cards .box .card:nth-child(2) .overlay {
     background: linear-gradient(45deg, #96c0ff, #0046de);
 }
 
-.game-style-cards-demo .box .card:nth-child(3), 
-.game-style-cards-demo .box .card:nth-child(3) .overlay {
+.game-style-cards .box .card:nth-child(3), 
+.game-style-cards .box .card:nth-child(3) .overlay {
     background: linear-gradient(45deg, #8f8f8f, #ffe600);
 }
 
-.game-style-cards-demo .box .card:nth-child(4), 
-.game-style-cards-demo .box .card:nth-child(4) .overlay {
+.game-style-cards .box .card:nth-child(4), 
+.game-style-cards .box .card:nth-child(4) .overlay {
     background: linear-gradient(45deg, #303030, #02dceb);
 }
 
-.game-style-cards-demo .box .card:nth-child(5), 
-.game-style-cards-demo .box .card:nth-child(5) .overlay {
+.game-style-cards .box .card:nth-child(5), 
+.game-style-cards .box .card:nth-child(5) .overlay {
     background: linear-gradient(45deg, #f4582c, #d30000);
 }
 
-.game-style-cards-demo .box .card:nth-child(6), 
-.game-style-cards-demo .box .card:nth-child(6) .overlay {
+.game-style-cards .box .card:nth-child(6), 
+.game-style-cards .box .card:nth-child(6) .overlay {
     background: linear-gradient(45deg, #daffb0, #006fd0);
 }
 
-.game-style-cards-demo .box .card:nth-child(7), 
-.game-style-cards-demo .box .card:nth-child(7) .overlay {
+.game-style-cards .box .card:nth-child(7), 
+.game-style-cards .box .card:nth-child(7) .overlay {
     background: linear-gradient(45deg, #04ed00, #f4f4f4);
 }
 
-.game-style-cards-demo .box .card .imgBx {
+.game-style-cards .box .card .imgBx {
     position: absolute;
     top: 0;
     left: 0;
@@ -1542,12 +1704,12 @@
     text-align: center;
 }
 
-.game-style-cards-demo .box .card .imgBx svg {
+.game-style-cards .box .card .imgBx svg {
     width: 100px;
     height: 100px;
 }
 
-.game-style-cards-demo .box .card .imgBx h2{
+.game-style-cards .box .card .imgBx h2{
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
@@ -1556,7 +1718,7 @@
     text-transform: uppercase;
 }
 
-.game-style-cards-demo .box .card .overlay {
+.game-style-cards .box .card .overlay {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -1568,7 +1730,7 @@
     transition: .5s;
 }
 
-.game-style-cards-demo .box .card .overlay:hover {
+.game-style-cards .box .card .overlay:hover {
     bottom: 0;
     right: 0;
     width: 100%;
@@ -1578,7 +1740,7 @@
     border-radius: 0;
 }
 
-.game-style-cards-demo .box .card .overlay:before {
+.game-style-cards .box .card .overlay:before {
     content: "Read";
     position: absolute;
     top: 0;
@@ -1596,12 +1758,12 @@
     transition-delay: .5s;
 }
 
-.game-style-cards-demo .box .card .overlay:hover:before {
+.game-style-cards .box .card .overlay:hover:before {
     display: none;
     transition-delay: 0s;
 }
 
-.game-style-cards-demo .box .card .content {
+.game-style-cards .box .card .content {
     padding: 20px;
     box-sizing: border-box;
     z-index: 1;
@@ -1612,7 +1774,7 @@
     color: white;
 }
 
-.game-style-cards-demo .box .card .overlay:hover ~ .content {
+.game-style-cards .box .card .overlay:hover ~ .content {
     opacity: 1;
     visibility: visible;
     transition: .2s;
@@ -1620,7 +1782,7 @@
 }
 
 /* Direction Aware Card Demo */
-.direction-aware-card-demo {
+.direction-aware-cards {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1628,11 +1790,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(0deg, #0b74cb 0%, #0b74cb 50%, rgb(215, 215, 215) 50%, rgb(215, 215, 215) 100%);
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(0deg, #075b9f 0%, #0b74cb 10%, #0b74cb 50%, rgb(215, 215, 215) 50%, rgb(215, 215, 215) 100%);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 
-.direction-aware-card-demo .container {
+.direction-aware-cards.light {
+    background: linear-gradient(0deg, #075b9f 0%, #0b74cb 10%, #0b74cb 50%, rgb(235, 235, 235) 50%, rgb(235, 235, 235) 100%);
+}
+
+.direction-aware-cards.dark {
+    background: linear-gradient(0deg, #075b9f 0%, #0b74cb 10%, #0b74cb 50%, rgb(20, 20, 20) 50%, rgb(20, 20, 20) 100%);
+}
+
+.direction-aware-cards .container {
     max-width: 1000px;
     position: relative;
     display: flex;
@@ -1641,7 +1813,7 @@
     transform-style: preserve-3d;
 }
 
-.direction-aware-card-demo .container .card {
+.direction-aware-cards .container .card {
     position: relative;
     width: 180px;
     height: 240px;
@@ -1657,18 +1829,26 @@
     transform-style: preserve-3d;
 }
 
-.direction-aware-card-demo .container:hover .card {
+.direction-aware-cards.light .container .card {
+    background: white;
+}
+
+.direction-aware-cards.dark .container .card {
+    background: black;
+}
+
+.direction-aware-cards .container:hover .card {
     transform: perspective(500px) rotateY(30deg)
 }
 
-.direction-aware-card-demo .container .card:hover {
+.direction-aware-cards .container .card:hover {
     transform: perspective(500px) rotateY(0deg)
 }
-.direction-aware-card-demo .container .card:hover ~ .card {
+.direction-aware-cards .container .card:hover ~ .card {
     transform: perspective(500px) rotateY(-30deg)
 }
 
-.direction-aware-card-demo .container .card h2 {
+.direction-aware-cards .container .card h2 {
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -1680,14 +1860,30 @@
     transition: box-shadow .5s;
 }
 
-.direction-aware-card-demo .container .card:hover h2 {
+.direction-aware-cards.light .container .card h2 {
+    color: white;
+}
+
+.direction-aware-cards.dark .container .card h2 {
+    color: black;
+}
+
+.direction-aware-cards .container .card:hover h2 {
     background: white;
     color: #2196f3;
     box-shadow: 0 0 0 150px #2196f3;
 }
 
+.direction-aware-cards.light .container .card:hover h2 {
+    background: white;
+}
+
+.direction-aware-cards.dark .container .card:hover h2 {
+    background: black;
+}
+
 /* Depth of Field Card Demo */
-.depth-of-field-card-demo {
+.depth-of-field-cards {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1695,11 +1891,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(0deg, white 50%, #2196f3);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.depth-of-field-cards.light {
     background: linear-gradient(0deg, white 50%, #2196f3);
 }
 
-.depth-of-field-card-demo .container {
+.depth-of-field-cards.dark {
+    background: linear-gradient(0deg, black 50%, #2196f3);
+}
+
+.depth-of-field-cards .container {
     max-width: 1000px;
     position: relative;
     display: flex;
@@ -1708,7 +1914,7 @@
     transition: .5s;
 }
 
-.depth-of-field-card-demo .container .card {
+.depth-of-field-cards .container .card {
     position: relative;
     width: 250px;
     height: 300px;
@@ -1719,17 +1925,27 @@
     transition: .5s;
 }
 
-.depth-of-field-card-demo .container:hover .card {
+.depth-of-field-cards.light .container .card {
+    background: white;
+    color: black;
+}
+
+.depth-of-field-cards.dark .container .card {
+    background: black;
+    color: white;
+}
+
+.depth-of-field-cards .container:hover .card {
     filter: blur(5px);
     transform: scale(.7)
 }
 
-.depth-of-field-card-demo .container .card:hover {
+.depth-of-field-cards .container .card:hover {
     filter: blur(0px);
     transform: scale(1)
 }
 
-.depth-of-field-card-demo .container .card:before {
+.depth-of-field-cards .container .card:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1739,32 +1955,60 @@
     transition: .5s;
 }
 
-.depth-of-field-card-demo .container .card:hover:before {
+.depth-of-field-cards.light .container .card:before {
+    background: white;
+}
+
+.depth-of-field-cards.dark .container .card:before {
+    background: black;
+}
+
+.depth-of-field-cards .container .card:hover:before {
     background: black;
     transform: scaleY(1.15);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
 }
 
-.depth-of-field-card-demo .container .card .content {
+.depth-of-field-cards.light .container .card:hover:before {
+    background: black;
+}
+
+.depth-of-field-cards.dark .container .card:hover:before {
+    background: white;
+}
+
+.depth-of-field-cards .container .card .content {
     text-align: center;
     z-index: 2;
     padding: 0 20px;
     transition: .5s;
 }
 
-.depth-of-field-card-demo .container .card:hover .content {
+.depth-of-field-cards .container .card:hover .content {
     color: white;
 }
 
-.depth-of-field-card-demo .container .card .content h2 {
+.depth-of-field-cards.light .container .card:hover .content {
+    color: white;
+}
+
+.depth-of-field-cards.dark .container .card:hover .content {
+    color: black;
+}
+
+.depth-of-field-cards.dark .container .card:hover .content a {
+    color: white;
+}
+
+.depth-of-field-cards .container .card .content h2 {
     font-size: 3em;
 }
 
-.depth-of-field-card-demo .container .card .content p {
+.depth-of-field-cards .container .card .content p {
     font-size: .9em;
 }
 
-.depth-of-field-card-demo .container .card .content a {
+.depth-of-field-cards .container .card .content a {
     display: inline-block;
     margin-top: 15px;
     padding: 5px 10px;
@@ -1773,22 +2017,41 @@
     text-decoration: none;
 }
 
-.depth-of-field-card-demo .container .card:hover .content a {
+.depth-of-field-cards.light .container .card .content a {
+    background: #262626;
+    color: white;
+}
+
+.depth-of-field-cards.dark .container .card .content a {
+    background: #e3e3e3;
+    color: black;
+}
+
+.depth-of-field-cards .container .card:hover .content a {
     background: #2196f3;
 }
 
 /* Image Clip Hover Card Demo */
-.image-clip-hover-card-demo {
+.image-clip-hover-cards {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: black;
+    background: #262626;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 
-.image-clip-hover-card-demo .container {
+.image-clip-hover-cards.dark {
+    background: #262626;
+}
+
+.image-clip-hover-cards.light {
+    background: white;
+}
+
+.image-clip-hover-cards .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1799,7 +2062,7 @@
     padding: 20px;
 }
 
-.image-clip-hover-card-demo .container .box {
+.image-clip-hover-cards .container .box {
     position: relative;
     width: 400px;
     height: 400px;
@@ -1808,7 +2071,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
-.image-clip-hover-card-demo .container .box .content {
+.image-clip-hover-cards .container .box .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -1823,12 +2086,12 @@
     box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 50px inset;
 }
 
-.image-clip-hover-card-demo .container .box .content h2,
-.image-clip-hover-card-demo .container .box .content p {
+.image-clip-hover-cards .container .box .content h2,
+.image-clip-hover-cards .container .box .content p {
     margin-bottom: 25px;
 }
 
-.image-clip-hover-card-demo .container .box .content a {
+.image-clip-hover-cards .container .box .content a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -1838,12 +2101,12 @@
     transition: .5s;
 }
 
-.image-clip-hover-card-demo .container .box .content a:hover {
+.image-clip-hover-cards .container .box .content a:hover {
     background: black;
     color: white;
 }
 
-.image-clip-hover-card-demo .container .box img {
+.image-clip-hover-cards .container .box img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1855,12 +2118,12 @@
     transition: 1s;
 }
 
-.image-clip-hover-card-demo .container .box:hover img {
+.image-clip-hover-cards .container .box:hover img {
     -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
 }
 
-.image-clip-hover-card-demo .container .box:nth-child(even):hover img {
+.image-clip-hover-cards .container .box:nth-child(even):hover img {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
 }

@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHatWizard, faPizzaSlice } from '@fortawesome/free-solid-svg-icons';
 import { faOldRepublic } from '@fortawesome/free-brands-svg-icons';
 
-export default class SwivelRotationCardDemo extends Component {
-    state = {};
+export default class SwivelRotationCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div id="swivel-rotation-card-demo" className="swivel-rotation-card-demo">
+            <div id="swivel-rotation-card-demo" className="swivel-rotation-cards">
                 <div className="container">
                     <div className="card">
                         <div className="face front">

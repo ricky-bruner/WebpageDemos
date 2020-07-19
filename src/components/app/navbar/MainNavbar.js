@@ -1,36 +1,52 @@
 import React, { Component } from "react";
-import RightArrow from "../../img/right-arrow.png";
-import OTIcon from "../../img/online-tutorials-icon.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkedAlt, faIcons, faAddressCard, faScroll, faHandPointer, faHome, faUsers } from '@fortawesome/free-solid-svg-icons'
+import RightArrow from "../../../img/right-arrow.png";
+import OTIcon from "../../../img/online-tutorials-icon.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkedAlt, faIcons, faAddressCard, faScroll, faHandPointer, faHome, faUsers } from '@fortawesome/free-solid-svg-icons';
+import "./mainnavbar.css";
 
 export default class MainNavbar extends Component {
     state = {
     };
 
-    showOptions = (option) => {
+    showOptions = (option, expand = false) => {
+        let newState = this.state;
+
         switch(option){
             case "buttons":
-                this.setState({ showButtonOptions: !this.state.showButtonOptions }, () => this.props.toggleNavbar);
+                newState.showButtonOptions = !this.state.showButtonOptions;
+                // this.setState({ showButtonOptions: !this.state.showButtonOptions }, () => this.props.toggleNavbar());
                 break;
             case "navbars":
-                this.setState({ showNavbarOptions: !this.state.showNavbarOptions }, () => this.props.toggleNavbar);
+                newState.showNavbarOptions = !this.state.showNavbarOptions;
+                // this.setState({ showNavbarOptions: !this.state.showNavbarOptions }, () => this.props.toggleNavbar());
                 break;
             case "cards":
-                this.setState({ showCardOptions: !this.state.showCardOptions }, () => this.props.toggleNavbar);
+                newState.showCardOptions = !this.state.showCardOptions;
+                // this.setState({ showCardOptions: !this.state.showCardOptions }, () => this.props.toggleNavbar());
                 break;
             case "testimonials":
-                this.setState({ showTestimonialOptions: !this.state.showTestimonialOptions }, () => this.props.toggleNavbar);
+                newState.showTestimonialOptions = !this.state.showTestimonialOptions;
+                // this.setState({ showTestimonialOptions: !this.state.showTestimonialOptions }, () => this.props.toggleNavbar());
                 break;
             case "icons":
-                this.setState({ showIconOptions: !this.state.showIconOptions }, () => this.props.toggleNavbar);
+                newState.showIconOptions = !this.state.showIconOptions;
+                // this.setState({ showIconOptions: !this.state.showIconOptions }, () => this.props.toggleNavbar());
                 break;
             case "scrollbars":
-                this.setState({ showScrollbarOptions: !this.state.showScrollbarOptions }, () => this.props.toggleNavbar);
+                newState.showScrollbarOptions = !this.state.showScrollbarOptions;
+                // this.setState({ showScrollbarOptions: !this.state.showScrollbarOptions }, () => this.props.toggleNavbar());
                 break;
             default:
                 break;
         }
+
+        if(expand){
+            this.setState({newState}, () => this.props.toggleNavbar());
+        } else {
+            this.setState({newState});
+        }
+
     }
 
     render(){
@@ -52,12 +68,12 @@ export default class MainNavbar extends Component {
                 }
                 <div className="toggle-navbar-button-container">
                     <div className="toggle-navbar-button" onClick={() => this.props.toggleNavbar()}>
-                        <img src={RightArrow} alt="Right Arrow" />
+                        <img src={RightArrow} alt="Right Arrow" onClick={() => this.props.toggleNavbar()}/>
                     </div>
                 </div>
                 {
                     this.props.expanded &&
-                    <ul>
+                    <ul className="expanded-main-navbar">
                         <li>
                             <div className="navbar-section-header" id="home" onClick={(e) => this.props.renderDemos(e)}><span><FontAwesomeIcon icon={faHome} /></span> Home</div>
                             <div className="navbar-section-underline"></div>
@@ -71,11 +87,11 @@ export default class MainNavbar extends Component {
                             {
                                 this.state.showNavbarOptions &&
                                 <ul className="navbar-section-list">
-                                    <li><button onClick={() => this.props.selectDemo("navbars", "All")}>All Navbar Demos</button></li>
                                     <li><button onClick={() => this.props.selectDemo("navbars", "Targeted Hover")}>Targeted Hover</button></li>
                                     <li><button onClick={() => this.props.selectDemo("navbars", "Roving Border")}>Roving Border</button></li>
                                     <li><button onClick={() => this.props.selectDemo("navbars", "Swinging Border")}>Swinging Border</button></li>
                                     <li><button onClick={() => this.props.selectDemo("navbars", "Remote")}>Remote</button></li>
+                                    <li><button onClick={() => this.props.selectDemo("navbars", "All")}>All Navbar Demos</button></li>
                                 </ul>
                             }
                             {
@@ -92,8 +108,8 @@ export default class MainNavbar extends Component {
                             {
                                 this.state.showIconOptions &&
                                 <ul className="navbar-section-list">
-                                    <li><button onClick={() => this.props.selectDemo("icons", "All")}>All Icon Demos</button></li>
                                     <li><button onClick={() => this.props.selectDemo("icons", "Icon Animation")}>Icon Animation</button></li>
+                                    <li><button onClick={() => this.props.selectDemo("icons", "All")}>All Icon Demos</button></li>
                                 </ul>
                             }
                             {
@@ -110,7 +126,6 @@ export default class MainNavbar extends Component {
                             {
                                 this.state.showCardOptions &&
                                 <ul className="navbar-section-list">
-                                    <li><button onClick={() => this.props.selectDemo("cards", "All")}>All Card Demos</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Image Clip Hover")}>Image Clip Hover</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Depth Of Field")}>Depth Of Field</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Direction Aware")}>Direction Aware</button></li>
@@ -128,6 +143,7 @@ export default class MainNavbar extends Component {
                                     <li><button onClick={() => this.props.selectDemo("cards", "Icon Growth")}>Icon Growth</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Circle Growth Icon")}>Circle Growth Icon</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Hover Switch")}>Hover Switch</button></li>
+                                    <li><button onClick={() => this.props.selectDemo("cards", "All")}>All Card Demos</button></li>
                                 </ul>
                             }
                             {
@@ -144,10 +160,10 @@ export default class MainNavbar extends Component {
                             {
                                 this.state.showTestimonialOptions &&
                                 <ul className="navbar-section-list">
-                                    <li><button onClick={() => this.props.selectDemo("testimonials", "All")}>All Testimonial Demos</button></li>
                                     <li><button onClick={() => this.props.selectDemo("testimonials", "Quote Movement")}>Quote Movement</button></li>
                                     <li><button onClick={() => this.props.selectDemo("testimonials", "Colorful Hover Quote Box")}>Colorful Hover Quote Box</button></li>
                                     <li><button onClick={() => this.props.selectDemo("testimonials", "Bottom Color Rise")}>Bottom Color Rise</button></li>
+                                    <li><button onClick={() => this.props.selectDemo("testimonials", "All")}>All Testimonial Demos</button></li>
                                 </ul>
                             }
                             {
@@ -182,7 +198,6 @@ export default class MainNavbar extends Component {
                             {
                                 this.state.showButtonOptions &&
                                 <ul className="navbar-section-list">
-                                    <li><button onClick={() => this.props.selectDemo("buttons", "All")}>All Button Demos</button></li>
                                     <li><button onClick={() => this.props.selectDemo("buttons", "Liquid Wave")}>Liquid Wave</button></li>
                                     <li><button onClick={() => this.props.selectDemo("buttons", "Neon Reflective")}>Neon Reflective</button></li>
                                     <li><button onClick={() => this.props.selectDemo("buttons", "3D")}>3D</button></li>
@@ -190,6 +205,7 @@ export default class MainNavbar extends Component {
                                     <li><button onClick={() => this.props.selectDemo("buttons", "Animated Outline")}>Animated Outline</button></li>
                                     <li><button onClick={() => this.props.selectDemo("buttons", "Shooting Border")}>Shooting Border</button></li>
                                     <li><button onClick={() => this.props.selectDemo("buttons", "Middle Out")}>Middle Out</button></li>
+                                    <li><button onClick={() => this.props.selectDemo("buttons", "All")}>All Button Demos</button></li>
                                 </ul>
                             }
                             {
@@ -205,23 +221,23 @@ export default class MainNavbar extends Component {
                         {/* <li><div className="navbar-section-underline"></div></li> */}
                         <li className="collapsed-icon" id="home" onClick={(e) => this.props.renderDemos(e)}><FontAwesomeIcon icon={faHome} /></li>
                         <li><div className="navbar-section-underline"></div></li>
-                        <li className="collapsed-icon" onClick={() => this.showOptions("navbars")}><FontAwesomeIcon icon={faMapMarkedAlt} /></li>
+                        <li className="collapsed-icon" onClick={() => this.showOptions("navbars", true)}><FontAwesomeIcon icon={faMapMarkedAlt} /></li>
                         <li><div className="navbar-section-underline"></div></li>
-                        <li className="collapsed-icon" onClick={() => this.showOptions("icons")}><FontAwesomeIcon icon={faIcons} /></li>
+                        <li className="collapsed-icon" onClick={() => this.showOptions("icons", true)}><FontAwesomeIcon icon={faIcons} /></li>
                         <li><div className="navbar-section-underline"></div></li>
-                        <li className="collapsed-icon" onClick={() => this.showOptions("cards")}><FontAwesomeIcon icon={faAddressCard} /></li>
+                        <li className="collapsed-icon" onClick={() => this.showOptions("cards", true)}><FontAwesomeIcon icon={faAddressCard} /></li>
                         <li><div className="navbar-section-underline"></div></li>
-                        <li className="collapsed-icon" onClick={() => this.showOptions("testimonials")}><FontAwesomeIcon icon={faUsers} /></li>
+                        <li className="collapsed-icon" onClick={() => this.showOptions("testimonials", true)}><FontAwesomeIcon icon={faUsers} /></li>
                         <li><div className="navbar-section-underline"></div></li>
-                        <li className="collapsed-icon" onClick={() => this.showOptions("scrollbars")}><FontAwesomeIcon icon={faScroll} /></li>
+                        <li className="collapsed-icon" onClick={() => this.showOptions("scrollbars", true)}><FontAwesomeIcon icon={faScroll} /></li>
                         <li><div className="navbar-section-underline"></div></li>
-                        <li className="collapsed-icon" onClick={() => this.showOptions("buttons")}><FontAwesomeIcon icon={faHandPointer} /></li>
+                        <li className="collapsed-icon" onClick={() => this.showOptions("buttons", true)}><FontAwesomeIcon icon={faHandPointer} /></li>
                         <li><div className="navbar-section-underline"></div></li>
                     </ul>
                 }
                 <div className="toggle-navbar-button-container">
                     <div className="toggle-navbar-button" onClick={() => this.props.toggleNavbar()}>
-                        <img src={RightArrow} alt="Right Arrow" />
+                        <img src={RightArrow} alt="Right Arrow" onClick={() => this.props.toggleNavbar()}/>
                     </div>
                 </div>
                 {/* <button id="home" onClick={(e) => this.props.renderDemos(e)}>Home</button>

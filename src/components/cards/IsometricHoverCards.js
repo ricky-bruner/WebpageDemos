@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faObjectGroup, faCode, faRocket } from '@fortawesome/free-solid-svg-icons';
 
-export default class IsometricCardHoverDemo extends Component {
-    state = {};
+export default class IsometricHoverCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div className="isometric-card-hover-demo">
+            <div className="isometric-hover-cards">
                 <div className="container">
                     <div className="card">
                         <div className="imgBx">

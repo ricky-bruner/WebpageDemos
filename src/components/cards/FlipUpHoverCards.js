@@ -3,12 +3,13 @@ import DumbleDore from "./../../img/dumbledore-portrait.png";
 import Hagrid from "./../../img/hagrid-portrait.png";
 import Snape from "./../../img/snape-portrait.png";
 
-export default class FlipUpHoverCardDemo extends Component {
-    state = {};
+export default class FlipUpHoverCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div className="flip-up-hover-card-demo">
+            <div className={"flip-up-hover-cards " + this.props.settings.theme}>
                 <div className="container">
                     <div className="box">
                         <div className="imgBx">

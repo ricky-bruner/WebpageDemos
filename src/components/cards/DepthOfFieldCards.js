@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import CodeWindow from '../codewindows/CodeWindow';
 
-export default class DepthOfFieldCardDemo extends Component {
-    state = {};
+export default class DepthOfFieldCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div id="depth-of-field-card-demo" className="depth-of-field-card-demo">
+            <div id="depth-of-field-cards" className={"depth-of-field-cards " + this.props.settings.theme}>
                 <div className="container">
                     <div className="card">
                         <div className="content">

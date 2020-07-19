@@ -1,0 +1,78 @@
+.code-box {
+    width: 85%;
+    /* height: 560px; */
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    /* background: #0d428c; */
+    background: black;
+    justify-content: space-around;
+    /* background: black; */
+    /* border-radius: 15px; */
+    /* box-shadow: rgba(0, 0, 0, .9) 0px 30px 40px; */
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 10px;
+}
+
+.code-selection-box {
+    width: 100%;
+    /* height: 30px; */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.code-selection-box button {
+    background: none;
+    border: none;
+    transition: 1s;
+}
+
+#html:focus,
+#css:focus {
+    outline: 0;
+}
+
+#html:hover,
+#css:hover {
+    cursor: pointer;
+    filter: brightness(2);
+}
+
+#html svg,
+#css svg {
+    width: 40px;
+    height: 40px;
+    /* color: #0d428c; */
+    color: white;
+}
+
+#html:hover svg,
+#css:hover svg {
+    color: gold;
+}
+
+.code-selection-box h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+}
+
+.code-display-box {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+pre {
+    color: gold;
+    background: #0d428c;;
+    width: 100%;
+    /* margin: 5px; */
+    padding: 20px;
+    word-wrap: normal;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.6) 80px 0px 500px inset;
+}

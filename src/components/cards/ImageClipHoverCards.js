@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+// import CodeWindow from '../codewindows/CodeWindow';
 
-export default class ImageClipHoverCardDemo extends Component {
-    state = {};
+export default class ImageClipHoverCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div className="image-clip-hover-card-demo">
+            <div className={"image-clip-hover-cards " + this.props.settings.theme}>
                 <div className="container">
                     <div className="box">
                         <div className="content">

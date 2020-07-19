@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 
-export default class CircleReductionServiceCard extends Component {
-    state = {};
+export default class CircleReductionServiceCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div id="circle-reduction-service-card-demo" className="circle-reduction-service-card-demo">
+            <div id="circle-reduction-service-cards" className="circle-reduction-service-cards">
                 <div className="container">
                     <div className="card">
                         <div className="face face1">
                             <div className="content">
                                 <h2>Service One</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <a href="circle-reduction-service-card-demo">Read More</a>
+                                <a href="circle-reduction-service-cards">Read More</a>
                             </div>
                         </div>
                         <div className="face face2">
@@ -24,7 +25,7 @@ export default class CircleReductionServiceCard extends Component {
                             <div className="content">
                                 <h2>Service Two</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <a href="circle-reduction-service-card-demo">Read More</a>
+                                <a href="circle-reduction-service-cards">Read More</a>
                             </div>
                         </div>
                         <div className="face face2">
@@ -36,7 +37,7 @@ export default class CircleReductionServiceCard extends Component {
                             <div className="content">
                                 <h2>Service Three</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                <a href="circle-reduction-service-card-demo">Read More</a>
+                                <a href="circle-reduction-service-cards">Read More</a>
                             </div>
                         </div>
                         <div className="face face2">

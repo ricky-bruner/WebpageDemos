@@ -10,7 +10,7 @@ export default class LiquidWaveButtonDemo extends Component {
         color: "blue",
         colors: [ "blue", "carribean", "mint", "lightgreen", "green", "purple", "pink", "hotpink", "red", "redorange", "orange", "yellow", "white", "black" ],
         speeds: [ "wave-fs", "wave-nm", "wave-sl" ],
-        sizes: [ "xlg", "lg", "md", "sm", "xs", ],
+        sizes: [ "xlg", "lg", "md", "sm", "xs"],
         themes: [ "light", "dark" ],
         showAllSizes: true,
         showAllColors: false,

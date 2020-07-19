@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import CodeWindow from '../codewindows/CodeWindow';
 
 export default class FlipHoverCardDemo extends Component {
     state = {
-
+        html: ".flip-hover-card-demo"
     };
 
     render(){
         return (
-            <div>
+            <div className="demo-section">
                 <div className="flip-hover-card-demo">
                     <div className="container">
                         <div className="card">
@@ -66,7 +67,7 @@ export default class FlipHoverCardDemo extends Component {
                         </div>
                     </div>
                 </div>
-                
+                <CodeWindow html={this.state.html} ref="CodeWindow" />
             </div>
         );
     }

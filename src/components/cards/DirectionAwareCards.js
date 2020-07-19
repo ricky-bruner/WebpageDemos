@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-export default class DirectionAwareCardDemo extends Component {
-    state = {};
+export default class DirectionAwareCards extends Component {
+    state = {
+    };
 
     render(){
         return (
-            <div className="direction-aware-card-demo">
+            <div className={"direction-aware-cards " + this.props.settings.theme}>
                 <div className="container">
                     <div className="card">
                         <h2>1</h2>
