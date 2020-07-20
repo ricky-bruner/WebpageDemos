@@ -1,0 +1,310 @@
+/* Isometric Card Hover Demo */
+.isometric-hover-cards {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    width: 100%;
+    background: #f3f3f3;
+    overflow: hidden;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.isometric-hover-cards.light {
+    background: #f3f3f3;
+}
+
+.isometric-hover-cards.dark {
+    background: #353535;
+}
+
+.isometric-hover-cards .container {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transform: skewY(-10deg);
+}
+
+.isometric-hover-cards .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: white;    
+    transition: .5s;
+    margin: 40px 5px;
+}
+
+.isometric-hover-cards.light .container .card {
+    background: white;    
+}
+
+.isometric-hover-cards.dark .container .card {
+    background: black;    
+}
+
+.isometric-hover-cards .container .card:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #00c0f6;  
+    transform-origin: bottom;
+    transform: skewX(45deg);  
+    transition: .5s;
+}
+
+.isometric-hover-cards .container .card:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 15px;
+    height: 50%;
+    background: #00c0f6;  
+    transform-origin: left;
+    transform: skewY(45deg);  
+    transition: .5s;
+    border-bottom: 200px solid #d9d9d9;
+}
+
+.isometric-hover-cards .container .card.blue:before,
+.isometric-hover-cards .container .card.blue:after {
+    background: #00c0f6;  
+}
+
+.isometric-hover-cards .container .card.mint:before,
+.isometric-hover-cards .container .card.mint:after {
+    background: #00f57a;  
+}
+
+.isometric-hover-cards .container .card.lightgreen:before,
+.isometric-hover-cards .container .card.lightgreen:after {
+    background: #7af500;  
+}
+
+.isometric-hover-cards .container .card.green:before,
+.isometric-hover-cards .container .card.green:after {
+    background: #00f500;  
+}
+
+.isometric-hover-cards .container .card.purple:before,
+.isometric-hover-cards .container .card.purple:after {
+    background: #b800f5;  
+}
+
+.isometric-hover-cards .container .card.pink:before,
+.isometric-hover-cards .container .card.pink:after {
+    background: #f500f5;  
+}
+
+.isometric-hover-cards .container .card.hotpink:before,
+.isometric-hover-cards .container .card.hotpink:after {
+    background: #f5007a;  
+}
+
+.isometric-hover-cards .container .card.red:before,
+.isometric-hover-cards .container .card.red:after {
+    background: #f50000;  
+}
+
+.isometric-hover-cards .container .card.redorange:before,
+.isometric-hover-cards .container .card.redorange:after {
+    background: #f53d00;  
+}
+
+.isometric-hover-cards .container .card.orange:before,
+.isometric-hover-cards .container .card.orange:after {
+    background: #f57a00;  
+}
+
+.isometric-hover-cards .container .card.yellow:before,
+.isometric-hover-cards .container .card.yellow:after {
+    background: #f5f500;  
+}
+
+.isometric-hover-cards .container .card.white:before,
+.isometric-hover-cards .container .card.white:after {
+    background: #d9d9d9;  
+}
+
+.isometric-hover-cards .container .card.black:before,
+.isometric-hover-cards .container .card.black:after {
+    background: #1e1e1e;  
+}
+
+.isometric-hover-cards.light .container .card:after {
+    border-bottom: 200px solid #d9d9d9;
+}
+
+.isometric-hover-cards.dark .container .card:after {
+    border-bottom: 200px solid #1e1e1e;
+}
+
+.isometric-hover-cards .container .card:hover {
+    transform: translateY(-40px);
+}
+
+.isometric-hover-cards .container .card .imgBx {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #00c7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.isometric-hover-cards .container .card.blue .imgBx {
+    background: #00c7ff;
+}
+
+.isometric-hover-cards .container .card.mint .imgBx {
+    background: #00ff80;
+}
+
+.isometric-hover-cards .container .card.lightgreen .imgBx {
+    background: #80ff00;
+}
+
+.isometric-hover-cards .container .card.green .imgBx {
+    background: #00ff00;
+}
+
+.isometric-hover-cards .container .card.purple .imgBx {
+    background: #bf00ff;
+}
+
+.isometric-hover-cards .container .card.pink .imgBx {
+    background: #ff00ff;
+}
+
+.isometric-hover-cards .container .card.hotpink .imgBx {
+    background: #ff0080;
+}
+
+.isometric-hover-cards .container .card.red .imgBx {
+    background: #ff0000;
+}
+
+.isometric-hover-cards .container .card.redorange .imgBx {
+    background: #ff4000;
+}
+
+.isometric-hover-cards .container .card.orange .imgBx {
+    background: #ff8000;
+}
+
+.isometric-hover-cards .container .card.yellow .imgBx {
+    background: #ffff00;
+}
+
+.isometric-hover-cards .container .card.white .imgBx {
+    background: #ffffff;
+}
+
+.isometric-hover-cards .container .card.black .imgBx {
+    background: #000000;
+}
+
+.isometric-hover-cards .container .card .imgBx svg {
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.isometric-hover-cards .container .card .imgBx h3 {
+    position: relative;
+    color: white;
+    margin-top: 10px;
+}
+
+.isometric-hover-cards.light .container .card .imgBx svg,
+.isometric-hover-cards.light .container .card .imgBx h3 {
+    color: white;
+}
+
+.isometric-hover-cards.dark .container .card .imgBx svg,
+.isometric-hover-cards.dark .container .card .imgBx h3 {
+    color: black;
+}
+
+.isometric-hover-cards .container .card.white .imgBx svg,
+.isometric-hover-cards .container .card.white .imgBx h3 {
+    color: black;
+}
+
+.isometric-hover-cards .container .card.black .imgBx svg,
+.isometric-hover-cards .container .card.black .imgBx h3 {
+    color: white;
+}
+
+.isometric-hover-cards .container .card .content {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    color: #777;
+    background: white;
+    text-align: center;
+}
+
+.isometric-hover-cards.light .container .card .content {
+    color: #777;
+    background: white;
+}
+
+.isometric-hover-cards.dark .container .card .content {
+    color: rgb(177, 177, 177);
+    background: black;
+}
+
+.isometric-hover-cards .container .card .content:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, .2));
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: .5s;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.isometric-hover-cards.light .container .card .content:before {
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, .2));
+}
+
+.isometric-hover-cards.dark .container .card .content:before {
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, .6));
+}
+
+.isometric-hover-cards .container .card:hover .content:before {
+    transform: translateY(40px) skewX(45deg);
+    filter: blur(5px);
+    opacity: .5;
+}
+
+.isometric-hover-cards .container .card:nth-child(1) {
+    z-index: 3;
+}
+
+.isometric-hover-cards .container .card:nth-child(2) {
+    z-index: 2;
+}
+
+.isometric-hover-cards .container .card:nth-child(3) {
+    z-index: 1;
+}

@@ -5,6 +5,9 @@ export default function BorderOptionFactory(selection){
 
         case "neumorphismcards":
             return [ "bd-rounded", "bd-sharp" ];
+
+        case "neonReflective":
+            return [ "bd-nm", "bd-f", "bd-no" ];
             
         default:
             return [];

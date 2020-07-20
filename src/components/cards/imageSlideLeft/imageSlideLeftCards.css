@@ -1,0 +1,265 @@
+/* Image Slide Left Card Demo */
+.image-slide-left-cards {
+    font-family: "Poppins", sans-serif;
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+    padding: 60px;
+}
+
+.image-slide-left-cards.dark {
+    background: #222;
+}
+
+.image-slide-left-cards.light {
+    background: rgb(230, 230, 230);
+}
+
+.image-slide-left-cards .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.image-slide-left-cards .container .card {
+    position: relative;
+    height: 250px;
+    background: white;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+}
+
+.image-slide-left-cards.dark .container .card {
+    background: white;
+}
+
+.image-slide-left-cards.light .container .card {
+    background: black;
+    color: white;
+}
+
+.image-slide-left-cards .container .card .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(51, 51, 51);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.image-slide-left-cards.dark .container .card .imgBx {
+    background: rgb(52, 51, 51);
+}
+
+.image-slide-left-cards.light .container .card .imgBx {
+    background: rgb(204, 204, 204);
+}
+
+.image-slide-left-cards .container .card:hover .imgBx {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: .5s ease-in-out;
+    background: #ff0057;
+}
+
+.image-slide-left-cards .container .card.hotpink:hover .imgBx {
+    background: #ff0057;
+}
+
+.image-slide-left-cards .container .card.blue:hover .imgBx {
+    background: #0040ff;
+}
+
+.image-slide-left-cards .container .card.mint:hover .imgBx {
+    background: #00ff80;
+}
+
+.image-slide-left-cards .container .card.lightgreen:hover .imgBx {
+    background: #80ff00;
+}
+
+.image-slide-left-cards .container .card.green:hover .imgBx {
+    background: #00ff00;
+}
+
+.image-slide-left-cards .container .card.purple:hover .imgBx {
+    background: #bf00ff;
+}
+
+.image-slide-left-cards .container .card.pink:hover .imgBx {
+    background: #ff00ff;
+}
+
+.image-slide-left-cards .container .card.red:hover .imgBx {
+    background: #ff0000;
+}
+
+.image-slide-left-cards .container .card.redorange:hover .imgBx {
+    background: #ff4000;
+}
+
+.image-slide-left-cards .container .card.orange:hover .imgBx {
+    background: #ff8000;
+}
+
+.image-slide-left-cards .container .card.yellow:hover .imgBx {
+    background: #ffff00;
+}
+
+.image-slide-left-cards .container .card.black:hover .imgBx {
+    background: #000000;
+}
+
+.image-slide-left-cards .container .card.white:hover .imgBx {
+    background: #ffffff;
+}
+
+.image-slide-left-cards .container .card .imgBx:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(255, 255, 255, .05);
+    font-weight: 700;
+}
+
+.image-slide-left-cards.dark .container .card .imgBx:before {
+    color: rgba(255, 255, 255, .05);
+}
+
+.image-slide-left-cards.light .container .card .imgBx:before {
+    color: rgba(0, 0, 0, .05);
+}
+
+.image-slide-left-cards .container .card .imgBx svg {
+    color: white;
+    height: 65%;
+    width: 65%;
+    transition: .5s ease-in-out;
+}
+
+.image-slide-left-cards.dark .container .card .imgBx svg {
+    color: white;
+}
+
+.image-slide-left-cards.light .container .card .imgBx svg {
+    color: black;
+}
+
+.image-slide-left-cards.dark .container .card.white:hover .imgBx svg,
+.image-slide-left-cards.light .container .card.white:hover .imgBx svg,
+.image-slide-left-cards .container .card.white:hover .imgBx svg {
+    color: black;
+}
+
+.image-slide-left-cards.dark .container .card.black:hover .imgBx svg,
+.image-slide-left-cards.light .container .card.black:hover .imgBx svg,
+.image-slide-left-cards .container .card.black:hover .imgBx svg {
+    color: white;
+}
+
+.image-slide-left-cards .container .card:hover .imgBx svg {
+    height: 55%;
+    width: 55%;
+}
+
+.image-slide-left-cards.light .container .card:hover .imgBx:before {
+    transition: .5s;
+    color: rgba(0, 0, 0, 0);
+}
+
+.image-slide-left-cards .container .card .content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-slide-left-cards .container .card .content h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.image-slide-left-cards .container .card .content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: white;
+}
+
+.image-slide-left-cards.dark .container .card .content a {
+    background: #333;
+    color: white;
+}
+
+.image-slide-left-cards.light .container .card .content a {
+    background: rgb(204, 204, 204);
+    color: black;
+}
+
+@media (max-width: 992px) {
+    .image-slide-left-cards .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-slide-left-cards .container .card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-slide-left-cards .container .card {
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-slide-left-cards .container .card .imgBx {
+        position: relative;
+    }
+
+    .image-slide-left-cards .container .card .imgBx,
+    .image-slide-left-cards .container .card:hover .imgBx {
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 0;
+    }
+
+    .image-slide-left-cards .container .card .imgBx svg,
+    .image-slide-left-cards .container .card:hover .imgBx svg {
+        max-width: 100px;
+    }
+
+    .image-slide-left-cards .container .card .content {
+        position: relative;
+        width: 100%;
+    }
+}

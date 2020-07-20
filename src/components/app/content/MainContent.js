@@ -4,9 +4,9 @@ import ScrollbarDemos from '../../../components/scrollbars/ScrollbarDemos';
 import CardDemosBody from '../../../components/cards/CardDemosBody';
 import NavbarDemos from '../../../components/navbars/NavbarDemos';
 import TestimonialDemos from '../../../components/testimonials/TestimonialDemos';
-import ButtonDemos from '../../../components/buttons/ButtonDemos';
 import HomePage from '../../../components/homepage/HomePage';
 import './maincontent.css';
+import ButtonDemosBody from '../../buttons/ButtonDemosBody';
 
 export default class MainContent extends Component {
     render() {
@@ -38,7 +38,7 @@ export default class MainContent extends Component {
                 }
                 {
                     this.props.buttons &&
-                    <ButtonDemos selectedDemo={this.props.selectedDemo} />
+                    <ButtonDemosBody selectedDemo={this.props.selectedDemo} />
                 }
             </div>
         );

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function ScrollbarDemoFactory(demoName, settings){
     switch(demoName){
         case "":

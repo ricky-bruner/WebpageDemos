@@ -1,0 +1,173 @@
+/* Circle Growth Service Card Demo */
+.circle-growth-service-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    width: 100%;
+    background: rgb(240, 240, 240);
+    font-family: "Poppins", sans-serif;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.circle-growth-service-cards.light {
+    background: rgb(240, 240, 240);
+}
+
+.circle-growth-service-cards.dark {
+    background: rgb(50, 50, 50);
+}
+
+.circle-growth-service-cards .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.circle-growth-service-cards .container .box {
+    position: relative;
+    width: 330px;
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.circle-growth-service-cards.light .container .box {
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.circle-growth-service-cards.dark .container .box {
+    background: black;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+}
+
+.circle-growth-service-cards .container .box:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.circle-growth-service-cards.light .container .box:before {
+    background: rgba(255, 255, 255, .2);
+}
+
+.circle-growth-service-cards.dark .container .box:before {
+    background: rgba(0, 0, 0, .1);
+}
+
+.circle-growth-service-cards .container .box .icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.circle-growth-service-cards.light .container .box .icon {
+    color: white;
+}
+
+.circle-growth-service-cards.dark .container .box .icon {
+    color: black;
+}
+
+.circle-growth-service-cards .container .box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+
+.circle-growth-service-cards .container .box:nth-child(1):hover .icon {
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+.circle-growth-service-cards .container .box:nth-child(2) .icon {
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+
+.circle-growth-service-cards .container .box:nth-child(2):hover .icon {
+    box-shadow: 0 0 0 400px #23e629;
+}
+
+.circle-growth-service-cards .container .box:nth-child(3) .icon {
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+
+.circle-growth-service-cards .container .box:nth-child(3):hover .icon {
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.circle-growth-service-cards .container .box .content {
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+
+.circle-growth-service-cards .container .box:hover .content {
+    color: white;
+}
+
+.circle-growth-service-cards.light .container .box:hover .content {
+    color: white;
+}
+
+.circle-growth-service-cards.dark .container .box:hover .content {
+    color: black;
+}
+
+.circle-growth-service-cards .container .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.circle-growth-service-cards .container .box .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.circle-growth-service-cards .container .box .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.circle-growth-service-cards.light .container .box .content a {
+    background: white;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.circle-growth-service-cards.dark .container .box .content a {
+    background: black;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+}

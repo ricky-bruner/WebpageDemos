@@ -1,0 +1,294 @@
+/* Liquid Wave Buttons */
+.liquid-wave-buttons {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    width: 100%;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.liquid-wave-buttons.dark {
+    background: rgb(50, 50, 50);
+}
+
+.liquid-wave-buttons.light {
+    background: rgb(235, 235, 235);
+}
+
+.liquid-wave-buttons .liquid-wave-button {
+    position: relative;
+    padding: 20px 45px;
+    margin: 5px;
+    display: block;
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    width: 200px;
+    background: transparent;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 5px;
+}
+
+.liquid-wave-buttons .liquid-wave-button:focus {
+    outline: none;
+}
+
+.liquid-wave-buttons .liquid-wave-button:hover {
+    cursor: pointer;
+}
+
+.liquid-wave-buttons .liquid-wave-button span {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, .3);
+}
+
+.liquid-wave-buttons .liquid-wave-button.xlg {
+    padding: 25px 57px;
+    width: 250px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xlg span {
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.lg {
+    padding: 20px 45px;
+    width: 200px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.lg span {
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.md {
+    padding: 16px 35px;
+    width: 160px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.md span {
+    font-size: 16px;
+    letter-spacing: 6px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.sm {
+    padding: 14px 30px;
+    width: 130px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.sm span {
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xs {
+    padding: 10px 15px 10px 18px;
+    width: 90px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xs span {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.liquid-wave-buttons .liquid-wave-button .liquid {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 100%;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: 1.25s;
+}
+
+.liquid-wave-buttons .liquid-wave-button.blue .liquid {
+    background: #4973ff;
+}
+
+.liquid-wave-buttons .liquid-wave-button.purple .liquid {
+    background: #8945c7;
+}
+
+.liquid-wave-buttons .liquid-wave-button.pink .liquid {
+    background: #ff5fff;
+}
+
+.liquid-wave-buttons .liquid-wave-button.carribean .liquid {
+    background: #59ddff;
+}
+
+.liquid-wave-buttons .liquid-wave-button.hotpink .liquid {
+    background: #fe479f;
+}
+
+.liquid-wave-buttons .liquid-wave-button.red .liquid {
+    background: #ff3333;
+}
+
+.liquid-wave-buttons .liquid-wave-button.redorange .liquid {
+    background: #ff4800;
+}
+
+.liquid-wave-buttons .liquid-wave-button.orange .liquid {
+    background: #ff6f00;
+}
+
+.liquid-wave-buttons .liquid-wave-button.yellow .liquid {
+    background: #ffc701;
+}
+
+.liquid-wave-buttons .liquid-wave-button.lightgreen .liquid {
+    background: #c5ef01;
+}
+
+.liquid-wave-buttons .liquid-wave-button.green .liquid {
+    background: #5bdb01;
+}
+
+.liquid-wave-buttons .liquid-wave-button.mint .liquid {
+    background: #00f192;
+}
+
+.liquid-wave-buttons .liquid-wave-button.white .liquid {
+    background: white;
+}
+
+.liquid-wave-buttons .liquid-wave-button.white span {
+    color: black;
+}
+
+.liquid-wave-buttons .liquid-wave-button.black .liquid {
+    background: black;
+}
+
+.liquid-wave-buttons .liquid-wave-button.black span {
+    color: white;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xlg .liquid {
+    top: -100px;
+    height: 250px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.lg .liquid {
+    top: -80px;
+    height: 200px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.md .liquid {
+    top: -60px;
+    height: 160px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.sm .liquid {
+    top: -50px;
+    height: 130px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xs .liquid {
+    top: -35px;
+    height: 90px;
+}
+
+.liquid-wave-buttons .liquid-wave-button:hover .liquid {
+    top: -120px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xlg:hover .liquid {
+    top: -150px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.md:hover .liquid {
+    top: -100px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.sm:hover .liquid {
+    top: -80px;
+}
+
+.liquid-wave-buttons .liquid-wave-button.xs:hover .liquid {
+    top: -55px;
+}
+
+.liquid-wave-buttons .liquid-wave-button .liquid:before,
+.liquid-wave-buttons .liquid-wave-button .liquid:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.liquid-wave-buttons .liquid-wave-button .liquid.dark:before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: liquid-wave 5s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button .liquid.light:before {
+    border-radius: 45%;
+    background: rgba(235, 235, 235, 1);
+    animation: liquid-wave 5s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button.wave-nm .liquid:before {
+    animation: liquid-wave 5s linear infinite;
+}             
+
+.liquid-wave-buttons .liquid-wave-button.wave-fs .liquid:before {
+    animation: liquid-wave 2.5s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button.wave-sl .liquid:before {
+    animation: liquid-wave 10s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button .liquid.dark:after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: liquid-wave 10s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button .liquid.light:after {
+    border-radius: 40%;
+    background: rgba(235, 235, 235, .5);
+    animation: liquid-wave 10s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button.wave-nm .liquid:after {
+    animation: liquid-wave 10s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button.wave-fs .liquid:after {
+    animation: liquid-wave 5s linear infinite;
+}
+
+.liquid-wave-buttons .liquid-wave-button.wave-sl .liquid:after {
+    animation: liquid-wave 20s linear infinite;
+}
+
+@keyframes liquid-wave {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}

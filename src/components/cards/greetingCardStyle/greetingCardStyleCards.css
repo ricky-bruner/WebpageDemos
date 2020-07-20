@@ -1,0 +1,67 @@
+/* Flip Hover Card Demo */
+.greeting-card-style-cards {
+    font-family: "Quicksand", sans-serif;
+    background: #f2f2f2;
+    min-height: 95vh;
+    width: 100%;
+    padding: 50px 0;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.greeting-card-style-cards .container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.greeting-card-style-cards .container .card {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
+}
+
+.greeting-card-style-cards .container .card:hover {
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+
+.greeting-card-style-cards .container .card .imgBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+
+.greeting-card-style-cards .container .card:hover .imgBox {
+    transform: rotateY(-135deg)
+}
+
+.greeting-card-style-cards .container .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greeting-card-style-cards .container .card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}

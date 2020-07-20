@@ -1,0 +1,280 @@
+/* Middle Out Buttom Demo */
+.middle-out-buttons {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.middle-out-buttons .middle-out-button {
+    position: relative;
+    margin: 15px 5px 5px;
+    padding: 8px 30px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background: none;
+    transition: .5s;
+    z-index: 1;
+}
+
+.middle-out-buttons .middle-out-button.xlg {
+    padding: 18px 35px;
+    font-size: 26px;
+    border: 2.5px solid black;
+}
+
+.middle-out-buttons .middle-out-button.lg {
+    padding: 14px 30px;
+    font-size: 22px;
+    border: 2px solid black;
+}
+
+.middle-out-buttons .middle-out-button.md {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.middle-out-buttons .middle-out-button.sm {
+    padding: 9px 20px;
+    font-size: 14px;
+    border: 1px solid black;
+}
+
+.middle-out-buttons .middle-out-button.xs {
+    padding: 7px 15px;
+    font-size: 12px;
+    border: .5px solid black;
+}
+
+.middle-out-buttons .middle-out-button:hover {
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.middle-out-buttons .middle-out-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: left;
+}
+
+.middle-out-buttons .middle-out-button:hover:before {
+    transform: scaleX(1);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.middle-out-buttons .middle-out-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 51%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.middle-out-buttons .middle-out-button:hover:after {
+    transform: scaleX(1);
+    transition: transform .5s;
+    transform-origin: left;
+}
+
+.middle-out-buttons .middle-out-button.blue {
+    color: #03a9f4;
+    border-color: #03a9f4;
+}
+
+.middle-out-buttons .middle-out-button.blue:before {
+    background: #03a9f4;
+}
+
+.middle-out-buttons .middle-out-button.blue:after {
+    background: #03a9f4;
+}
+
+.middle-out-buttons .middle-out-button.mint {
+    color: #00ffb0;
+    border-color: #00ffb0;
+}
+
+.middle-out-buttons .middle-out-button.mint:before {
+    background: #00ffb0;
+}
+
+.middle-out-buttons .middle-out-button.mint:after {
+    background: #00ffb0;
+}
+
+.middle-out-buttons .middle-out-button.lightgreen {
+    color: #b6dc00;
+    border-color: #b6dc00;
+}
+
+.middle-out-buttons .middle-out-button.lightgreen:before {
+    background: #b6dc00;
+}
+
+.middle-out-buttons .middle-out-button.lightgreen:after {
+    background: #b6dc00;
+}
+
+.middle-out-buttons .middle-out-button.green {
+    color: #00ff10;
+    border-color: #00ff10;
+}
+
+.middle-out-buttons .middle-out-button.green:before {
+    background: #00ff10;
+}
+
+.middle-out-buttons .middle-out-button.green:after {
+    background: #00ff10;
+}
+
+.middle-out-buttons .middle-out-button.purple {
+    color: #c13ce9;
+    border-color: #c13ce9;
+}
+
+.middle-out-buttons .middle-out-button.purple:before {
+    background: #c13ce9;
+}
+
+.middle-out-buttons .middle-out-button.purple:after {
+    background: #c13ce9;
+}
+
+.middle-out-buttons .middle-out-button.pink {
+    color: #ff5caf;
+    border-color: #ff5caf;
+}
+
+.middle-out-buttons .middle-out-button.pink:before {
+    background: #ff5caf;
+}
+
+.middle-out-buttons .middle-out-button.pink:after {
+    background: #ff5caf;
+}
+
+.middle-out-buttons .middle-out-button.hotpink {
+    color: #fc349d;
+    border-color: #fc349d;
+}
+
+.middle-out-buttons .middle-out-button.hotpink:before {
+    background: #fc349d;
+}
+
+.middle-out-buttons .middle-out-button.hotpink:after {
+    background: #fc349d;
+}
+
+.middle-out-buttons .middle-out-button.red {
+    color: #f12a32;
+    border-color: #f12a32;
+}
+
+.middle-out-buttons .middle-out-button.red:before {
+    background: #f12a32;
+}
+
+.middle-out-buttons .middle-out-button.red:after {
+    background: #f12a32;
+}
+
+.middle-out-buttons .middle-out-button.redorange {
+    color: #f63b00;
+    border-color: #f63b00;
+}
+
+.middle-out-buttons .middle-out-button.redorange:before {
+    background: #f63b00;
+}
+
+.middle-out-buttons .middle-out-button.redorange:after {
+    background: #f63b00;
+}
+
+.middle-out-buttons .middle-out-button.orange {
+    color: #ff8100;
+    border-color: #ff8100;
+}
+
+.middle-out-buttons .middle-out-button.orange:before {
+    background: #ff8100;
+}
+
+.middle-out-buttons .middle-out-button.orange:after {
+    background: #ff8100;
+}
+
+.middle-out-buttons .middle-out-button.yellow {
+    color: #ffec00;
+    border-color: #ffec00;
+}
+
+.middle-out-buttons .middle-out-button.yellow:before {
+    background: #ffec00;
+}
+
+.middle-out-buttons .middle-out-button.yellow:after {
+    background: #ffec00;
+}
+
+.middle-out-buttons .middle-out-button.white {
+    color: white;
+    border-color: white;
+}
+
+.middle-out-buttons .middle-out-button.white:before {
+    background: white;
+}
+
+.middle-out-buttons .middle-out-button.white:after {
+    background: white;
+}
+
+.middle-out-buttons .middle-out-button.light:hover,
+.middle-out-buttons .middle-out-button.dark:hover {
+    color: white;
+    text-shadow: 1px 1px black; 
+}
+
+.middle-out-buttons .middle-out-button.black:hover {
+    color: white;
+    text-shadow: none; 
+}
+
+.middle-out-buttons .middle-out-button.white:hover {
+    color: black;
+    text-shadow: none;
+}
+
+/* .middle-out-buttons .middle-out-button.xs:hover {
+    text-shadow: none;
+} */

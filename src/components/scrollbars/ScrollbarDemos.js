@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './scrollbars.css';
-import ScrollbarProgress from './ScrollbarProgress';
 import ScrollbarDemoHeader from './ScrollbarDemoHeader';
+import './scrollbars.css';
 
 export default class ScrollbarDemos extends Component {
     state = {};

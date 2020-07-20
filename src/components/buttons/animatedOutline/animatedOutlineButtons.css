@@ -1,0 +1,222 @@
+/* Animated Outline Button Demo */
+.animated-outline-buttons {
+    margin: 0;
+    padding: 10px;
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.animated-outline-buttons.dark {
+    background: rgb(50, 50, 50);
+}
+
+.animated-outline-buttons.light {
+    background: rgb(235, 235, 235);
+}
+
+.animated-outline-buttons .animated-outline-button {
+    position: relative;
+    width: 180px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+    line-height: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+.animated-outline-buttons .animated-outline-button.light {
+    color: black;
+}
+
+.animated-outline-buttons .animated-outline-button:focus {
+    outline: none;
+}
+
+.animated-outline-buttons .animated-outline-button:hover {
+    cursor: pointer;
+}
+
+.animated-outline-buttons .animated-outline-button.xlg {
+    width: 210px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 28px;
+}
+
+.animated-outline-buttons .animated-outline-button.lg {
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+.animated-outline-buttons .animated-outline-button.md {
+    width: 160px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+}
+
+.animated-outline-buttons .animated-outline-button.sm {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.animated-outline-buttons .animated-outline-button.xs {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.animated-outline-buttons .animated-outline-button svg,
+.animated-outline-buttons .animated-outline-button svg rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+}
+
+.animated-outline-buttons .animated-outline-button svg rect {
+    stroke: white;
+    stroke-width: 4;
+    transition: 1s;
+    stroke-dasharray: 500, 500;
+    stroke-dashoffset: 0;
+}
+
+.animated-outline-buttons .animated-outline-button.light svg rect {
+    stroke: black;
+}
+
+.animated-outline-buttons .animated-outline-button.sm svg rect {
+    stroke-width: 3;
+}
+
+.animated-outline-buttons .animated-outline-button.xs svg rect {
+    stroke-width: 2;
+}
+
+.animated-outline-buttons .animated-outline-button:hover svg rect {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 220;
+    stroke: #00bcd4;
+}
+
+/* .animated-outline-buttons .animated-outline-button.mint:hover svg rect {
+} */
+
+.animated-outline-buttons .animated-outline-button.blue:hover svg rect {
+    stroke: #00bcd4;
+}
+
+.animated-outline-buttons .animated-outline-button.mint:hover svg rect {
+    stroke: #00f192;
+}
+
+.animated-outline-buttons .animated-outline-button.hotpink:hover svg rect {
+    stroke: #ff3183;
+}
+
+.animated-outline-buttons .animated-outline-button.purple:hover svg rect {
+    stroke: #8945c7;
+}
+
+.animated-outline-buttons .animated-outline-button.pink:hover svg rect {
+    stroke: #ff5fff;
+}
+
+.animated-outline-buttons .animated-outline-button.red:hover svg rect {
+    stroke: #ff3333;
+}
+
+.animated-outline-buttons .animated-outline-button.redorange:hover svg rect {
+    stroke: #ff4800;
+}
+
+.animated-outline-buttons .animated-outline-button.orange:hover svg rect {
+    stroke: #ff6f00;
+}
+
+.animated-outline-buttons .animated-outline-button.yellow:hover svg rect {
+    stroke: #ffc701;
+}
+
+.animated-outline-buttons .animated-outline-button.lightgreen:hover svg rect {
+    stroke: #c5ef01;
+}
+
+.animated-outline-buttons .animated-outline-button.green:hover svg rect {
+    stroke: #5bdb01;
+}
+
+.animated-outline-buttons .animated-outline-button.black:hover svg rect {
+    stroke: #000000;
+}
+
+.animated-outline-buttons .animated-outline-button.white:hover svg rect {
+    stroke: #ffffff;
+}
+
+.animated-outline-buttons .animated-outline-button.xlg svg rect {
+    stroke-dasharray: 560, 500;
+}
+
+.animated-outline-buttons .animated-outline-button.xlg:hover svg rect {
+    stroke-dasharray: 110, 400;
+    stroke-dashoffset: 180;
+    /* stroke: #00bcd4; */
+}
+
+.animated-outline-buttons .animated-outline-button.lg svg rect {
+    stroke-dasharray: 500, 500;
+}
+
+.animated-outline-buttons .animated-outline-button.lg:hover svg rect {
+    stroke-dasharray: 100, 400;
+    stroke-dashoffset: 220;
+}
+
+.animated-outline-buttons .animated-outline-button.md svg rect {
+    stroke-dasharray: 430, 500;
+}
+
+.animated-outline-buttons .animated-outline-button.md:hover svg rect {
+    stroke-dasharray: 80, 350;
+    stroke-dashoffset: 175;
+}
+
+.animated-outline-buttons .animated-outline-button.sm svg rect {
+    stroke-dasharray: 340, 500;
+}
+
+.animated-outline-buttons .animated-outline-button.sm:hover svg rect {
+    stroke-dasharray: 65, 350;
+    stroke-dashoffset: 212;
+}
+
+.animated-outline-buttons .animated-outline-button.xs svg rect {
+    stroke-dasharray: 270, 500;
+}
+
+.animated-outline-buttons .animated-outline-button.xs:hover svg rect {
+    stroke-dasharray: 50, 350;
+    stroke-dashoffset: 258;
+}

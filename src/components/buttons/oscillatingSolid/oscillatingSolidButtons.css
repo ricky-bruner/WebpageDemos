@@ -1,0 +1,199 @@
+/* Oscillating Solid Button Demo */
+.oscillating-solid-buttons {
+    margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.oscillating-solid-buttons.dark {
+    background: rgb(50, 50, 50);
+}
+
+.oscillating-solid-buttons.light {
+    background: rgb(235, 235, 235);
+}
+
+.oscillating-solid-buttons .oscillating-solid-button {
+    position: relative;
+    margin: 5px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.light {
+    color: black;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.light:hover {
+    color: white;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.dark {
+    color: white;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button:focus {
+    outline: none;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button:hover {
+    cursor: pointer;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.xlg {
+    padding: 20px 40px;
+    font-size: 25px;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.lg {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.md {
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.sm {
+    padding: 8px 16px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.xs {
+    padding: 5px 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    z-index: -1;
+    transition: transform .5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.blue:before {
+    background: #03a9f4;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.mint:before {
+    background: #00f192;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.hotpink:before {
+    background: #ff3183;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.purple:before {
+    background: #8945c7;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.pink:before {
+    background: #ff5fff;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.red:before {
+    background: #ff3333;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.redorange:before {
+    background: #ff4800;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.orange:before {
+    background: #ff6f00;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.yellow:before {
+    background: #ffc701;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.lightgreen:before {
+    background: #c5ef01;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.green:before {
+    background: #5bdb01;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.white:before {
+    background: white;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.white:hover {
+    color: black;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.black:before {
+    background: black;
+}
+
+/* .oscillating-solid-buttons .oscillating-solid-button.white:hover {
+    color: black;
+} */
+
+.oscillating-solid-buttons .oscillating-solid-button:hover:before {
+    transition: transform .5s;
+    transform-origin: top left;
+    transform: scale(1);
+}
+
+.oscillating-solid-buttons .oscillating-solid-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid white;
+    z-index: -1;
+    transition: transform .5s;
+    transform-origin: top left;
+    box-sizing: border-box;
+    transform: scale(1);
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.light:after {
+    border: 2px solid black;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.sm:after,
+.oscillating-solid-buttons .oscillating-solid-button.xs:after {
+    border: 1px solid white;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button.sm.light:after,
+.oscillating-solid-buttons .oscillating-solid-button.xs.light:after {
+    border: 1px solid black;
+}
+
+.oscillating-solid-buttons .oscillating-solid-button:hover:after {
+    transition: transform .5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+}

@@ -1,21 +1,21 @@
 import React from 'react';
-import GameStyleCards from "../../components/cards/GameStyleCards";
-import ImageClipHoverCards from '../../components/cards/ImageClipHoverCards';
-import DepthOfFieldCards from '../../components/cards/DepthOfFieldCards';
-import DirectionAwareCards from '../../components/cards/DirectionAwareCards';
-import CircleReductionServiceCards from '../../components/cards/CircleReductionServiceCards';
-import SwivelRotationCards from '../../components/cards/SwivelRotationCards';
-import FlipUpHoverCards from '../../components/cards/FlipUpHoverCards';
-import IsometricHoverCards from '../../components/cards/IsometricHoverCards';
-import CircleGrowthServiceCards from '../../components/cards/CircleGrowthServiceCards';
-import ImageSlideLeftCards from '../../components/cards/ImageSlideLeftCards';
-import NeumorphismCards from '../../components/cards/NeumorphismCards';
-import SkewedBorderCards from '../../components/cards/SkewedBorderCards';
-import GlowingCards from '../../components/cards/GlowingCards';
-import FlipHoverCards from '../../components/cards/FlipHoverCards';
-import CircleGrowthIconCards from '../../components/cards/CircleGrowthIconCards';
-import IconGrowthCards from '../../components/cards/IconGrowthCards';
-import HoverSwitchCards from '../../components/cards/HoverSwitchCards';
+import GameStyleCards from "../../components/cards/gameStyle/GameStyleCards";
+import ImageClipHoverCards from '../../components/cards/imageClipHover/ImageClipHoverCards';
+import DepthOfFieldCards from '../../components/cards/depthOfField/DepthOfFieldCards';
+import DirectionAwareCards from '../../components/cards/directionAware/DirectionAwareCards';
+import CircleReductionServiceCards from '../../components/cards/circleReductionService/CircleReductionServiceCards';
+import SwivelRotationCards from '../../components/cards/swivelRotation/SwivelRotationCards';
+import FlipUpHoverCards from '../../components/cards/flipUpHover/FlipUpHoverCards';
+import IsometricHoverCards from '../../components/cards/isometricHover/IsometricHoverCards';
+import CircleGrowthServiceCards from '../../components/cards/circleGrowthService/CircleGrowthServiceCards';
+import ImageSlideLeftCards from '../../components/cards/imageSlideLeft/ImageSlideLeftCards';
+import NeumorphismCards from '../../components/cards/neumorphism/NeumorphismCards';
+import SkewedBorderCards from '../../components/cards/skewedBorder/SkewedBorderCards';
+import GlowingCards from '../../components/cards/glowing/GlowingCards';
+import CircleGrowthIconCards from '../../components/cards/circleGrowthIcon/CircleGrowthIconCards';
+import IconGrowthCards from '../../components/cards/iconGrowth/IconGrowthCards';
+import HoverSwitchCards from '../../components/cards/hoverSwitch/HoverSwitchCards';
+import GreetingCardStyleCards from '../../components/cards/greetingCardStyle/GreetingCardStyleCards';
 
 export default function CardDemoFactory(demoName, settings){
     switch(demoName){
@@ -58,8 +58,8 @@ export default function CardDemoFactory(demoName, settings){
         case "GlowingCards":
             return <GlowingCards settings={settings} />
 
-        case "FlipHoverCards":
-            return <FlipHoverCards settings={settings} />
+        case "GreetingCardStyleCards":
+            return <GreetingCardStyleCards settings={settings} />
 
         case "CircleGrowthIconCards":
             return <CircleGrowthIconCards settings={settings} /> 

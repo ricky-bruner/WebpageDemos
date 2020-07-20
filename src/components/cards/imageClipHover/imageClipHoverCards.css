@@ -1,0 +1,96 @@
+/* Image Clip Hover Card Demo */
+.image-clip-hover-cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #262626;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.image-clip-hover-cards.dark {
+    background: #262626;
+}
+
+.image-clip-hover-cards.light {
+    background: white;
+}
+
+.image-clip-hover-cards .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.image-clip-hover-cards .container .box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: white;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.image-clip-hover-cards .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 50px inset;
+}
+
+.image-clip-hover-cards .container .box .content h2,
+.image-clip-hover-cards .container .box .content p {
+    margin-bottom: 25px;
+}
+
+.image-clip-hover-cards .container .box .content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.image-clip-hover-cards .container .box .content a:hover {
+    background: black;
+    color: white;
+}
+
+.image-clip-hover-cards .container .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: 1s;
+}
+
+.image-clip-hover-cards .container .box:hover img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+}
+
+.image-clip-hover-cards .container .box:nth-child(even):hover img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+}

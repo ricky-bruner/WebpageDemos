@@ -139,7 +139,7 @@ export default class MainNavbar extends Component {
                                     <li><button onClick={() => this.props.selectDemo("cards", "Neumorphism")}>Neumorphism</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Skewed Border")}>Skewed Border</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Glowing")}>Glowing</button></li>
-                                    <li><button onClick={() => this.props.selectDemo("cards", "Flip Hover")}>Flip Hover</button></li>
+                                    <li><button onClick={() => this.props.selectDemo("cards", "Greeting Card Style")}>Greeting Card Style</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Icon Growth")}>Icon Growth</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Circle Growth Icon")}>Circle Growth Icon</button></li>
                                     <li><button onClick={() => this.props.selectDemo("cards", "Hover Switch")}>Hover Switch</button></li>

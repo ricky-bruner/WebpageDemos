@@ -1,0 +1,100 @@
+/* Direction Aware Card Demo */
+.direction-aware-cards {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(0deg, #075b9f 0%, #0b74cb 10%, #0b74cb 50%, rgb(215, 215, 215) 50%, rgb(215, 215, 215) 100%);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.direction-aware-cards.light {
+    background: linear-gradient(0deg, #075b9f 0%, #0b74cb 10%, #0b74cb 50%, rgb(235, 235, 235) 50%, rgb(235, 235, 235) 100%);
+}
+
+.direction-aware-cards.dark {
+    background: linear-gradient(0deg, #075b9f 0%, #0b74cb 10%, #0b74cb 50%, rgb(20, 20, 20) 50%, rgb(20, 20, 20) 100%);
+}
+
+.direction-aware-cards .container {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+}
+
+.direction-aware-cards .container .card {
+    position: relative;
+    width: 180px;
+    height: 240px;
+    background: white;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    transition: .5s;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.direction-aware-cards.light .container .card {
+    background: white;
+}
+
+.direction-aware-cards.dark .container .card {
+    background: black;
+}
+
+.direction-aware-cards .container:hover .card {
+    transform: perspective(500px) rotateY(30deg)
+}
+
+.direction-aware-cards .container .card:hover {
+    transform: perspective(500px) rotateY(0deg)
+}
+.direction-aware-cards .container .card:hover ~ .card {
+    transform: perspective(500px) rotateY(-30deg)
+}
+
+.direction-aware-cards .container .card h2 {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3em;
+    background: #2196f3;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    transition: box-shadow .5s;
+}
+
+.direction-aware-cards.light .container .card h2 {
+    color: white;
+}
+
+.direction-aware-cards.dark .container .card h2 {
+    color: black;
+}
+
+.direction-aware-cards .container .card:hover h2 {
+    background: white;
+    color: #2196f3;
+    box-shadow: 0 0 0 150px #2196f3;
+}
+
+.direction-aware-cards.light .container .card:hover h2 {
+    background: white;
+}
+
+.direction-aware-cards.dark .container .card:hover h2 {
+    background: black;
+}

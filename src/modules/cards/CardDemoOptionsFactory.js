@@ -107,7 +107,7 @@ export default function CardDemoOptionsFactory(demoName){
             options.theme = "dark";
             return options;
 
-        case "FlipHoverCards":
+        case "GreetingCardStyleCards":
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
@@ -126,7 +126,7 @@ export default function CardDemoOptionsFactory(demoName){
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;
-            
+
         default:
             return options;
     }

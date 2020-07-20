@@ -1,0 +1,212 @@
+/* Neumorphism Card Demo */
+.neumorphism-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    width: 100%;
+    padding: 40px;
+    background: #ebf5fc;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.neumorphism-cards.light {
+    background: #ebf5fc;
+}
+
+.neumorphism-cards.dark {
+    background: #252828;
+}
+
+.neumorphism-cards .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.neumorphism-cards .container .card {
+    width: 310px;
+    margin: 15px;
+    padding: 40px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+                6px 6px 20px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-cards .container .card.bd-rounded {
+    border-radius: 40px;
+}
+
+.neumorphism-cards .container .card.bd-sharp {
+    border-radius: 0px;
+}
+
+.neumorphism-cards.light .container .card {
+    background: #ebf5fc;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
+                6px 6px 20px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-cards.dark .container .card {
+    background: #252828;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
+                6px 6px 20px rgba(0, 0, 0, 1);
+}
+
+.neumorphism-cards .container .card:hover {
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, .5),
+                inset 6px 6px 20px rgba(0, 0, 0, .05);
+}
+
+.neumorphism-cards.light .container .card:hover {
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, .5),
+                inset 6px 6px 20px rgba(0, 0, 0, .05);
+}
+
+.neumorphism-cards.dark .container .card:hover {
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, .05),
+                inset 6px 6px 20px rgba(0, 0, 0, .5);
+}
+
+.neumorphism-cards .container .card .imgBx {
+    position: relative;
+    text-align: center;
+}
+
+.neumorphism-cards .container .card .imgBx svg {
+    width: 120px;
+    height: 120px;
+    color: #32a3b1;
+}
+
+.neumorphism-cards .container .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.neumorphism-cards .container .card .contentBx h2 {
+    color: #32a3b1;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+
+.neumorphism-cards .container .card .contentBx p {
+    color: #32a3b1;
+}
+
+.neumorphism-cards .container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #32a3b1;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+                4px 4px 15px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-cards .container .card.bd-rounded .contentBx a {
+    border-radius: 40px;
+}
+
+.neumorphism-cards .container .card.bd-sharp .contentBx a {
+    border-radius: 0px;
+}
+
+.neumorphism-cards.light .container .card .contentBx a {
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, 1),
+                4px 4px 15px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-cards.dark .container .card .contentBx a {
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, .1),
+                4px 4px 15px rgba(0, 0, 0, 1);
+}
+
+.neumorphism-cards .container .card.teal .imgBx svg,
+.neumorphism-cards .container .card.teal .contentBx h2,
+.neumorphism-cards .container .card.teal .contentBx p,
+.neumorphism-cards .container .card.teal .contentBx a {
+    color: #32a3b1;
+}
+
+.neumorphism-cards .container .card.purple .imgBx svg,
+.neumorphism-cards .container .card.purple .contentBx h2,
+.neumorphism-cards .container .card.purple .contentBx p,
+.neumorphism-cards .container .card.purple .contentBx a {
+    color: #9332b3;
+}
+
+.neumorphism-cards .container .card.red .imgBx svg,
+.neumorphism-cards .container .card.red .contentBx h2,
+.neumorphism-cards .container .card.red .contentBx p,
+.neumorphism-cards .container .card.red .contentBx a {
+    color: #b33232;
+}
+
+.neumorphism-cards .container .card.orange .imgBx svg,
+.neumorphism-cards .container .card.orange .contentBx h2,
+.neumorphism-cards .container .card.orange .contentBx p,
+.neumorphism-cards .container .card.orange .contentBx a {
+    color: #b37332;
+}
+
+.neumorphism-cards .container .card.yellow .imgBx svg,
+.neumorphism-cards .container .card.yellow .contentBx h2,
+.neumorphism-cards .container .card.yellow .contentBx p,
+.neumorphism-cards .container .card.yellow .contentBx a {
+    color: #b3b332;
+}
+
+.neumorphism-cards .container .card.green .imgBx svg,
+.neumorphism-cards .container .card.green .contentBx h2,
+.neumorphism-cards .container .card.green .contentBx p,
+.neumorphism-cards .container .card.green .contentBx a {
+    color: #32b332;
+}
+
+.neumorphism-cards .container .card.blue .imgBx svg,
+.neumorphism-cards .container .card.blue .contentBx h2,
+.neumorphism-cards .container .card.blue .contentBx p,
+.neumorphism-cards .container .card.blue .contentBx a {
+    color: #3253b3;
+}
+
+.neumorphism-cards .container .card.pink .imgBx svg,
+.neumorphism-cards .container .card.pink .contentBx h2,
+.neumorphism-cards .container .card.pink .contentBx p,
+.neumorphism-cards .container .card.pink .contentBx a {
+    color: #b33293;
+}
+
+.neumorphism-cards .container .card .contentBx a:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, .5),
+                inset 4px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-cards.light .container .card .contentBx a:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, .5),
+                inset 4px 4px 10px rgba(0, 0, 0, .1);
+}
+
+.neumorphism-cards.dark .container .card .contentBx a:hover {
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, .1),
+                inset 4px 4px 10px rgba(0, 0, 0, .5);
+}
+
+.neumorphism-cards .container .card a:hover span {
+    display: block;
+    transform: scale(.98);
+}
+
+.neumorphism-cards .container .card:hover .imgBx,
+.neumorphism-cards .container .card:hover .contentBx {
+    transform: scale(.98);
+}

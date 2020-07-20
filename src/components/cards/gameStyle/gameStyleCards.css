@@ -1,0 +1,243 @@
+/* Game Style Cards Demo */
+.game-style-cards {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #262626;
+    width: 100%;
+    height: 95vh;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
+}
+
+.game-style-cards.dark {
+    background: #262626;
+}
+
+.game-style-cards.light {
+    background: #e1e1e1;
+}
+
+.game-style-cards .box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+}
+
+.game-style-cards .box .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .5);
+    transition: .5s;
+    transform-origin: bottom;
+    border-radius: 10px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-style-cards .box .card:nth-child(1) {
+    transform: translate(0px, 0px);
+}
+
+.game-style-cards .box .card:nth-child(2) {
+    transform: translate(2px, 2px);
+}
+
+.game-style-cards .box .card:nth-child(3) {
+    transform: translate(4px, 4px);
+}
+
+.game-style-cards .box .card:nth-child(4) {
+    transform: translate(6px, 6px);
+}
+
+.game-style-cards .box .card:nth-child(5) {
+    transform: translate(8px, 8px);
+}
+
+.game-style-cards .box .card:nth-child(6) {
+    transform: translate(10px, 10px);
+}
+
+.game-style-cards .box .card:nth-child(7) {
+    transform: translate(12px, 12px);
+}
+
+.game-style-cards .box:hover .card:nth-child(1) {
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.game-style-cards .box:hover .card:nth-child(2) {
+    transform: rotate(-30deg) translate(2px, 2px);
+}
+
+.game-style-cards .box:hover .card:nth-child(3) {
+    transform: rotate(-15deg) translate(4px, 4px);
+}
+
+.game-style-cards .box:hover .card:nth-child(4) {
+    transform: rotate(-0deg) translate(6px, 6px);
+}
+
+.game-style-cards .box:hover .card:nth-child(5) {
+    transform: rotate(15deg) translate(8px, 8px);
+}
+
+.game-style-cards .box:hover .card:nth-child(6) {
+    transform: rotate(30deg) translate(10px, 10px);
+}
+
+.game-style-cards .box:hover .card:nth-child(7) {
+    transform: rotate(45deg) translate(12px, 12px);
+}
+
+.game-style-cards .box .card:hover {
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+}
+
+.game-style-cards .box .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 20;
+    pointer-events: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.game-style-cards .box .card:nth-child(1), 
+.game-style-cards .box .card:nth-child(1) .overlay {
+    background: linear-gradient(45deg, #ffb08e, #f54a00);
+}
+
+.game-style-cards .box .card:nth-child(2), 
+.game-style-cards .box .card:nth-child(2) .overlay {
+    background: linear-gradient(45deg, #96c0ff, #0046de);
+}
+
+.game-style-cards .box .card:nth-child(3), 
+.game-style-cards .box .card:nth-child(3) .overlay {
+    background: linear-gradient(45deg, #8f8f8f, #ffe600);
+}
+
+.game-style-cards .box .card:nth-child(4), 
+.game-style-cards .box .card:nth-child(4) .overlay {
+    background: linear-gradient(45deg, #303030, #02dceb);
+}
+
+.game-style-cards .box .card:nth-child(5), 
+.game-style-cards .box .card:nth-child(5) .overlay {
+    background: linear-gradient(45deg, #f4582c, #d30000);
+}
+
+.game-style-cards .box .card:nth-child(6), 
+.game-style-cards .box .card:nth-child(6) .overlay {
+    background: linear-gradient(45deg, #daffb0, #006fd0);
+}
+
+.game-style-cards .box .card:nth-child(7), 
+.game-style-cards .box .card:nth-child(7) .overlay {
+    background: linear-gradient(45deg, #04ed00, #f4f4f4);
+}
+
+.game-style-cards .box .card .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-style-cards .box .card .imgBx svg {
+    width: 100px;
+    height: 100px;
+}
+
+.game-style-cards .box .card .imgBx h2{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.game-style-cards .box .card .overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.game-style-cards .box .card .overlay:hover {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    opacity: .9;
+    border-radius: 0;
+}
+
+.game-style-cards .box .card .overlay:before {
+    content: "Read";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: .5s;
+}
+
+.game-style-cards .box .card .overlay:hover:before {
+    display: none;
+    transition-delay: 0s;
+}
+
+.game-style-cards .box .card .content {
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+    color: white;
+}
+
+.game-style-cards .box .card .overlay:hover ~ .content {
+    opacity: 1;
+    visibility: visible;
+    transition: .2s;
+    transition-delay: .3s;
+}

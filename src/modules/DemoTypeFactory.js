@@ -1,4 +1,3 @@
-import React from 'react';
 import CardDemoFactory from './cards/CardDemoFactory';
 import ButtonDemoFactory from './buttons/ButtonDemoFactory';
 import NavbarDemoFactory from './navbars/NavbarDemoFactory';

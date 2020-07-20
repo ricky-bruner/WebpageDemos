@@ -1,0 +1,465 @@
+/* Shooting Border Button Demo */
+.shooting-border-buttons {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.shooting-border-buttons.dark {
+    background: rgb(50, 50, 50);
+}
+
+.shooting-border-buttons.light {
+    background: rgb(235, 235, 235);
+}
+
+.shooting-border-buttons .shooting-border-button {
+    position: relative;
+    background: #0c002b;
+    color: #1670f0;
+    padding: 30px 60px;
+    margin: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: 1s;
+    border: none;
+}
+
+.shooting-border-buttons .shooting-border-button:focus {
+    outline: none;
+}
+
+.shooting-border-buttons .shooting-border-button:hover {
+    cursor: pointer;
+}
+
+.shooting-border-buttons .shooting-border-button.blue {
+    color: #1670f0;
+    background: #0c002b;
+}
+
+.shooting-border-buttons .shooting-border-button.mint {
+    color: #00ffb0;
+    background: #00100c;
+}
+
+.shooting-border-buttons .shooting-border-button.lightgreen {
+    color: #b6dc00;
+    background: #001700;
+}
+
+.shooting-border-buttons .shooting-border-button.green {
+    color: #00ff10;
+    background: #001b0d;
+}
+
+.shooting-border-buttons .shooting-border-button.yellow {
+    color: #ffec00;
+    background: #1a1500;
+}
+
+.shooting-border-buttons .shooting-border-button.orange {
+    color: #ff8100;
+    background: #201000;
+}
+
+.shooting-border-buttons .shooting-border-button.redorange {
+    color: #f63b00;
+    background: #1d0700;
+}
+
+.shooting-border-buttons .shooting-border-button.red {
+    color: #f12a32;
+    background: #190300;
+}
+
+.shooting-border-buttons .shooting-border-button.hotpink {
+    color: #fc349d;
+    background: #1f0001;
+}
+
+.shooting-border-buttons .shooting-border-button.pink {
+    color: #ff5caf;
+    background: #2b0000;
+}
+
+.shooting-border-buttons .shooting-border-button.purple {
+    color: #c13ce9;
+    background: #200025;
+}
+
+.shooting-border-buttons .shooting-border-button.white {
+    color: black;
+    background: #c4c4c4;
+}
+
+.shooting-border-buttons .shooting-border-button.black {
+    color: white;
+    background: #121212;
+}
+
+.shooting-border-buttons .shooting-border-button.xlg {
+    padding: 30px 60px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.shooting-border-buttons .shooting-border-button.lg {
+    padding: 25px 50px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.shooting-border-buttons .shooting-border-button.md {
+    padding: 20px 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.shooting-border-buttons .shooting-border-button.sm {
+    padding: 15px 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.shooting-border-buttons .shooting-border-button.xs {
+    padding: 10px 20px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.shooting-border-buttons .shooting-border-button:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, .05);
+}
+
+.shooting-border-buttons .shooting-border-button.white:before {
+    background: rgba(255, 255, 255, .2);
+}
+
+.shooting-border-buttons .shooting-border-button:hover span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #1779ff);
+    animation: animateTop 2s linear infinite;
+}
+
+.shooting-border-buttons .shooting-border-button.blue:hover span:nth-child(1) {
+    background: linear-gradient(to right, #0c002b, #1670f0);
+}
+
+.shooting-border-buttons .shooting-border-button.mint:hover span:nth-child(1) {
+    background: linear-gradient(to right, #00100c, #00ffb0);
+}
+
+.shooting-border-buttons .shooting-border-button.lightgreen:hover span:nth-child(1) {
+    background: linear-gradient(to right, #001700, #b6dc00);
+}
+
+.shooting-border-buttons .shooting-border-button.green:hover span:nth-child(1) {
+    background: linear-gradient(to right, #001b0d, #00ff10);
+}
+
+.shooting-border-buttons .shooting-border-button.yellow:hover span:nth-child(1) {
+    background: linear-gradient(to right, #1a1500, #ffec00);
+}
+
+.shooting-border-buttons .shooting-border-button.orange:hover span:nth-child(1) {
+    background: linear-gradient(to right, #201000, #ff8100);
+}
+
+.shooting-border-buttons .shooting-border-button.redorange:hover span:nth-child(1) {
+    background: linear-gradient(to right, #1d0700, #f63b00);
+}
+
+.shooting-border-buttons .shooting-border-button.red:hover span:nth-child(1) {
+    background: linear-gradient(to right, #190300, #f12a32);
+}
+
+.shooting-border-buttons .shooting-border-button.hotpink:hover span:nth-child(1) {
+    background: linear-gradient(to right, #1f0001, #fc349d);
+}
+
+.shooting-border-buttons .shooting-border-button.pink:hover span:nth-child(1) {
+    background: linear-gradient(to right, #2b0000, #ff5caf);
+}
+
+.shooting-border-buttons .shooting-border-button.purple:hover span:nth-child(1) {
+    background: linear-gradient(to right, #200025, #c13ce9);
+}
+
+.shooting-border-buttons .shooting-border-button.white:hover span:nth-child(1) {
+    background: linear-gradient(to right, #c4c4c4, black);
+}
+
+.shooting-border-buttons .shooting-border-button.black:hover span:nth-child(1) {
+    background: linear-gradient(to right, #121212, white);
+}
+
+.shooting-border-buttons .shooting-border-button.sm:hover span:nth-child(1),
+.shooting-border-buttons .shooting-border-button.sm:hover span:nth-child(3),
+.shooting-border-buttons .shooting-border-button.xs:hover span:nth-child(1),
+.shooting-border-buttons .shooting-border-button.xs:hover span:nth-child(3) {
+    height: 1px;
+}
+
+.shooting-border-buttons .shooting-border-button.sm:hover span:nth-child(2),
+.shooting-border-buttons .shooting-border-button.sm:hover span:nth-child(4),
+.shooting-border-buttons .shooting-border-button.xs:hover span:nth-child(2),
+.shooting-border-buttons .shooting-border-button.xs:hover span:nth-child(4) {
+    width: 1px;
+}
+
+@keyframes animateTop {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.shooting-border-buttons .shooting-border-button:hover span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
+    animation: animateRight 2s linear infinite;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+.shooting-border-buttons .shooting-border-button.blue:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #0c002b, #1670f0);
+}
+
+.shooting-border-buttons .shooting-border-button.mint:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #00100c, #00ffb0);
+}
+
+.shooting-border-buttons .shooting-border-button.lightgreen:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #001700, #b6dc00);
+}
+
+.shooting-border-buttons .shooting-border-button.green:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #001b0d, #00ff10);
+}
+
+.shooting-border-buttons .shooting-border-button.yellow:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #1a1500, #ffec00);
+}
+
+.shooting-border-buttons .shooting-border-button.orange:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #201000, #ff8100);
+}
+
+.shooting-border-buttons .shooting-border-button.redorange:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #1d0700, #f63b00);
+}
+
+.shooting-border-buttons .shooting-border-button.red:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #190300, #f12a32);
+}
+
+.shooting-border-buttons .shooting-border-button.hotpink:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #1f0001, #fc349d);
+}
+
+.shooting-border-buttons .shooting-border-button.pink:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #2b0000, #ff5caf);
+}
+
+.shooting-border-buttons .shooting-border-button.purple:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #200025, #c13ce9);
+}
+
+.shooting-border-buttons .shooting-border-button.white:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #c4c4c4, black);
+}
+
+.shooting-border-buttons .shooting-border-button.black:hover span:nth-child(2) {
+    background: linear-gradient(to bottom, #121212, white);
+}
+
+@keyframes animateRight {
+    0% {
+        visibility: visible;
+        transform: translateY(-100%);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(100%);
+    }
+}
+
+.shooting-border-buttons .shooting-border-button:hover span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b, #1779ff);
+    animation: animateBottom 2s linear infinite;
+}
+
+.shooting-border-buttons .shooting-border-button.blue:hover span:nth-child(3) {
+    background: linear-gradient(to left, #0c002b, #1670f0);
+}
+
+.shooting-border-buttons .shooting-border-button.mint:hover span:nth-child(3) {
+    background: linear-gradient(to left, #00100c, #00ffb0);
+}
+
+.shooting-border-buttons .shooting-border-button.lightgreen:hover span:nth-child(3) {
+    background: linear-gradient(to left, #001700, #b6dc00);
+}
+
+.shooting-border-buttons .shooting-border-button.green:hover span:nth-child(3) {
+    background: linear-gradient(to left, #001b0d, #00ff10);
+}
+
+.shooting-border-buttons .shooting-border-button.yellow:hover span:nth-child(3) {
+    background: linear-gradient(to left, #1a1500, #ffec00);
+}
+
+.shooting-border-buttons .shooting-border-button.orange:hover span:nth-child(3) {
+    background: linear-gradient(to left, #201000, #ff8100);
+}
+
+.shooting-border-buttons .shooting-border-button.redorange:hover span:nth-child(3) {
+    background: linear-gradient(to left, #1d0700, #f63b00);
+}
+
+.shooting-border-buttons .shooting-border-button.red:hover span:nth-child(3) {
+    background: linear-gradient(to left, #190300, #f12a32);
+}
+
+.shooting-border-buttons .shooting-border-button.hotpink:hover span:nth-child(3) {
+    background: linear-gradient(to left, #1f0001, #fc349d);
+}
+
+.shooting-border-buttons .shooting-border-button.pink:hover span:nth-child(3) {
+    background: linear-gradient(to left, #2b0000, #ff5caf);
+}
+
+.shooting-border-buttons .shooting-border-button.purple:hover span:nth-child(3) {
+    background: linear-gradient(to left, #200025, #c13ce9);
+}
+
+.shooting-border-buttons .shooting-border-button.white:hover span:nth-child(3) {
+    background: linear-gradient(to left, #c4c4c4, black);
+}
+
+.shooting-border-buttons .shooting-border-button.black:hover span:nth-child(3) {
+    background: linear-gradient(to left, #121212, white);
+}
+
+@keyframes animateBottom {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.shooting-border-buttons .shooting-border-button:hover span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #1779ff);
+    animation: animateLeft 2s linear infinite;
+    animation-delay: 1s;
+    visibility: hidden;
+}
+
+.shooting-border-buttons .shooting-border-button.blue:hover span:nth-child(4) {
+    background: linear-gradient(to top, #0c002b, #1670f0);
+}
+
+.shooting-border-buttons .shooting-border-button.mint:hover span:nth-child(4) {
+    background: linear-gradient(to top, #00100c, #00ffb0);
+}
+
+.shooting-border-buttons .shooting-border-button.lightgreen:hover span:nth-child(4) {
+    background: linear-gradient(to top, #001700, #b6dc00);
+}
+
+.shooting-border-buttons .shooting-border-button.green:hover span:nth-child(4) {
+    background: linear-gradient(to top, #001b0d, #00ff10);
+}
+
+.shooting-border-buttons .shooting-border-button.yellow:hover span:nth-child(4) {
+    background: linear-gradient(to top, #1a1500, #ffec00);
+}
+
+.shooting-border-buttons .shooting-border-button.orange:hover span:nth-child(4) {
+    background: linear-gradient(to top, #201000, #ff8100);
+}
+
+.shooting-border-buttons .shooting-border-button.redorange:hover span:nth-child(4) {
+    background: linear-gradient(to top, #1d0700, #f63b00);
+}
+
+.shooting-border-buttons .shooting-border-button.red:hover span:nth-child(4) {
+    background: linear-gradient(to top, #190300, #f12a32);
+}
+
+.shooting-border-buttons .shooting-border-button.hotpink:hover span:nth-child(4) {
+    background: linear-gradient(to top, #1f0001, #fc349d);
+}
+
+.shooting-border-buttons .shooting-border-button.pink:hover span:nth-child(4) {
+    background: linear-gradient(to top, #2b0000, #ff5caf);
+}
+
+.shooting-border-buttons .shooting-border-button.purple:hover span:nth-child(4) {
+    background: linear-gradient(to top, #200025, #c13ce9);
+}
+
+.shooting-border-buttons .shooting-border-button.white:hover span:nth-child(4) {
+    background: linear-gradient(to top, #c4c4c4, black);
+}
+
+.shooting-border-buttons .shooting-border-button.black:hover span:nth-child(4) {
+    background: linear-gradient(to top, #121212, white);
+}
+
+@keyframes animateLeft {
+    0% {
+        visibility: visible;
+        transform: translateY(100%);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(-100%);
+    }
+}

@@ -3,7 +3,7 @@ export default function SpeedOptionFactory(selection){
         case "standard":
             return [ "fs", "nm", "sl" ];
             
-        case "liquidwave":
+        case "liquidWave":
             return [ "wave-fs", "wave-nm", "wave-sl" ];
 
         default:

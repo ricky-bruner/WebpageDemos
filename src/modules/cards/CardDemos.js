@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function CardDemos() {
     let cardDemos = [
         {
@@ -81,10 +79,10 @@ export default function CardDemos() {
             demoTitle: "Glowing Cards"
         },
         {
-            demoName: "FlipHoverCards",
-            friendlyName: "Flip Hover",
-            demoClass: "flip-hover-cards",
-            demoTitle: "Flip Hover Cards"
+            demoName: "GreetingCardStyleCards",
+            friendlyName: "Greeting Card Style",
+            demoClass: "greeting-card-style-cards",
+            demoTitle: "Greeting Card Style Cards"
         },
         {
             demoName: "CircleGrowthIconCards",
