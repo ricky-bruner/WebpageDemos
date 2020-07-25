@@ -1,0 +1,161 @@
+/* Roving Border Navbar Demo */
+.roving-border-navbars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.roving-border-navbars.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.roving-border-navbars.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.roving-border-navbars .roving-border-navbar {
+    font-family: "Montserrat", sans-serif;
+    background: #ffff56;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+}
+
+.roving-border-navbars .roving-border-navbar.yellow {
+    background: #ffff56;
+}
+
+.roving-border-navbars .roving-border-navbar.white {
+    background: white;
+}
+
+.roving-border-navbars .roving-border-navbar.black {
+    background: black;
+}
+
+.roving-border-navbars .roving-border-navbar.blue {
+    background: #5757ff;
+}
+
+.roving-border-navbars .roving-border-navbar.mint {
+    background: #57ffab;
+}
+
+.roving-border-navbars .roving-border-navbar.lightgreen {
+    background: #abff57;
+}
+
+.roving-border-navbars .roving-border-navbar.green {
+    background: #57ff57;
+}
+
+.roving-border-navbars .roving-border-navbar.purple {
+    background: #ab57ff;
+}
+
+.roving-border-navbars .roving-border-navbar.pink {
+    background: #ff57ff;
+}
+
+.roving-border-navbars .roving-border-navbar.hotpink {
+    background: #ff57ab;
+}
+
+.roving-border-navbars .roving-border-navbar.red {
+    background: #ff5757;
+}
+
+.roving-border-navbars .roving-border-navbar.redorange {
+    background: #ff8157;
+}
+
+.roving-border-navbars .roving-border-navbar.orange {
+    background: #ffab57;
+}
+
+.roving-border-navbars .roving-border-navbar li {
+    list-style: none;
+}
+
+.roving-border-navbars .roving-border-navbar li a { 
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #262626;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.roving-border-navbars .roving-border-navbar.black li a { 
+    color: #e3e3e3;
+}
+
+.roving-border-navbars .roving-border-navbar li a:before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.roving-border-navbars .roving-border-navbar li a:hover:before { 
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.roving-border-navbars .roving-border-navbar li a:after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.roving-border-navbars .roving-border-navbar li a:hover:after { 
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.roving-border-navbars .roving-border-navbar.black li a:before,
+.roving-border-navbars .roving-border-navbar.black li a:after {
+    background: #e3e3e3;
+}
+
+.roving-border-navbars .roving-border-navbar.bd-nm li a:before,
+.roving-border-navbars .roving-border-navbar.bd-nm li a:after {
+    height: 2px;
+}
+
+.roving-border-navbars .roving-border-navbar.bd-thin li a:before,
+.roving-border-navbars .roving-border-navbar.bd-thin li a:after {
+    height: 1px;
+}
+
+.roving-border-navbars .roving-border-navbar.bd-thicc li a:before,
+.roving-border-navbars .roving-border-navbar.bd-thicc li a:after {
+    height: 3px;
+}

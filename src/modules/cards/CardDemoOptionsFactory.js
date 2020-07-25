@@ -3,6 +3,7 @@ import SizeOptionsFactory from '../options/SizeOptionsFactory';
 import SpeedOptionFactory from '../options/SpeedOptionsFactory';
 import ColorOptionsFactory from '../options/ColorOptionsFactory';
 import BorderOptionFactory from '../options/BorderOptionFactory';
+import CardNames from '../helpers/cards/CardNames';
 
 export default function CardDemoOptionsFactory(demoName){
     let options = {
@@ -23,7 +24,7 @@ export default function CardDemoOptionsFactory(demoName){
     };
     
     switch(demoName){
-        case "GameStyleCards":
+        case CardNames.GameStyleCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.sizes = SizeOptionsFactory("standard");
@@ -36,37 +37,37 @@ export default function CardDemoOptionsFactory(demoName){
             options.border = "bd-thicc";
             return options;
 
-        case "ImageClipHoverCards":
+        case CardNames.ImageClipHoverCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;
 
-        case "DepthOfFieldCards":
+        case CardNames.DepthOfFieldCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "DirectionAwareCards":
+        case CardNames.DirectionAwareCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "CircleReductionServiceCards":
+        case CardNames.CircleReductionServiceCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "SwivelRotationCards":
+        case CardNames.SwivelRotationCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "FlipUpHoverCards":
+        case CardNames.FlipUpHoverCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "IsometricHoverCards":
+        case CardNames.IsometricHoverCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             options.colors = ColorOptionsFactory("standard");
@@ -74,12 +75,12 @@ export default function CardDemoOptionsFactory(demoName){
             options.useShowAllColors = true;
             return options;
 
-        case "CircleGrowthServiceCards":
+        case CardNames.CircleGrowthServiceCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "ImageSlideLeftCards":
+        case CardNames.ImageSlideLeftCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.colors = ColorOptionsFactory("standard");
@@ -87,7 +88,7 @@ export default function CardDemoOptionsFactory(demoName){
             options.useShowAllColors = true;
             return options;
 
-        case "NeumorphismCards":
+        case CardNames.NeumorphismCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             options.borders = BorderOptionFactory("neumorphismcards");
@@ -97,32 +98,32 @@ export default function CardDemoOptionsFactory(demoName){
             options.useShowAllColors = true;
             return options;
 
-        case "SkewedBorderCards":
+        case CardNames.SkewedBorderCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;
 
-        case "GlowingCards":
+        case CardNames.GlowingCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;
 
-        case "GreetingCardStyleCards":
+        case CardNames.GreetingCardStyleCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             return options;
 
-        case "CircleGrowthIconCards":
+        case CardNames.CircleGrowthIconCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;
 
-        case "IconGrowthCards":
+        case CardNames.IconGrowthCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;
 
-        case "HoverSwitchCards":
+        case CardNames.HoverSwitchCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             return options;

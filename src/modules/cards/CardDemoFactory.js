@@ -16,58 +16,59 @@ import CircleGrowthIconCards from '../../components/cards/circleGrowthIcon/Circl
 import IconGrowthCards from '../../components/cards/iconGrowth/IconGrowthCards';
 import HoverSwitchCards from '../../components/cards/hoverSwitch/HoverSwitchCards';
 import GreetingCardStyleCards from '../../components/cards/greetingCardStyle/GreetingCardStyleCards';
+import CardNames from '../helpers/cards/CardNames';
 
 export default function CardDemoFactory(demoName, settings){
     switch(demoName){
-        case "GameStyleCards":
+        case CardNames.GameStyleCards:
             return <GameStyleCards settings={settings} />
 
-        case "ImageClipHoverCards":
+        case CardNames.ImageClipHoverCards:
             return <ImageClipHoverCards settings={settings} />
 
-        case "DepthOfFieldCards":
+        case CardNames.DepthOfFieldCards:
             return <DepthOfFieldCards settings={settings} />
 
-        case "DirectionAwareCards":
+        case CardNames.DirectionAwareCards:
             return <DirectionAwareCards settings={settings} />
 
-        case "CircleReductionServiceCards":
+        case CardNames.CircleReductionServiceCards:
             return <CircleReductionServiceCards settings={settings} />
 
-        case "SwivelRotationCards":
+        case CardNames.SwivelRotationCards:
             return <SwivelRotationCards settings={settings} />
 
-        case "FlipUpHoverCards":
+        case CardNames.FlipUpHoverCards:
             return <FlipUpHoverCards settings={settings} />
 
-        case "IsometricHoverCards":
+        case CardNames.IsometricHoverCards:
             return <IsometricHoverCards settings={settings} />
 
-        case "CircleGrowthServiceCards":
+        case CardNames.CircleGrowthServiceCards:
             return <CircleGrowthServiceCards settings={settings} />
 
-        case "ImageSlideLeftCards":
+        case CardNames.ImageSlideLeftCards:
             return <ImageSlideLeftCards settings={settings} />
 
-        case "NeumorphismCards":
+        case CardNames.NeumorphismCards:
             return <NeumorphismCards settings={settings} />
 
-        case "SkewedBorderCards":
+        case CardNames.SkewedBorderCards:
             return <SkewedBorderCards settings={settings} />
 
-        case "GlowingCards":
+        case CardNames.GlowingCards:
             return <GlowingCards settings={settings} />
 
-        case "GreetingCardStyleCards":
+        case CardNames.GreetingCardStyleCards:
             return <GreetingCardStyleCards settings={settings} />
 
-        case "CircleGrowthIconCards":
+        case CardNames.CircleGrowthIconCards:
             return <CircleGrowthIconCards settings={settings} /> 
 
-        case "IconGrowthCards":
+        case CardNames.IconGrowthCards:
             return <IconGrowthCards settings={settings} />
 
-        case "HoverSwitchCards":
+        case CardNames.HoverSwitchCards:
             return <HoverSwitchCards settings={settings} />
 
         default:

@@ -1,0 +1,259 @@
+/* Remote Navbar Demo */
+.remote-control-navbars {
+    /* background: #f2f2f2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: rgb(235, 235, 235);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.remote-control-navbars.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.remote-control-navbars.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.remote-control-navbars .navbar-container {
+    padding: 10px 100px !important;
+}
+
+.remote-control-navbars .remote-control-navbar {
+    position: relative;
+    transform: rotate(-25deg) skew(20deg, 5deg);
+    list-style-type: none;
+    margin: 50px;
+}
+
+.remote-control-navbars .remote-control-navbar .list-item {
+    background: #000;
+    color: #575757;
+    text-align: center;
+    height: 2.5em;
+    width: 4em;
+    line-height: 2.5em;
+    border-bottom: 1px solid #060606;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    box-shadow: -2em 1.5em 0 #e1e1e1;
+    transition: all 0.25s linear;
+}
+
+.remote-control-navbars .remote-control-navbar.light .list-item {
+    background: #000;
+    color: rgb(87, 87, 87);
+    border-bottom: 1px solid rgb(6, 6, 6);
+    box-shadow: -2em 1.5em 0 rgb(225, 225, 225);
+}
+
+.remote-control-navbars .remote-control-navbar.dark .list-item {
+    background: #fff;
+    color: rgb(87, 87, 87);   
+    border-bottom: 1px solid rgb(249, 249, 249);
+    box-shadow: -2em 1.5em 0 rgb(30, 30, 30);
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:before, 
+.remote-control-navbars .remote-control-navbar .list-item:after {
+    content: '';
+    position: absolute;
+    transition: all 0.25s linear;
+    width: 0.5em;
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:after {
+    height: 4em;
+    background: rgb(24, 24, 24);
+    bottom: -2.25em;
+    left: 1.5em;
+    transform: rotate(90deg) skew(0, 45deg);
+}
+
+.remote-control-navbars .remote-control-navbar.light .list-item:after {
+    background: rgb(24, 24, 24);
+}
+
+.remote-control-navbars .remote-control-navbar.dark .list-item:after {
+    background: rgb(231, 231, 231);
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:before {
+    height: 2.5em;
+    background: rgb(18, 18, 18);
+    top: 0.25em;
+    left: -0.5em;
+    transform: skewY(-45deg);
+}
+
+.remote-control-navbars .remote-control-navbar.light .list-item:before {
+    background: rgb(18, 18, 18);
+}
+
+.remote-control-navbars .remote-control-navbar.dark .list-item:before {
+    background: rgb(237, 237, 237);
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:hover {
+    background: #ff6e42;
+    color: #fffcfb;
+    transform: translate(0.9em, -0.9em);
+    transition: all 0.25s linear;
+    box-shadow: -2em 2em 0 #e1e1e1;
+}
+
+.remote-control-navbars .remote-control-navbar.light .list-item:hover {
+    box-shadow: -2em 2em 0 #e1e1e1;
+}
+
+.remote-control-navbars .remote-control-navbar.dark .list-item:hover {
+    box-shadow: -2em 2em 0 rgb(30, 30, 30);
+}
+
+.remote-control-navbars .remote-control-navbar.redorange .list-item:hover {
+    background: rgb(255, 110, 66);
+}
+
+.remote-control-navbars .remote-control-navbar.blue .list-item:hover {
+    background: rgb(66, 66, 255);
+}
+
+.remote-control-navbars .remote-control-navbar.mint .list-item:hover {
+    background: rgb(66, 255, 161);
+}
+
+.remote-control-navbars .remote-control-navbar.lightgreen .list-item:hover {
+    background: rgb(161, 255, 66);
+}
+
+.remote-control-navbars .remote-control-navbar.green .list-item:hover {
+    background: rgb(66, 255, 66);
+}
+
+.remote-control-navbars .remote-control-navbar.purple .list-item:hover {
+    background: rgb(161, 66, 255);
+}
+
+.remote-control-navbars .remote-control-navbar.pink .list-item:hover {
+    background: rgb(255, 135, 213);
+}
+
+.remote-control-navbars .remote-control-navbar.hotpink .list-item:hover {
+    background: rgb(255, 66, 161);
+}
+
+.remote-control-navbars .remote-control-navbar.red .list-item:hover {
+    background: rgb(255, 66, 66);
+}
+
+.remote-control-navbars .remote-control-navbar.orange .list-item:hover {
+    background: rgb(255, 161, 66);
+}
+
+.remote-control-navbars .remote-control-navbar.yellow .list-item:hover {
+    color: #cecece;
+    background: rgb(255, 255, 66);
+}
+
+.remote-control-navbars .remote-control-navbar.white .list-item:hover {
+    color: #cecece;
+    background: white;
+}
+
+.remote-control-navbars .remote-control-navbar.black .list-item:hover {
+    background: black;
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:hover:before, 
+.remote-control-navbars .remote-control-navbar .list-item:hover:after {
+    transition: all 0.25s linear;
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:hover:before {
+    background: #b65234;
+    width: 1em;
+    top: 0.5em;
+    left: -1em;
+}
+
+.remote-control-navbars .remote-control-navbar .list-item:hover:after {
+    background: #b65234;
+    width: 1em;
+    bottom: -2.5em;
+    left: 1em;
+    height: 4em;
+}
+
+.remote-control-navbars .remote-control-navbar.redorange .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.redorange .list-item:hover:after {
+    background: rgb(182, 82, 52);
+}
+
+.remote-control-navbars .remote-control-navbar.blue .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.blue .list-item:hover:after {
+    background: rgb(52, 52, 183);
+}
+
+.remote-control-navbars .remote-control-navbar.mint .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.mint .list-item:hover:after {
+    background: rgb(52, 183, 117);
+}
+
+.remote-control-navbars .remote-control-navbar.lightgreen .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.lightgreen .list-item:hover:after {
+    background: rgb(117, 183, 52);
+}
+
+.remote-control-navbars .remote-control-navbar.green .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.green .list-item:hover:after {
+    background: rgb(52, 183, 52);
+}
+
+.remote-control-navbars .remote-control-navbar.purple .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.purple .list-item:hover:after {
+    background: rgb(117, 52, 183);
+}
+
+.remote-control-navbars .remote-control-navbar.pink .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.pink .list-item:hover:after {
+    background: rgb(185, 100, 155);
+}
+
+.remote-control-navbars .remote-control-navbar.hotpink .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.hotpink .list-item:hover:after {
+    background: rgb(183, 52, 117);
+}
+
+.remote-control-navbars .remote-control-navbar.red .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.red .list-item:hover:after {
+    background: rgb(183, 52, 52);
+}
+
+.remote-control-navbars .remote-control-navbar.orange .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.orange .list-item:hover:after {
+    background: rgb(183, 117, 52);
+}
+
+.remote-control-navbars .remote-control-navbar.yellow .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.yellow .list-item:hover:after {
+    background: rgb(183, 183, 52);
+}
+
+.remote-control-navbars .remote-control-navbar.white .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.white .list-item:hover:after {
+    background: rgb(237, 237, 237);
+}
+
+.remote-control-navbars .remote-control-navbar.black .list-item:hover:before,
+.remote-control-navbars .remote-control-navbar.black .list-item:hover:after {
+    background: rgb(24, 24, 24);
+}

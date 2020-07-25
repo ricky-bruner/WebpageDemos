@@ -1,0 +1,133 @@
+/* Quote Movement Testimonials */
+.quote-movement-testimonials {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.quote-movement-testimonials.light {
+    background: #f5f5f5;
+}
+
+.quote-movement-testimonials.dark {
+    background: #232323;
+}
+
+.quote-movement-testimonials .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.quote-movement-testimonials .container .box {
+    position: relative;
+    padding: 80px 40px 40px;
+    transition: .5s;
+    text-align: center;
+    background: white;
+}
+
+.quote-movement-testimonials .container .box:hover {
+    background: #ff0057;
+}
+
+.quote-movement-testimonials .container .box p {
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+
+.quote-movement-testimonials .container .box h4 {
+    margin: 20px 0 0;
+    padding: 0;
+    transition: .5s;
+    font-size: 18px;
+    color: #ff0057;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.quote-movement-testimonials .container .box h4 span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #c5c5c5;
+    transition: .5s;
+}
+
+.quote-movement-testimonials .container .box:hover,
+.quote-movement-testimonials .container .box:hover h4,
+.quote-movement-testimonials .container .box:hover h4 span {
+    color: white;
+}
+
+.quote-movement-testimonials .container .box .imgBox {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.quote-movement-testimonials .container .box .imgBox img {
+    width: 100%;
+}
+
+.quote-movement-testimonials .container .box:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: url("../../../img/quote.svg");
+    background-size: cover;
+    opacity: .05;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.quote-movement-testimonials .container .box:hover:before {
+    transform: translateY(-60px);
+    opacity: 1;
+}
+
+.quote-movement-testimonials .container .box:after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background: url("../../../img/quote.svg");
+    background-size: cover;
+    opacity: .05;
+    pointer-events: none;
+    transition: .5s;
+    transform: rotate(180deg) translateY(0px);
+}
+
+.quote-movement-testimonials .container .box:hover:after {
+    transform: rotate(180deg) translateY(-60px);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .quote-movement-testimonials .container .box {
+        margin-top: 80px;
+    }
+}

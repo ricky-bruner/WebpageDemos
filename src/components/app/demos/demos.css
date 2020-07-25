@@ -182,3 +182,68 @@
     color: black;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
+
+.demo .navbar-container {
+    position: relative;
+    width: 95%;
+    min-height: 150px;
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.demo .navbar-container:before {
+    content: attr(data-text);
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    top: -15px;
+    left: 2%;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+/* .demo .demo-container.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+} */
+
+.demo .navbar-container.dark {
+    background: black;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo .navbar-container.dark:before {
+    background: rgb(30, 30, 30);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* .demo .demo-container.light {
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    background: rgb(235, 235, 235);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+} */
+
+.demo .navbar-container.light {
+    background: white;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo .navbar-container.light:before {
+    background: rgb(235, 235, 235);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}

@@ -3,6 +3,7 @@ import SizeOptionsFactory from '../options/SizeOptionsFactory';
 import SpeedOptionFactory from '../options/SpeedOptionsFactory';
 import ColorOptionsFactory from '../options/ColorOptionsFactory';
 import BorderOptionFactory from '../options/BorderOptionFactory';
+import ButtonNames from '../helpers/buttons/ButtonNames';
 
 export default function ButtonDemoOptionsFactory(demoName){
     let options = {
@@ -25,7 +26,7 @@ export default function ButtonDemoOptionsFactory(demoName){
     };
     
     switch(demoName){
-        case "LiquidWaveButtons":
+        case ButtonNames.LiquidWaveButtons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.sizes = SizeOptionsFactory("standard");
@@ -39,7 +40,7 @@ export default function ButtonDemoOptionsFactory(demoName){
             options.useShowAllColors = true;
             return options;
 
-        case "NeonReflectiveButtons":
+        case ButtonNames.NeonReflectiveButtons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.sizes = SizeOptionsFactory("standard");
@@ -55,7 +56,7 @@ export default function ButtonDemoOptionsFactory(demoName){
             options.reflective = "reflective"
             return options;
 
-        case "ThreeDimensionalButtons":
+        case ButtonNames.ThreeDimensionalButtons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.sizes = SizeOptionsFactory("standard");
@@ -63,18 +64,7 @@ export default function ButtonDemoOptionsFactory(demoName){
             options.useShowAllSizes = true;
             return options;
 
-        case "OscillatingSolidButtons":
-            options.themes = ThemeOptionsFactory("standard");
-            options.theme = "dark";
-            options.sizes = SizeOptionsFactory("standard");
-            options.size = "lg";
-            options.useShowAllSizes = true;
-            options.colors = ColorOptionsFactory("standard");
-            options.color = "blue";
-            options.useShowAllColors = true;
-            return options;
-
-        case "AnimatedOutlineButtons":
+        case ButtonNames.OscillatingSolidButtons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.sizes = SizeOptionsFactory("standard");
@@ -85,7 +75,7 @@ export default function ButtonDemoOptionsFactory(demoName){
             options.useShowAllColors = true;
             return options;
 
-        case "ShootingBorderButtons":
+        case ButtonNames.AnimatedOutlineButtons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
             options.sizes = SizeOptionsFactory("standard");
@@ -96,7 +86,18 @@ export default function ButtonDemoOptionsFactory(demoName){
             options.useShowAllColors = true;
             return options;
 
-        case "MiddleOutButtons":
+        case ButtonNames.ShootingBorderButtons:
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            options.sizes = SizeOptionsFactory("standard");
+            options.size = "lg";
+            options.useShowAllSizes = true;
+            options.colors = ColorOptionsFactory("standard");
+            options.color = "blue";
+            options.useShowAllColors = true;
+            return options;
+
+        case ButtonNames.MiddleOutButtons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
             options.sizes = SizeOptionsFactory("standard");

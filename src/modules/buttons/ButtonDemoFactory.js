@@ -6,28 +6,29 @@ import OscillatingSolidButtons from '../../components/buttons/oscillatingSolid/O
 import AnimatedOutlineButtons from '../../components/buttons/animatedOutline/AnimatedOutlineButtons';
 import ShootingBorderButtons from '../../components/buttons/shootingBorder/ShootingBorderButtons';
 import MiddleOutButtons from '../../components/buttons/middleOut/MiddleOutButtons';
+import ButtonNames from '../helpers/buttons/ButtonNames';
 
 export default function ButtonDemoFactory(demoName, settings){
     switch(demoName){
-        case "LiquidWaveButtons":
+        case ButtonNames.LiquidWaveButtons:
             return <LiquidWaveButtons settings={settings} />
 
-        case "NeonReflectiveButtons":
+        case ButtonNames.NeonReflectiveButtons:
             return <NeonReflectiveButtons settings={settings} />
 
-        case "ThreeDimensionalButtons":
+        case ButtonNames.ThreeDimensionalButtons:
             return <ThreeDimensionalButtons settings={settings} />
 
-        case "OscillatingSolidButtons":
+        case ButtonNames.OscillatingSolidButtons:
             return <OscillatingSolidButtons settings={settings} />
 
-        case "AnimatedOutlineButtons":
+        case ButtonNames.AnimatedOutlineButtons:
             return <AnimatedOutlineButtons settings={settings} />
 
-        case "ShootingBorderButtons":
+        case ButtonNames.ShootingBorderButtons:
             return <ShootingBorderButtons settings={settings} />
 
-        case "MiddleOutButtons":
+        case ButtonNames.MiddleOutButtons:
             return <MiddleOutButtons settings={settings} />
 
         default:

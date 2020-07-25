@@ -4,25 +4,26 @@ import NavbarDemoFactory from './navbars/NavbarDemoFactory';
 import IconDemoFactory from './icons/IconDemoFactory';
 import TestimonialDemoFactory from './testimonials/TestimonialDemoFactory';
 import ScrollbarDemoFactory from './scrollbars/ScrollbarDemoFactory';
+import DemoTypes from './helpers/DemoTypes';
 
 export default function DemoTypeFactory(type, demoName, settings){
     switch(type){
-        case "card":
+        case DemoTypes.Cards:
             return CardDemoFactory(demoName, settings);
 
-        case "button":
+        case DemoTypes.Buttons:
             return ButtonDemoFactory(demoName, settings);
 
-        case "navbar":
+        case DemoTypes.Navbars:
             return NavbarDemoFactory(demoName, settings);
 
-        case "icon":
+        case DemoTypes.Icons:
             return IconDemoFactory(demoName, settings);
 
-        case "testimonial":
+        case DemoTypes.Testimonials:
             return TestimonialDemoFactory(demoName, settings);
 
-        case "scrollbar":
+        case DemoTypes.Scrollbars:
             return ScrollbarDemoFactory(demoName, settings);
 
         default:

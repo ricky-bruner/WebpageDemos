@@ -1,0 +1,174 @@
+/* Swinging Border Navbar Demo */
+.swinging-border-navbars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.swinging-border-navbars.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.swinging-border-navbars.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.swinging-border-navbars .swinging-border-navbar {
+    position: relative;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 25px 5px 10px;
+}
+
+.swinging-border-navbars .swinging-border-navbar li {
+    list-style: none;
+}
+
+.swinging-border-navbars .swinging-border-navbar li a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: 0 10px;
+    min-width: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.swinging-border-navbars .swinging-border-navbar.light li a {
+    color: black;
+}
+
+.swinging-border-navbars .swinging-border-navbar li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #ffeb3b;
+    border-left: 2px solid #ffeb3b;
+    transform-origin: left;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.swinging-border-navbars .swinging-border-navbar.bd-thin li a:before {
+    border-width: 1px;
+}
+
+.swinging-border-navbars .swinging-border-navbar.bd-thicc li a:before {
+    border-width: 3px;
+}
+
+.swinging-border-navbars .swinging-border-navbar li a:hover:before {
+    width: 10px;
+    height: 10px;
+    transform: rotate(360deg);
+}
+
+.swinging-border-navbars .swinging-border-navbar li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #ffeb3b;
+    border-right: 2px solid #ffeb3b;
+    transform-origin: right;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.swinging-border-navbars .swinging-border-navbar.bd-thin li a:after {
+    border-width: 1px;
+}
+
+.swinging-border-navbars .swinging-border-navbar.bd-thicc li a:after {
+    border-width: 3px;
+}
+
+.swinging-border-navbars .swinging-border-navbar li a:hover:after {
+    width: 10px;
+    height: 10px;
+    transform: rotate(-360deg);
+    transition-delay: .3s;
+}
+
+.swinging-border-navbars .swinging-border-navbar.yellow li a:before,
+.swinging-border-navbars .swinging-border-navbar.yellow li a:after {
+    border-color: #ffeb3b;
+}
+
+.swinging-border-navbars .swinging-border-navbar.blue li a:before,
+.swinging-border-navbars .swinging-border-navbar.blue li a:after {
+    border-color: #0000ff;
+}
+
+.swinging-border-navbars .swinging-border-navbar.mint li a:before,
+.swinging-border-navbars .swinging-border-navbar.mint li a:after {
+    border-color: #00ffbf;
+}
+
+.swinging-border-navbars .swinging-border-navbar.lightgreen li a:before,
+.swinging-border-navbars .swinging-border-navbar.lightgreen li a:after {
+    border-color: #80ff00;
+}
+
+.swinging-border-navbars .swinging-border-navbar.green li a:before,
+.swinging-border-navbars .swinging-border-navbar.green li a:after {
+    border-color: #00ff40;
+}
+
+.swinging-border-navbars .swinging-border-navbar.purple li a:before,
+.swinging-border-navbars .swinging-border-navbar.purple li a:after {
+    border-color: #bf00ff;
+}
+
+.swinging-border-navbars .swinging-border-navbar.pink li a:before,
+.swinging-border-navbars .swinging-border-navbar.pink li a:after {
+    border-color: #fe89d5;
+}
+
+.swinging-border-navbars .swinging-border-navbar.hotpink li a:before,
+.swinging-border-navbars .swinging-border-navbar.hotpink li a:after {
+    border-color: #ff00bf;
+}
+
+.swinging-border-navbars .swinging-border-navbar.red li a:before,
+.swinging-border-navbars .swinging-border-navbar.red li a:after {
+    border-color: #ff0000;
+}
+
+.swinging-border-navbars .swinging-border-navbar.redorange li a:before,
+.swinging-border-navbars .swinging-border-navbar.redorange li a:after {
+    border-color: #ff4000;
+}
+
+.swinging-border-navbars .swinging-border-navbar.orange li a:before,
+.swinging-border-navbars .swinging-border-navbar.orange li a:after {
+    border-color: #ff8000;
+}
+
+.swinging-border-navbars .swinging-border-navbar.white li a:before,
+.swinging-border-navbars .swinging-border-navbar.white li a:after {
+    border-color: white;
+}
+
+.swinging-border-navbars .swinging-border-navbar.black li a:before,
+.swinging-border-navbars .swinging-border-navbar.black li a:after {
+    border-color: black;
+}

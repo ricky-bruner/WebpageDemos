@@ -1,0 +1,300 @@
+/* Corner Brackets Hover Navbar */
+.corner-brackets-hover-navbars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 95vh;
+    background: rgb(50, 50, 50);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.corner-brackets-hover-navbars.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.corner-brackets-hover-navbars.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li {
+    list-style: none;
+    padding: 10px 25px;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    padding: 5px;
+}
+
+.corner-brackets-hover-navbars.dark .corner-brackets-hover-navbar li a {
+    color: white;
+}
+
+.corner-brackets-hover-navbars.light .corner-brackets-hover-navbar li a {
+    color: black;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a:hover {
+    color: #ff0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.yellow li a:hover {
+    color: #ff0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.blue li a:hover {
+    color: #0040ff;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.mint li a:hover {
+    color: #00ff80;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.lightgreen li a:hover {
+    color: #80ff00;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.green li a:hover {
+    color: #00ff00;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.purple li a:hover {
+    color: #bf00ff;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.pink li a:hover {
+    color: #ff00ff;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.hotpink li a:hover {
+    color: #ff0080;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.red li a:hover {
+    color: #ff0000;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.redorange li a:hover {
+    color: #ff4000;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.orange li a:hover {
+    color: #ff8000;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.white li a:hover {
+    color: white;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.black li a:hover {
+    color: black;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a span:first-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a:hover span:first-child:before {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a span:first-child:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #ff0;
+    border-right: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a:hover span:first-child:after {
+    top: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a span:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a:hover span:last-child:before {
+    bottom: -10px;
+    left: -10px;
+    opacity: 1;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a span:last-child:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #ff0;
+    border-right: 2px solid #ff0;
+    transition: .2s;
+    opacity: 0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar li a:hover span:last-child:after {
+    bottom: -10px;
+    right: -10px;
+    opacity: 1;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.yellow li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.yellow li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.yellow li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.yellow li a span:last-child:after {
+    border-color: #ff0;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.blue li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.blue li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.blue li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.blue li a span:last-child:after {
+    border-color: #0040ff;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.mint li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.mint li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.mint li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.mint li a span:last-child:after {
+    border-color: #00ff80;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.lightgreen li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.lightgreen li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.lightgreen li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.lightgreen li a span:last-child:after {
+    border-color: #80ff00;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.green li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.green li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.green li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.green li a span:last-child:after {
+    border-color: #00ff00;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.purple li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.purple li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.purple li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.purple li a span:last-child:after {
+    border-color: #bf00ff;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.pink li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.pink li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.pink li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.pink li a span:last-child:after {
+    border-color: #ff00ff;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.hotpink li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.hotpink li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.hotpink li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.hotpink li a span:last-child:after {
+    border-color: #ff0080;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.red li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.red li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.red li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.red li a span:last-child:after {
+    border-color: #ff0000;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.redorange li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.redorange li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.redorange li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.redorange li a span:last-child:after {
+    border-color: #ff4000;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.orange li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.orange li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.orange li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.orange li a span:last-child:after {
+    border-color: #ff8000;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.white li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.white li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.white li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.white li a span:last-child:after {
+    border-color: white;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.black li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.black li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.black li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.black li a span:last-child:after {
+    border-color: black;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-nm li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-nm li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-nm li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-nm li a span:last-child:after {
+    border-width: 2px;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thin li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thin li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thin li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thin li a span:last-child:after {
+    border-width: 1px;
+}
+
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thicc li a span:first-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thicc li a span:first-child:after,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thicc li a span:last-child:before,
+.corner-brackets-hover-navbars .corner-brackets-hover-navbar.bd-thicc li a span:last-child:after {
+    border-width: 3px;
+}
