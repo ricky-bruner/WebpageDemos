@@ -104,7 +104,7 @@ export default class IsometricHoverRiseSocialMediaIcons extends Component {
                     this.props.settings.showAllColors &&
                     this.props.settings.colors.map(c => {
                         return (
-                            <div className="icon-container" data-text={this.props.settings.size}>
+                            <div className="icon-container" data-text={c}>
                                 <div className="isometric-hover-rise-social-media-icon-row">
                                     <div className={"isometric-hover-rise-social-media-icon " + c + " " + this.props.settings.size}>
                                         <a href="#home">

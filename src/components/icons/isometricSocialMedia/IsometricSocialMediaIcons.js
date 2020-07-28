@@ -84,7 +84,7 @@ export default class IsometricSocialMediaIcons extends Component {
                     this.props.settings.showAllColors &&
                     this.props.settings.colors.map(c => {
                         return (
-                            <div className="icon-container" data-text={this.props.settings.size}>
+                            <div className="icon-container" data-text={c}>
                                 <div className="isometric-social-media-icon-row">
                                     <div className={"isometric-social-media-icon " + c + " " + this.props.settings.size}>
                                         <a href="#home">
@@ -98,7 +98,7 @@ export default class IsometricSocialMediaIcons extends Component {
                                     </div>
                                     <div className={"isometric-social-media-icon " + c + " " + this.props.settings.size}>
                                         <a href="#home">
-                                            <FontAwesomeIcon icon={faWhatsapp} />
+                                            <FontAwesomeIcon icon={faGooglePlusG} />
                                         </a>
                                     </div>
                                     <div className={"isometric-social-media-icon " + c + " " + this.props.settings.size}>
@@ -171,7 +171,7 @@ export default class IsometricSocialMediaIcons extends Component {
                                     </div>
                                     <div className={"isometric-social-media-icon " + this.props.settings.color + " " + s}>
                                         <a href="#home">
-                                            <FontAwesomeIcon icon={faWhatsapp} />
+                                            <FontAwesomeIcon icon={faGooglePlusG} />
                                         </a>
                                     </div>
                                     <div className={"isometric-social-media-icon " + this.props.settings.color + " " + s}>
