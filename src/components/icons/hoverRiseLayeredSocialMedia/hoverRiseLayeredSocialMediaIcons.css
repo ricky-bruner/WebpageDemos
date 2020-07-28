@@ -1,0 +1,254 @@
+/* Hover Rise Layered Icons */
+.hover-rise-layered-social-media-icons {
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(235, 235, 235);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.hover-rise-layered-social-media-icons.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.hover-rise-layered-social-media-icons.dark {
+    background: rgb(50, 50, 50);
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.hover-rise-layered-social-media-icons .icon-container {
+    position: relative;
+    margin-top: 55px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px; 
+    padding: 0;
+    transform: rotate(-30deg) skew(25deg);
+    font-size: 30px;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.lg {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xlg {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.md {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.sm {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xs {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:hover span {
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.default:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.facebook:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.facebook:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.facebook:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.facebook:nth-child(4) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.facebook:nth-child(5) span {
+    background: #3b5999;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.default:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.twitter:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.twitter:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.twitter:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.twitter:nth-child(4) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.twitter:nth-child(5) span {
+    background: #55acee;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.default:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.googleplus:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.googleplus:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.googleplus:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.googleplus:nth-child(4) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.googleplus:nth-child(5) span {
+    background: #dd4b39;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:nth-child(4) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.default:nth-child(4) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.linkedin:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.linkedin:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.linkedin:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.linkedin:nth-child(4) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.linkedin:nth-child(5) span {
+    background: #0077B5;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:nth-child(5) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.default:nth-child(5) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.instagram:nth-child(1) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.instagram:nth-child(2) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.instagram:nth-child(3) span,
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.instagram:nth-child(4) span, 
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.instagram:nth-child(5) span {
+    background: #e4405f;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:hover span:nth-child(5),
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.lg:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:hover span:nth-child(4),
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.lg:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:hover span:nth-child(3),
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.lg:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:hover span:nth-child(2),
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.lg:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon:hover span:nth-child(1),
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.lg:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+    opacity: .2;
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xlg:hover span:nth-child(5) {
+    transform: translate(48px, -48px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xlg:hover span:nth-child(4) {
+    transform: translate(36px, -36px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xlg:hover span:nth-child(3) {
+    transform: translate(24px, -24px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xlg:hover span:nth-child(2) {
+    transform: translate(12px, -12px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xlg:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.md:hover span:nth-child(5) {
+    transform: translate(32px, -32px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.md:hover span:nth-child(4) {
+    transform: translate(24px, -24px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.md:hover span:nth-child(3) {
+    transform: translate(16px, -16px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.md:hover span:nth-child(2) {
+    transform: translate(8px, -8px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.md:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.sm:hover span:nth-child(5) {
+    transform: translate(24px, -24px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.sm:hover span:nth-child(4) {
+    transform: translate(18px, -18px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.sm:hover span:nth-child(3) {
+    transform: translate(12px, -12px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.sm:hover span:nth-child(2) {
+    transform: translate(6px, -6px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.sm:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xs:hover span:nth-child(5) {
+    transform: translate(20px, -20px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xs:hover span:nth-child(4) {
+    transform: translate(15px, -15px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xs:hover span:nth-child(3) {
+    transform: translate(10px, -10px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xs:hover span:nth-child(2) {
+    transform: translate(5px, -5px);
+}
+
+.hover-rise-layered-social-media-icons .hover-rise-layered-social-media-icon.xs:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+}

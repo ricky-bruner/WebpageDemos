@@ -1,0 +1,237 @@
+/* Animated Movement Icons */
+.animated-movement-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    width: 100%;
+    background: #072b3a;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.animated-movement-icons.dark {
+    border: 1px solid black;
+    background: #072b3a;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+}
+
+.animated-movement-icons.light {
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    background: #d9e5ea;
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
+}
+
+.animated-movement-icons .icon-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.animated-movement-icons .icon-container .icon {
+    width: 200px;
+}
+
+.animated-movement-icons .icon-container .icon path,
+.animated-movement-icons .icon-container .icon.lightning path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+}
+
+.animated-movement-icons .icon-container .icon.bd-nm path {
+    stroke-width: 10;
+}
+
+.animated-movement-icons .icon-container .icon.bd-thin path {
+    stroke-width: 6;
+}
+
+.animated-movement-icons .icon-container .icon.bd-thicc path {
+    stroke-width: 14;
+}
+
+.animated-movement-icons .icon-container .icon.fire path {
+    stroke: #ff6633;
+}
+
+.animated-movement-icons .icon-container .icon.neon path {
+    stroke: #33ff33;
+}
+
+.animated-movement-icons .icon-container .icon.fuscia path {
+    stroke: #ff33cc;
+}
+
+.animated-movement-icons .icon-container .icon.electric path {
+    stroke: #ffff33;
+}
+
+.animated-movement-icons .icon-container .icon.white path {
+    stroke: white;
+}
+
+.animated-movement-icons .icon-container .icon.black path {
+    stroke: black;
+}
+
+.animated-movement-icons .icon-container .icon.heart path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.animated-movement-icons .icon-container .icon.heart:hover path,
+.animated-movement-icons .icon-container .icon.neonblue.heart:hover path {
+    animation: animate-heart 1.5s linear forwards;
+    fill-opacity: 0;
+    fill: #31e8ff;
+}
+
+.animated-movement-icons .icon-container .icon.star path {
+    stroke-dasharray: 1810;
+    stroke-dashoffset: 0;
+}
+
+.animated-movement-icons .icon-container .icon.star:hover path,
+.animated-movement-icons .icon-container .icon.neonblue.star:hover path {
+    animation: animate-star 2s linear forwards;
+    fill-opacity: 0;
+    fill: #31e8ff;
+}
+
+.animated-movement-icons .icon-container .icon.moon path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+}
+
+.animated-movement-icons .icon-container .icon.moon:hover path,
+.animated-movement-icons .icon-container .icon.lightning.moon:hover path {
+    animation: animate-moon 1.5s linear forwards;
+    fill-opacity: 0;
+    fill: #31e8ff;
+}
+
+.animated-movement-icons .icon-container .icon.leaf path {
+    stroke-dasharray: 2350;
+    stroke-dashoffset: 0;
+}
+
+.animated-movement-icons .icon-container .icon.leaf:hover path,
+.animated-movement-icons .icon-container .icon.lightning.leaf:hover path {
+    animation: animate-leaf 1.5s linear forwards;
+    fill-opacity: 0;
+    fill: #31e8ff;
+}
+
+.animated-movement-icons .icon-container .icon.fire.heart:hover path,
+.animated-movement-icons .icon-container .icon.fire.star:hover path,
+.animated-movement-icons .icon-container .icon.fire.moon:hover path,
+.animated-movement-icons .icon-container .icon.fire.leaf:hover path {
+    fill: #ff6633;
+}
+
+.animated-movement-icons .icon-container .icon.neon.heart:hover path,
+.animated-movement-icons .icon-container .icon.neon.star:hover path,
+.animated-movement-icons .icon-container .icon.neon.moon:hover path,
+.animated-movement-icons .icon-container .icon.neon.leaf:hover path {
+    fill: #33ff33;
+}
+
+.animated-movement-icons .icon-container .icon.fuscia.heart:hover path,
+.animated-movement-icons .icon-container .icon.fuscia.star:hover path,
+.animated-movement-icons .icon-container .icon.fuscia.moon:hover path,
+.animated-movement-icons .icon-container .icon.fuscia.leaf:hover path {
+    fill: #ff33cc;
+}
+
+.animated-movement-icons .icon-container .icon.electric.heart:hover path,
+.animated-movement-icons .icon-container .icon.electric.star:hover path,
+.animated-movement-icons .icon-container .icon.electric.moon:hover path,
+.animated-movement-icons .icon-container .icon.electric.leaf:hover path {
+    fill: #ffff33;
+}
+
+.animated-movement-icons .icon-container .icon.white.heart:hover path,
+.animated-movement-icons .icon-container .icon.white.star:hover path,
+.animated-movement-icons .icon-container .icon.white.moon:hover path,
+.animated-movement-icons .icon-container .icon.white.leaf:hover path {
+    fill: white;
+}
+
+.animated-movement-icons .icon-container .icon.black.heart:hover path,
+.animated-movement-icons .icon-container .icon.black.star:hover path,
+.animated-movement-icons .icon-container .icon.black.moon:hover path,
+.animated-movement-icons .icon-container .icon.black.leaf:hover path {
+    fill: black;
+}
+
+@keyframes animate-heart {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 1560;
+    }
+    80% {
+        stroke-dashoffset: 3120;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 3120;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes animate-star {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 1810;
+    }
+    80% {
+        stroke-dashoffset: 3620;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 3620;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes animate-moon {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 1560;
+    }
+    80% {
+        stroke-dashoffset: 3120;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 3120;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes animate-leaf {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 2350;
+    }
+    80% {
+        stroke-dashoffset: 4700;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 4700;
+        fill-opacity: 1;
+    }
+}

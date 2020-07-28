@@ -11,6 +11,7 @@ export default class GenericDemo extends Component {
         size: "",
         speed: "",
         reflective: "",
+        overflowing: false,
         showAllBorders: false,
         showAllColors: false,
         showAllSizes: false,
@@ -24,7 +25,8 @@ export default class GenericDemo extends Component {
             size: this.props.options.size,
             speed: this.props.options.speed,
             theme: this.props.options.theme,
-            reflective: this.props.options.reflective
+            reflective: this.props.options.reflective,
+            overflowing: this.props.options.overflowing
         })
     }
 
@@ -37,6 +39,7 @@ export default class GenericDemo extends Component {
             colors: this.props.options.colors,
             showAllColors: this.state.showAllColors,
             reflective: this.state.reflective,
+            overflowing: this.state.overflowing,
             size: this.state.size,
             sizes: this.props.options.sizes,
             showAllSizes: this.state.showAllSizes,
@@ -88,6 +91,14 @@ export default class GenericDemo extends Component {
         });
     }
 
+    toggleOverflowing = () => {
+        let newState = this.getToggledState("overflowing");
+        
+        this.setState(newState, () => {
+            this.refs.CodeWindow.renderHTML()
+        });
+    }
+
     toggleAllColors = () => {
         let newState = this.getToggledState("color");
         newState.size = !this.state.showAllColors ? "xs" : this.props.options.size;
@@ -126,6 +137,7 @@ export default class GenericDemo extends Component {
             border: type === "border" ? (!this.state.showAllBorders ? "" : this.props.options.border) : (this.state.border === "" ? this.props.options.border : this.state.border),
             color: type === "color" ? (!this.state.showAllColors ? "" : this.props.options.color) : (this.state.color === "" ? this.props.options.color : this.state.color),
             reflective: type === "reflective" ? (this.state.reflective === "reflective" ? "" : "reflective") : (this.state.reflective),
+            overflowing: type === "overflowing" ? !this.state.overflowing : false,
             size: type === "size" ? (!this.state.showAllSizes ? "" : this.props.options.size) : (this.state.size === "" ? this.props.options.size : this.state.size),
             speed: type === "speed" ? (!this.state.showAllSpeeds ? "" : this.props.options.speed) : (this.state.speed === "" ? this.props.options.speed : this.state.speed),
             showAllBorders: type === "border" ? !this.state.showAllBorders : false, 
@@ -203,6 +215,13 @@ export default class GenericDemo extends Component {
                             <div className="option-section">
                                 <h4>Reflective:</h4>
                                 <button className={this.state.reflective ? "active" : ""} onClick={() => this.toggleReflective()}>Toggle Reflection</button>
+                            </div>
+                        }
+                        {
+                            this.props.options.useOverflowing &&
+                            <div className="option-section">
+                                <h4>Overflowing:</h4>
+                                <button className={this.state.overflowing ? "active" : ""} onClick={() => this.toggleOverflowing()}>Toggle Overflowing</button>
                             </div>
                         }
                     </div>

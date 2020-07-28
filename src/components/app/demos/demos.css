@@ -183,7 +183,8 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.demo .navbar-container {
+.demo .navbar-container,
+.demo .icon-container {
     position: relative;
     width: 95%;
     min-height: 150px;
@@ -193,10 +194,11 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
 }
 
-.demo .navbar-container:before {
+.demo .navbar-container:before,
+.demo .icon-container:before {
     content: attr(data-text);
     position: absolute;
     background: black;
@@ -214,15 +216,17 @@
     box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
 } */
 
-.demo .navbar-container.dark {
+.demo .navbar-container.dark,
+.demo .icon-container.dark {
     background: black;
     border: 1px solid black;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.demo .navbar-container.dark:before {
+.demo .navbar-container.dark:before,
+.demo .icon-container.dark:before {
     background: rgb(30, 30, 30);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -234,15 +238,17 @@
     box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 45px;
 } */
 
-.demo .navbar-container.light {
+.demo .navbar-container.light,
+.demo .icon-container.light {
     background: white;
     border: 1px solid white;
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.demo .navbar-container.light:before {
+.demo .navbar-container.light:before,
+.demo .icon-container.light:before {
     background: rgb(235, 235, 235);
     color: black;
     border: 1px solid rgba(0, 0, 0, 0.5);

@@ -1,7 +1,23 @@
+import React from 'react';
+import IconNames from "../helpers/icons/IconNames";
+import AnimatedMovementIcons from "../../components/icons/animatedMovement/AnimatedMovementIcons";
+import HoverRiseLayeredSocialMediaIcons from '../../components/icons/hoverRiseLayeredSocialMedia/HoverRiseLayeredSocialMediaIcons';
+import IsometricSocialMediaIcons from '../../components/icons/isometricSocialMedia/IsometricSocialMediaIcons';
+import IsometricHoverRiseSocialMediaIcons from '../../components/icons/isometricHoverRiseSocialMedia/IsometricHoverRiseSocialMediaIcons';
+
 export default function IconDemoFactory(demoName, settings){
     switch(demoName){
-        case "":
-            return null;
+        case IconNames.IsometricHoverRiseSocialMediaIcons:
+            return <IsometricHoverRiseSocialMediaIcons settings={settings} />
+
+        case IconNames.IsometricSocialMediaIcons:
+            return <IsometricSocialMediaIcons settings={settings} />
+        
+        case IconNames.HoverRiseLayeredSocialMediaIcons:
+            return <HoverRiseLayeredSocialMediaIcons settings={settings} />
+        
+        case IconNames.AnimatedMovementIcons:
+            return <AnimatedMovementIcons settings={settings} />
 
         default:
             return null;

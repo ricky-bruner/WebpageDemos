@@ -3,6 +3,7 @@ import DemoTypes from "./DemoTypes";
 import ButtonNames from "./buttons/ButtonNames";
 import NavbarNames from "./navbars/NavbarNames";
 import TestimonialNames from "./testimonials/TestimonialNames";
+import IconNames from "./icons/IconNames";
 
 export default function DemoFetcher(type) {
     let demoNames = {};
@@ -25,7 +26,7 @@ export default function DemoFetcher(type) {
             break;
 
         case DemoTypes.Icons:
-            demoNames = {};
+            demoNames = IconNames;
             break;
 
         case DemoTypes.Scrollbars:
