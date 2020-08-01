@@ -1,0 +1,498 @@
+.isometric-cube-social-media-icons {
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ccc;
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.isometric-cube-social-media-icons.dark {
+    background: #222;
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.isometric-cube-social-media-icons.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.isometric-cube-social-media-icons .icon-container {
+    min-height: 300px !important;
+    padding: 15px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon-row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon {
+    position: relative;
+    top: 0;
+    left: -20px;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg) rotateY(45deg);
+    transition: .5s;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg {
+    margin: 95px 80px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg {
+    margin: 115px 95px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md {
+    margin: 85px 75px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm {
+    margin: 80px 65px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs {
+    margin: 70px 60px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon:hover {
+    transition: .5s;
+}
+  
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .side {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: #262626;
+    line-height: 80px;
+    text-align: center;
+    transition: .5s;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .side {
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    line-height: 90px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .side {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .side {
+    width: 90px;
+    height: 90px;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .side {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .side {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.isometric-cube-social-media-icons.light .isometric-cube-social-media-icon .side {
+    color: #262626;
+}
+
+.isometric-cube-social-media-icons.dark .isometric-cube-social-media-icon .side {
+    color: #dedede;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon:hover .side {
+    top: -20px;
+    transition: .5s;
+    color: white;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .top {
+    background: white;
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .top {
+    transform: rotateX(90deg) translateZ(60px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .top {
+    transform: rotateX(90deg) translateZ(45px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .top {
+    transform: rotateX(90deg) translateZ(40px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .top {
+    transform: rotateX(90deg) translateZ(35px);
+}
+
+.isometric-cube-social-media-icons.light .isometric-cube-social-media-icon .top {
+    background: white;
+}
+
+.isometric-cube-social-media-icons.dark .isometric-cube-social-media-icon .top {
+    background: #303030;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .left {
+    background: #bcbcbc;
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .left {
+    transform: rotateY(-90deg) translateZ(60px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .left {
+    transform: rotateY(-90deg) translateZ(45px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .left {
+    transform: rotateY(-90deg) translateZ(40px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .left {
+    transform: rotateY(-90deg) translateZ(35px);
+}
+
+.isometric-cube-social-media-icons.light .isometric-cube-social-media-icon .left {
+    background: #bcbcbc;
+}
+
+.isometric-cube-social-media-icons.dark .isometric-cube-social-media-icon .left {
+    background: #232323;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .front {
+    background: #e1e1e1;
+    transform: translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .front {
+    transform: translateZ(60px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .front {
+    transform: translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .front {
+    transform: translateZ(45px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .front {
+    transform: translateZ(40px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .front {
+    transform: translateZ(35px);
+}
+
+.isometric-cube-social-media-icons.light .isometric-cube-social-media-icon .front {
+    background: #e1e1e1;
+}
+
+.isometric-cube-social-media-icons.dark .isometric-cube-social-media-icon .front {
+    background: #353535;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .right {
+    transform: rotateY(90deg) translateZ(50px);
+    visibility: hidden;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .right {
+    transform: rotateY(90deg) translateZ(60px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .right {
+    transform: rotateY(90deg) translateZ(45px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .right {
+    transform: rotateY(90deg) translateZ(40px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .right {
+    transform: rotateY(90deg) translateZ(35px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .back {
+    transform: rotateY(-180deg) translateZ(50px);
+    visibility: hidden;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .back {
+    transform: rotateY(-180deg) translateZ(60px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .back {
+    transform: rotateY(-180deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .back {
+    transform: rotateY(-180deg) translateZ(45px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .back {
+    transform: rotateY(-180deg) translateZ(40px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .back {
+    transform: rotateY(-180deg) translateZ(35px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+    box-shadow: -15px -15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xlg .bottom {
+    transform: rotateX(-90deg) translateZ(60px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.lg .bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.md .bottom {
+    transform: rotateX(-90deg) translateZ(45px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.sm .bottom {
+    transform: rotateX(-90deg) translateZ(40px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.xs .bottom {
+    transform: rotateX(-90deg) translateZ(35px);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon .bottom svg {
+    visibility: hidden;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon:hover .bottom {
+    box-shadow: -35px -35px 25px rgba(0, 0, 0, 0.4);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(1) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.facebook:hover .top {
+    background: #3b5999;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(1) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.facebook:hover .left {
+    background: #2e4a86;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(1) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.facebook:hover .front {
+    background: #4a69ad;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(2) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.twitter:hover .top {
+    background: #55acee;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(2) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.twitter:hover .left {
+    background: #4184b7;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(2) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.twitter:hover .front {
+    background: #4d9fde;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(3) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.googleplus:hover .top {
+    background: #dd4b39;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(3) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.googleplus:hover .left {
+    background: #c13929;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(3) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.googleplus:hover .front {
+    background: #e8432e;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(4) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.linkedin:hover .top {
+    background: #0077B5;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(4) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.linkedin:hover .left {
+    background: #036aa0;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(4) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.linkedin:hover .front {
+    background: #0d82bf;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(5) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.instagram:hover .top {
+    background: #e4405f;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(5) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.instagram:hover .left {
+    background: #d02d4c;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(5) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.instagram:hover .front {
+    background: #f1395c;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(6) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.whatsapp:hover .top {
+    background: #25D366;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(6) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.whatsapp:hover .left {
+    background: rgb(36, 181, 89);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(6) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.whatsapp:hover .front {
+    background: rgb(51, 237, 119);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(7) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.messenger:hover .top {
+    background: #0084ff;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(7) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.messenger:hover .left {
+    background: #006dd3;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(7) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.messenger:hover .front {
+    background: #168cfa;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(8) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.skype:hover .top {
+    background: #00AFF0;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(8) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.skype:hover .left {
+    background: rgb(0, 149, 203);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(8) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.skype:hover .front {
+    background: rgb(4, 188, 255);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(9) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.pinterest:hover .top {
+    background: #bd081c;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(9) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.pinterest:hover .left {
+    background: #9b0718;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(9) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.pinterest:hover .front {
+    background: #d80820;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(10) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.youtube:hover .top {
+    background: #cd201f;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(10) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.youtube:hover .left {
+    background: #a41b1b;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(10) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.youtube:hover .front {
+    background: #ed2323;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(11) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.reddit:hover .top {
+    background: #ff5700;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(11) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.reddit:hover .left {
+    background: #dc4900;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(11) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.reddit:hover .front {
+    background: #fa651b;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(12) .top,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.snapchat:hover .top {
+    background: #FFFC00;
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(12) .left,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.snapchat:hover .left {
+    background: rgb(223, 220, 0);
+}
+
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.default:hover:nth-child(12) .front,
+.isometric-cube-social-media-icons .isometric-cube-social-media-icon.snapchat:hover .front {
+    background: rgb(255, 252, 80);
+}

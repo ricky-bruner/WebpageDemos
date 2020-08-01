@@ -26,6 +26,17 @@ export default function IconDemoOptionsFactory(demoName) {
     };
 
     switch(demoName) {
+        case IconNames.IsometricCubeSocialMediaIcons:
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            options.colors = ColorOptionsFactory("SocialMediaFull");
+            options.color = "default";
+            options.useShowAllColors = true;
+            options.sizes = SizeOptionsFactory("standard");
+            options.size = "lg";
+            options.useShowAllSizes = true;
+            return options;
+        
         case IconNames.IsometricHoverRiseSocialMediaIcons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";

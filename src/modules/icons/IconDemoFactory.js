@@ -4,9 +4,13 @@ import AnimatedMovementIcons from "../../components/icons/animatedMovement/Anima
 import HoverRiseLayeredSocialMediaIcons from '../../components/icons/hoverRiseLayeredSocialMedia/HoverRiseLayeredSocialMediaIcons';
 import IsometricSocialMediaIcons from '../../components/icons/isometricSocialMedia/IsometricSocialMediaIcons';
 import IsometricHoverRiseSocialMediaIcons from '../../components/icons/isometricHoverRiseSocialMedia/IsometricHoverRiseSocialMediaIcons';
+import IsometricCubeSocialMediaIcons from '../../components/icons/isometricCubeSocialMedia/IsometricCubeSocialMediaIcons';
 
 export default function IconDemoFactory(demoName, settings){
     switch(demoName){
+        case IconNames.IsometricCubeSocialMediaIcons:
+            return <IsometricCubeSocialMediaIcons settings={settings} />
+        
         case IconNames.IsometricHoverRiseSocialMediaIcons:
             return <IsometricHoverRiseSocialMediaIcons settings={settings} />
 
