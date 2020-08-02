@@ -1,0 +1,204 @@
+.magic-line-social-media-icons {
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #222;
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.magic-line-social-media-icons.dark {
+    background: #222;
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.magic-line-social-media-icons.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.magic-line-social-media-icons .icon-container {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    padding: 20px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon {
+    position: relative;
+    margin: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.xlg {
+    width: 120px;
+    margin: 15px 30px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.lg {
+    width: 100px;
+    margin: 15px 25px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.md {
+    width: 80px;
+    margin: 10px 20px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.sm {
+    width: 70px;
+    margin: 10px 15px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.xs {
+    width: 60px;
+    margin: 10px 10px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon .base {
+    font-size: 4.5em;
+    color: #3f3f3f;
+}
+
+.magic-line-social-media-icons.dark .magic-line-social-media-icon .base {
+    color: #3f3f3f;
+}
+
+.magic-line-social-media-icons.light .magic-line-social-media-icon .base {
+    color: #b7b7b7;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon .magic-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 4.5em;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .75s ease-in-out;
+    color: #3f3f3f;
+    border-bottom: 4px solid #3f3f3f;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.bd-nm .magic-line {
+    border-width: 4px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.bd-thin .magic-line {
+    border-width: 2px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.bd-thicc .magic-line {
+    border-width: 6px;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.xlg .base,
+.magic-line-social-media-icons .magic-line-social-media-icon.xlg .magic-line {
+    font-size: 5em;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.lg .base,
+.magic-line-social-media-icons .magic-line-social-media-icon.lg .magic-line {
+    font-size: 4.5em;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.md .base,
+.magic-line-social-media-icons .magic-line-social-media-icon.md .magic-line {
+    font-size: 4em;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.sm .base,
+.magic-line-social-media-icons .magic-line-social-media-icon.sm .magic-line {
+    font-size: 3.5em;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.xs .base,
+.magic-line-social-media-icons .magic-line-social-media-icon.xs .magic-line {
+    font-size: 3em;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(1) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.twitter .magic-line {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(2) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.facebook .magic-line {
+    color: #3b5999;
+    border-color: #3b5999;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(3) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.whatsapp .magic-line {
+    color: #25D366;
+    border-color: #25D366;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(4) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.linkedin .magic-line {
+    color: #0077B5;
+    border-color: #0077B5;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(5) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.instagram .magic-line {
+    color: #e4405f;
+    border-color: #e4405f;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(6) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.googleplus .magic-line {
+    color: #dd4b39;
+    border-color: #dd4b39;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(7) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.messenger .magic-line {
+    color: #0084ff;
+    border-color: #0084ff;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(8) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.skype .magic-line {
+    color: #00AFF0;
+    border-color: #00AFF0;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(9) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.youtube .magic-line {
+    color: #cd201f;
+    border-color: #cd201f;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(10) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.pinterest .magic-line {
+    color: #bd081c;
+    border-color: #bd081c;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(11) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.reddit .magic-line {
+    color: #ff5700;
+    border-color: #ff5700;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon.default:nth-child(12) .magic-line,
+.magic-line-social-media-icons .magic-line-social-media-icon.snapchat .magic-line {
+    color: #FFFC00;
+    border-color: #FFFC00;
+}
+
+.magic-line-social-media-icons .magic-line-social-media-icon:hover .magic-line {
+    height: 100%;
+}
