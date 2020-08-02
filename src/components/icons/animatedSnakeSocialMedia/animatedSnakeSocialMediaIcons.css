@@ -1,0 +1,289 @@
+.animated-snake-social-media-icons {
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #222;
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.animated-snake-social-media-icons.dark {
+    background: #222;
+    border: 1px solid black;
+    box-shadow: inset rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+
+.animated-snake-social-media-icons.light {
+    background: rgb(235, 235, 235);
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.animated-snake-social-media-icons .icon-container {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    padding: 20px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #262626;
+    margin: 10px;
+    transition: .5s;
+}
+
+.animated-snake-social-media-icons.dark .animated-snake-social-media-icon {
+    color: #cccccc;
+}
+
+.animated-snake-social-media-icons.light .animated-snake-social-media-icon {
+    color: #262626;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.xlg {
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    font-size: 55px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.lg {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 45px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.md {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 35px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.sm {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.xs {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span {
+    position: absolute;
+    transition: transform .5s;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(3) {
+    width: 100%;
+    height: 1px;
+    background: #262626;
+}
+
+.animated-snake-social-media-icons.light .animated-snake-social-media-icon span:nth-child(1),
+.animated-snake-social-media-icons.light .animated-snake-social-media-icon span:nth-child(3) {
+    background: #262626;
+}
+
+.animated-snake-social-media-icons.dark .animated-snake-social-media-icon span:nth-child(1),
+.animated-snake-social-media-icons.dark .animated-snake-social-media-icon span:nth-child(3) {
+    background: #cccccc;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thin span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thin span:nth-child(3) {
+    height: 1px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-nm span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-nm span:nth-child(3) {
+    height: 2px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thicc span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thicc span:nth-child(3) {
+    height: 3px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    background: #262626;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thin span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thin span:nth-child(4) {
+    width: 1px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-nm span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-nm span:nth-child(4) {
+    width: 2px;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thicc span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.bd-thicc span:nth-child(4) {
+    width: 3px;
+}
+
+.animated-snake-social-media-icons.light .animated-snake-social-media-icon span:nth-child(2),
+.animated-snake-social-media-icons.light .animated-snake-social-media-icon span:nth-child(4) {
+    background: #262626;
+}
+
+.animated-snake-social-media-icons.dark .animated-snake-social-media-icon span:nth-child(2),
+.animated-snake-social-media-icons.dark .animated-snake-social-media-icon span:nth-child(4) {
+    background: #cccccc;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(1):hover,
+.animated-snake-social-media-icons .animated-snake-social-media-icon.facebook:hover {
+    color: #3b5999;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(1):hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(1):hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(1):hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(1):hover span:nth-child(4),  
+.animated-snake-social-media-icons .animated-snake-social-media-icon.facebook:hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.facebook:hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.facebook:hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.facebook:hover span:nth-child(4) {
+    background: #3b5999;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(2):hover,
+.animated-snake-social-media-icons .animated-snake-social-media-icon.twitter:hover {
+    color: #1da1f2;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(2):hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(2):hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(2):hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(2):hover span:nth-child(4),  
+.animated-snake-social-media-icons .animated-snake-social-media-icon.twitter:hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.twitter:hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.twitter:hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.twitter:hover span:nth-child(4) {
+    background: #1da1f2;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(3):hover,
+.animated-snake-social-media-icons .animated-snake-social-media-icon.googleplus:hover {
+    color: #dd4b39;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(3):hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(3):hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(3):hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(3):hover span:nth-child(4),  
+.animated-snake-social-media-icons .animated-snake-social-media-icon.googleplus:hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.googleplus:hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.googleplus:hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.googleplus:hover span:nth-child(4) {
+    background: #dd4b39;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(4):hover,
+.animated-snake-social-media-icons .animated-snake-social-media-icon.linkedin:hover {
+    color: #0077B5;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(4):hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(4):hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(4):hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(4):hover span:nth-child(4),  
+.animated-snake-social-media-icons .animated-snake-social-media-icon.linkedin:hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.linkedin:hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.linkedin:hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.linkedin:hover span:nth-child(4) {
+    background: #0077B5;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(5):hover,
+.animated-snake-social-media-icons .animated-snake-social-media-icon.instagram:hover {
+    color: #e4405f;
+}
+
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(5):hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(5):hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(5):hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.default:nth-child(5):hover span:nth-child(4),  
+.animated-snake-social-media-icons .animated-snake-social-media-icon.instagram:hover span:nth-child(1),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.instagram:hover span:nth-child(2),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.instagram:hover span:nth-child(3),
+.animated-snake-social-media-icons .animated-snake-social-media-icon.instagram:hover span:nth-child(4) {
+    background: #e4405f;
+}
+

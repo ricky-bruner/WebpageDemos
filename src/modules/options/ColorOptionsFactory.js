@@ -17,10 +17,13 @@ export default function ColorOptionsFactory(selection){
         case IconNames.AnimatedMovementIcons:
             return [ "lightning", "fire", "neon", "fuscia", "electric", "black", "white" ];
 
+        case IconNames.AnimatedSnakeSocialMediaIcons:
         case IconNames.HoverRiseLayeredIcons:
+        case "SocialMediaOne":
             return [ "default", "facebook", "twitter", "googleplus", "linkedin", "instagram" ];
 
         case IconNames.IsometricSocialMediaIcons:
+        case "SocialMediaTwo":
             return [ "default", "facebook", "twitter", "whatsapp", "linkedin", "instagram" ];
 
         case "SocialMediaFull":

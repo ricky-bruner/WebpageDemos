@@ -6,9 +6,13 @@ import IsometricSocialMediaIcons from '../../components/icons/isometricSocialMed
 import IsometricHoverRiseSocialMediaIcons from '../../components/icons/isometricHoverRiseSocialMedia/IsometricHoverRiseSocialMediaIcons';
 import IsometricCubeSocialMediaIcons from '../../components/icons/isometricCubeSocialMedia/IsometricCubeSocialMediaIcons';
 import MagicLineSocialMediaIcons from '../../components/icons/magicLineSocialMedia/MagicLineSocialMediaIcons';
+import AnimatedSnakeSocialMediaIcons from '../../components/icons/animatedSnakeSocialMedia/AnimatedSnakeSocialMediaIcons';
 
 export default function IconDemoFactory(demoName, settings){
     switch(demoName){
+        case IconNames.AnimatedSnakeSocialMediaIcons:
+            return <AnimatedSnakeSocialMediaIcons settings={settings} />
+
         case IconNames.MagicLineSocialMediaIcons:
             return <MagicLineSocialMediaIcons settings={settings} />
         

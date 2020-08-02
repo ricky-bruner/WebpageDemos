@@ -26,6 +26,20 @@ export default function IconDemoOptionsFactory(demoName) {
     };
 
     switch(demoName) {
+        case IconNames.AnimatedSnakeSocialMediaIcons:
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            options.borders = BorderOptionFactory("standard");
+            options.border = "bd-thin";
+            options.useShowAllBorders = true;
+            options.colors = ColorOptionsFactory(IconNames.AnimatedSnakeSocialMediaIcons);
+            options.color = "default";
+            options.useShowAllColors = true;
+            options.sizes = SizeOptionsFactory("standard");
+            options.size = "lg";
+            options.useShowAllSizes = true;
+            return options;
+        
         case IconNames.MagicLineSocialMediaIcons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";

@@ -1,4 +1,5 @@
 export default {
+    AnimatedSnakeSocialMediaIcons: "AnimatedSnakeSocialMediaIcons",
     MagicLineSocialMediaIcons: "MagicLineSocialMediaIcons",
     IsometricCubeSocialMediaIcons: "IsometricCubeSocialMediaIcons",
     IsometricHoverRiseSocialMediaIcons: "IsometricHoverRiseSocialMediaIcons",
