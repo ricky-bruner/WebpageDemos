@@ -26,6 +26,17 @@ export default function IconDemoOptionsFactory(demoName) {
     };
 
     switch(demoName) {
+        case IconNames.FlipCubeSocialMediaIcons:
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "light";
+            options.colors = ColorOptionsFactory(IconNames.AnimatedSnakeSocialMediaIcons);
+            options.color = "default";
+            options.useShowAllColors = true;
+            options.sizes = SizeOptionsFactory("standard");
+            options.size = "lg";
+            options.useShowAllSizes = true;
+            return options;
+        
         case IconNames.AnimatedSnakeSocialMediaIcons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";

@@ -7,9 +7,13 @@ import IsometricHoverRiseSocialMediaIcons from '../../components/icons/isometric
 import IsometricCubeSocialMediaIcons from '../../components/icons/isometricCubeSocialMedia/IsometricCubeSocialMediaIcons';
 import MagicLineSocialMediaIcons from '../../components/icons/magicLineSocialMedia/MagicLineSocialMediaIcons';
 import AnimatedSnakeSocialMediaIcons from '../../components/icons/animatedSnakeSocialMedia/AnimatedSnakeSocialMediaIcons';
+import FlipCubeSocialMediaIcons from '../../components/icons/flipCubeSocialMedia/FlipCubeSocialMediaIcons';
 
 export default function IconDemoFactory(demoName, settings){
     switch(demoName){
+        case IconNames.FlipCubeSocialMediaIcons:
+            return <FlipCubeSocialMediaIcons settings={settings} />
+
         case IconNames.AnimatedSnakeSocialMediaIcons:
             return <AnimatedSnakeSocialMediaIcons settings={settings} />
 
