@@ -16,7 +16,7 @@ export default class AppRoutes extends Component {
                 {
                     DemoFetcher(DemoTypes.Navbars).map(demo => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + DemoTypes.Navbars + "/" + demo.demoName}>
+                            <Route exact path={"/" + DemoTypes.Navbars + "/" + demo.demoName}>
                                 <MainContent selectedDemo={demo.demoName} 
                                     selectedDemoType={DemoTypes.Navbars} 
                                     expanded={this.state.expanded} />
@@ -27,7 +27,7 @@ export default class AppRoutes extends Component {
                 {
                     DemoFetcher(DemoTypes.Icons).map(demo => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + DemoTypes.Icons + "/" + demo.demoName}>
+                            <Route exact path={"/" + DemoTypes.Icons + "/" + demo.demoName}>
                                 <MainContent selectedDemo={demo.demoName} 
                                     selectedDemoType={DemoTypes.Icons} 
                                     expanded={this.state.expanded} />
@@ -38,7 +38,7 @@ export default class AppRoutes extends Component {
                 {
                     DemoFetcher(DemoTypes.Cards).map(demo => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + DemoTypes.Cards + "/" + demo.demoName}>
+                            <Route exact path={"/" + DemoTypes.Cards + "/" + demo.demoName}>
                                 <MainContent selectedDemo={demo.demoName} 
                                     selectedDemoType={DemoTypes.Cards} 
                                     expanded={this.state.expanded} />
@@ -49,7 +49,7 @@ export default class AppRoutes extends Component {
                 {
                     DemoFetcher(DemoTypes.Testimonials).map(demo => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + DemoTypes.Testimonials + "/" + demo.demoName}>
+                            <Route exact path={"/" + DemoTypes.Testimonials + "/" + demo.demoName}>
                                 <MainContent selectedDemo={demo.demoName} 
                                     selectedDemoType={DemoTypes.Testimonials} 
                                     expanded={this.state.expanded} />
@@ -60,7 +60,7 @@ export default class AppRoutes extends Component {
                 {
                     DemoFetcher(DemoTypes.Scrollbars).map(demo => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + DemoTypes.Scrollbars + "/" + demo.demoName}>
+                            <Route exact path={"/" + DemoTypes.Scrollbars + "/" + demo.demoName}>
                                 <MainContent selectedDemo={demo.demoName} 
                                     selectedDemoType={DemoTypes.Scrollbars} 
                                     expanded={this.state.expanded} />
@@ -71,7 +71,7 @@ export default class AppRoutes extends Component {
                 {
                     DemoFetcher(DemoTypes.Buttons).map(demo => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + DemoTypes.Buttons + "/" + demo.demoName}>
+                            <Route exact path={"/" + DemoTypes.Buttons + "/" + demo.demoName}>
                                 <MainContent selectedDemo={demo.demoName} 
                                     selectedDemoType={DemoTypes.Buttons} 
                                     expanded={this.state.expanded} />
@@ -82,7 +82,7 @@ export default class AppRoutes extends Component {
                 {
                     Object.keys(DemoTypes).map(key => {
                         return (
-                            <Route exact path={"/WebpageDemos/" + key + "/All"}>
+                            <Route exact path={"/" + key + "/All"}>
                                 <MainContent selectedDemo={"All"} 
                                     selectedDemoType={key} 
                                     expanded={this.state.expanded} />
@@ -90,16 +90,16 @@ export default class AppRoutes extends Component {
                         );
                     })
                 }
-                <Route exact path="/WebpageDemos/Home/">
+                <Route exact path="/Home/">
                     <MainContent selectedDemo={""} 
                         selectedDemoType={DemoTypes.Home} 
                         expanded={this.state.expanded} />
                 </Route>
                 <Route exact path="/WebpageDemos">
-                    <Redirect to="/WebpageDemos/Home/"></Redirect> 
+                    <Redirect to="/Home/"></Redirect> 
                 </Route>
                 <Route exact path="/">
-                    <Redirect to="/WebpageDemos/Home/"></Redirect> 
+                    <Redirect to="/Home/"></Redirect> 
                 </Route>
             </React.Fragment>
         );
