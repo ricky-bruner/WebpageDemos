@@ -18,9 +18,9 @@ export default class NavbarSection extends Component {
                     this.props.showOptionsType &&
                     <ul className="navbar-section-list">
                         {
-                            DemoFetcher(this.props.demoType).map(d => <li><Link to={"/WebpageDemos/" + this.props.demoType + "/" + d.demoName}>{d.friendlyName}</Link></li>)
+                            DemoFetcher(this.props.demoType).map(d => <li><Link to={"/" + this.props.demoType + "/" + d.demoName}>{d.friendlyName}</Link></li>)
                         }
-                        <li><Link to={"/WebpageDemos/" + this.props.demoType + "/All"}>All {this.props.demoType}</Link></li>
+                        <li><Link to={"/" + this.props.demoType + "/All"}>All {this.props.demoType}</Link></li>
                     </ul>
                 }
                 {

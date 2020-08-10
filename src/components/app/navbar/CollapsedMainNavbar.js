@@ -10,7 +10,7 @@ export default class CollapsedMainNavbar extends Component {
     render() {
         return (
             <ul className="collapsed-main-navbar">
-                <Link to={"/WebpageDemos/"} className="collapsed-icon home" id="home"><FontAwesomeIcon icon={faHome} /></Link>
+                <Link to={"/"} className="collapsed-icon home" id="home"><FontAwesomeIcon icon={faHome} /></Link>
                 <li><div className="navbar-section-underline"></div></li>
                 <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Navbars, true)}><FontAwesomeIcon icon={faMapMarkedAlt} /></li>
                 <li><div className="navbar-section-underline"></div></li>
