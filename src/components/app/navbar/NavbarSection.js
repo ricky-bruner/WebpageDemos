@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DemoFetcher from '../../../modules/helpers/DemoFetcher';
+import { Link } from 'react-router-dom';
 
 export default class NavbarSection extends Component {
     state = {};
@@ -17,9 +18,9 @@ export default class NavbarSection extends Component {
                     this.props.showOptionsType &&
                     <ul className="navbar-section-list">
                         {
-                            DemoFetcher(this.props.demoType).map(d => <li><button onClick={() => this.props.selectDemo(this.props.demoType, d.demoName)}>{d.friendlyName}</button></li>)
+                            DemoFetcher(this.props.demoType).map(d => <li><Link to={"/" + this.props.demoType + "/" + d.demoName}>{d.friendlyName}</Link></li>)
                         }
-                        <li><button onClick={() => this.props.selectDemo(this.props.demoType, "All")}>All {this.props.demoType}</button></li>
+                        <li><Link to={"/" + this.props.demoType + "/All"}>All {this.props.demoType}</Link></li>
                     </ul>
                 }
                 {

@@ -5,13 +5,16 @@
     padding: 15px;
     box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 10px;
     background: #0d428c;
+    transition: .5s;
 }
 
 .navbar-container.expanded {
+    transition: .5s;
     width: 15%;
 }
 
 .navbar-container {
+    transition: .5s;
     width: 5%;
 }
 
@@ -80,6 +83,7 @@
     text-align: right;
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none;
     padding: 5px;
     margin: 7px;
     display: flex;
@@ -122,8 +126,9 @@
     background: white;
 }
 
-.navbar-section-list li button {
+.navbar-section-list li a {
     background: none;
+    text-decoration: none;
     border: none;
     color: black;
     font-size: 14px;
@@ -132,7 +137,7 @@
     cursor: pointer;
 }
 
-.navbar-section-list li button:focus {
+.navbar-section-list li a:focus {
     outline: none;
 }
 
@@ -140,6 +145,14 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.collapsed-main-navbar .collapsed-icon.home svg {
+    color: white;
+    margin: 5px;
+    font-size: 36px;
     padding: 5px;
 }
 

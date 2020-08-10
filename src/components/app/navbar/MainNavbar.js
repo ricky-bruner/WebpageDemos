@@ -7,6 +7,7 @@ import NavbarSection from "./NavbarSection";
 import "./mainnavbar.css";
 import NavbarToggleButton from "./NavbarToggleButton";
 import CollapsedMainNavbar from "./CollapsedMainNavbar";
+import { Link } from "react-router-dom";
 
 export default class MainNavbar extends Component {
     state = {
@@ -69,20 +70,20 @@ export default class MainNavbar extends Component {
                     this.props.expanded &&
                     <ul className="expanded-main-navbar">
                         <li className="navbar-section">
-                            <div className="navbar-section-header" id="home" onClick={() => this.props.selectDemo(DemoTypes.Home, "")}><span><FontAwesomeIcon icon={faHome} /></span> Home</div>
+                            <Link to={"/"} className="navbar-section-header" id="home"><span><FontAwesomeIcon icon={faHome} /></span> Home</Link>
                             <div className="navbar-section-underline"></div>
                         </li>
-                        <NavbarSection demoType={DemoTypes.Navbars} showOptionsType={this.state.showNavbarOptions} showOptions={this.showOptions} selectDemo={this.props.selectDemo} sectionIcon={faMapMarkedAlt} />
-                        <NavbarSection demoType={DemoTypes.Icons} showOptionsType={this.state.showIconOptions} showOptions={this.showOptions} selectDemo={this.props.selectDemo} sectionIcon={faIcons} />
-                        <NavbarSection demoType={DemoTypes.Cards} showOptionsType={this.state.showCardOptions} showOptions={this.showOptions} selectDemo={this.props.selectDemo} sectionIcon={faAddressCard} />
-                        <NavbarSection demoType={DemoTypes.Testimonials} showOptionsType={this.state.showTestimonialOptions} showOptions={this.showOptions} selectDemo={this.props.selectDemo} sectionIcon={faUsers} />
-                        <NavbarSection demoType={DemoTypes.Scrollbars} showOptionsType={this.state.showScrollbarOptions} showOptions={this.showOptions} selectDemo={this.props.selectDemo} sectionIcon={faScroll} />
-                        <NavbarSection demoType={DemoTypes.Buttons} showOptionsType={this.state.showButtonOptions} showOptions={this.showOptions} selectDemo={this.props.selectDemo} sectionIcon={faHandPointer} />
+                        <NavbarSection demoType={DemoTypes.Navbars} showOptionsType={this.state.showNavbarOptions} showOptions={this.showOptions} sectionIcon={faMapMarkedAlt} />
+                        <NavbarSection demoType={DemoTypes.Icons} showOptionsType={this.state.showIconOptions} showOptions={this.showOptions} sectionIcon={faIcons} />
+                        <NavbarSection demoType={DemoTypes.Cards} showOptionsType={this.state.showCardOptions} showOptions={this.showOptions} sectionIcon={faAddressCard} />
+                        <NavbarSection demoType={DemoTypes.Testimonials} showOptionsType={this.state.showTestimonialOptions} showOptions={this.showOptions} sectionIcon={faUsers} />
+                        <NavbarSection demoType={DemoTypes.Scrollbars} showOptionsType={this.state.showScrollbarOptions} showOptions={this.showOptions} sectionIcon={faScroll} />
+                        <NavbarSection demoType={DemoTypes.Buttons} showOptionsType={this.state.showButtonOptions} showOptions={this.showOptions} sectionIcon={faHandPointer} />
                     </ul>
                 }
                 {
                     !this.props.expanded &&
-                    <CollapsedMainNavbar showOptions={this.showOptions} selectDemo={this.props.selectDemo} />
+                    <CollapsedMainNavbar showOptions={this.showOptions} />
                 }
                 <NavbarToggleButton toggleNavbar={this.props.toggleNavbar} />
             </div>

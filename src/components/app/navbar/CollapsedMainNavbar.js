@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faIcons, faMapMarkedAlt, faAddressCard, faScroll, faHandPointer, faUsers } from '@fortawesome/free-solid-svg-icons';
 import DemoTypes from '../../../modules/helpers/DemoTypes';
+import { Link } from 'react-router-dom';
 
 export default class CollapsedMainNavbar extends Component {
     state = {};
@@ -9,7 +10,7 @@ export default class CollapsedMainNavbar extends Component {
     render() {
         return (
             <ul className="collapsed-main-navbar">
-                <li className="collapsed-icon" id="home" onClick={() => this.props.selectDemo(DemoTypes.Home, "")}><FontAwesomeIcon icon={faHome} /></li>
+                <Link to={"/"} className="collapsed-icon home" id="home"><FontAwesomeIcon icon={faHome} /></Link>
                 <li><div className="navbar-section-underline"></div></li>
                 <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Navbars, true)}><FontAwesomeIcon icon={faMapMarkedAlt} /></li>
                 <li><div className="navbar-section-underline"></div></li>
