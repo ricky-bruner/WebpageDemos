@@ -70,7 +70,7 @@ export default class MainNavbar extends Component {
                     this.props.expanded &&
                     <ul className="expanded-main-navbar">
                         <li className="navbar-section">
-                            <Link to={"/"} className="navbar-section-header" id="home"><span><FontAwesomeIcon icon={faHome} /></span> Home</Link>
+                            <Link to={"/WebpageDemos/"} className="navbar-section-header" id="home"><span><FontAwesomeIcon icon={faHome} /></span> Home</Link>
                             <div className="navbar-section-underline"></div>
                         </li>
                         <NavbarSection demoType={DemoTypes.Navbars} showOptionsType={this.state.showNavbarOptions} showOptions={this.showOptions} sectionIcon={faMapMarkedAlt} />
