@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import OTIcon from "../../../img/online-tutorials-icon.png";
+import MainLogo from "../../../img/transfigureiologos/transfigure_io_code_blue.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkedAlt, faIcons, faAddressCard, faScroll, faHandPointer, faHome, faUsers } from '@fortawesome/free-solid-svg-icons';
 import DemoTypes from "../../../modules/helpers/DemoTypes";
@@ -57,12 +57,12 @@ export default class MainNavbar extends Component {
             <div className={this.props.expanded ? "navbar-container expanded" : "navbar-container"}>
                 {
                     !this.props.expanded &&
-                    <img className="ot-icon" src={OTIcon} alt="Online Tutorials Icon" />
+                    <img className="ot-icon" src={MainLogo} alt="Online Tutorials Icon" />
                 }
                 {
                     this.props.expanded &&
                     <div className="expanded-ot-icon">
-                        <img className="ot-icon" src={OTIcon} alt="Online Tutorials Icon" />
+                        <img className="ot-icon" src={MainLogo} alt="Online Tutorials Icon" />
                     </div>
                 }
                 <NavbarToggleButton toggleNavbar={this.props.toggleNavbar} />

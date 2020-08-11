@@ -24,6 +24,7 @@
     justify-content: flex-end;
     padding: 5px;
     margin: 15px 0;
+    transition: .5s;
 }
 
 .navbar-container.expanded .toggle-navbar-button-container {
@@ -32,6 +33,7 @@
     justify-content: flex-end;
     padding: 5px;
     margin: 15px 0;
+    transition: .5s;
 }
 
 .navbar-container .toggle-navbar-button-container .toggle-navbar-button {
@@ -43,14 +45,17 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
+    transition: .5s;
 }
 
 .navbar-container .toggle-navbar-button-container  .toggle-navbar-button img {
     width: 50px;
+    transition: .5s;
 }
 
 .navbar-container.expanded .toggle-navbar-button-container  .toggle-navbar-button img {
     transform: rotate(180deg);
+    transition: .5s;
 }
 
 .navbar-container ul {
@@ -69,13 +74,15 @@
 
 .navbar-container .ot-icon {
     width: 80px;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
-    filter: hue-rotate(210deg);
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    border-radius: 50%;
+    transition: .5s;
 }
 
 .navbar-container .expanded-ot-icon {
     display: flex;
     justify-content: center;
+    transition: .5s;
 }
 
 .navbar-section-header {
