@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/transfigure.io/static/css/main.a3301052.chunk.css",
-    "main.js": "/transfigure.io/static/js/main.825644e4.chunk.js",
-    "main.js.map": "/transfigure.io/static/js/main.825644e4.chunk.js.map",
+    "main.js": "/transfigure.io/static/js/main.734782c8.chunk.js",
+    "main.js.map": "/transfigure.io/static/js/main.734782c8.chunk.js.map",
     "runtime-main.js": "/transfigure.io/static/js/runtime-main.b0100b42.js",
     "runtime-main.js.map": "/transfigure.io/static/js/runtime-main.b0100b42.js.map",
     "static/js/2.36fde851.chunk.js": "/transfigure.io/static/js/2.36fde851.chunk.js",
     "static/js/2.36fde851.chunk.js.map": "/transfigure.io/static/js/2.36fde851.chunk.js.map",
     "index.html": "/transfigure.io/index.html",
-    "precache-manifest.299fdd47b655283e7891ec74eedbd594.js": "/transfigure.io/precache-manifest.299fdd47b655283e7891ec74eedbd594.js",
+    "precache-manifest.571f3b8ea011903fba6e8e5f14bd8a43.js": "/transfigure.io/precache-manifest.571f3b8ea011903fba6e8e5f14bd8a43.js",
     "service-worker.js": "/transfigure.io/service-worker.js",
     "static/css/main.a3301052.chunk.css.map": "/transfigure.io/static/css/main.a3301052.chunk.css.map",
     "static/js/2.36fde851.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.36fde851.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.b0100b42.js",
     "static/js/2.36fde851.chunk.js",
     "static/css/main.a3301052.chunk.css",
-    "static/js/main.825644e4.chunk.js"
+    "static/js/main.734782c8.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d86b256f669cedcec328f3cd9406eaca",
+    "revision": "f3bd4b372b13d8af12f4f079b6c5c571",
     "url": "/transfigure.io/index.html"
   },
   {
-    "revision": "65a44a8c2d0a9d8e5dda",
+    "revision": "9c9c1f75edf1dd127136",
     "url": "/transfigure.io/static/css/main.a3301052.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/transfigure.io/static/js/2.36fde851.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "65a44a8c2d0a9d8e5dda",
-    "url": "/transfigure.io/static/js/main.825644e4.chunk.js"
+    "revision": "9c9c1f75edf1dd127136",
+    "url": "/transfigure.io/static/js/main.734782c8.chunk.js"
   },
   {
     "revision": "205d8255a4c706acedd1",
