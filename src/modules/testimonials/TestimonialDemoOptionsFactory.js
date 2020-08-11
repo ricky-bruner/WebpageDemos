@@ -1,8 +1,8 @@
 import ThemeOptionsFactory from '../options/ThemeOptionsFactory';
-import SizeOptionsFactory from '../options/SizeOptionsFactory';
-import SpeedOptionFactory from '../options/SpeedOptionsFactory';
-import ColorOptionsFactory from '../options/ColorOptionsFactory';
-import BorderOptionFactory from '../options/BorderOptionFactory';
+// import SizeOptionsFactory from '../options/SizeOptionsFactory';
+// import SpeedOptionFactory from '../options/SpeedOptionsFactory';
+// import ColorOptionsFactory from '../options/ColorOptionsFactory';
+// import BorderOptionFactory from '../options/BorderOptionFactory';
 import TestimonialNames from '../helpers/testimonials/TestimonialNames';
 
 export default function TestimonialDemoOptionsFactory(demoName) {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 String.prototype.toFriendlyName = function(type) {
     return this.replace(/([A-Z]+)/g, ' $1').trim().replace(` ${type}`, '');
 }

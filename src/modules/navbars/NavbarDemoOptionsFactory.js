@@ -1,6 +1,6 @@
 import ThemeOptionsFactory from '../options/ThemeOptionsFactory';
-import SizeOptionsFactory from '../options/SizeOptionsFactory';
-import SpeedOptionFactory from '../options/SpeedOptionsFactory';
+// import SizeOptionsFactory from '../options/SizeOptionsFactory';
+// import SpeedOptionFactory from '../options/SpeedOptionsFactory';
 import ColorOptionsFactory from '../options/ColorOptionsFactory';
 import BorderOptionFactory from '../options/BorderOptionFactory';
 import NavbarNames from '../helpers/navbars/NavbarNames';

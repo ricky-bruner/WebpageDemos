@@ -1,6 +1,6 @@
 import ThemeOptionsFactory from '../options/ThemeOptionsFactory';
 import SizeOptionsFactory from '../options/SizeOptionsFactory';
-import SpeedOptionFactory from '../options/SpeedOptionsFactory';
+// import SpeedOptionFactory from '../options/SpeedOptionsFactory';
 import ColorOptionsFactory from '../options/ColorOptionsFactory';
 import BorderOptionFactory from '../options/BorderOptionFactory';
 import IconNames from '../helpers/icons/IconNames';
@@ -29,7 +29,7 @@ export default function IconDemoOptionsFactory(demoName) {
         case IconNames.FlipCubeSocialMediaIcons:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "light";
-            options.colors = ColorOptionsFactory(IconNames.AnimatedSnakeSocialMediaIcons);
+            options.colors = ColorOptionsFactory("SocialMediaOne");
             options.color = "default";
             options.useShowAllColors = true;
             options.sizes = SizeOptionsFactory("standard");

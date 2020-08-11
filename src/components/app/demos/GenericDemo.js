@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CodeWindow from '../codewindows/CodeWindow';
 import DemoTypeFactory from '../../../modules/DemoTypeFactory';
+import DemoTypeCitationsFactory from '../../../modules/DemoTypeCitationsFactory';
 import './demos.css';
 
 export default class GenericDemo extends Component {
@@ -162,7 +163,7 @@ export default class GenericDemo extends Component {
                                 <h4>Theme:</h4>
                                 {
                                     this.props.options.themes.map(theme => {
-                                        return <button className={(this.state.theme === theme) ? "active" : ""} onClick={() => this.toggleTheme(theme)}>{theme.toUpperCase()}</button>
+                                        return <button className={(this.state.theme === theme) ? "active" : ""} onClick={() => this.toggleTheme(theme)}>{theme}</button>
                                     })
                                 }
                             </div>
@@ -239,6 +240,9 @@ export default class GenericDemo extends Component {
                                 }
                             </div>
                         </div>
+                    }
+                    {
+                        DemoTypeCitationsFactory(this.props.demoType, this.props.demoName)
                     }
                 </div>
                 <div className="demo-container">

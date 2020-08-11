@@ -13,27 +13,22 @@ export default class IsometricHoverRiseSocialMediaIcons extends Component {
             this.props.settings.colors.map(color => {
                 switch (color) {
                     case "facebook":
-                        pairings.push({ color: color, icon: faFacebookF });
-                        break;
+                        return pairings.push({ color: color, icon: faFacebookF });
 
                     case "twitter":
-                        pairings.push({ color: color, icon: faTwitter });
-                        break;
+                        return pairings.push({ color: color, icon: faTwitter });
 
                     case "whatsapp":
-                        pairings.push({ color: color, icon: faWhatsapp });
-                        break;
+                        return pairings.push({ color: color, icon: faWhatsapp });
 
                     case "linkedin":
-                        pairings.push({ color: color, icon: faLinkedinIn });
-                        break;
+                        return pairings.push({ color: color, icon: faLinkedinIn });
 
                     case "instagram":
-                        pairings.push({ color: color, icon: faInstagram });
-                        break;
+                        return pairings.push({ color: color, icon: faInstagram });
 
                     default:
-                        break;
+                        return null;
                 }
             });
         }

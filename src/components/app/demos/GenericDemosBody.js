@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import GenericDemo from './GenericDemo';
-// import './cards.css';
-import DemoTypes from '../../../modules/helpers/DemoTypes';
 import DemoTypeOptionsFactory from '../../../modules/DemoTypeOptionsFactory';
 import DemoHeaderFactory from '../../../modules/DemoHeaderFactory';
 import DemoFetcher from '../../../modules/helpers/DemoFetcher';

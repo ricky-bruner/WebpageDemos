@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import DemoTypes from "../../../modules/helpers/DemoTypes";
-// import MainContent from "../../../MainContent";
 import DemoFetcher from "../../../modules/helpers/DemoFetcher";
 import MainContent from "../content/MainContent";
 
