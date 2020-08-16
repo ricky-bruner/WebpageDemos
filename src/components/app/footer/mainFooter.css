@@ -323,3 +323,43 @@
 .main-footer .footer-icon.udemy:hover span:nth-child(4) {
     background: #eb524f;
 }
+
+
+/* @media (max-width: 1085px) {
+    .main-footer .footer-icon.sm {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 22px;
+    }
+} */
+
+@media (max-width: 1000px) {
+    .main-footer .footer-icon.sm {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-footer {
+        flex-direction: column;
+        height: 100%;
+        padding: 5px;
+    }
+    
+    .main-footer .left,
+    .main-footer .right {
+        width: 99.5%;
+        margin: 5px;
+    }
+
+    .main-footer .footer-icon.sm {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 25px;
+    }
+}

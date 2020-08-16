@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 .navbar-container {
     display: flex;
     flex-direction: column;
@@ -63,16 +65,21 @@
 }
 
 .navbar-container h2 {
-    font-size: 22px;
+    display: none;
+    font-size: 26px;
+    font-family: 'Kaushan Script', cursive;
     margin: 20px 0;
-    color: #0d428c;
+    color: white;
     text-align: center;
-    background: white;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    text-shadow: rgba(0, 0, 0, .7) 1px 1px;
 }
 
-.navbar-container .ot-icon {
+.navbar-container.expanded h2 {
+    display: block;
+}
+
+.navbar-container .website-icon {
     width: 80px;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     border-radius: 5px;
@@ -80,7 +87,7 @@
     transition: .5s;
 }
 
-.navbar-container .expanded-ot-icon {
+.navbar-container.expanded .website-icon-container {
     display: flex;
     justify-content: center;
     transition: .5s;
@@ -171,4 +178,183 @@
     height: 35px;
     font-size: 40px;
     padding: 5px;
+}
+
+@media (max-width: 1155px) {
+    .navbar-container.expanded {
+        width: 20%;
+    }
+    
+    .navbar-container .website-icon {
+        width: 70px;
+    }
+
+    .navbar-container h2 {
+        font-size: 20px;
+        display: block;
+        visibility: hidden;
+    }
+
+    .navbar-container.expanded h2 {
+        font-size: 20px;
+        visibility: visible;
+    }
+    
+    .navbar-section-header {
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    .navbar-section-header span {
+        font-size: 20px;
+    }
+
+    .collapsed-main-navbar .collapsed-icon.home svg {
+        margin: 5px;
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .collapsed-main-navbar li svg {
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 35px;
+        padding: 5px;
+    }
+
+    .collapsed-main-navbar .collapsed-icon {
+        padding: 0px;
+    }
+
+    .navbar-container .toggle-navbar-button-container {
+        width: 230%;
+        padding: 5px;
+        margin: 12px 0;
+    }
+    
+    .navbar-container.expanded .toggle-navbar-button-container {
+        width: 120%;
+        padding: 5px;
+        margin: 12px 0;
+    }
+    
+    .navbar-container .toggle-navbar-button-container .toggle-navbar-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .navbar-container .toggle-navbar-button-container  .toggle-navbar-button img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-container,
+    .navbar-container.expanded {
+        width: 100%;
+        min-height: 80px;
+    }
+
+    .navbar-container {
+        /* height: 80px; */
+    }
+
+    .navbar-container.expanded {
+        height: 100%;
+    }
+
+    .navbar-container .main-navbar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-container h2,
+    .navbar-container.expanded h2 {
+        display: block;
+        margin: 0;
+        visibility: visible;
+    }
+
+    .navbar-container.expanded .toggle-navbar-button-container,
+    .navbar-container .toggle-navbar-button-container {
+        width: 10%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-container .toggle-navbar-button-container.top, 
+    .navbar-container.expanded .toggle-navbar-button-container.top {
+        width: 10%;
+    }
+
+    .navbar-container .toggle-navbar-button-container .toggle-navbar-button {
+        width: 50px;
+        height: 50px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+    
+    .navbar-container .toggle-navbar-button-container  .toggle-navbar-button img {
+        width: 50px;
+        transform: rotate(90deg);
+    }
+    
+    .navbar-container.expanded .toggle-navbar-button-container  .toggle-navbar-button img {
+        transform: rotate(270deg);
+    }
+
+    .navbar-container.expanded .toggle-navbar-button-container.bottom {
+        align-self: flex-end;
+    }
+
+    .navbar-container.expanded .toggle-navbar-button-container.bottom,
+    .navbar-container.expanded .toggle-navbar-button-container.bottom .toggle-navbar-button,
+    .navbar-container.expanded .toggle-navbar-button-container.bottom .toggle-navbar-button img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-container .toggle-navbar-button-container.bottom,
+    .navbar-container .toggle-navbar-button-container.bottom .toggle-navbar-button,
+    .navbar-container .toggle-navbar-button-container.bottom .toggle-navbar-button img {
+        display: none;
+    }
+
+    .navbar-container .collapsed-main-navbar {
+        display: none;
+    }
+
+    .navbar-container .website-icon, 
+    .navbar-container .website-icon-container {
+        width: 60px;
+    }
+
+    .navbar-container .expanded-main-navbar {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .navbar-container .toggle-navbar-button-container .toggle-navbar-button {
+        width: 40px;
+        height: 40px;
+        box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    }
+
+    .navbar-container .toggle-navbar-button-container  .toggle-navbar-button img {
+        width: 40px;
+        transform: rotate(90deg);
+    }
+
+    .navbar-container .website-icon, 
+    .navbar-container .website-icon-container {
+        width: 50px;
+    }
+
+    .navbar-container h2,
+    .navbar-container.expanded h2 {
+        font-size: 22px;
+    }
 }

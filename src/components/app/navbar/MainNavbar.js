@@ -55,17 +55,24 @@ export default class MainNavbar extends Component {
     render(){
         return (
             <div className={this.props.expanded ? "navbar-container expanded" : "navbar-container"}>
-                {
-                    !this.props.expanded &&
-                    <img className="ot-icon" src={MainLogo} alt="Online Tutorials Icon" />
-                }
-                {
-                    this.props.expanded &&
-                    <div className="expanded-ot-icon">
-                        <img className="ot-icon" src={MainLogo} alt="Online Tutorials Icon" />
-                    </div>
-                }
-                <NavbarToggleButton toggleNavbar={this.props.toggleNavbar} />
+                <div className="main-navbar-header">
+                    {/* <img className="ot-icon" src={MainLogo} alt="Online Tutorials Icon" /> */}
+
+                        <div className="website-icon-container">
+                            <img className="website-icon" src={MainLogo} alt="Transfigure.io Icon" />
+                        </div>
+                    {/* {
+                        !this.props.expanded &&
+                    }
+                    {
+                        this.props.expanded &&
+                        <div className="expanded-ot-icon">
+                            <img className="ot-icon" src={MainLogo} alt="Online Tutorials Icon" />
+                        </div>
+                    } */}
+                    <h2>Transfigure.io</h2>
+                    <NavbarToggleButton toggleNavbar={this.props.toggleNavbar} location="top" />
+                </div>
                 {
                     this.props.expanded &&
                     <ul className="expanded-main-navbar">
@@ -73,19 +80,19 @@ export default class MainNavbar extends Component {
                             <Link to={"/"} className="navbar-section-header" id="home"><span><FontAwesomeIcon icon={faHome} /></span> Home</Link>
                             <div className="navbar-section-underline"></div>
                         </li>
-                        <NavbarSection demoType={DemoTypes.Navbars} showOptionsType={this.state.showNavbarOptions} showOptions={this.showOptions} sectionIcon={faMapMarkedAlt} />
-                        <NavbarSection demoType={DemoTypes.Icons} showOptionsType={this.state.showIconOptions} showOptions={this.showOptions} sectionIcon={faIcons} />
-                        <NavbarSection demoType={DemoTypes.Cards} showOptionsType={this.state.showCardOptions} showOptions={this.showOptions} sectionIcon={faAddressCard} />
-                        <NavbarSection demoType={DemoTypes.Testimonials} showOptionsType={this.state.showTestimonialOptions} showOptions={this.showOptions} sectionIcon={faUsers} />
-                        <NavbarSection demoType={DemoTypes.Scrollbars} showOptionsType={this.state.showScrollbarOptions} showOptions={this.showOptions} sectionIcon={faScroll} />
                         <NavbarSection demoType={DemoTypes.Buttons} showOptionsType={this.state.showButtonOptions} showOptions={this.showOptions} sectionIcon={faHandPointer} />
+                        <NavbarSection demoType={DemoTypes.Cards} showOptionsType={this.state.showCardOptions} showOptions={this.showOptions} sectionIcon={faAddressCard} />
+                        <NavbarSection demoType={DemoTypes.Icons} showOptionsType={this.state.showIconOptions} showOptions={this.showOptions} sectionIcon={faIcons} />
+                        <NavbarSection demoType={DemoTypes.Navbars} showOptionsType={this.state.showNavbarOptions} showOptions={this.showOptions} sectionIcon={faMapMarkedAlt} />
+                        <NavbarSection demoType={DemoTypes.Scrollbars} showOptionsType={this.state.showScrollbarOptions} showOptions={this.showOptions} sectionIcon={faScroll} />
+                        <NavbarSection demoType={DemoTypes.Testimonials} showOptionsType={this.state.showTestimonialOptions} showOptions={this.showOptions} sectionIcon={faUsers} />
                     </ul>
                 }
                 {
                     !this.props.expanded &&
                     <CollapsedMainNavbar showOptions={this.showOptions} />
                 }
-                <NavbarToggleButton toggleNavbar={this.props.toggleNavbar} />
+                <NavbarToggleButton toggleNavbar={this.props.toggleNavbar} location="bottom" />
             </div>
         );
     }

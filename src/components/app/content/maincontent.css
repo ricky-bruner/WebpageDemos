@@ -7,3 +7,16 @@
 .content-container.expanded {
     width: 85%;
 }
+
+@media (max-width: 1155px) {
+    .content-container.expanded {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .content-container,
+    .content-container.expanded {
+        width: 100%;
+    }
+}

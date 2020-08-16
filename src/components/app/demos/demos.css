@@ -300,3 +300,43 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 1155px) {
+
+}
+
+@media (max-width: 1085px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 524px) {
+    .demo .options-container .options-box button {
+        font-size: 12px;
+    }
+
+    .citation-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
+@media (max-width: 322px) {
+
+}
+
+@media (max-width: 282px) {
+
+}

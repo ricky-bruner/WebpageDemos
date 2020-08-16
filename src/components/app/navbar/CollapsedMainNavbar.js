@@ -12,17 +12,17 @@ export default class CollapsedMainNavbar extends Component {
             <ul className="collapsed-main-navbar">
                 <Link to={"/"} className="collapsed-icon home" id="home"><FontAwesomeIcon icon={faHome} /></Link>
                 <li><div className="navbar-section-underline"></div></li>
-                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Navbars, true)}><FontAwesomeIcon icon={faMapMarkedAlt} /></li>
-                <li><div className="navbar-section-underline"></div></li>
-                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Icons, true)}><FontAwesomeIcon icon={faIcons} /></li>
+                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Buttons, true)}><FontAwesomeIcon icon={faHandPointer} /></li>
                 <li><div className="navbar-section-underline"></div></li>
                 <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Cards, true)}><FontAwesomeIcon icon={faAddressCard} /></li>
                 <li><div className="navbar-section-underline"></div></li>
-                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Testimonials, true)}><FontAwesomeIcon icon={faUsers} /></li>
+                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Icons, true)}><FontAwesomeIcon icon={faIcons} /></li>
+                <li><div className="navbar-section-underline"></div></li>
+                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Navbars, true)}><FontAwesomeIcon icon={faMapMarkedAlt} /></li>
                 <li><div className="navbar-section-underline"></div></li>
                 <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Scrollbars, true)}><FontAwesomeIcon icon={faScroll} /></li>
                 <li><div className="navbar-section-underline"></div></li>
-                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Buttons, true)}><FontAwesomeIcon icon={faHandPointer} /></li>
+                <li className="collapsed-icon" onClick={() => this.props.showOptions(DemoTypes.Testimonials, true)}><FontAwesomeIcon icon={faUsers} /></li>
                 <li><div className="navbar-section-underline"></div></li>
             </ul>
         );

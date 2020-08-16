@@ -6,7 +6,7 @@ export default class NavbarToggleButton extends Component {
 
     render() {
         return (
-            <div className="toggle-navbar-button-container">
+            <div className={"toggle-navbar-button-container " + this.props.location}>
                 <div className="toggle-navbar-button" onClick={() => this.props.toggleNavbar()}>
                     <img src={RightArrow} alt="Right Arrow" onClick={() => this.props.toggleNavbar()}/>
                 </div>

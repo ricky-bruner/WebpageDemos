@@ -84,3 +84,146 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 1155px) {
+
+}
+
+@media (max-width: 1085px) {
+    .fontawesome-details-section .citation-fontawesome-icon {
+        font-size: 25px;
+    }
+
+    .fontawesome-details-section .citation-title,
+    .onlinetutorials-title-section .citation-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fontawesome-details-section .citation-fontawesome-icon {
+        font-size: 30px;
+    }
+
+    .fontawesome-details-section .citation-title,
+    .onlinetutorials-title-section .citation-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 524px) {
+    .fontawesome-details-section .citation-fontawesome-icon {
+        font-size: 25px;
+    }
+
+    .fontawesome-details-section .citation-title,
+    .onlinetutorials-title-section .citation-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .citation-title-section .website-title {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    
+    .citation-title-section .information-text {
+        margin: 5px;
+        font-size: 7px;
+    }
+
+    .ot-created-by {
+        font-size: 8px;
+    }
+
+    .onlinetutorials-title-section .website-logo img {
+        width: 35px;
+        margin: 5px;
+    }
+
+    .citation-footer .icon-container {
+        padding: 2px 0;
+    }
+
+    .main-footer .footer-icon.xs {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .main-footer .footer-icon.udemy svg {
+        position: absolute;
+        top: 12%;
+        left: 12%;
+    }
+}
+
+@media (max-width: 375px) {
+    .fontawesome-details-section .citation-fontawesome-icon {
+        font-size: 20px;
+    }
+
+    .fontawesome-details-section .citation-title,
+    .onlinetutorials-title-section .citation-title {
+        font-size: 15px;
+    }
+
+    .onlinetutorials-title-section .website-logo img {
+        width: 30px;
+        margin: 5px;
+    }
+
+    .main-footer .footer-icon.xs {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .main-footer .footer-icon.udemy svg {
+        position: absolute;
+        top: 12%;
+        left: 12%;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 322px) {
+    .fontawesome-details-section .citation-fontawesome-icon {
+        font-size: 18px;
+    }
+
+    .fontawesome-details-section .citation-title,
+    .onlinetutorials-title-section .citation-title {
+        font-size: 12px;
+    }
+
+    .onlinetutorials-title-section .website-logo img {
+        width: 25px;
+        margin: 3px;
+    }
+
+    .main-footer .footer-icon.xs {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 282px) {
+    .main-footer .footer-icon.xs {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 11px;
+    }
+    
+    .main-footer .footer-icon.udemy svg {
+        width: 13px;
+        height: 13px;
+    }
+}
