@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/transfigure.io/static/css/main.ea1891ee.chunk.css",
-    "main.js": "/transfigure.io/static/js/main.33e3f0b2.chunk.js",
-    "main.js.map": "/transfigure.io/static/js/main.33e3f0b2.chunk.js.map",
+    "main.css": "/transfigure.io/static/css/main.bc0aaefb.chunk.css",
+    "main.js": "/transfigure.io/static/js/main.0abe9130.chunk.js",
+    "main.js.map": "/transfigure.io/static/js/main.0abe9130.chunk.js.map",
     "runtime-main.js": "/transfigure.io/static/js/runtime-main.b0100b42.js",
     "runtime-main.js.map": "/transfigure.io/static/js/runtime-main.b0100b42.js.map",
-    "static/js/2.d3142254.chunk.js": "/transfigure.io/static/js/2.d3142254.chunk.js",
-    "static/js/2.d3142254.chunk.js.map": "/transfigure.io/static/js/2.d3142254.chunk.js.map",
+    "static/js/2.7e409089.chunk.js": "/transfigure.io/static/js/2.7e409089.chunk.js",
+    "static/js/2.7e409089.chunk.js.map": "/transfigure.io/static/js/2.7e409089.chunk.js.map",
     "index.html": "/transfigure.io/index.html",
-    "precache-manifest.90fa49720e7690aca8decd8cdbed45a5.js": "/transfigure.io/precache-manifest.90fa49720e7690aca8decd8cdbed45a5.js",
+    "precache-manifest.757998e8b095ee40259cc92d68e267c8.js": "/transfigure.io/precache-manifest.757998e8b095ee40259cc92d68e267c8.js",
     "service-worker.js": "/transfigure.io/service-worker.js",
-    "static/css/main.ea1891ee.chunk.css.map": "/transfigure.io/static/css/main.ea1891ee.chunk.css.map",
-    "static/js/2.d3142254.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.d3142254.chunk.js.LICENSE.txt",
+    "static/css/main.bc0aaefb.chunk.css.map": "/transfigure.io/static/css/main.bc0aaefb.chunk.css.map",
+    "static/js/2.7e409089.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.7e409089.chunk.js.LICENSE.txt",
     "static/media/ProjectLogo1.png": "/transfigure.io/static/media/ProjectLogo1.b38c469a.png",
     "static/media/ProjectLogo2.png": "/transfigure.io/static/media/ProjectLogo2.9267e302.png",
     "static/media/ProjectLogo3.png": "/transfigure.io/static/media/ProjectLogo3.7687f651.png",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b0100b42.js",
-    "static/js/2.d3142254.chunk.js",
-    "static/css/main.ea1891ee.chunk.css",
-    "static/js/main.33e3f0b2.chunk.js"
+    "static/js/2.7e409089.chunk.js",
+    "static/css/main.bc0aaefb.chunk.css",
+    "static/js/main.0abe9130.chunk.js"
   ]
 }

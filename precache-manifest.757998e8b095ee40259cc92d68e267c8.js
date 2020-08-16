@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ed2462fdcd5ece887adcaa68577f7fb",
+    "revision": "d6747dcea73dca92ccb02710745c5025",
     "url": "/transfigure.io/index.html"
   },
   {
-    "revision": "9bf04df889ec4a6dd709",
-    "url": "/transfigure.io/static/css/main.ea1891ee.chunk.css"
+    "revision": "2fa3ae31662c8d5eb6fe",
+    "url": "/transfigure.io/static/css/main.bc0aaefb.chunk.css"
   },
   {
-    "revision": "75548e959bfb54806711",
-    "url": "/transfigure.io/static/js/2.d3142254.chunk.js"
+    "revision": "1d4771c05d411bff89de",
+    "url": "/transfigure.io/static/js/2.7e409089.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/transfigure.io/static/js/2.d3142254.chunk.js.LICENSE.txt"
+    "url": "/transfigure.io/static/js/2.7e409089.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9bf04df889ec4a6dd709",
-    "url": "/transfigure.io/static/js/main.33e3f0b2.chunk.js"
+    "revision": "2fa3ae31662c8d5eb6fe",
+    "url": "/transfigure.io/static/js/main.0abe9130.chunk.js"
   },
   {
     "revision": "205d8255a4c706acedd1",
