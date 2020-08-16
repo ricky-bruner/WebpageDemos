@@ -3,6 +3,7 @@ import CodeWindow from '../codewindows/CodeWindow';
 import DemoTypeFactory from '../../../modules/DemoTypeFactory';
 import DemoTypeCitationsFactory from '../../../modules/DemoTypeCitationsFactory';
 import './demos.css';
+import AdvancedCodeWindow from '../codewindows/AdvancedCodeWindow';
 
 export default class GenericDemo extends Component {
     state = {
@@ -241,14 +242,19 @@ export default class GenericDemo extends Component {
                             </div>
                         </div>
                     }
-                    {
-                        DemoTypeCitationsFactory(this.props.demoType, this.props.demoName)
-                    }
                 </div>
                 <div className="demo-container">
                     {DemoTypeFactory(this.props.demoType, this.props.demoName, this.getSettings())}
                 </div>
                 <CodeWindow html={"." + this.props.demoClass} ref="CodeWindow" />
+                {/* <AdvancedCodeWindow html={"." + this.props.demoClass} ref="CodeWindow" /> */}
+                <div className="options-container">
+                    <h3>Sources:</h3>
+                    {
+                        DemoTypeCitationsFactory(this.props.demoType, this.props.demoName)
+                    }
+                </div>
+                <div className="underline"></div>
             </div>
         );
     }

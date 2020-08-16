@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.citation-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citation-details-section-left,
+.citation-details-section-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.citation-details-section-left {
+    width: 45%;
+}
+
+.citation-details-section-right {
+    width: 54%;
+}
+
+.citation-title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.citation-title-section .website-title {
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+}
+
+.citation-title-section .information-text {
+    margin: 5px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.fontawesome-details-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontawesome-details-section .citation-fontawesome-icon {
+    font-size: 30px;
+    color: #339af0;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.fontawesome-details-section .citation-title,
+.onlinetutorials-title-section .citation-title {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.onlinetutorials-title-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onlinetutorials-title-section .website-logo img {
+    width: 40px;
+    margin: 5px;
+}
+
+.ot-created-by {
+    font-size: 11px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

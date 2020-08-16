@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MainLogo from "../../../img/transfigureiologos/transfigure_io_code_blue.png";
+import MainLogo from "../../../img/transfigureiologos/transfigure_io_transparent_code_blue.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkedAlt, faIcons, faAddressCard, faScroll, faHandPointer, faHome, faUsers } from '@fortawesome/free-solid-svg-icons';
 import DemoTypes from "../../../modules/helpers/DemoTypes";

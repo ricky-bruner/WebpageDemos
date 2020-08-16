@@ -1,16 +1,15 @@
 /* Oscillating Solid Button Demo */
 .oscillating-solid-buttons {
     margin: 0;
-    padding: 10px;
+    padding: 20px;
     font-family: sans-serif;
-    min-height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: rgb(50, 50, 50);
-    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 15px;
 }
 
 .oscillating-solid-buttons.dark {

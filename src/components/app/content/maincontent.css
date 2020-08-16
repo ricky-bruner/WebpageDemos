@@ -1,6 +1,7 @@
 .content-container {
     width: 95%;
     min-height: 100vh;
+    padding: 50px 0;
 }
 
 .content-container.expanded {

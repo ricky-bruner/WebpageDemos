@@ -1,9 +1,8 @@
 /* Hover Rise Layered Icons */
 .hover-rise-layered-social-media-icons {
     margin: 0;
-    padding-bottom: 30px;
     width: 100%;
-    min-height: 95vh;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;

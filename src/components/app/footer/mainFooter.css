@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.main-footer {
+    width: 100%;
+    height: 150px;
+    background: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px -5px 10px;
+}
+
+.main-footer .left,
+.main-footer .right {
+    width: 49.5%;
+    height: 90%;
+    background: rgb(34, 34, 34);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    box-shadow: inset rgba(0, 0, 0, 0.7) 0px 5px 10px;
+}
+
+.main-footer .left {
+    display: flex;
+}
+
+.main-footer .footer-icons {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-footer .icon-container {
+    padding: 10px;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+
+.main-footer .footer-icon {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    margin: 5px;
+    transition: all 0.5s ease 0s;
+}
+
+.main-footer .footer-icons.dark .footer-icon {
+    color: rgb(204, 204, 204);
+}
+
+.main-footer .footer-icons.light .footer-icon {
+    color: rgb(38, 38, 38);
+}
+
+.main-footer .footer-icon.xlg {
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    font-size: 55px;
+}
+
+.main-footer .footer-icon.lg {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 45px;
+}
+
+.main-footer .footer-icon.md {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 35px;
+}
+
+.main-footer .footer-icon.sm {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.main-footer .footer-icon.xs {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.main-footer .footer-icon span {
+    position: absolute;
+    transition: transform 0.5s ease 0s;
+}
+
+.main-footer .footer-icon span:nth-child(1), 
+.main-footer .footer-icon span:nth-child(3) {
+    width: 100%;
+    height: 1px;
+    background: rgb(38, 38, 38);
+}
+
+.main-footer .footer-icons.light .footer-icon span:nth-child(1), 
+.main-footer .footer-icons.light .footer-icon span:nth-child(3) {
+    background: rgb(38, 38, 38);
+}
+
+.main-footer .footer-icons.dark .footer-icon span:nth-child(1), 
+.main-footer .footer-icons.dark .footer-icon span:nth-child(3) {
+    background: rgb(204, 204, 204);
+}
+
+.main-footer .footer-icon.bd-thin span:nth-child(1), 
+.main-footer .footer-icon.bd-thin span:nth-child(3) {
+    height: 1px;
+}
+
+.main-footer .footer-icon.bd-nm span:nth-child(1), 
+.main-footer .footer-icon.bd-nm span:nth-child(3) {
+    height: 2px;
+}
+
+.main-footer .footer-icon.bd-thicc span:nth-child(1), 
+.main-footer .footer-icon.bd-thicc span:nth-child(3) {
+    height: 3px;
+}
+
+.main-footer .footer-icon span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    transform-origin: right center;
+}
+
+.main-footer .footer-icon:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s ease 0s;
+}
+
+.main-footer .footer-icon span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    transform-origin: left center;
+}
+
+.main-footer .footer-icon:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.5s ease 0s;
+}
+
+.main-footer .footer-icon span:nth-child(2), .footer-icon span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    background: rgb(38, 38, 38);
+}
+
+.main-footer .footer-icon.bd-thin span:nth-child(2), .footer-icon.bd-thin span:nth-child(4) {
+    width: 1px;
+}
+
+.main-footer .footer-icon.bd-nm span:nth-child(2), .footer-icon.bd-nm span:nth-child(4) {
+    width: 2px;
+}
+
+.main-footer .footer-icon.bd-thicc span:nth-child(2), .footer-icon.bd-thicc span:nth-child(4) {
+    width: 3px;
+}
+
+.main-footer .footer-icons.light .footer-icon span:nth-child(2), 
+.main-footer .footer-icons.light .footer-icon span:nth-child(4) {
+    background: rgb(38, 38, 38);
+}
+
+.main-footer .footer-icons.dark .footer-icon span:nth-child(2), 
+.main-footer .footer-icons.dark .footer-icon span:nth-child(4) {
+    background: rgb(204, 204, 204);
+}
+
+.main-footer .footer-icon span:nth-child(2) {
+    top: 0px;
+    left: 0px;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+}
+
+.main-footer .footer-icon:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: center top;
+    transition: transform 0.5s ease 0s;
+}
+
+.main-footer .footer-icon span:nth-child(4) {
+    top: 0px;
+    right: 0px;
+    transform: scaleY(0);
+    transform-origin: center top;
+}
+
+.main-footer .footer-icon:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: center bottom;
+    transition: transform 0.5s ease 0s;
+}
+
+.main-footer .footer-icon.facebook:hover {
+    color: rgb(59, 89, 153);
+}
+
+.main-footer .footer-icon.facebook:hover span:nth-child(1), 
+.main-footer .footer-icon.facebook:hover span:nth-child(2), 
+.main-footer .footer-icon.facebook:hover span:nth-child(3), 
+.main-footer .footer-icon.facebook:hover span:nth-child(4) {
+    background: rgb(59, 89, 153);
+}
+
+.main-footer .footer-icon.sourcecode:hover {
+    color: #ff4500;
+}
+
+.main-footer .footer-icon.sourcecode:hover span:nth-child(1), 
+.main-footer .footer-icon.sourcecode:hover span:nth-child(2), 
+.main-footer .footer-icon.sourcecode:hover span:nth-child(3), 
+.main-footer .footer-icon.sourcecode:hover span:nth-child(4) {
+    background: #ff4500;
+}
+
+.main-footer .footer-icon.github:hover {
+    color: #6e5494;
+}
+
+.main-footer .footer-icon.github:hover span:nth-child(1), 
+.main-footer .footer-icon.github:hover span:nth-child(2), 
+.main-footer .footer-icon.github:hover span:nth-child(3), 
+.main-footer .footer-icon.github:hover span:nth-child(4) {
+    background: #6e5494;
+}
+
+.main-footer .footer-icon.linkedin:hover {
+    color: rgb(0, 119, 181);
+}
+
+.main-footer .footer-icon.linkedin:hover span:nth-child(1), 
+.main-footer .footer-icon.linkedin:hover span:nth-child(2), 
+.main-footer .footer-icon.linkedin:hover span:nth-child(3), 
+.main-footer .footer-icon.linkedin:hover span:nth-child(4) {
+    background: rgb(0, 119, 181);
+}
+
+.main-footer .footer-icon.personalsite:hover {
+    color: #fffc00;
+}
+
+.main-footer .footer-icon.personalsite:hover span:nth-child(1), 
+.main-footer .footer-icon.personalsite:hover span:nth-child(2), 
+.main-footer .footer-icon.personalsite:hover span:nth-child(3), 
+.main-footer .footer-icon.personalsite:hover span:nth-child(4) {
+    background: #fffc00;
+}
+
+.main-footer .footer-icon.youtube:hover {
+    color: #ff0000;
+}
+
+.main-footer .footer-icon.youtube:hover span:nth-child(1), 
+.main-footer .footer-icon.youtube:hover span:nth-child(2), 
+.main-footer .footer-icon.youtube:hover span:nth-child(3), 
+.main-footer .footer-icon.youtube:hover span:nth-child(4) {
+    background: #ff0000;
+}
+
+.main-footer .footer-icon.paypal:hover {
+    color: #009cde;
+}
+
+.main-footer .footer-icon.paypal:hover span:nth-child(1), 
+.main-footer .footer-icon.paypal:hover span:nth-child(2), 
+.main-footer .footer-icon.paypal:hover span:nth-child(3), 
+.main-footer .footer-icon.paypal:hover span:nth-child(4) {
+    background: #009cde;
+}
+
+.main-footer .footer-icon.patreon:hover {
+    color: #f96e5c;
+}
+
+.main-footer .footer-icon.patreon:hover span:nth-child(1), 
+.main-footer .footer-icon.patreon:hover span:nth-child(2), 
+.main-footer .footer-icon.patreon:hover span:nth-child(3), 
+.main-footer .footer-icon.patreon:hover span:nth-child(4) {
+    background: #f96e5c;
+}
+
+.main-footer .footer-icon.udemy svg {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.main-footer .footer-icon.udemy svg {
+    fill: rgb(204, 204, 204);
+}
+
+.main-footer .footer-icon.udemy:hover svg {
+    fill: #eb524f;
+}
+
+.main-footer .footer-icon.udemy:hover {
+    color: #eb524f;
+}
+
+.main-footer .footer-icon.udemy:hover span:nth-child(1), 
+.main-footer .footer-icon.udemy:hover span:nth-child(2), 
+.main-footer .footer-icon.udemy:hover span:nth-child(3), 
+.main-footer .footer-icon.udemy:hover span:nth-child(4) {
+    background: #eb524f;
+}

@@ -1,17 +1,16 @@
 /* Liquid Wave Buttons */
 .liquid-wave-buttons {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 95vh;
     width: 100%;
+    padding: 20px;
     background: rgb(50, 50, 50);
-    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 45px;
+    box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 15px;
 }
 
 .liquid-wave-buttons.dark {

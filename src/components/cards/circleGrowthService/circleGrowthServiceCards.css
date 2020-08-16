@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 95vh;
     width: 100%;
+    padding: 20px 0;
     background: rgb(240, 240, 240);
     font-family: "Poppins", sans-serif;
     box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 import './codewindows.css';
 
-export default class CodeWindow extends Component {
+export default class AdvancedCodeWindow extends Component {
     state = {
         html: false,
         css: false,
@@ -79,6 +79,30 @@ export default class CodeWindow extends Component {
         return "\n" + ruleText;
     }
 
+    analyzeCodeRow = (codeRowText) => {
+        let analysis = {
+            hasAttribute: false,
+            attributeCount: 0,
+            attributeList: [],
+            elementTag: ""
+        };
+
+        analysis.elementTag = codeRowText.split("")[0].replace("<", "");
+
+        let div = document.createElement("div");
+        div.innerHTML = codeRowText;
+        console.log(div);
+        
+        let actualElement = div.firstChild;
+        console.log(actualElement.attributes);
+        console.log(actualElement.innerText);
+
+        if(codeRowText.includes("class=")){
+            analysis.attributeCount++;
+            analysis.hasAttribute = true;
+        }
+    }
+
     formatHTMLText = (className) => {
         if(document.querySelector(className) !== null){
             let text = `${document.querySelector(className).innerHTML}`;
@@ -87,6 +111,9 @@ export default class CodeWindow extends Component {
             text = text.replace(/>/g, ">\n");
             text = text.replace(/</g, "\n<");
             let textArray = text.split('\n').filter(t => t !== "");
+
+            this.analyzeCodeRow(textArray[2]);
+
             let formattedText = "";
             let breakTags = [ "<div", "</div", "<h1", "<h2", "<h3", "<h4", "<a", "<p", "<img", "<svg", "<path", "<ul", "<li", "</ul>", "</li>", "</a>", "<svg", "</svg>", "<butt", "<span", "</span" ];
             let indenters = [ "<div", "<ul", "<li", "<a", "<svg", "<span" ];
@@ -133,7 +160,9 @@ export default class CodeWindow extends Component {
                     <pre>
                         { 
                             this.state.html &&
-                            this.state.htmlCode
+                            <code>
+                                <div><span>{this.state.htmlCode}</span></div>
+                            </code>
                         }
                         {
                             this.state.css &&

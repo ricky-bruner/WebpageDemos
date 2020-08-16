@@ -1,11 +1,10 @@
 /* Image Clip Hover Card Demo */
 .image-clip-hover-cards {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: #262626;
     box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }

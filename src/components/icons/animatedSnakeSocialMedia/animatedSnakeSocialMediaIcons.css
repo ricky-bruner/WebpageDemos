@@ -1,8 +1,7 @@
 .animated-snake-social-media-icons {
     margin: 0;
-    padding-bottom: 30px;
+    padding: 20px;
     width: 100%;
-    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;

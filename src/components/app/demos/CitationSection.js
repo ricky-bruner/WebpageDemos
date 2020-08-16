@@ -11,7 +11,7 @@ export default class CitationSection extends Component {
 
     render() {
         return (
-            <div className="options-box">
+            <div className="options-box source-box">
                 <div className="option-section citation-box">
                     <h4>Source:</h4>
                     <button className={(this.state.showCitationVideo === true) ? "active" : ""} onClick={() => this.toggleCitationVideo()}>Toggle Video Tutorial</button>

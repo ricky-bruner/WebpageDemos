@@ -2,9 +2,8 @@
 .greeting-card-style-cards {
     font-family: "Quicksand", sans-serif;
     background: #f2f2f2;
-    min-height: 95vh;
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
     box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }
 

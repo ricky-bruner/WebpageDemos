@@ -1,14 +1,13 @@
 /* Image Slide Left Card Demo */
 .image-slide-left-cards {
     font-family: "Poppins", sans-serif;
-    min-height: 95vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #222;
     box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
-    padding: 60px;
+    padding: 15px 65px;
 }
 
 .image-slide-left-cards.dark {

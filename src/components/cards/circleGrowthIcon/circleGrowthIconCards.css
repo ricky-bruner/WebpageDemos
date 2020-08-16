@@ -4,9 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 95vh;
     width: 100%;
-    padding: 40px;
+    padding: 30px;
     background: #333;
     box-shadow: inset rgba(0, 0, 0, 0.9) 0px 5px 10px;
 }

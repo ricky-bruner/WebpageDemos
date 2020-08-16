@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MainNavbar from './components/app/navbar/MainNavbar';
 import AppRoutes from './components/app/routes/AppRoutes';
+import MainFooter from './components/app/footer/MainFooter';
 
 export default class AppView extends Component {
     state = {
@@ -13,9 +14,12 @@ export default class AppView extends Component {
 
     render(){
         return (
-            <div className="app-view">
-                <MainNavbar expanded={this.state.expanded} toggleNavbar={this.toggleNavbar} />
-                <AppRoutes expanded={this.state.expanded} />
+            <div>
+                <div className="app-view">
+                    <MainNavbar expanded={this.state.expanded} toggleNavbar={this.toggleNavbar} />
+                    <AppRoutes expanded={this.state.expanded} />
+                </div>
+                <MainFooter />
             </div>
         );
     }
