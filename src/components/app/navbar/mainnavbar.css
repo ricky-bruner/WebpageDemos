@@ -25,7 +25,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 5px;
-    margin: 15px 0;
+    margin: 5px 0;
     transition: .5s;
 }
 
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 5px;
-    margin: 15px 0;
+    margin: 5px 0;
     transition: .5s;
 }
 
@@ -65,10 +65,11 @@
 }
 
 .navbar-container h2 {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
     font-size: 26px;
     font-family: 'Kaushan Script', cursive;
-    margin: 20px 0;
+    margin: 10px 0;
     color: white;
     text-align: center;
     padding: 10px;
@@ -77,6 +78,7 @@
 
 .navbar-container.expanded h2 {
     display: block;
+    visibility: visible;
 }
 
 .navbar-container .website-icon {
@@ -103,6 +105,7 @@
     margin: 7px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-section-header span {
@@ -230,13 +233,11 @@
     .navbar-container .toggle-navbar-button-container {
         width: 230%;
         padding: 5px;
-        margin: 12px 0;
     }
     
     .navbar-container.expanded .toggle-navbar-button-container {
         width: 120%;
         padding: 5px;
-        margin: 12px 0;
     }
     
     .navbar-container .toggle-navbar-button-container .toggle-navbar-button {
