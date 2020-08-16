@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/transfigure.io/static/css/main.a3301052.chunk.css",
-    "main.js": "/transfigure.io/static/js/main.734782c8.chunk.js",
-    "main.js.map": "/transfigure.io/static/js/main.734782c8.chunk.js.map",
+    "main.css": "/transfigure.io/static/css/main.ea1891ee.chunk.css",
+    "main.js": "/transfigure.io/static/js/main.33e3f0b2.chunk.js",
+    "main.js.map": "/transfigure.io/static/js/main.33e3f0b2.chunk.js.map",
     "runtime-main.js": "/transfigure.io/static/js/runtime-main.b0100b42.js",
     "runtime-main.js.map": "/transfigure.io/static/js/runtime-main.b0100b42.js.map",
-    "static/js/2.36fde851.chunk.js": "/transfigure.io/static/js/2.36fde851.chunk.js",
-    "static/js/2.36fde851.chunk.js.map": "/transfigure.io/static/js/2.36fde851.chunk.js.map",
+    "static/js/2.d3142254.chunk.js": "/transfigure.io/static/js/2.d3142254.chunk.js",
+    "static/js/2.d3142254.chunk.js.map": "/transfigure.io/static/js/2.d3142254.chunk.js.map",
     "index.html": "/transfigure.io/index.html",
-    "precache-manifest.571f3b8ea011903fba6e8e5f14bd8a43.js": "/transfigure.io/precache-manifest.571f3b8ea011903fba6e8e5f14bd8a43.js",
+    "precache-manifest.90fa49720e7690aca8decd8cdbed45a5.js": "/transfigure.io/precache-manifest.90fa49720e7690aca8decd8cdbed45a5.js",
     "service-worker.js": "/transfigure.io/service-worker.js",
-    "static/css/main.a3301052.chunk.css.map": "/transfigure.io/static/css/main.a3301052.chunk.css.map",
-    "static/js/2.36fde851.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.36fde851.chunk.js.LICENSE.txt",
+    "static/css/main.ea1891ee.chunk.css.map": "/transfigure.io/static/css/main.ea1891ee.chunk.css.map",
+    "static/js/2.d3142254.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.d3142254.chunk.js.LICENSE.txt",
     "static/media/ProjectLogo1.png": "/transfigure.io/static/media/ProjectLogo1.b38c469a.png",
     "static/media/ProjectLogo2.png": "/transfigure.io/static/media/ProjectLogo2.9267e302.png",
     "static/media/ProjectLogo3.png": "/transfigure.io/static/media/ProjectLogo3.7687f651.png",
@@ -19,16 +19,17 @@
     "static/media/dumbledore.jpg": "/transfigure.io/static/media/dumbledore.accac18a.jpg",
     "static/media/hagrid-portrait.png": "/transfigure.io/static/media/hagrid-portrait.d57f3f76.png",
     "static/media/hagrid.jpg": "/transfigure.io/static/media/hagrid.f24e493f.jpg",
+    "static/media/online-tutorials-icon.png": "/transfigure.io/static/media/online-tutorials-icon.1f6692fd.png",
     "static/media/colorfulHoverQuoteBoxTestimonials.css": "/transfigure.io/static/media/quote.dacf1007.svg",
     "static/media/right-arrow.png": "/transfigure.io/static/media/right-arrow.41111c89.png",
     "static/media/snape-portrait.png": "/transfigure.io/static/media/snape-portrait.6a1f1328.png",
     "static/media/snape.jpg": "/transfigure.io/static/media/snape.7ee55dd9.jpg",
-    "static/media/transfigure_io_code_blue.png": "/transfigure.io/static/media/transfigure_io_code_blue.a44af5fd.png"
+    "static/media/transfigure_io_transparent_code_blue.png": "/transfigure.io/static/media/transfigure_io_transparent_code_blue.c5a4ee95.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b0100b42.js",
-    "static/js/2.36fde851.chunk.js",
-    "static/css/main.a3301052.chunk.css",
-    "static/js/main.734782c8.chunk.js"
+    "static/js/2.d3142254.chunk.js",
+    "static/css/main.ea1891ee.chunk.css",
+    "static/js/main.33e3f0b2.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f3bd4b372b13d8af12f4f079b6c5c571",
+    "revision": "2ed2462fdcd5ece887adcaa68577f7fb",
     "url": "/transfigure.io/index.html"
   },
   {
-    "revision": "9c9c1f75edf1dd127136",
-    "url": "/transfigure.io/static/css/main.a3301052.chunk.css"
+    "revision": "9bf04df889ec4a6dd709",
+    "url": "/transfigure.io/static/css/main.ea1891ee.chunk.css"
   },
   {
-    "revision": "12b4d04e35d71adb8036",
-    "url": "/transfigure.io/static/js/2.36fde851.chunk.js"
+    "revision": "75548e959bfb54806711",
+    "url": "/transfigure.io/static/js/2.d3142254.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/transfigure.io/static/js/2.36fde851.chunk.js.LICENSE.txt"
+    "url": "/transfigure.io/static/js/2.d3142254.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9c9c1f75edf1dd127136",
-    "url": "/transfigure.io/static/js/main.734782c8.chunk.js"
+    "revision": "9bf04df889ec4a6dd709",
+    "url": "/transfigure.io/static/js/main.33e3f0b2.chunk.js"
   },
   {
     "revision": "205d8255a4c706acedd1",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/transfigure.io/static/media/hagrid.f24e493f.jpg"
   },
   {
+    "revision": "1f6692fd1fb2e944b56fe008b01c4986",
+    "url": "/transfigure.io/static/media/online-tutorials-icon.1f6692fd.png"
+  },
+  {
     "revision": "dacf1007a80457b94023b1921f5e74de",
     "url": "/transfigure.io/static/media/quote.dacf1007.svg"
   },
@@ -68,7 +72,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/transfigure.io/static/media/snape.7ee55dd9.jpg"
   },
   {
-    "revision": "a44af5fd085bfadb776c24ce534a3df3",
-    "url": "/transfigure.io/static/media/transfigure_io_code_blue.a44af5fd.png"
+    "revision": "c5a4ee95040d54e40e539b03341d1cf3",
+    "url": "/transfigure.io/static/media/transfigure_io_transparent_code_blue.c5a4ee95.png"
   }
 ]);
