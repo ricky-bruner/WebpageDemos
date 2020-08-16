@@ -1,7 +1,7 @@
 export default {
-    TargetedHoverNavbars: "TargetedHoverNavbars",
+    CornerBracketsHoverNavbars: "CornerBracketsHoverNavbars",
+    RemoteControlNavbars: "RemoteControlNavbars",
     RovingBorderNavbars: "RovingBorderNavbars",
     SwingingBorderNavbars: "SwingingBorderNavbars",
-    CornerBracketsHoverNavbars: "CornerBracketsHoverNavbars",
-    RemoteControlNavbars: "RemoteControlNavbars"
+    TargetedHoverNavbars: "TargetedHoverNavbars",
 }

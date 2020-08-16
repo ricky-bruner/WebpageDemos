@@ -1,9 +1,9 @@
 export default {
-    LiquidWaveButtons: "LiquidWaveButtons",
-    NeonReflectiveButtons: "NeonReflectiveButtons",
-    ThreeDimensionalButtons: "ThreeDimensionalButtons",
-    OscillatingSolidButtons: "OscillatingSolidButtons",
     AnimatedOutlineButtons: "AnimatedOutlineButtons",
-    ShootingBorderButtons: "ShootingBorderButtons",
+    LiquidWaveButtons: "LiquidWaveButtons",
     MiddleOutButtons: "MiddleOutButtons",
+    NeonReflectiveButtons: "NeonReflectiveButtons",
+    OscillatingSolidButtons: "OscillatingSolidButtons",
+    ShootingBorderButtons: "ShootingBorderButtons",
+    ThreeDimensionalButtons: "ThreeDimensionalButtons"
 }

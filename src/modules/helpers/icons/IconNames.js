@@ -1,10 +1,10 @@
 export default {
-    FlipCubeSocialMediaIcons: "FlipCubeSocialMediaIcons",
+    AnimatedMovementIcons: "AnimatedMovementIcons",
     AnimatedSnakeSocialMediaIcons: "AnimatedSnakeSocialMediaIcons",
-    MagicLineSocialMediaIcons: "MagicLineSocialMediaIcons",
+    FlipCubeSocialMediaIcons: "FlipCubeSocialMediaIcons",
+    HoverRiseLayeredSocialMediaIcons: "HoverRiseLayeredSocialMediaIcons",
     IsometricCubeSocialMediaIcons: "IsometricCubeSocialMediaIcons",
     IsometricHoverRiseSocialMediaIcons: "IsometricHoverRiseSocialMediaIcons",
     IsometricSocialMediaIcons: "IsometricSocialMediaIcons",
-    HoverRiseLayeredSocialMediaIcons: "HoverRiseLayeredSocialMediaIcons",
-    AnimatedMovementIcons: "AnimatedMovementIcons"
+    MagicLineSocialMediaIcons: "MagicLineSocialMediaIcons",
 }

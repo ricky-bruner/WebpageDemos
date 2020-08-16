@@ -1,5 +1,5 @@
 export default {
-    QuoteMovementTestimonials: "QuoteMovementTestimonials",
+    BottomColorRiseTestimonials: "BottomColorRiseTestimonials",
     ColorfulHoverQuoteBoxTestimonials: "ColorfulHoverQuoteBoxTestimonials",
-    BottomColorRiseTestimonials: "BottomColorRiseTestimonials"
+    QuoteMovementTestimonials: "QuoteMovementTestimonials",
 }

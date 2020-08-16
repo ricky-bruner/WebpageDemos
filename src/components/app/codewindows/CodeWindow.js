@@ -51,9 +51,11 @@ export default class CodeWindow extends Component {
         let animationNames = [];
 
         for(let i = 0; i < sheet.cssRules.length; i++) {
-            ruleText += sheet.cssRules[i].cssText + "\n" ;
-            if(sheet.cssRules[i].cssText.includes("animation:")){
-                animationNames.push(sheet.cssRules[i].style.animationName)
+            if(sheet.cssRules[i].cssText.includes(className)) {
+                ruleText += sheet.cssRules[i].cssText + "\n" ;
+                if(sheet.cssRules[i].cssText.includes("animation:")){
+                    animationNames.push(sheet.cssRules[i].style.animationName)
+                }
             }
         }
 
