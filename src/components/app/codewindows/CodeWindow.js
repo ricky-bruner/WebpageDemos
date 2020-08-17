@@ -7,6 +7,7 @@ export default class CodeWindow extends Component {
     state = {
         html: false,
         css: false,
+        both: false,
         htmlCode: "",
         cssCode: ""
     };
@@ -18,20 +19,28 @@ export default class CodeWindow extends Component {
     switchCode = (id) => {
         if(id === "html"){
             this.renderHTML();
-        } else {
+        } else if(id === "css"){
             this.renderCSS();
+        } else {
+            this.renderBoth();
         }
     }
 
     renderHTML = () => {
-        this.setState({ html: true, css: false }, () => {
+        this.setState({ html: true, css: false, both: false }, () => {
             this.setState({htmlCode: this.formatHTMLText(this.props.html)});
         });
     }
 
     renderCSS = () => {
-        this.setState({ html: false, css: true }, () => {
+        this.setState({ html: false, css: true, both: false }, () => {
             this.setState({cssCode: this.getStyleRules(this.props.html)});
+        });
+    }
+
+    renderBoth = () => {
+        this.setState({ html: false, css: false, both: true }, () => {
+            this.setState({htmlCode: this.formatHTMLText(this.props.html), cssCode: this.getStyleRules(this.props.html)});
         });
     }
 
@@ -95,27 +104,31 @@ export default class CodeWindow extends Component {
             let outdenters = [ "</div", "</ul>", "</li>", "</a>", "</svg>", "</span>" ];
             let indentCount = 0;
 
-            textArray.forEach(t => {
-                if (breakTags.filter(tag => t.includes(tag)).length > 0) {
-                    formattedText += "\n"
-                    if(indenters.filter(i => t.includes(i)).length > 0){
-                        indentCount++;
-                        for(let i = 0; i < indentCount; i++){
-                            formattedText += "    ";
-                        }
-                    } else if(outdenters.filter(i => t.includes(i)).length > 0){
-                        for(let i = 0; i < indentCount; i++){
-                            formattedText += "    ";
-                        }
-                        indentCount--;
-                    } else {
-                        for(let i = 0; i < indentCount + 1; i++){
-                            formattedText += "    ";
-                        }
-                    }
+            textArray.forEach((t, increment) => {
+                if(increment === 0) {
                     formattedText += t;
                 } else {
-                    formattedText += t;
+                    if (breakTags.filter(tag => t.includes(tag)).length > 0) {
+                        formattedText += "\n"
+                        if(indenters.filter(i => t.includes(i)).length > 0){
+                            indentCount++;
+                            for(let i = 0; i < indentCount; i++){
+                                formattedText += "    ";
+                            }
+                        } else if(outdenters.filter(i => t.includes(i)).length > 0){
+                            for(let i = 0; i < indentCount; i++){
+                                formattedText += "    ";
+                            }
+                            indentCount--;
+                        } else {
+                            for(let i = 0; i < indentCount + 1; i++){
+                                formattedText += "    ";
+                            }
+                        }
+                        formattedText += t;
+                    } else {
+                        formattedText += t;
+                    }
                 }
             })
 
@@ -127,19 +140,33 @@ export default class CodeWindow extends Component {
         return (
             <div className="code-box">
                 <div className="code-selection-box">
-                    <button id="html" className="code-selection-button" ><FontAwesomeIcon icon={faHtml5} onClick={() => this.switchCode("html")}/></button>
-                    <button id="css" className="code-selection-button" ><FontAwesomeIcon icon={faCss3Alt} onClick={() => this.switchCode("css")}/></button>
-                    <h3>Toggle between HTML and CSS Code</h3>
+                    <button id="html" className={"code-selection-button" + (this.state.html ? " active" : "")} onClick={() => this.switchCode("html")}>html</button>
+                    <button id="css" className={"code-selection-button" + (this.state.css ? " active" : "")} onClick={() => this.switchCode("css")}>css</button>
+                    <button id="both" className={"code-selection-button" + (this.state.both ? " active" : "")} onClick={() => this.switchCode("both")}>both</button>
+                    <h3>HTML and CSS Code Samples below</h3>
                 </div>
                 <div className="code-display-box">
                     <pre>
                         { 
                             this.state.html &&
-                            this.state.htmlCode
+                            <div className="codewindow-container">
+                                {this.state.htmlCode}
+                            </div>
+                            
                         }
                         {
                             this.state.css &&
-                            this.state.cssCode
+                            <div className="codewindow-container">
+                                {this.state.cssCode}
+                            </div>
+                            
+                        }
+                        {
+                            this.state.both &&
+                            <div className="codewindow-both-container">
+                                <div className="codewindow-both-left">{this.state.htmlCode}</div>
+                                <div className="codewindow-both-right">{this.state.cssCode}</div>
+                            </div>
                         }
                     </pre>
                 </div>

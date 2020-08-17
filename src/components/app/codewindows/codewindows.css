@@ -22,34 +22,38 @@
     align-items: center;
 }
 
-.code-selection-box button {
+/* .code-selection-box button {
     background: none;
     border: none;
     transition: 1s;
-}
+} */
 
-#html:focus,
-#css:focus {
-    outline: 0;
-}
-
-#html:hover,
-#css:hover {
-    cursor: pointer;
-    filter: brightness(2);
-}
-
-#html svg,
-#css svg {
-    width: 40px;
-    height: 40px;
-    /* color: #0d428c; */
+.code-selection-box button {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    background: black;
     color: white;
+    transition: .5s;
 }
 
-#html:hover svg,
-#css:hover svg {
-    color: gold;
+.code-selection-box button.active {
+    background: #0d428c;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.code-selection-box button:hover {
+    color: white;
+    background: #0d428c;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.code-selection-box button:focus {
+    outline: none;
 }
 
 .code-selection-box h3 {
@@ -68,11 +72,35 @@
 
 pre {
     color: gold;
-    background: #0d428c;;
+    /* background: #0d428c; */
+    background: #07254f;
     width: 100%;
-    /* margin: 5px; */
-    padding: 20px;
+    padding: 15px;
+    padding: 0px;
     word-wrap: normal;
     overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.6) 80px 0px 500px inset;
+}
+
+pre .codewindow-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+pre .codewindow-both-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+
+pre .codewindow-both-container .codewindow-both-left, 
+pre .codewindow-both-container .codewindow-both-right {
+    width: 49%;
+    overflow-y: scroll;
+    padding: 5px;
+    background: #07254f;
     box-shadow: rgba(0, 0, 0, 0.6) 80px 0px 500px inset;
 }
