@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/transfigure.io/precache-manifest.a3675278f059c5d00559910c12878c1f.js"
+  "/transfigure.io/precache-manifest.8809cf113ef46ee0730d3429b1fbb28e.js"
 );
 
 self.addEventListener('message', (event) => {
