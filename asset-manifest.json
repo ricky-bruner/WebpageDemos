@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/transfigure.io/static/css/main.c6942fae.chunk.css",
-    "main.js": "/transfigure.io/static/js/main.a9ba1b25.chunk.js",
-    "main.js.map": "/transfigure.io/static/js/main.a9ba1b25.chunk.js.map",
+    "main.css": "/transfigure.io/static/css/main.e63ea6b6.chunk.css",
+    "main.js": "/transfigure.io/static/js/main.b37bcfad.chunk.js",
+    "main.js.map": "/transfigure.io/static/js/main.b37bcfad.chunk.js.map",
     "runtime-main.js": "/transfigure.io/static/js/runtime-main.b0100b42.js",
     "runtime-main.js.map": "/transfigure.io/static/js/runtime-main.b0100b42.js.map",
     "static/js/2.7e409089.chunk.js": "/transfigure.io/static/js/2.7e409089.chunk.js",
     "static/js/2.7e409089.chunk.js.map": "/transfigure.io/static/js/2.7e409089.chunk.js.map",
     "index.html": "/transfigure.io/index.html",
-    "precache-manifest.c0168e4f4ffcfbbdf9a4095a04fd70df.js": "/transfigure.io/precache-manifest.c0168e4f4ffcfbbdf9a4095a04fd70df.js",
+    "precache-manifest.a3675278f059c5d00559910c12878c1f.js": "/transfigure.io/precache-manifest.a3675278f059c5d00559910c12878c1f.js",
     "service-worker.js": "/transfigure.io/service-worker.js",
-    "static/css/main.c6942fae.chunk.css.map": "/transfigure.io/static/css/main.c6942fae.chunk.css.map",
+    "static/css/main.e63ea6b6.chunk.css.map": "/transfigure.io/static/css/main.e63ea6b6.chunk.css.map",
     "static/js/2.7e409089.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.7e409089.chunk.js.LICENSE.txt",
     "static/media/ProjectLogo1.png": "/transfigure.io/static/media/ProjectLogo1.b38c469a.png",
     "static/media/ProjectLogo2.png": "/transfigure.io/static/media/ProjectLogo2.9267e302.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.b0100b42.js",
     "static/js/2.7e409089.chunk.js",
-    "static/css/main.c6942fae.chunk.css",
-    "static/js/main.a9ba1b25.chunk.js"
+    "static/css/main.e63ea6b6.chunk.css",
+    "static/js/main.b37bcfad.chunk.js"
   ]
 }
