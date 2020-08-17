@@ -56,32 +56,32 @@ export default class GenericDemo extends Component {
 
     toggleColor = (color) => {
         this.setState({ color: color, showAllColors: false }, () => {
-            this.refs.CodeWindow.renderHTML();
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
     toggleSpeed = (speed) => {
         this.setState({ speed: speed, showAllSpeeds: false }, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
     toggleSize = (size) => {
         let color = this.state.color === "" ? this.props.options.color : this.state.color;
         this.setState({ color: color, size: size, showAllColors: false, showAllSizes: false }, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
     toggleBorder = (border) => {
         this.setState({ border: border, showAllBorders: false }, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
     toggleTheme = (theme) => {
         this.setState({ theme: theme }, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
@@ -89,7 +89,7 @@ export default class GenericDemo extends Component {
         let newState = this.getToggledState("reflective");
         
         this.setState(newState, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
@@ -97,7 +97,7 @@ export default class GenericDemo extends Component {
         let newState = this.getToggledState("overflowing");
         
         this.setState(newState, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
@@ -106,7 +106,7 @@ export default class GenericDemo extends Component {
         newState.size = !this.state.showAllColors ? "xs" : this.props.options.size;
         
         this.setState(newState, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }   
 
@@ -114,7 +114,7 @@ export default class GenericDemo extends Component {
         let newState = this.getToggledState("speed");
 
         this.setState(newState, () => {
-                this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
@@ -122,7 +122,7 @@ export default class GenericDemo extends Component {
         let newState = this.getToggledState("border");
 
         this.setState(newState, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 
@@ -130,7 +130,7 @@ export default class GenericDemo extends Component {
         let newState = this.getToggledState("size");
         
         this.setState(newState, () => {
-            this.refs.CodeWindow.renderHTML()
+            this.refs.CodeWindow.reRenderCodeWindow();
         });
     }
 

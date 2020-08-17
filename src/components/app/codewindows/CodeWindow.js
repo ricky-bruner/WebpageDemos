@@ -26,6 +26,26 @@ export default class CodeWindow extends Component {
         }
     }
 
+    reRenderCodeWindow = () => {
+        switch(true) {
+            case this.state.html:
+                this.renderHTML();
+                break;
+
+            case this.state.css:
+                this.renderCSS();
+                break;
+
+            case this.state.both:
+                this.renderBoth();
+                break;
+
+            default:
+                this.renderHTML();
+                break;
+        }
+    }
+
     renderHTML = () => {
         this.setState({ html: true, css: false, both: false }, () => {
             this.setState({htmlCode: this.formatHTMLText(this.props.html)});
