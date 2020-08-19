@@ -247,7 +247,7 @@ export default class GenericDemo extends Component {
                     {DemoTypeFactory(this.props.demoType, this.props.demoName, this.getSettings())}
                 </div>
                 <CodeWindow html={"." + this.props.demoClass} ref="CodeWindow" />
-                {/* <AdvancedCodeWindow html={"." + this.props.demoClass} ref="CodeWindow" /> */}
+                <AdvancedCodeWindow html={"." + this.props.demoClass} ref="CodeWindow" />
                 <div className="options-container">
                     <h3>Sources:</h3>
                     {

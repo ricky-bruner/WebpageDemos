@@ -73,7 +73,8 @@
 pre {
     color: gold;
     /* background: #0d428c; */
-    background: #07254f;
+    /* background: #07254f; */
+    background: #212121;
     width: 100%;
     padding: 15px;
     padding: 0px;
@@ -101,6 +102,133 @@ pre .codewindow-both-container .codewindow-both-right {
     width: 49%;
     overflow-y: scroll;
     padding: 5px;
-    background: #07254f;
+    /* background: #07254f; */
+    background: #212121;
     box-shadow: rgba(0, 0, 0, 0.6) 80px 0px 500px inset;
+}
+
+.html-code-row {
+    /* padding-left: calc(var(indent) * 5%); */
+}
+
+.cw-bk {
+    color: white;
+}
+
+.cw-tag {
+    color: orange;
+}
+
+.cw-attr {
+    color: rgb(227, 97, 140);
+}
+
+.cw-attr-val {
+    color: gold;
+}
+
+.cw-eq {
+    color: gray;
+}
+
+.cw-txt {
+    color: white;
+}
+
+.cw-rul {
+    color: rgb(255, 196, 225);
+}
+
+.cw-curl {
+    color: gold;
+}
+
+.cw-prop {
+    color: rgb(227, 108, 227);
+}
+
+.cw-prop-val {
+    color: coral;
+}
+
+.cw-col {
+    color: white;
+}
+
+.cw-par {
+    color: rgb(171, 0, 171);
+}
+
+.cw-num {
+    color: orange;
+}
+
+.cw-comma {
+    color: white;
+}
+
+.cw-dot {
+    color: white;
+}
+
+.cw-perc {
+    color: lightgray;
+}
+
+.cw-meas {
+    color: lightgray;
+}
+
+@media (max-width: 992px) {
+    .code-selection-box h3 {
+        font-size: 18px;
+    }
+
+    pre .codewindow-both-container {
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    pre .codewindow-both-container .codewindow-both-left, 
+    pre .codewindow-both-container .codewindow-both-right {
+        width: 100%;
+        height: 48%;
+    }
+}
+
+@media (max-width: 560px) {
+    .code-selection-box h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 516px) {
+    .code-selection-box h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 476px) {
+    .code-selection-box h3 {
+        font-size: 12px;
+    }
+
+    .code-selection-box button {
+        padding: 4px 8px;
+        margin: 3px 0;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 338px) {
+    .code-selection-box h3 {
+        font-size: 10px;
+    }
+
+    .code-selection-box button {
+        padding: 4px 8px;
+        margin: 3px 0;
+        font-size: 11px;
+    }
 }

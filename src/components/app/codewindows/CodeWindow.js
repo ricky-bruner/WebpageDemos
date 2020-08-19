@@ -107,7 +107,7 @@ export default class CodeWindow extends Component {
         ruleText = ruleText.replace(/;/g, ";\n   ");
         ruleText = ruleText.replace(/ {4}}/g, "}");
 
-        return "\n" + ruleText;
+        return ruleText;
     }
 
     formatHTMLText = (className) => {
