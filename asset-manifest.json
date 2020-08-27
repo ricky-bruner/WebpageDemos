@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/transfigure.io/static/css/main.6a3ba0dd.chunk.css",
-    "main.js": "/transfigure.io/static/js/main.5843d20b.chunk.js",
-    "main.js.map": "/transfigure.io/static/js/main.5843d20b.chunk.js.map",
+    "main.css": "/transfigure.io/static/css/main.3995b42f.chunk.css",
+    "main.js": "/transfigure.io/static/js/main.12b5c152.chunk.js",
+    "main.js.map": "/transfigure.io/static/js/main.12b5c152.chunk.js.map",
     "runtime-main.js": "/transfigure.io/static/js/runtime-main.b0100b42.js",
     "runtime-main.js.map": "/transfigure.io/static/js/runtime-main.b0100b42.js.map",
-    "static/js/2.7e409089.chunk.js": "/transfigure.io/static/js/2.7e409089.chunk.js",
-    "static/js/2.7e409089.chunk.js.map": "/transfigure.io/static/js/2.7e409089.chunk.js.map",
+    "static/js/2.d4931d48.chunk.js": "/transfigure.io/static/js/2.d4931d48.chunk.js",
+    "static/js/2.d4931d48.chunk.js.map": "/transfigure.io/static/js/2.d4931d48.chunk.js.map",
     "index.html": "/transfigure.io/index.html",
-    "precache-manifest.8fe3106797534a13f8bcb575e13023bd.js": "/transfigure.io/precache-manifest.8fe3106797534a13f8bcb575e13023bd.js",
+    "precache-manifest.d0501522dbafb6945973bffacaa1fb77.js": "/transfigure.io/precache-manifest.d0501522dbafb6945973bffacaa1fb77.js",
     "service-worker.js": "/transfigure.io/service-worker.js",
-    "static/css/main.6a3ba0dd.chunk.css.map": "/transfigure.io/static/css/main.6a3ba0dd.chunk.css.map",
-    "static/js/2.7e409089.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.7e409089.chunk.js.LICENSE.txt",
+    "static/css/main.3995b42f.chunk.css.map": "/transfigure.io/static/css/main.3995b42f.chunk.css.map",
+    "static/js/2.d4931d48.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.d4931d48.chunk.js.LICENSE.txt",
+    "static/media/HowToUse.jpg": "/transfigure.io/static/media/HowToUse.3ed13b50.jpg",
     "static/media/ProjectLogo1.png": "/transfigure.io/static/media/ProjectLogo1.b38c469a.png",
     "static/media/ProjectLogo2.png": "/transfigure.io/static/media/ProjectLogo2.9267e302.png",
     "static/media/ProjectLogo3.png": "/transfigure.io/static/media/ProjectLogo3.7687f651.png",
@@ -28,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b0100b42.js",
-    "static/js/2.7e409089.chunk.js",
-    "static/css/main.6a3ba0dd.chunk.css",
-    "static/js/main.5843d20b.chunk.js"
+    "static/js/2.d4931d48.chunk.js",
+    "static/css/main.3995b42f.chunk.css",
+    "static/js/main.12b5c152.chunk.js"
   ]
 }
