@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/transfigure.io/static/css/main.3995b42f.chunk.css",
+    "main.css": "/transfigure.io/static/css/main.4eae85f6.chunk.css",
     "main.js": "/transfigure.io/static/js/main.12b5c152.chunk.js",
     "main.js.map": "/transfigure.io/static/js/main.12b5c152.chunk.js.map",
     "runtime-main.js": "/transfigure.io/static/js/runtime-main.b0100b42.js",
@@ -8,9 +8,9 @@
     "static/js/2.d4931d48.chunk.js": "/transfigure.io/static/js/2.d4931d48.chunk.js",
     "static/js/2.d4931d48.chunk.js.map": "/transfigure.io/static/js/2.d4931d48.chunk.js.map",
     "index.html": "/transfigure.io/index.html",
-    "precache-manifest.d0501522dbafb6945973bffacaa1fb77.js": "/transfigure.io/precache-manifest.d0501522dbafb6945973bffacaa1fb77.js",
+    "precache-manifest.1bb6041f78d52fbfbcb9ed781f444015.js": "/transfigure.io/precache-manifest.1bb6041f78d52fbfbcb9ed781f444015.js",
     "service-worker.js": "/transfigure.io/service-worker.js",
-    "static/css/main.3995b42f.chunk.css.map": "/transfigure.io/static/css/main.3995b42f.chunk.css.map",
+    "static/css/main.4eae85f6.chunk.css.map": "/transfigure.io/static/css/main.4eae85f6.chunk.css.map",
     "static/js/2.d4931d48.chunk.js.LICENSE.txt": "/transfigure.io/static/js/2.d4931d48.chunk.js.LICENSE.txt",
     "static/media/HowToUse.jpg": "/transfigure.io/static/media/HowToUse.3ed13b50.jpg",
     "static/media/ProjectLogo1.png": "/transfigure.io/static/media/ProjectLogo1.b38c469a.png",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.b0100b42.js",
     "static/js/2.d4931d48.chunk.js",
-    "static/css/main.3995b42f.chunk.css",
+    "static/css/main.4eae85f6.chunk.css",
     "static/js/main.12b5c152.chunk.js"
   ]
 }
