@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea93329899a767ca459118d557d18dde",
+    "revision": "81c859459c707a0ee1ba5cb128621eb2",
     "url": "/transfigure.io/index.html"
   },
   {
-    "revision": "99c187763ee9ad856b7b",
-    "url": "/transfigure.io/static/css/main.4eae85f6.chunk.css"
+    "revision": "a1ed94060462ed6d1461",
+    "url": "/transfigure.io/static/css/main.672ddc3d.chunk.css"
   },
   {
     "revision": "f94d22aeaa5e6e3d0426",
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/transfigure.io/static/js/2.d4931d48.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "99c187763ee9ad856b7b",
-    "url": "/transfigure.io/static/js/main.12b5c152.chunk.js"
+    "revision": "a1ed94060462ed6d1461",
+    "url": "/transfigure.io/static/js/main.79500d65.chunk.js"
   },
   {
     "revision": "205d8255a4c706acedd1",
     "url": "/transfigure.io/static/js/runtime-main.b0100b42.js"
   },
   {
-    "revision": "3ed13b50650bd86ca7db745ae6a4b239",
-    "url": "/transfigure.io/static/media/HowToUse.3ed13b50.jpg"
+    "revision": "49eb486c97b07331a13cba3d20403b45",
+    "url": "/transfigure.io/static/media/HowToUse.49eb486c.png"
   },
   {
     "revision": "b38c469a630e6cda06db2501d1c4c231",
