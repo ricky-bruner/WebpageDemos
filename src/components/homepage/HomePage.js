@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from '../../img/transfigureiologos/transfigure_io_transparent_code_blue.png';
-import HomePageMeme from '../../img/HowToUse.jpg';
+import HomePageMeme from '../../img/HowToUse.png';
 import { faFacebookF, faYoutube, faPaypal, faPatreon, faFontAwesome } from '@fortawesome/free-brands-svg-icons';
 import "./homepage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
