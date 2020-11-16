@@ -324,16 +324,6 @@
     background: #eb524f;
 }
 
-
-/* @media (max-width: 1085px) {
-    .main-footer .footer-icon.sm {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        font-size: 22px;
-    }
-} */
-
 @media (max-width: 1000px) {
     .main-footer .footer-icon.sm {
         width: 40px;
