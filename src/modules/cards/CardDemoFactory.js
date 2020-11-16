@@ -17,9 +17,13 @@ import IconGrowthCards from '../../components/cards/iconGrowth/IconGrowthCards';
 import HoverSwitchCards from '../../components/cards/hoverSwitch/HoverSwitchCards';
 import GreetingCardStyleCards from '../../components/cards/greetingCardStyle/GreetingCardStyleCards';
 import CardNames from '../helpers/cards/CardNames';
+import LeakyCauldronStyleCards from '../../components/cards/leakyCauldronStyle/LeakyCauldronStyleCards';
 
 export default function CardDemoFactory(demoName, settings){
     switch(demoName){
+        case CardNames.LeakyCauldronStyleCards:
+            return <LeakyCauldronStyleCards settings={settings} />
+
         case CardNames.GameStyleCards:
             return <GameStyleCards settings={settings} />
 

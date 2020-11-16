@@ -24,6 +24,11 @@ export default function CardDemoOptionsFactory(demoName){
     };
     
     switch(demoName){
+        case CardNames.LeakyCauldronStyleCards:
+            options.themes = ThemeOptionsFactory("standard");
+            options.theme = "dark";
+            return options;
+        
         case CardNames.GameStyleCards:
             options.themes = ThemeOptionsFactory("standard");
             options.theme = "dark";
